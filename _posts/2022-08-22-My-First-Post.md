@@ -8,5 +8,14 @@ title: My First Post
 
 **Welcome to My Blog**
 
-<h1>Wondering who i am?<h1>
-<p>My name is Vivian and I am a junior at Del Norte High School. Not sure if I strictly want to go down the path of "software engineer" since coding is both frustrating and rewarding at the same time. I enjoy doing graphic design, digital art, and cybersecurity<p>
+<h2>Wondering who i am?<h2>
+<hr>
+<p>My name is Vivian and I am a junior at Del Norte High School. I love going to the beach, reading a good book, and I believe that peanut butter cookies are the best cookie. Some of my hobbies include graphic design, digital art, and cybersecurity :)<p>
+
+<h2>Goals for CSP<h2>
+<hr>
+<ul>
+    <li> Get better at different coding languages (Java, python, html, etc.)
+    <li> Get A's in the class for all 3 trimesters and a 5 on the AP exam :)
+    <li> Have fun while not losing sweat, blood, and tears
+</ul>
