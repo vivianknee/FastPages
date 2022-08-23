@@ -1,10 +1,9 @@
-
 ---
-- toc: true
-- layout: post
-- description: Vivian's first post
-- categories: [fun facts, goals, hobbies]
-- title: My First Post
+toc: true
+layout: post
+description: My first post
+categories: [Fun Facts, Goals, Hobbies]
+title: Vivian's Post
 ---
 
 # **Welcome to My Blog**
