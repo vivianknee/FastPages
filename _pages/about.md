@@ -16,7 +16,7 @@ This website is powered by **[Vivian](https://github.com/fastai/fastpages)** [^1
 <ul>
     <li>I am part of the CyberAegis team and participate in Cyberpatriot competitions 
     <li>I enjoy graphic design and marketing and am a marketing coordinator for SAGE, a nonprofit organization
-    <li>I enjoy doing research on subjects I'm interested and I recently attended a research program at UCSD
+    <li>I enjoy doing research on subjects I'm interested in. I recently attended a research program at UCSD
 <ul>
 
 
