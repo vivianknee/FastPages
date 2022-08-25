@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Title",
-            "content": ". toc: true | branch: master | badges: true | comments: true | author: Vivian Ni | categories: [fastpages, jupyter] | . . &quot;APCSP Blog: My Progress&quot; . Tool check:this code proves that I have all the necessary tools installed. These tools include: conda, bash, java, javascript, and python. .",
+            "content": ". title: APCSP Blog and My Progress | toc: true | branch: master | badges: true | comments: true | author: Vivian Ni | categories: [fastpages, jupyter] | . . APCSP Blog: My Progress . Tool check:this code proves that I have all the necessary tools installed. These tools include: conda, bash, java, javascript, and python. .",
             "url": "https://vivianknee.github.io/FastPages/2022/08/25/bash-notebook.html",
             "relUrl": "/2022/08/25/bash-notebook.html",
             "date": " • Aug 25, 2022"
@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Title",
-            "content": ". toc: true | branch: master | badges: true | comments: true | author: Vivian Ni | categories: [fastpages, jupyter] | . . My First Notebook . Vivian&#39;s first Jupyter Notebook . msg = &quot;This took a lot of unnecessary sweat, blood, and tears to set up&quot; print(msg) . This took a lot of unnecessary sweat, blood, and tears to set up .",
+            "content": ". title: My First Notebook | toc: true | branch: master | badges: true | comments: true | author: Vivian Ni | categories: [fastpages, jupyter] | . . My First Notebook . Vivian&#39;s first Jupyter Notebook . msg = &quot;This took a lot of unnecessary sweat, blood, and tears to set up&quot; print(msg) . This took a lot of unnecessary sweat, blood, and tears to set up .",
             "url": "https://vivianknee.github.io/FastPages/2022/08/22/first-notebook.html",
             "relUrl": "/2022/08/22/first-notebook.html",
             "date": " • Aug 22, 2022"
