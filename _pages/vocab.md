@@ -9,4 +9,3 @@ input:
 output:
 pwd: print working directory
 sequence
-list
