@@ -4,8 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[Vivian](https://github.com/fastai/fastpages)** [^1].
-[^1]:a super cool human being
+This website is powered by **[Vivian](https://github.com/fastai/fastpages)** 
 <h2>Who am I?</h2>
 <hr>
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/vivian.png?raw=true" width="250" height="340">
