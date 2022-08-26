@@ -192,14 +192,16 @@ print<span class="o">(</span>msg<span class="o">)</span>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nv">test</span><span class="o">=</span>“python3” <span class="c1"># keyword</span>
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> Python Check 
+<span class="nv">test</span><span class="o">=</span><span class="s2">&quot;python3&quot;</span> <span class="c1"># keyword</span>
 <span class="nv">check</span><span class="o">=</span><span class="sb">`</span>jupyter kernelspec list <span class="p">|</span> grep <span class="nv">$test</span><span class="sb">`</span> <span class="c1"># run command</span>
 <span class="nv">n</span><span class="o">=</span><span class="si">${#</span><span class="nv">check</span><span class="si">}</span> <span class="c1"># determine length</span>
-<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># test length</span>
+
+<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># testt length</span>
 <span class="k">then</span> <span class="c1"># greater than zero</span>
-    <span class="nb">echo</span> “<span class="nv">$check</span>”
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$check</span><span class="s2">&quot;</span>
 <span class="k">else</span> <span class="c1"># less than zero</span>
-    <span class="nb">echo</span> “<span class="nv">$check</span>”
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$test</span><span class="s2"> not found&quot;</span>
 <span class="k">fi</span>
 </pre></div>
 
@@ -213,7 +215,117 @@ print<span class="o">(</span>msg<span class="o">)</span>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>“”
+<pre>Python Check
+  python3       /home/vivian/.local/share/jupyter/kernels/python3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>conda</code></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> Conda Check
+<span class="c1"># test for a kernel installation</span>
+<span class="nv">test</span><span class="o">=</span><span class="s2">&quot;jupyter&quot;</span> <span class="c1"># keyword</span>
+<span class="nv">check</span><span class="o">=</span><span class="sb">`</span>conda list <span class="p">|</span> grep <span class="nv">$test</span><span class="sb">`</span> <span class="c1"># run command</span>
+<span class="nv">n</span><span class="o">=</span><span class="si">${#</span><span class="nv">check</span><span class="si">}</span> <span class="c1"># determine length</span>
+
+<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># testt length</span>
+<span class="k">then</span> <span class="c1"># greater than zero</span>
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$check</span><span class="s2">&quot;</span>
+<span class="k">else</span> <span class="c1"># less than zero</span>
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$test</span><span class="s2"> not found&quot;</span>
+<span class="k">fi</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Conda Check
+jupyter                   1.0.0            py39h06a4308_7  
+jupyter_client            6.1.12             pyhd3eb1b0_0  
+jupyter_console           6.4.0              pyhd3eb1b0_0  
+jupyter_core              4.9.2            py39h06a4308_0  
+jupyter_server            1.13.5             pyhd3eb1b0_0  
+jupyterlab                3.3.2              pyhd3eb1b0_0  
+jupyterlab_pygments       0.1.2                      py_0  
+jupyterlab_server         2.10.3             pyhd3eb1b0_1  
+jupyterlab_widgets        1.0.0              pyhd3eb1b0_1  
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>java and javascript</code></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> Java Check
+<span class="c1"># test for a kernel installation</span>
+<span class="nv">test</span><span class="o">=</span><span class="s2">&quot;java&quot;</span> <span class="c1"># keyword</span>
+<span class="nv">check</span><span class="o">=</span><span class="sb">`</span>jupyter kernelspec list <span class="p">|</span> grep <span class="nv">$test</span><span class="sb">`</span> <span class="c1"># run command</span>
+<span class="nv">n</span><span class="o">=</span><span class="si">${#</span><span class="nv">check</span><span class="si">}</span> <span class="c1"># determine length</span>
+
+<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># testt length</span>
+<span class="k">then</span> <span class="c1"># greater than zero</span>
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$check</span><span class="s2">&quot;</span>
+<span class="k">else</span> <span class="c1"># less than zero</span>
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$test</span><span class="s2"> not found&quot;</span>
+<span class="k">fi</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Java Check
+  java          /home/vivian/.local/share/jupyter/kernels/java
+  javascript    /home/vivian/.local/share/jupyter/kernels/javascript
 </pre>
 </div>
 </div>
