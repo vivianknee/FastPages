@@ -5,7 +5,7 @@ title: Vocab
 ---
 
 # AP CSP Vocabulary Notes
--input:
--output:
--pwd: print working directory
--sequence
+- input: 
+- output: 
+- pwd: print working directory
+- sequence:
