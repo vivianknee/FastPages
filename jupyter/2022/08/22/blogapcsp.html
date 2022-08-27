@@ -145,7 +145,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;This took a lot of unnecessary sweat, blood, and tears to set up&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;This took a lot of unnecessary sweat, blood, and tears to set up&quot;</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 </pre></div>
 
@@ -185,14 +185,14 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
 
 <span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question: &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">msg</span>
 
-<span class="n">questions</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">questions</span> <span class="o">=</span> <span class="mi">6</span>
 <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, &#39;</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&quot; running &quot;</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
@@ -252,7 +252,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="n">Python</span> <span class="n">Check</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">echo</span> <span class="n">Python</span> <span class="n">Check</span> 
 <span class="n">test</span><span class="o">=</span><span class="s2">&quot;python3&quot;</span> <span class="c1"># keyword</span>
 <span class="n">check</span><span class="o">=</span><span class="err">`</span><span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="err">$</span><span class="n">test</span><span class="err">`</span> <span class="c1"># run command</span>
 <span class="n">n</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="c1">#check} # determine length</span>
@@ -301,7 +301,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="n">Conda</span> <span class="n">Check</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">echo</span> <span class="n">Conda</span> <span class="n">Check</span>
 <span class="c1"># test for a kernel installation</span>
 <span class="n">test</span><span class="o">=</span><span class="s2">&quot;jupyter&quot;</span> <span class="c1"># keyword</span>
 <span class="n">check</span><span class="o">=</span><span class="err">`</span><span class="n">conda</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="err">$</span><span class="n">test</span><span class="err">`</span> <span class="c1"># run command</span>
@@ -359,7 +359,7 @@ jupyterlab_widgets        1.0.0              pyhd3eb1b0_1
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="n">Java</span> <span class="n">Check</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">echo</span> <span class="n">Java</span> <span class="n">Check</span>
 <span class="c1"># test for a kernel installation</span>
 <span class="n">test</span><span class="o">=</span><span class="s2">&quot;java&quot;</span> <span class="c1"># keyword</span>
 <span class="n">check</span><span class="o">=</span><span class="err">`</span><span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="err">$</span><span class="n">test</span><span class="err">`</span> <span class="c1"># run command</span>
