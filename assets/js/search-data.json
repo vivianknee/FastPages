@@ -71,7 +71,7 @@
   
       ,"page1": {
           "title": "Vocab",
-          "content": "AP CSP Vocabulary Notes . input: | output: | pwd: print working directory | sequence: | .",
+          "content": "AP CSP Vocabulary Notes . Vocabulary . input = instructions you give to a computer | sequence = several lines of code together | output = the information the computer gives to you | key (name) --&gt; value (Vivian) | . Linux/Ubuntu Commmands . pwd = print working directory | mkdir = make directory | cd = change directory | ls = list directory | | .",
           "url": "https://vivianknee.github.io/FastPages/Vocab/",
           "relUrl": "/Vocab/",
           "date": ""
