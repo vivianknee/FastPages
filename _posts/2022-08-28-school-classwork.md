@@ -19,7 +19,6 @@ title: School Work
     <li>Definition of a derivative
     <li>Continuity proof
     <li>Intermediate Value Theorem
-<ul>
 
 <h2>Per 2: AP English Language</h2>
 <hr>
@@ -27,7 +26,7 @@ title: School Work
 <ul>
     <li>We learned how to write a rhetorical precis which is a short essay analyzing rhetorical devices an author uses to get their message across
     <li>We learned about two different methods for writing a thesis: device driven or idea driven
-<ul>
+
 <h3>Taking the FRQ portion of the AP exam</h3>
 1. Read the prompt. Annotate the rhetorical situation. This includes context, audience, and a description of the writer
 2. Read the passage. Annotate the rhetorical devices, tone, and purpose of the essay
@@ -39,7 +38,7 @@ title: School Work
 <ul>
     <li>Chinese Holidays including the lunar festival and spring festival
     <li>Covering tradition including food, clothing, and famous historical locations because culture is an important aspect of the AP exam
-<ul>
+
 
 <h2>Per 5: AP Physics</h2>
 <hr>
@@ -62,5 +61,5 @@ title: School Work
             <li><b>Scalar<b>: quantities that are described by magnitude only (time, mass, speed)</li>
         <ul>
     <li>Dimensional Analysis
-<ul>
+
         
