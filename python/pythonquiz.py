@@ -32,6 +32,7 @@ if rsp == "expression":
     correct += 1
 else:
     print(rsp + " is incorrect!")
+
 rsp = question_with_response("Two or more lines of code is known as a '_______'?")
 if rsp == "sequence":
     print(rsp + " is correct!")
@@ -52,6 +53,7 @@ if rsp == "def":
     correct += 1
 else:
     print(rsp + " is incorrect!")
+
 rsp = question_with_response("What statement must you use to place variables that are defined as numbers into strings?")
 if rsp == "str()":
     print(rsp + " is correct!")
