@@ -14,18 +14,20 @@ title: School Work
 <hr>
 <h3>Topics Covered: Tri one is all review from calculus AB</h3>
 <ul>
-    <li>Limits review
-    <li>Using a creative one to solve for limits
-    <li>Definition of a derivative
-    <li>Continuity proof
-    <li>Intermediate Value Theorem
+    <li>Limits review</li>
+    <li>Using a creative one to solve for limits</li>
+    <li>Definition of a derivative</li>
+    <li>Continuity proof</li>
+    <li>Intermediate Value Theorem</li>
+</ul>
 
 <h2>Per 2: AP English Language</h2>
 <hr>
 <h3>Topics Covered</h3>
 <ul>
-    <li>We learned how to write a rhetorical precis which is a short essay analyzing rhetorical devices an author uses to get their message across
-    <li>We learned about two different methods for writing a thesis: device driven or idea driven
+    <li>We learned how to write a rhetorical precis which is a short essay analyzing rhetorical devices an author uses to get their message across</li>
+    <li>We learned about two different methods for writing a thesis: device driven or idea driven</li>
+</ul>
 
 <h3>Taking the FRQ portion of the AP exam</h3>
 1. Read the prompt. Annotate the rhetorical situation. This includes context, audience, and a description of the writer
@@ -36,9 +38,9 @@ title: School Work
 <hr>
 <h3>Topics Covered</h3>
 <ul>
-    <li>Chinese Holidays including the lunar festival and spring festival
-    <li>Covering tradition including food, clothing, and famous historical locations because culture is an important aspect of the AP exam
-
+    <li>Chinese Holidays including the lunar festival and spring festival</li>
+    <li>Covering tradition including food, clothing, and famous historical locations because culture is an important aspect of the AP exam</li>
+</ul>
 
 <h2>Per 5: AP Physics</h2>
 <hr>
@@ -51,7 +53,8 @@ title: School Work
             <li>A 0 after a digit 1-9 and a decimal are significant ex: 0.90 has 2 sigfigs</li>
             <li>A 0 at the end of a whole number with no decimal point is insignificant ex: 90 has 1 sigfig</li>
             <li>A 0 inbetween digits 1-9 is significant ex: 909 has 3 sigfigs</li>
-        <ul>
+        </ul>
+    </li>
     <li>Motion in One Dimension
         <ul>
             <li><b>Kinematics<b>: describes motion while ignoring the agents that caused the motion</li>
@@ -59,7 +62,8 @@ title: School Work
             <li><b>Displacement<b>: change in position during some time interval. It is solved with the equation Δx=xf-xi</li>
             <li><b>Vector<b>: quantities that need both magnitude(size or numerical value) and direction(positive or negative) to describe them</li>
             <li><b>Scalar<b>: quantities that are described by magnitude only (time, mass, speed)</li>
-        <ul>
-    <li>Dimensional Analysis
+        </ul>
+    </li>
+    <li>Dimensional Analysis</li>
 
         
