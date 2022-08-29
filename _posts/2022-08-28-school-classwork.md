@@ -5,6 +5,7 @@ description: Study guides, notes, to-do lists
 author: Vivian Ni
 categories: [markdown, schoolwork, noncsp]
 title: School Work
+comments: true
 ---
 
 <h1>Trimester 1 Classes</h1>
