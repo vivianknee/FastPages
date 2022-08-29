@@ -57,11 +57,11 @@ title: School Work
     </li>
     <li>Motion in One Dimension
         <ul>
-            <li><b>Kinematics<b>: describes motion while ignoring the agents that caused the motion</li>
-            <li><b>Position<b>: defined in terms of a frame of reference(usually the x or y axis)</li>
-            <li><b>Displacement<b>: change in position during some time interval. It is solved with the equation Δx=xf-xi</li>
-            <li><b>Vector<b>: quantities that need both magnitude(size or numerical value) and direction(positive or negative) to describe them</li>
-            <li><b>Scalar<b>: quantities that are described by magnitude only (time, mass, speed)</li>
+            <li><b>Kinematics</b>: describes motion while ignoring the agents that caused the motion</li>
+            <li><b>Position</b>: defined in terms of a frame of reference(usually the x or y axis)</li>
+            <li><b>Displacement</b>: change in position during some time interval. It is solved with the equation Δx=xf-xi</li>
+            <li><b>Vector</b>: quantities that need both magnitude(size or numerical value) and direction(positive or negative) to describe them</li>
+            <li><b>Scalar</b>: quantities that are described by magnitude only (time, mass, speed)</li>
         </ul>
     </li>
     <li>Dimensional Analysis</li>
