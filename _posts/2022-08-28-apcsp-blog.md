@@ -5,6 +5,7 @@ description: My Progress
 author: Vivian Ni
 categories: [markdown]
 title: APCSP Blog-The Process and Progress
+comments: true
 ---
 
 # APCSP Blog-The Process and Progress
