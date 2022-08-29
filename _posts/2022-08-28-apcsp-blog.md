@@ -15,7 +15,7 @@ title: APCSP Blog-The Process and Progress
 - I created my first post and notebook using python hello and markdown syntax. Markdown also uses html so I like that I was able to switch between markdown and html code.
 - I also learned how to add images and through trial and error, I have discovered 2 ways to add an image
     1. Using the html method of <img scr= > 
-    2. ![](<p>{{ site.baseurl }}</p>/filepath/image.png)
+    2. ![]("{{" site.baseurl "}}"/filepath/image.png) ignore quotations
 - I learned a bunch of new vocab terms in regard to computer science. This includes commands and terms to describe different syntaxes
 
 ## Week 2
