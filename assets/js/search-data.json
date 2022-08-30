@@ -115,7 +115,7 @@
   
       ,"page1": {
           "title": "Vocab",
-          "content": "AP CSP Vocabulary Notes . Vocabulary . input = instructions you give to a computer | sequence = several lines of code together | output = the information the computer gives to you | key (name) --&gt; value (Vivian) | . Linux/Ubuntu Commmands . pwd = print working directory | mkdir = make directory | cd = change directory | ls = list directory | | .",
+          "content": "AP CSP Vocabulary Notes . Vocabulary . input = instructions you give to a computer | sequence = several lines of code together | output = the information the computer gives to you | key (name) --&gt; value (Vivian) | Variables: a way to name, store, data and reference data. Lists and Dictionaries are variables with extended features for storing and retrieving data. Lists, think of [] square brackets, are a way of grouping data in an ordered sequence | Dictionaries, think of {} curly braces, are a way of grouping data into in key-value relationships | . | . Linux/Ubuntu Commmands . pwd = print working directory | mkdir = make directory | cd = change directory | ls = list directory | | .",
           "url": "https://vivianknee.github.io/FastPages/Vocab/",
           "relUrl": "/Vocab/",
           "date": ""
