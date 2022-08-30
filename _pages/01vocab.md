@@ -17,6 +17,7 @@ title: Vocab
             <li>Dictionaries, think of {} curly braces, are a way of grouping data into in key-value relationships</li>
         </ul>
     </li>
+    <li>Concatenation: the operation of joining two strings together </li>
 </ul>
 
 **Linux/Ubuntu Commmands** 
