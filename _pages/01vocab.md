@@ -11,6 +11,12 @@ title: Vocab
     <li>sequence = several lines of code together</li>
     <li>output = the information the computer gives to you</li>
     <li>key (name) --> value (Vivian)</li>
+    <li>Variables: a way to name, store, data and reference data. Lists and Dictionaries are variables with extended features for storing and retrieving data.
+        <ul>
+            <li>Lists, think of [] square brackets, are a way of grouping data in an ordered sequence</li>
+            <li>Dictionaries, think of {} curly braces, are a way of grouping data into in key-value relationships</li>
+        </ul>
+    </li>
 </ul>
 
 **Linux/Ubuntu Commmands** 
