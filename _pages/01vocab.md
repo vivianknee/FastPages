@@ -18,7 +18,7 @@ title: Vocab
         </ul>
     </li>
     <li>Concatenation: the operation of joining two strings together </li>
-    <li>jekyll:
+    <li>jekyll:used to 
     <li>liquid:
 </ul>
 
