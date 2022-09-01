@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -132,6 +132,14 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="List-of-Dictionaries">List of Dictionaries<a class="anchor-link" href="#List-of-Dictionaries"> </a></h2><blockquote><p>this code appends the dictionaries to the list, the list being infoDb. As you can see, 2 dictionaries have been appended.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -139,10 +147,10 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aboutV</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">infoDb</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># Append to List a Dictionary of key/values </span>
-<span class="n">aboutV</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+<span class="n">infoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
     <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Vivian&quot;</span><span class="p">,</span>
     <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Ni&quot;</span><span class="p">,</span>
     <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;May 13&quot;</span><span class="p">,</span>
@@ -152,8 +160,18 @@ window.onload = wrap_img;
     <span class="s2">&quot;Best_Treats&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;cookies&quot;</span><span class="p">,</span> <span class="s2">&quot;ice cream&quot;</span><span class="p">,</span> <span class="s2">&quot;cake&quot;</span><span class="p">,</span> <span class="s2">&quot;brownies&quot;</span><span class="p">]</span>
 <span class="p">})</span>
 
+<span class="n">infoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Hanli&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Ni&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;Jan 11&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;San Diego&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Fav_Movie&quot;</span><span class="p">:</span> <span class="s2">&quot;MIB&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Fav_Colors&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;Best_Treats&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;smoothies&quot;</span><span class="p">,</span> <span class="s2">&quot;ice cream&quot;</span><span class="p">]</span>
+<span class="p">})</span>
+
 <span class="c1"># Print the data structure</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">aboutV</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">infoDb</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -166,7 +184,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{&#39;FirstName&#39;: &#39;Vivian&#39;, &#39;LastName&#39;: &#39;Ni&#39;, &#39;DOB&#39;: &#39;May 13&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Fav_Movie&#39;: &#39;Inception&#39;, &#39;Fav_Colors&#39;: [&#39;sage green&#39;, &#39;coral&#39;, &#39;lilac purple&#39;], &#39;Best_Treats&#39;: [&#39;cookies&#39;, &#39;ice cream&#39;, &#39;cake&#39;, &#39;brownies&#39;]}]
+<pre>[{&#39;FirstName&#39;: &#39;Vivian&#39;, &#39;LastName&#39;: &#39;Ni&#39;, &#39;DOB&#39;: &#39;May 13&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Fav_Movie&#39;: &#39;Inception&#39;, &#39;Fav_Colors&#39;: [&#39;sage green&#39;, &#39;coral&#39;, &#39;lilac purple&#39;], &#39;Best_Treats&#39;: [&#39;cookies&#39;, &#39;ice cream&#39;, &#39;cake&#39;, &#39;brownies&#39;]}, {&#39;FirstName&#39;: &#39;Hanli&#39;, &#39;LastName&#39;: &#39;Ni&#39;, &#39;DOB&#39;: &#39;Jan 11&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Fav_Movie&#39;: &#39;MIB&#39;, &#39;Fav_Colors&#39;: [&#39;blue&#39;, &#39;green&#39;], &#39;Best_Treats&#39;: [&#39;smoothies&#39;, &#39;ice cream&#39;]}]
 </pre>
 </div>
 </div>
@@ -177,6 +195,12 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="For-Loop-for-output-of-List/Dictionary">For Loop for output of List/Dictionary<a class="anchor-link" href="#For-Loop-for-output-of-List/Dictionary"> </a></h2>
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -195,11 +219,10 @@ window.onload = wrap_img;
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Best_Treats&quot;</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
     <span class="nb">print</span><span class="p">()</span>
 
-<span class="c1"># for loop iterates on length of InfoDb</span>
-<span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">aboutV</span><span class="p">:</span>
-        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">infoDb</span><span class="p">:</span>
+            <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
 
 <span class="n">for_loop</span><span class="p">()</span>
 </pre></div>
@@ -223,6 +246,13 @@ Vivian Ni
 	 Favorite Colors: sage green, coral, lilac purple
 	 Best Treats: cookies, ice cream, cake, brownies
 
+Hanli Ni
+	 Residence: San Diego
+	 Birth Day: Jan 11
+	 Favorite Movie MIB
+	 Favorite Colors: blue, green
+	 Best Treats: smoothies, ice cream
+
 </pre>
 </div>
 </div>
@@ -233,6 +263,97 @@ Vivian Ni
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Alternate-Methods-of-Iteration">Alternate Methods of Iteration<a class="anchor-link" href="#Alternate-Methods-of-Iteration"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="For-Loop-with-an-Index">For Loop with an Index<a class="anchor-link" href="#For-Loop-with-an-Index"> </a></h3><blockquote><p>this code uses a for loop with the range and index syntax to print the dictionaries. It also does so in reverse order</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;FirstName&quot;</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;LastName&quot;</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Residence:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Residence&quot;</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Birth Day:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;DOB&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Favorite Movie&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Fav_Movie&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Favorite Colors: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># end=&quot;&quot; make sure no return occurs</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Fav_Colors&quot;</span><span class="p">]))</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Best Treats: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># end=&quot;&quot; make sure no return occurs</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Best_Treats&quot;</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
+    <span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># for loop iterates on length of InfoDb</span>
+<span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">infoDb</span><span class="p">)</span> <span class="c1">#figures out the length of the list infoDb (which is 2 because there are 2 dictionaries in the list)</span>
+    <span class="n">ran</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="n">length</span><span class="p">)</span> <span class="c1">#defines ran as the range of the length. (this is 0 and 1 because the length is 2)</span>
+    <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">ran</span><span class="p">):</span> <span class="c1">#index is 0 and 1 so it takes the indexes of infoDb. 0 would be the first dictionary and 1 would be the second. reversed prints them as 1 0 instead of 0 1</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">infoDb</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+
+<span class="n">for_loop</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>For loop output
+
+Vivian Ni
+	 Residence: San Diego
+	 Birth Day: May 13
+	 Favorite Movie Inception
+	 Favorite Colors: sage green, coral, lilac purple
+	 Best Treats: cookies, ice cream, cake, brownies
+
+Hanli Ni
+	 Residence: San Diego
+	 Birth Day: Jan 11
+	 Favorite Movie MIB
+	 Favorite Colors: blue, green
+	 Best Treats: smoothies, ice cream
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Using-Input-to-Add-Dictionaries">Using Input to Add Dictionaries<a class="anchor-link" href="#Using-Input-to-Add-Dictionaries"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Quiz-that-stores-in-a-List-of-Dictionaries">Quiz that stores in a List of Dictionaries<a class="anchor-link" href="#Quiz-that-stores-in-a-List-of-Dictionaries"> </a></h2>
+</div>
+</div>
+</div>
 </div>
 
 
