@@ -22,3 +22,5 @@ comments: true
 - I also used bash to test to see if I had all the packages required installed
 
 ## Week 2
+- I learned about lists and dictionaries and how to use them to store data and create cool things like quizzes and inputs.
+- I also learned about the importance of HTML and how to change the theme of my website. I also messed around with dark mode and I am trying to make a toggle button for dark and light mode.
