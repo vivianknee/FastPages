@@ -32,7 +32,7 @@ table, th, td {
                 <ol>
                     <li>Using the html method of img scr=""</li>
                     <li>![]({{ site.baseurl }}/filepath/image.png) </li>
-                <ol>
+                </ol>
             <li>I learned a bunch of new vocab terms in regard to computer science. This includes commands and terms to describe different syntaxes</li>
             <li>I learned how to create a python quiz in which I give the computer an input and it gives me the answer or message as an output</li>
             <li>I also used bash to test to see if I had all the packages required installed</li>
