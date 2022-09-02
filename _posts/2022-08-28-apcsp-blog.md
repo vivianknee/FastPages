@@ -23,6 +23,7 @@ table, th, td {
     <th>Week 2</th>
     <th>Week 3</th>
   </tr>
+  
   <tr>
     <td>
         <ul>
