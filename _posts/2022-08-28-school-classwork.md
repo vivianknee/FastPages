@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Study guides, notes, to-do lists
 author: Vivian Ni
-categories: [markdown, schoolwork, noncsp]
+categories: [markdown, schoolwork, noncsp, week1]
 title: School Work
 comments: true
 ---
