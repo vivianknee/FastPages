@@ -10,7 +10,7 @@ comments: true
 <html>
 <style>
 table, th, td {
-  border:1px solid black;
+  border:1px white;
 }
 </style>
 <body>
