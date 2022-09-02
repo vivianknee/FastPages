@@ -18,13 +18,14 @@ title: Vocab
         </ul>
     </li>
     <li>Concatenation: the operation of joining two strings together </li>
-    <li>jekyll:used to 
-    <li>liquid:
+    <li>jekyll:used to</li> 
+    <li>liquid:</li>
 </ul>
 
-**Linux/Ubuntu Commmands** 
+**Linux/Ubuntu Commands** 
 <ul>
     <li>pwd = print working directory</li>
     <li>mkdir = make directory</li>
     <li>cd = change directory</li>
     <li>ls = list directory<li>
+</ul>

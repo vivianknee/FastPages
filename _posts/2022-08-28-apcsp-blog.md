@@ -28,12 +28,11 @@ table, th, td {
         <ul>
             <li>I downloaded all the necessary tools. Some I have already used and others were new to me. For example, I've never used markdown, jupyter notebooks, or wsl before. However, I did have some experience with linux and html prior to taking this class</li>
             <li>I created my first post and notebook using python hello and markdown syntax. Markdown also uses html so I like that I was able to switch between markdown and html code</li>
-            <li>I also learned how to add images and through trial and error, I have discovered 2 ways to add an image
+            <li>I also learned how to add images and through trial and error, I have discovered 2 ways to add an image</li>
                 <ol>
                     <li>Using the html method of img scr=""</li>
                     <li>![]({{ site.baseurl }}/filepath/image.png) </li>
                 <ol>
-            </li>
             <li>I learned a bunch of new vocab terms in regard to computer science. This includes commands and terms to describe different syntaxes</li>
             <li>I learned how to create a python quiz in which I give the computer an input and it gives me the answer or message as an output</li>
             <li>I also used bash to test to see if I had all the packages required installed</li>
