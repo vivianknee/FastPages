@@ -4,7 +4,7 @@ layout: post
 description: My Progress
 author: Vivian Ni
 categories: [markdown]
-title: APCSP Blog-The Process and Progress
+title: APCSP Blog 
 comments: true
 ---
 <html>
