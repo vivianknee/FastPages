@@ -8,11 +8,8 @@ title: APCSP Blog
 comments: true
 ---
 
-| Week 0 | Week 1 | Week 2|
-|-|-|-|
-| [First Post]() | [Schoolwork Blog](https://vivianknee.github.io/FastPages/markdown/noncsp/week1/2022/08/28/school-classwork.html) | [Lists, Dictionaries, and Iterations](https://vivianknee.github.io/FastPages/jupyter/week2/2022/08/30/lists.html) |
-| [About Me](https://vivianknee.github.io/FastPages/about/) | [My Art with Images and Tables](https://vivianknee.github.io/FastPages/markdown/noncsp/week1/2022/08/24/My-Art.html) |  | 
-| | [Python Quiz](https://vivianknee.github.io/FastPages/jupyter/week1/2022/08/28/python.html) | 
-| | [Bash Tool Check](https://vivianknee.github.io/FastPages/jupyter/week1/2022/08/22/toolcheck.html) |  |  
-|  | [APCSP Vocab](https://vivianknee.github.io/FastPages/Vocab/) |  |
-|  |  |  |
+| Week | Sprint | Review Ticket | Summary |
+|-|-|-|-|
+| 0 | | Tool Setup | | [Review Ticket 0](https://github.com/vivianknee/FastPages/issues/6#issue-1347442011) | We learned how to make our first markdown posts and jupyter notebooks. My first makedown post was my [About Me](https://vivianknee.github.io/FastPages/about/) and my [First Post](https://vivianknee.github.io/FastPages/markdown/week0/2022/08/22/My-First-Post.html). In order to do this, we had to set up wsl, vscode, and download numerous other programs like anaconda, bash, python, and more. |
+| 1 | | Intro to Python | [Review Ticket 1](https://github.com/vivianknee/FastPages/issues/7#issue-1353739633) | This week was super busy and more code heavy. Specifically, we began using python and bash. Using python, we made a [Python Quiz](https://vivianknee.github.io/FastPages/jupyter/week1/2022/08/28/python.html) and with bash we created a [Bash Tool Check](https://vivianknee.github.io/FastPages/jupyter/week1/2022/08/22/toolcheck.html). The bash tool check made sure that we had all the necessary programs installed. This week was also an oppurtunity to personalize our website so I made a page consisting of  [My Art with Images and Tables](https://vivianknee.github.io/FastPages/markdown/noncsp/week1/2022/08/24/My-Art.html). Finally, we had to show proof of our blogging both in csp which I did through [APCSP Vocab](https://vivianknee.github.io/FastPages/Vocab/) | and for [Schoolwork](https://vivianknee.github.io/FastPages/markdown/noncsp/week1/2022/08/28/school-classwork.html) outside of csp. |
+| 2 | | Data Abstraction | [Review Ticket 2](https://github.com/vivianknee/FastPages/issues/8#issue-1360542831) | This week we started learning about  [Lists, Dictionaries, and Iterations](https://vivianknee.github.io/FastPages/jupyter/week2/2022/08/30/lists.html) and how to store data with them. We learned how to print and format dictionaries as well as do other more advanced things with them. In addition, we also messed around with html and the themes of our website. For example we applied a dark mode css file which changed the entire look of the site. |
