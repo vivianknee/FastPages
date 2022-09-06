@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      7 min read
     
 </span></p>
 
@@ -135,6 +135,63 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Variables">Variables<a class="anchor-link" href="#Variables"> </a></h2><blockquote><p>Variables all have a type:String, Integer, Float, List and Dictionary are some key types.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Vivian Ni&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># variable of type integer</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># variable of type float</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mf">3.00</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;score&quot;</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># variable of type list (many values in one variable)</span>
+<span class="n">langs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;JavaScript&quot;</span><span class="p">,</span> <span class="s2">&quot;Java&quot;</span><span class="p">,</span> <span class="s2">&quot;bash&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;langs&quot;</span><span class="p">,</span> <span class="n">langs</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">),</span> <span class="s2">&quot;length&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">langs</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;- langs[3]&quot;</span><span class="p">,</span> <span class="n">langs</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">langs</span><span class="p">[</span><span class="mi">3</span><span class="p">]))</span>
+
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1"># variable of type dictionary (a group of keys and values)</span>
+<span class="n">person</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">name</span><span class="p">,</span>
+    <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span>
+    <span class="s2">&quot;score&quot;</span><span class="p">:</span> <span class="n">score</span><span class="p">,</span>
+    <span class="s2">&quot;langs&quot;</span><span class="p">:</span> <span class="n">langs</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;person&quot;</span><span class="p">,</span> <span class="n">person</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">),</span> <span class="s2">&quot;length&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">person</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;- person[&quot;name&quot;]&#39;</span><span class="p">,</span> <span class="n">person</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">],</span> <span class="nb">type</span><span class="p">(</span><span class="n">person</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="List-of-Dictionaries">List of Dictionaries<a class="anchor-link" href="#List-of-Dictionaries"> </a></h2><blockquote><p>this code appends the dictionaries to the list, the list being infoDb. As you can see, 2 dictionaries have been appended.</p>
@@ -216,7 +273,7 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">for_loop</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For loop output</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">infoDb</span><span class="p">:</span>
-        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
 
 <span class="n">for_loop</span><span class="p">()</span>
 </pre></div>
@@ -233,20 +290,8 @@ window.onload = wrap_img;
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>For loop output
 
-Vivian Ni
-	 Residence: San Diego
-	 Birth Day: May 13
-	 Favorite Movie Inception
-	 Email: vivianni452@gmail.com
-	 Best Treats: cookies, ice cream, cake, brownies
-
-Hanli Ni
-	 Residence: San Diego
-	 Birth Day: Jan 11
-	 Favorite Movie MIB
-	 Email: hanlini@gmail.com
-	 Best Treats: smoothies, ice cream
-
+{&#39;FirstName&#39;: &#39;Vivian&#39;, &#39;LastName&#39;: &#39;Ni&#39;, &#39;DOB&#39;: &#39;May 13&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Fav_Movie&#39;: &#39;Inception&#39;, &#39;Email&#39;: &#39;vivianni452@gmail.com&#39;, &#39;Best_Treats&#39;: [&#39;cookies&#39;, &#39;ice cream&#39;, &#39;cake&#39;, &#39;brownies&#39;]}
+{&#39;FirstName&#39;: &#39;Hanli&#39;, &#39;LastName&#39;: &#39;Ni&#39;, &#39;DOB&#39;: &#39;Jan 11&#39;, &#39;Residence&#39;: &#39;San Diego&#39;, &#39;Email&#39;: &#39;hanlini@gmail.com&#39;, &#39;Fav_Movie&#39;: &#39;MIB&#39;, &#39;Best_Treats&#39;: [&#39;smoothies&#39;, &#39;ice cream&#39;]}
 </pre>
 </div>
 </div>
@@ -265,8 +310,11 @@ Hanli Ni
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="For-Loop-with-an-Index">For Loop with an Index<a class="anchor-link" href="#For-Loop-with-an-Index"> </a></h3><blockquote><p>this code uses a for loop with the range and index syntax to print the dictionaries. It also does so in reverse order</p>
+<h3 id="Formatted-Output-of-Dictionaries:-Using-For-Loop-with-an-Index">Formatted Output of Dictionaries: Using For Loop with an Index<a class="anchor-link" href="#Formatted-Output-of-Dictionaries:-Using-For-Loop-with-an-Index"> </a></h3><blockquote><p>this code uses a for loop with the range and index syntax to print the dictionaries. It also does so in reverse order
+Formatted output of Dictionary Managing data in Lists and Dictionaries is for the convenience of passing the data across the internet or preparing it to be stored into a database. Also, it is a great way to exchange data inside of our own programs.</p>
 </blockquote>
+<p>Next, we will take the stored data and output it within our notebook. There are multiple steps to this process.</p>
+<p>Preparing a function to format the data, the print_data() function receives a parameter called "d_rec" short for dictionary record. It then references different keys within [] square brackets. Preparing a function to iterate through the list, the for_loop() function uses an enhanced for loop that pull record by record out of InfoDb until the list is empty. Each time through the loop it call print_data(record), which passes the dictionary record to that function. Finally, you need to activate your function with the call to the defined function for_loop(). Functions are defined, not activated until they are called. By placing for_loop() at the left margin the function is activated.</p>
 
 </div>
 </div>
@@ -278,7 +326,7 @@ Hanli Ni
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span> <span class="c1">#formatting</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;FirstName&quot;</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;LastName&quot;</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Residence:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Residence&quot;</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Birth Day:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;DOB&quot;</span><span class="p">])</span>
@@ -355,7 +403,7 @@ Vivian Ni
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> 
     <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">infoDb</span><span class="p">):</span> <span class="c1">#length is 2 so while i is less than, it will keep printing</span>
         <span class="n">record</span> <span class="o">=</span> <span class="n">infoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="c1">#defines the record as the index of the list</span>
-        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span> <span class="c1">#prints that index</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span> <span class="c1">#prints that index using the formatted print function</span>
         <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1">#adds 1 and returns to the top till i is no longer &lt;2</span>
     <span class="k">return</span>
 
@@ -416,7 +464,7 @@ Hanli Ni
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recursive_loop</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">infoDb</span><span class="p">):</span> <span class="c1">#ensures the code stops after it recurses through all the indexes since length determines amount of indexes</span>
         <span class="n">record</span> <span class="o">=</span> <span class="n">infoDb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="c1">#defines record as the index of infoDb</span>
-        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+        <span class="n">print_data</span><span class="p">(</span><span class="n">record</span><span class="p">)</span> <span class="c1">#prints using the formatted print function</span>
         <span class="n">recursive_loop</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">#adds 1 to the original index and returns until i is no longer &lt;2</span>
     <span class="k">return</span>
     
@@ -524,7 +572,7 @@ Hanli Ni
 
 <span class="k">def</span> <span class="nf">search_data</span><span class="p">(</span><span class="n">firstname</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">infoDb</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;FirstName&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">firstname</span><span class="p">:</span> 
+        <span class="k">if</span> <span class="n">record</span><span class="p">[</span><span class="s2">&quot;FirstName&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="n">firstname</span><span class="p">:</span> <span class="c1">#compares the already existing name to the name inputted with the firstname variable</span>
             <span class="k">return</span> <span class="n">record</span>
 
     <span class="k">return</span> <span class="n">NULL</span>
@@ -547,12 +595,12 @@ Hanli Ni
         <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">&quot;add&quot;</span><span class="p">:</span>
             <span class="n">data_entry</span><span class="p">()</span>
         <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">&quot;search&quot;</span><span class="p">:</span>
-            <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Who do you want to search (firstname)?&quot;</span><span class="p">)</span>
-            <span class="n">record</span> <span class="o">=</span> <span class="n">search_data</span><span class="p">(</span><span class="n">name</span><span class="p">)</span> <span class="c1">#defines record as the input &quot;name&quot; and runs it through the search function</span>
+            <span class="n">firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Who do you want to search (firstname)?&quot;</span><span class="p">)</span>
+            <span class="n">record</span> <span class="o">=</span> <span class="n">search_data</span><span class="p">(</span><span class="n">firstname</span><span class="p">)</span> <span class="c1">#defines record as the input &quot;name&quot; and runs it through the search function</span>
             <span class="n">print_data2</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
         <span class="k">elif</span> <span class="n">lol</span> <span class="o">==</span> <span class="s2">&quot;delete&quot;</span><span class="p">:</span>
-            <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Who do you want to delete(firstname)&quot;</span><span class="p">)</span>
-            <span class="n">data_delete</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+            <span class="n">firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Who do you want to delete(firstname)&quot;</span><span class="p">)</span>
+            <span class="n">data_delete</span><span class="p">(</span><span class="n">firstname</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid input. Please try again&quot;</span><span class="p">)</span>
 
@@ -575,14 +623,20 @@ Hanli Ni
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Vivian  is deleted!
+<pre>Hanli is deleted!
 Come back again!
-Total Number of Records:  1
-Hanli Ni
+Total Number of Records:  2
+Vivian Ni
 	 Residence: San Diego
-	 Birth Day: Jan 11
-	 Favorite Movie MIB
-	 Email: hanlini@gmail.com
+	 Birth Day: May 13
+	 Favorite Movie Inception
+	 Email: vivianni452@gmail.com
+
+Emma Shen
+	 Residence: San Diego
+	 Birth Day: July
+	 Favorite Movie Not sure
+	 Email: aimashen.2017@gmail.com
 
 </pre>
 </div>
