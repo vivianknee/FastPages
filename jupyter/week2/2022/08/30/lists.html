@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -633,7 +633,6 @@ Hanli Ni
     <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">infoDb</span><span class="p">:</span>
             <span class="n">print_data2</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
  
-
 <span class="n">main</span><span class="p">()</span>
 </pre></div>
 
@@ -685,16 +684,76 @@ Emma Shen
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a mood quiz! Figure out how to uplift your mood by taking this quiz&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">questions</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="n">q1</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;Which is the largest planet in the solar system?&quot;</span><span class="p">,</span> <span class="s2">&quot;jupiter&quot;</span><span class="p">)</span>
-<span class="n">q2</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;Are worker bees male or female?&quot;</span><span class="p">,</span> <span class="s2">&quot;female&quot;</span><span class="p">)</span>
-<span class="n">q3</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;What type of fish is Nemo?&quot;</span><span class="p">,</span> <span class="s2">&quot;clownfish&quot;</span><span class="p">)</span>
-<span class="n">q4</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;How much is the diameter of a basketball hoop? (answer in inches and written out as a word)&quot;</span><span class="p">,</span> <span class="s2">&quot;eighteen&quot;</span><span class="p">)</span>
-<span class="n">q5</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;Name the largest state in America&quot;</span><span class="p">,</span> <span class="s2">&quot;alaska&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Take this fun quiz on food!&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">question_and_answer</span><span class="p">(</span><span class="n">prompt</span><span class="p">,</span> <span class="n">answer</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question: &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Answer: &quot;</span> <span class="o">+</span> <span class="n">msg</span><span class="p">)</span>
+    
+    <span class="k">if</span> <span class="n">answer</span> <span class="o">==</span> <span class="n">msg</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correct!&quot;</span><span class="p">)</span>
+        <span class="k">global</span> <span class="n">correct</span>
+        <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Incorrect!&quot;</span><span class="p">)</span>
+        
+    <span class="k">return</span> <span class="n">msg</span>
+ 
+<span class="n">Q1</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;Which famous soft drink was invented in 1892?? </span><span class="se">\t</span><span class="s2"> Coca cola </span><span class="se">\t</span><span class="s2"> pepsi </span><span class="se">\t</span><span class="s2"> rootbeer&quot;</span><span class="p">,</span> <span class="s2">&quot;coca cola&quot;</span><span class="p">)</span>
+<span class="n">Q2</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;What was the first food eaten in space? </span><span class="se">\t</span><span class="s2"> applesauce </span><span class="se">\t</span><span class="s2"> icecream  </span><span class="se">\t</span><span class="s2"> mashed potatoes&quot;</span><span class="p">,</span> <span class="s2">&quot;applesauce&quot;</span><span class="p">)</span>
+<span class="n">Q3</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;Where were French fries invented? </span><span class="se">\t</span><span class="s2"> France </span><span class="se">\t</span><span class="s2"> America </span><span class="se">\t</span><span class="s2"> Belgium&quot;</span><span class="p">,</span> <span class="s2">&quot;Belgium&quot;</span><span class="p">)</span>
+<span class="n">Q4</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;What is the USA’s favorite flavor of ice cream? </span><span class="se">\t</span><span class="s2"> chocolate  </span><span class="se">\t</span><span class="s2"> vanilla  </span><span class="se">\t</span><span class="s2"> strawberry&quot;</span><span class="p">,</span> <span class="s2">&quot;vanilla&quot;</span><span class="p">)</span>
+<span class="n">Q5</span> <span class="o">=</span> <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">&quot;What is the most popular pizza topping in the USA? </span><span class="se">\t</span><span class="s2"> pepperoni </span><span class="se">\t</span><span class="s2"> sausage </span><span class="se">\t</span><span class="s2"> olives&quot;</span><span class="p">,</span> <span class="s2">&quot;pepperoni&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;You scored </span><span class="si">{</span><span class="n">correct</span><span class="si">}</span><span class="s1"> /5 correct answers!&#39;</span><span class="p">)</span>
+    
+<span class="n">Quiz</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Question 1&quot;</span><span class="p">:</span> <span class="n">Q1</span><span class="p">,</span>
+    <span class="s2">&quot;Question 2&quot;</span><span class="p">:</span> <span class="n">Q2</span><span class="p">,</span>
+    <span class="s2">&quot;Question 3&quot;</span><span class="p">:</span> <span class="n">Q3</span><span class="p">,</span>
+    <span class="s2">&quot;Question 4&quot;</span><span class="p">:</span> <span class="n">Q4</span><span class="p">,</span>
+    <span class="s2">&quot;Question 5&quot;</span><span class="p">:</span> <span class="n">Q5</span>
+<span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here is a record of your quiz answers:&quot;</span><span class="p">,</span><span class="n">Quiz</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Take this fun quiz on food!
+Question: Which famous soft drink was invented in 1892?? 	 Coca cola 	 pepsi 	 rootbeer
+Answer: coca cola
+Correct!
+Question: What was the first food eaten in space? 	 applesauce 	 icecream  	 mashed potatoes
+Answer: applesauce
+Correct!
+Question: Where were French fries invented? 	 France 	 America 	 Belgium
+Answer: belgium
+Incorrect!
+Question: What is the USA’s favorite flavor of ice cream? 	 chocolate  	 vanilla  	 strawberry
+Answer: vanilla
+Correct!
+Question: What is the most popular pizza topping in the USA? 	 pepperoni 	 sausage 	 olives
+Answer: pepperoni
+Correct!
+You scored 4 /5 correct answers!
+Here is a record of your quiz answers: {&#39;Question 1&#39;: &#39;coca cola&#39;, &#39;Question 2&#39;: &#39;applesauce&#39;, &#39;Question 3&#39;: &#39;belgium&#39;, &#39;Question 4&#39;: &#39;vanilla&#39;, &#39;Question 5&#39;: &#39;pepperoni&#39;}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
