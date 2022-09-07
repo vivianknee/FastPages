@@ -13,5 +13,5 @@ title: My First Post
 <ul>
     <li> Get better at different coding languages (Java, python, html, etc.)
     <li> Get A's in the class for all 3 trimesters and a 5 on the AP exam :)
-    <li> Have fun 🤞
+    <li> Make sure to have fun 🤞
 <ul>
