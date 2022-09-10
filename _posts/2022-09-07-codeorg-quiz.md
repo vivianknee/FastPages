@@ -13,7 +13,7 @@ comments: true
 **Function:**
 - Here is an example of my code for selectable answers. I used the blocks "on event" and "set screen" to change the screen off my game to the next question depending on the answer chosen.
 
-<img src ="https://github.com/vivianknee/FastPages/blob/master/images/code1.png?raw=true" width="350" height="270">
+<img src ="https://github.com/vivianknee/FastPages/blob/master/images/code1.png?raw=true" width="370" height="270">
 
 - Here is an example of my code for questions that take user input.  
 
