@@ -36,7 +36,7 @@ Another problem I ran into was some error in my code that was not letting me out
 
 But why?
 
-I started searching google for the error as well as javascript syntax. After searching, I found that another method to add to a score variable was to use the syntax "++" in front of the variable. This is what my code looked like after the changes. 
+I started searching google for the error as well as javascript syntax. The reason why my previous code wasn't working was due to global variable shadowing which means that one variable shares a name with another, resulting in confusion. Since I defined the variable "attempts" as 0 in the beginning but then used the same name to add 1 to the variable, my initial variable shadowed the new one causing the variable to be lost when the function returned. After searching some more, I found that another method to add to a score variable was to use the syntax "++" in front of the variable. This is what my code looked like after the changes. 
 
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/finalworking.PNG?raw=true" width="400" height="270">
 
