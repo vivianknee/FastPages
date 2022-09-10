@@ -20,9 +20,13 @@ comments: true
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/input.png?raw=true" width="415" height="270">
 
 ## 2. Data Abstraction
+
 ## 3. Managing Complexity
+
 ## 4. Procedural Abstraction
+
 ## 5. Algorithm Implementation
+
 ## 6. Testing/Debugging
 One problem that I ran into was getting my code to output the final number of attempts the user needed to complete the quiz. At first, I wasn't sure how to print strings as well as variables in one block. I also wasn't sure how to change the text every time depending on different user performance. To solve this problem, I used multiple addition operator blocks to put multiple variables into one block. I set each variable to either a string or my "attempts" variable. My final code was this:
 
@@ -36,10 +40,9 @@ I started searching google for the error as well as javascript syntax. After sea
 
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/finalworking.PNG?raw=true" width="400" height="270">
 
-## Step 1: Planning
+## Design
 First I decided on the content of my quiz: Are you smarter than a 5th grader? This theme is inspired by the popular game "Are you smarter than a 5th grader?" It consists of simple questions testing the range of your knowledge.
 
-## Step 2: Design
 The next thing I decided to do was design the GUI/looks of my game. I decided on 5 questions, each question would have 4 answers and each answer would have an image to go along with it. This was my initial draft of the game looks.
 
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/GUI.png?raw=true" width="270" height="360">
@@ -50,9 +53,6 @@ This is what my design looked like when it was finalized
 
 I also made a screen for incorrect answers and completing the entire quiz. When the user clicks a wrong answer, the code will take them to the incorrect screen and let them go to the beginning of the quiz.
 
-
-
-## Step 4: Debugging
 
 
 
