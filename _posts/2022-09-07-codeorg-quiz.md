@@ -7,6 +7,8 @@ title: Blogging my Code.org Quiz
 comments: true
 ---
 
+Press this <a href="https://studio.code.org/projects/applab/lRDbJP_aMc_8eQXMMqe3UkFvSjWGQMvXnGVgDJq_EHU/edit"> link </a> to play my quiz!
+
 ## 1. Program Purpose and Function
 **Purpose:** The purpose of my program is to create a quiz that tests the user on their knowledge. The code consists of user input as well as answers that can be selected. These answers are either correct or incorrect and depending on the answer selected or input given, the code will take the user to the next question or the incorrect screen.
 
