@@ -7,6 +7,22 @@ title: Blogging my Code.org Quiz
 comments: true
 ---
 
+## Program Purpose and Function
+The purpose of my program is to create a quiz that tests the user on their knowledge. The code consists of user input as well as answers that can be selected. These answers are either correct or incorrect and depending on the answer selected or input given, the code will take the user to the next question or the incorrect screen.
+
+Here are the variables I set at the beginning of my code to get a number of attempts and correct answers.
+
+<img src ="https://github.com/vivianknee/FastPages/blob/master/images/code1.png?raw=true" width="350" height="270">
+
+Here is an example of my code for selectable answers. I used the blocks "on event" and "set screen" to change the screen off my game to the next question depending on the answer chosen.
+
+<img src ="https://github.com/vivianknee/FastPages/blob/master/images/code1.png?raw=true" width="350" height="270">
+
+Here is an example of my code for questions that take user input.  
+
+<img src ="https://github.com/vivianknee/FastPages/blob/master/images/code1.png?raw=true" width="350" height="270">
+
+
 ## Step 1: Planning
 First I decided on the content of my quiz: Are you smarter than a 5th grader? This theme is inspired by the popular game "Are you smarter than a 5th grader?" It consists of simple questions testing the range of your knowledge.
 
@@ -21,12 +37,7 @@ This is what my design looked like when it was finalized
 
 I also made a screen for incorrect answers and completing the entire quiz. When the user clicks a wrong answer, the code will take them to the incorrect screen and let them go to the beginning of the quiz.
 
-## Step 3: Code
-Then I decided to try and code a basic quiz. This way I could figure out how the quiz actually works. From that point, I could focus more on customization and design. My plan for the code was to use the "on event" and "set screen" blocks to change the screen off my game to the next question.
 
-<img src ="https://github.com/vivianknee/FastPages/blob/master/images/code1.png?raw=true" width="350" height="270">
-
-I also made it so that when an incorrect answer is chosen, it will set the screen to the incorrect screen.
 
 ## Step 4: Debugging
 
