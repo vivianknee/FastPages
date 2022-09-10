@@ -17,7 +17,7 @@ comments: true
 
 - Here is an example of my code for questions that take user input.  
 
-<img src ="https://github.com/vivianknee/FastPages/blob/master/images/input.png?raw=true" width="400" height="270">
+<img src ="https://github.com/vivianknee/FastPages/blob/master/images/input.png?raw=true" width="415" height="270">
 
 ## 2. Data Abstraction
 ## 3. Managing Complexity
@@ -26,7 +26,7 @@ comments: true
 ## 6. Testing/Debugging
 One problem that I ran into was getting my code to output the final number of attempts the user needed to complete the quiz. My initial code used variables and the "set text" block in order to output this, however this was not working so I had to devise a better method.
 
-<img src ="https://github.com/vivianknee/FastPages/blob/master/images/finalscore.PNG?raw=true" width="400" height="270">
+<img src ="https://github.com/vivianknee/FastPages/blob/master/images/finalscore.PNG?raw=true" width="440" height="270">
 
 The error that I was getting was that no matter how many incorrect attempts I made during testing, the final text always said 0. I then identified that the problem lied in the block "var = attempts + 1". Somehow this block was not adding anything to the number of attempts causing it to always remain at 0.
 
