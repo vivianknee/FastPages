@@ -8,12 +8,10 @@ comments: true
 ---
 
 ## Program Purpose and Function
+**Purpose** 
 The purpose of my program is to create a quiz that tests the user on their knowledge. The code consists of user input as well as answers that can be selected. These answers are either correct or incorrect and depending on the answer selected or input given, the code will take the user to the next question or the incorrect screen.
 
-Here are the variables I set at the beginning of my code to get a number of attempts and correct answers.
-
-<img src ="https://github.com/vivianknee/FastPages/blob/master/images/code1.png?raw=true" width="350" height="270">
-
+**Function**
 Here is an example of my code for selectable answers. I used the blocks "on event" and "set screen" to change the screen off my game to the next question depending on the answer chosen.
 
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/code1.png?raw=true" width="350" height="270">
