@@ -24,11 +24,11 @@ comments: true
 ## 4. Procedural Abstraction
 ## 5. Algorithm Implementation
 ## 6. Testing/Debugging
-One problem that I ran into was getting my code to output the final number of attempts the user needed to complete the quiz. My initial code used variables and the "set text" block in order to output this.  
+One problem that I ran into was getting my code to output the final number of attempts the user needed to complete the quiz. At first, I wasn't sure how to print strings as well as variables in one block. I also wasn't sure how to change the text every time depending on different user performance. To solve this problem, I used multiple addition operator blocks to put multiple variables into one block. I set each variable to either a string or my "attempts" variable. My final code was this:
 
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/finalscore.PNG?raw=true" width="440" height="270">
 
-However, there was some error in my code that was not letting me output what I wanted to. The error that I was getting was that no matter how many incorrect attempts I made during testing, the final text always said 0. I then identified that the problem lied in the block "var = attempts + 1". Somehow this block was not adding anything to the number of attempts causing it to always remain at 0.
+Another problem I ran into was some error in my code that was not letting me output what I wanted to. The error that I was getting was that no matter how many incorrect attempts I made during testing, the final text always said 0. I then identified that the problem lied in the block "var = attempts + 1". Somehow this block was not adding anything to the number of attempts causing it to always remain at 0.
 
 But why?
 
