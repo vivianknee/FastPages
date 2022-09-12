@@ -10,7 +10,7 @@ comments: true
 Press this <a href="https://studio.code.org/projects/applab/lRDbJP_aMc_8eQXMMqe3UkFvSjWGQMvXnGVgDJq_EHU"> link </a> to play my quiz!
 
 ## Design
-First I decided on the content of my quiz: Are you smarter than a 5th grader? This theme is inspired by the popular game "Are you smarter than a 5th grader?" It consists of simple questions testing the range of your knowledge.
+First I decided on the content of my quiz: this theme is inspired by the popular game "Are you smarter than a 5th grader?" It consists of simple questions testing the range of your knowledge.
 
 The next thing I decided to do was design the GUI/looks of my game. I decided on 5 questions, each question would have 4 answers and each answer would have an image to go along with it. This was my initial draft of the game looks.
 
@@ -36,10 +36,12 @@ I also made a screen for incorrect answers and completing the entire quiz. When 
 
 ## 2. Data Abstraction
 
+
 ## 3. Managing Complexity
 
+
 ## 4. Procedural Abstraction
-In my code, I created a function/procedure that tells the user the result of their answer by either showing a check sign or a X sign. To do this, I first made a function called "showResult". The function has 4 parameters: "result", "nextScreen", "image_y", and "image_n". The result parameter essentially states whether the correct answer was selected or not; if the result is "yes" then the function proceeds to show the element image_y and move on to the "nextScreen". Otherwise, if result is equal to anything but "yes", it will show the element image_n and add 1 to the attempts score. I also included a "setTimeout" block which hides both images initially, but when the images do show, the block makes them show for 1000ms or 1 s.
+In my code, I created a function/procedure that tells the user the result of their answer by either showing a check sign or a X sign. To do this, I first made a function called `showResult`. The function has 4 parameters: "result", "nextScreen", "image_y", and "image_n". The result parameter essentially states whether the correct answer was selected or not; if the result is "yes" then the function proceeds to show the element image_y and move on to the "nextScreen". Otherwise, if result is equal to anything but "yes", it will show the element image_n and add 1 to the attempts score. I also included a `setTimeout` block which hides both images initially, but when the images do show, the block makes them show for 1000ms or 1 s.
 Here is the actual code:
 
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/function.PNG?raw=true" width="415" height="270">
@@ -47,7 +49,7 @@ Here is the actual code:
 ## 5. Algorithm Implementation
 
 ## 6. Testing/Debugging
-One problem that I ran into was getting my code to output the final number of attempts the user needed to complete the quiz. At first, I wasn't sure how to print strings as well as variables in one block. I also wasn't sure how to change the text every time depending on different user performance. To solve this problem, I used multiple addition operator blocks to put multiple variables into one block. I set each variable to either a string or my "attempts" variable. My final code was this:
+One problem that I ran into was getting my code to output the final number of attempts the user needed to complete the quiz. At first, I wasn't sure how to print strings as well as variables in one block. I also wasn't sure how to change the text every time depending on different user performance. To solve this problem, I used multiple addition operator blocks to put multiple variables into one block. I set each variable to either a string or my `attempts` variable. My final code was this:
 
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/finalscore.PNG?raw=true" width="440" height="270">
 
