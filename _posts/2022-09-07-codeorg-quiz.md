@@ -26,6 +26,9 @@ Press this <a href="https://studio.code.org/projects/applab/lRDbJP_aMc_8eQXMMqe3
 ## 3. Managing Complexity
 
 ## 4. Procedural Abstraction
+In my code, I created a function/procedure that tells the user the result of their answer by either showing a check sign or a X sign. To do this, I first made a function called "showResult". The function has 4 parameters: "result", "nextScreen", "image_y", and "image_n". The result parameter essentially states whether the correct answer was selected or not; if the result is "yes" then the function proceeds to show the element image_y and move on to the "nextScreen". Otherwise, if result is equal to anything but "yes", it will show the element image_n and add 1 to the attempts score. Here is the actual code:
+
+<img src ="https://github.com/vivianknee/FastPages/blob/master/images/function.PNG?raw=true" width="415" height="270">
 
 ## 5. Algorithm Implementation
 
