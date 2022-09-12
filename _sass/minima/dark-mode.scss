@@ -12,6 +12,10 @@ html, body, input, textarea, select, button {
   background-color: $dark-grey !important;
 }
 
+* {
+    transition: all 0.2s ease-in-out;
+}
+
 a {
     color: rgb(245, 247, 249) !important;
 }
