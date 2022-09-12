@@ -133,9 +133,10 @@ window.onload = wrap_img;
 <p><img src="https://github.com/vivianknee/FastPages/blob/master/images/input.png?raw=true" width="415" height="270" /></p>
 
 <h2 id="2-data-abstraction">2. Data Abstraction</h2>
-<p>I set a variable <code class="language-plaintext highlighter-rouge">attempts</code> equal to 0 at the beginning of my code to keep record of the users # of attempts at the end of the quiz.</p>
+<p>I used a <code class="language-plaintext highlighter-rouge">variable</code> named “attempts” to store data. I set it equal to 0 at the beginning of my code to keep record of the users # of attempts at the end of the quiz.</p>
 
 <h2 id="3-managing-complexity">3. Managing Complexity</h2>
+<p>TBD</p>
 
 <h2 id="4-procedural-abstraction">4. Procedural Abstraction</h2>
 <p>In my code, I created a function/procedure that tells the user the result of their answer by either showing a check sign or a X sign. To do this, I first made a function called <code class="language-plaintext highlighter-rouge">showResult</code>. The function has 4 parameters: “result”, “nextScreen”, “image_y”, and “image_n”. The result parameter essentially states whether the correct answer was selected or not; if the result is “yes” then the function proceeds to show the element image_y and move on to the “nextScreen”. Otherwise, if result is equal to anything but “yes”, it will show the element image_n and add 1 to the attempts score. I also included a <code class="language-plaintext highlighter-rouge">setTimeout</code> block which hides both images initially, but when the images do show, the block makes them show for 1000ms or 1 s.
@@ -144,6 +145,7 @@ Here is the actual code:</p>
 <p><img src="https://github.com/vivianknee/FastPages/blob/master/images/function.PNG?raw=true" width="415" height="270" /></p>
 
 <h2 id="5-algorithm-implementation">5. Algorithm Implementation</h2>
+<p>TBD</p>
 
 <h2 id="6-testingdebugging">6. Testing/Debugging</h2>
 <p>One problem that I ran into was getting my code to output the final number of attempts the user needed to complete the quiz. At first, I wasn’t sure how to print strings as well as variables in one block. I also wasn’t sure how to change the text every time depending on different user performance. To solve this problem, I used multiple addition operator blocks to put multiple variables into one block. I set each variable to either a string or my <code class="language-plaintext highlighter-rouge">attempts</code> variable. My final code was this:</p>
@@ -159,9 +161,10 @@ Here is the actual code:</p>
 <p><img src="https://github.com/vivianknee/FastPages/blob/master/images/finalworking.PNG?raw=true" width="400" height="270" /></p>
 
 <h2 id="takeaways">Takeaways:</h2>
-<p>I only fulfilled half of the college board criteria for the create task so here are some things I need to learn/apply in the future:</p>
+<p>I only fulfilled half-ish of the college board criteria for the create task so here are some things I need to learn/apply in the future:</p>
 <ul>
-  <li></li>
+  <li>Learn how to effectively use lists/other collection types for quizzes or other create task ideas. Make use of lists to increase the efficiency of the code. (Data Abstraction and Managing Complexity)</li>
+  <li>Learn the difference between a function and an algorithm. How can I make an algorithm that solves a key issue in my code? (Algorithm Implementation)</li>
 </ul>
 
 
