@@ -47,7 +47,7 @@ Here is the actual code:
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/function.PNG?raw=true" width="415" height="270">
 
 ## 5. Algorithm Implementation
-TBD
+I used a function called showResult to tell the user if their answer was incorrect or correct. The function would then take the user to the next question if they got it correct.
 
 ## 6. Testing/Debugging
 I used trial and error to test my function. If the answer was correct, then the correct image would show. If the answer was incorrect, then the incorrect image would show. This confirmed that my function was working. In addition, if there was an error, the console log would tell me which line the error was at and I would fix it.
