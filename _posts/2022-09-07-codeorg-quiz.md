@@ -50,6 +50,9 @@ Here is the actual code:
 TBD
 
 ## 6. Testing/Debugging
+I used trial and error to test my function. If the answer was correct, then the correct image would show. If the answer was incorrect, then the incorrect image would show. This confirmed that my function was working. In addition, if there was an error, the console log would tell me which line the error was at and I would fix it.
+
+## Challenges
 One problem that I ran into was getting my code to output the final number of attempts the user needed to complete the quiz. At first, I wasn't sure how to print strings as well as variables in one block. I also wasn't sure how to change the text every time depending on different user performance. To solve this problem, I used multiple addition operator blocks to put multiple variables into one block. I set each variable to either a string or my `attempts` variable. My final code was this:
 
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/finalscore.PNG?raw=true" width="440" height="270">
