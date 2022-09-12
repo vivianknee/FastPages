@@ -35,7 +35,7 @@ I also made a screen for incorrect answers and completing the entire quiz. When 
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/input.png?raw=true" width="415" height="270">
 
 ## 2. Data Abstraction
-I set a variable `attempts` equal to 0 at the beginning of my code to keep record of the users # of attempts at the end of the quiz.
+I used a `variable` named "attempts" to store data. I set it equal to 0 at the beginning of my code to keep record of the users # of attempts at the end of the quiz.
 
 ## 3. Managing Complexity
 
@@ -62,8 +62,9 @@ I started searching google for the error as well as javascript syntax. The reaso
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/finalworking.PNG?raw=true" width="400" height="270">
 
 ## Takeaways:
-I only fulfilled half of the college board criteria for the create task so here are some things I need to learn/apply in the future:
-- 
+I only fulfilled half-ish of the college board criteria for the create task so here are some things I need to learn/apply in the future:
+- Learn how to effectively use lists/other collection types for quizzes or other create task ideas. Make use of lists to increase the efficiency of the code. (Data Abstraction and Managing Complexity)
+- Learn the difference between a function and an algorithm. How can I make an algorithm that solves a key issue in my code? (Algorithm Implementation)
 
 
 
