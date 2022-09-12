@@ -38,7 +38,7 @@ I also made a screen for incorrect answers and completing the entire quiz. When 
 I used a `variable` named "attempts" to store data. I set it equal to 0 at the beginning of my code to keep record of the users # of attempts at the end of the quiz.
 
 ## 3. Managing Complexity
-
+TBD
 
 ## 4. Procedural Abstraction
 In my code, I created a function/procedure that tells the user the result of their answer by either showing a check sign or a X sign. To do this, I first made a function called `showResult`. The function has 4 parameters: "result", "nextScreen", "image_y", and "image_n". The result parameter essentially states whether the correct answer was selected or not; if the result is "yes" then the function proceeds to show the element image_y and move on to the "nextScreen". Otherwise, if result is equal to anything but "yes", it will show the element image_n and add 1 to the attempts score. I also included a `setTimeout` block which hides both images initially, but when the images do show, the block makes them show for 1000ms or 1 s.
@@ -47,6 +47,7 @@ Here is the actual code:
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/function.PNG?raw=true" width="415" height="270">
 
 ## 5. Algorithm Implementation
+TBD
 
 ## 6. Testing/Debugging
 One problem that I ran into was getting my code to output the final number of attempts the user needed to complete the quiz. At first, I wasn't sure how to print strings as well as variables in one block. I also wasn't sure how to change the text every time depending on different user performance. To solve this problem, I used multiple addition operator blocks to put multiple variables into one block. I set each variable to either a string or my `attempts` variable. My final code was this:
