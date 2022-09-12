@@ -9,7 +9,7 @@ comments: true
 
 Press this <a href="https://studio.code.org/projects/applab/lRDbJP_aMc_8eQXMMqe3UkFvSjWGQMvXnGVgDJq_EHU"> link </a> to play my quiz!
 
-## Design
+## Design & Planning
 First I decided on the content of my quiz: this theme is inspired by the popular game "Are you smarter than a 5th grader?" It consists of simple questions testing the range of your knowledge.
 
 The next thing I decided to do was design the GUI/looks of my game. I decided on 5 questions, each question would have 4 answers and each answer would have an image to go along with it. This was my initial draft of the game looks.
