@@ -69,6 +69,7 @@ I started searching google for the error as well as javascript syntax. The reaso
 I only fulfilled half-ish of the college board criteria for the create task so here are some things I need to learn/apply in the future:
 - Learn how to effectively use lists/other collection types for quizzes or other create task ideas. Make use of lists to increase the efficiency of the code. (Data Abstraction and Managing Complexity)
 - Learn the difference between a function and an algorithm. How can I make an algorithm that solves a key issue in my code? (Algorithm Implementation)
+- learn how to use iteration, sequencing, and selection to create an algorithm 
 
 
 
