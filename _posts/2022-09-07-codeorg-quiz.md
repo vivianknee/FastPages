@@ -3,7 +3,7 @@ layout: post
 description: Using code.org to make a quiz
 author: Vivian Ni
 categories: [markdown, week3]
-title: Blogging my Code.org Quiz 
+title: Blogging my AppLab Quiz 
 comments: true
 ---
 
