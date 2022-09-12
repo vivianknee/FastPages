@@ -23,7 +23,7 @@ This is what my design looked like when it was finalized
 I also made a screen for incorrect answers and completing the entire quiz. When the user clicks a wrong answer, the code will take them to the incorrect screen and let them go to the beginning of the quiz.
 
 ## 1. Program Purpose and Function
-**Purpose:** The purpose of my program is to create a quiz that tests the user on their knowledge. I code the whole program using javascript. Th code consists of user input as well as answers that can be selected. These answers are either correct or incorrect and depending on the answer selected or input given, the code will take the user to the next question or the incorrect screen.
+**Purpose:** The purpose of my program is to create a quiz that tests the user on their knowledge. I code the whole program using javascript. The code consists of user input as well as answers that can be selected. These answers are either correct or incorrect and depending on the answer selected or input given, the code will take the user to the next question or the incorrect screen.
 
 **Function:**
 - Here is an example of my code for selectable answers. I used the blocks `on event` and `set screen` to change the screen off my game to the next question depending on the answer chosen.
