@@ -103,6 +103,19 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <p>Press this <a href="https://studio.code.org/projects/applab/lRDbJP_aMc_8eQXMMqe3UkFvSjWGQMvXnGVgDJq_EHU"> link </a> to play my quiz!</p>
 
+<h2 id="design">Design</h2>
+<p>First I decided on the content of my quiz: Are you smarter than a 5th grader? This theme is inspired by the popular game “Are you smarter than a 5th grader?” It consists of simple questions testing the range of your knowledge.</p>
+
+<p>The next thing I decided to do was design the GUI/looks of my game. I decided on 5 questions, each question would have 4 answers and each answer would have an image to go along with it. This was my initial draft of the game looks.</p>
+
+<p><img src="https://github.com/vivianknee/FastPages/blob/master/images/GUI.png?raw=true" width="270" height="360" /></p>
+
+<p>This is what my design looked like when it was finalized</p>
+
+<p><img src="https://github.com/vivianknee/FastPages/blob/master/images/guidone.png?raw=true" width="270" height="360" /></p>
+
+<p>I also made a screen for incorrect answers and completing the entire quiz. When the user clicks a wrong answer, the code will take them to the incorrect screen and let them go to the beginning of the quiz.</p>
+
 <h2 id="1-program-purpose-and-function">1. Program Purpose and Function</h2>
 <p><strong>Purpose:</strong> The purpose of my program is to create a quiz that tests the user on their knowledge. The code consists of user input as well as answers that can be selected. These answers are either correct or incorrect and depending on the answer selected or input given, the code will take the user to the next question or the incorrect screen.</p>
 
@@ -143,19 +156,6 @@ Here is the actual code:</p>
 <p>I started searching google for the error as well as javascript syntax. The reason why my previous code wasn’t working was due to global variable shadowing which means that one variable shares a name with another, resulting in confusion. Since I defined the variable “attempts” as 0 in the beginning but then used the same name to add 1 to the variable, my initial variable shadowed the new one causing the variable to be lost when the function returned. After searching some more, I found that another method to add to a score variable was to use the syntax “++” in front of the variable. This is what my code looked like after the changes.</p>
 
 <p><img src="https://github.com/vivianknee/FastPages/blob/master/images/finalworking.PNG?raw=true" width="400" height="270" /></p>
-
-<h2 id="design">Design</h2>
-<p>First I decided on the content of my quiz: Are you smarter than a 5th grader? This theme is inspired by the popular game “Are you smarter than a 5th grader?” It consists of simple questions testing the range of your knowledge.</p>
-
-<p>The next thing I decided to do was design the GUI/looks of my game. I decided on 5 questions, each question would have 4 answers and each answer would have an image to go along with it. This was my initial draft of the game looks.</p>
-
-<p><img src="https://github.com/vivianknee/FastPages/blob/master/images/GUI.png?raw=true" width="270" height="360" /></p>
-
-<p>This is what my design looked like when it was finalized</p>
-
-<p><img src="https://github.com/vivianknee/FastPages/blob/master/images/guidone.png?raw=true" width="270" height="360" /></p>
-
-<p>I also made a screen for incorrect answers and completing the entire quiz. When the user clicks a wrong answer, the code will take them to the incorrect screen and let them go to the beginning of the quiz.</p>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
