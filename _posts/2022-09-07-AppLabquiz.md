@@ -41,13 +41,13 @@ I used a `variable` named "attempts" to store data. I set it equal to 0 at the b
 TBD
 
 ## 4. Procedural Abstraction
+I created a function called `showResult`. I called back to this function for every question I had demonstrating how I utilized the function for my quiz.
+
+## 5. Algorithm Implementation
 In my code, I created a function/procedure that tells the user the result of their answer by either showing a check sign or a X sign. To do this, I first made a function called `showResult`. The function has 4 parameters: "result", "nextScreen", "image_y", and "image_n". The result parameter essentially states whether the correct answer was selected or not; if the result is "yes" then the function proceeds to show the element image_y and move on to the "nextScreen". Otherwise, if result is equal to anything but "yes", it will show the element image_n and add 1 to the attempts score. I also included a `setTimeout` block which hides both images initially, but when the images do show, the block makes them show for 1000ms or 1 s.
 Here is the actual code:
 
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/function.PNG?raw=true" width="415" height="270">
-
-## 5. Algorithm Implementation
-I used a function called showResult to tell the user if their answer was incorrect or correct. The function would then take the user to the next question if they got it correct.
 
 ## 6. Testing/Debugging
 I used trial and error to test my function. If the answer was correct, then the correct image would show. If the answer was incorrect, then the incorrect image would show. This confirmed that my function was working. In addition, if there was an error, the console log would tell me which line the error was at and I would fix it.
