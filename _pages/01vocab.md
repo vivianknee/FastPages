@@ -29,3 +29,4 @@ title: Vocab
     <li>cd = change directory</li>
     <li>ls = list directory<li>
 </ul>
+
