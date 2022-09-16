@@ -45,7 +45,7 @@ comments: true
 
 <h2>Per 5: AP Physics</h2>
 <hr>
-<h3>Unit 1: Introduction and Measurments</h3>
+<h3>Unit 1: Introduction and Measurements</h3>
 <ul>
     <li>Sig Figs
         <ul>
@@ -53,7 +53,7 @@ comments: true
             <li>A 0 after a decimal point but before digits that are 1-9 are insignificant ex: 0.09 has 1 sigfig</li>
             <li>A 0 after a digit 1-9 and a decimal are significant ex: 0.90 has 2 sigfigs</li>
             <li>A 0 at the end of a whole number with no decimal point is insignificant ex: 90 has 1 sigfig</li>
-            <li>A 0 inbetween digits 1-9 is significant ex: 909 has 3 sigfigs</li>
+            <li>A 0 in between digits 1-9 is significant ex: 909 has 3 sigfigs</li>
         </ul>
     </li>
     <li>Motion in One Dimension
