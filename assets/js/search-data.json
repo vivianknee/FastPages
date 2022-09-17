@@ -3,9 +3,9 @@
     
         "post0": {
             "title": "Personal CSP Journey",
-            "content": "",
-            "url": "https://vivianknee.github.io/FastPages/markdown/week3/2022/09/16/personalcspjourney.html",
-            "relUrl": "/markdown/week3/2022/09/16/personalcspjourney.html",
+            "content": "this is a test this is a test .",
+            "url": "https://vivianknee.github.io/FastPages/markdown/week4/2022/09/16/personalcspjourney.html",
+            "relUrl": "/markdown/week4/2022/09/16/personalcspjourney.html",
             "date": " • Sep 16, 2022"
         }
         
@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "Running a Website Locally",
             "content": "Server Address: /http://localhost:4000/FastPages/ .",
-            "url": "https://vivianknee.github.io/FastPages/markdown/week3/2022/09/16/docker.html",
-            "relUrl": "/markdown/week3/2022/09/16/docker.html",
+            "url": "https://vivianknee.github.io/FastPages/markdown/week4/2022/09/16/docker.html",
+            "relUrl": "/markdown/week4/2022/09/16/docker.html",
             "date": " • Sep 16, 2022"
         }
         
