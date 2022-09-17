@@ -1,1 +1,1 @@
-Sitemap: https://vivianknee.github.io/mnt/c/Users/vivia/vscode/FastPages/sitemap.xml
+Sitemap: https://vivianknee.github.io/FastPages/sitemap.xml
