@@ -11,7 +11,7 @@ comments: true
 ## My Personal CSP Journey
 The very first coding class I took was in middle school. It was a class provided by the school known as "exploratory". This basically meant that for one trimester of the year, teacher would teach the class on the basics of coding. AKA Scratch. I had to dig pretty far back to find some old projects. Here is the result of my search:
 
-<img src ="https://github.com/vivianknee/FastPages/blob/master/images/scratch.png?raw=true" width="360" height="280">
+<img src ="https://github.com/vivianknee/FastPages/blob/master/images/scratch.PNG?raw=true" width="360" height="280">
 
 Pretty revolutionary.
 
