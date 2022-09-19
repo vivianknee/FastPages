@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Running a Website Locally",
-            "content": "Server Address: /http://localhost:4000/FastPages/ . Process . I encountered a lot of errors during this process: . I got the error telling me that I didn&#39;t have wsl 2 installed. I had to do the whole process of installing it, then changing settings in docker for the make server command to finally work | I got an error saying that I didn&#39;t have the permission to run certain volumes so I had to run make server with &quot;sudo&quot; in front of it to bypass permissions | &lt;/li&gt;I got an error where when I opened the link to my website, it told me that the link didn&#39;t exist&lt;/li&gt; .",
+            "content": "Server Address: /http://localhost:4000/FastPages/ . Process . I encountered a lot of errors during this process: . I got the error telling me that I didn&#39;t have wsl 2 installed. I had to do the whole process of installing it, then changing settings in docker for the make server command to finally work | I got an error saying that I didn&#39;t have the permission to run certain volumes so I had to run make server with &quot;sudo&quot; in front of it to bypass permissions | I got an error where when I opened the link to my website, it told me that the link didn&#39;t exist | .",
             "url": "https://vivianknee.github.io/FastPages/markdown/week4/2022/09/16/docker.html",
             "relUrl": "/markdown/week4/2022/09/16/docker.html",
             "date": " • Sep 16, 2022"
