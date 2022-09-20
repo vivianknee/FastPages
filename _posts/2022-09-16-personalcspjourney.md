@@ -15,7 +15,7 @@ The very first coding class I took was in middle school. It was a class provided
 
 Pretty revolutionary.
 
-My next experience into computer science was when I joined Cyberpatriot. Cyberpatriot is essentially a competition where thousands of teams compete to secure different operating systems. Along the way, I learned how to configure different security settings on a computer, how to use powershell and cmd, and even a little bit of coding. Here's a photo of my first year doing CyberPatriot, dating all the way back to 2018 when I was a itty bitty 7th grader.
+My next experience in computer science was when I joined Cyberpatriot. Cyberpatriot is essentially a competition where thousands of teams compete to secure different operating systems. Along the way, I learned how to configure different security settings on a computer, how to use powershell and cmd, and even a little bit of coding. Here's a photo of my first year doing CyberPatriot, dating all the way back to 2018 when I was a itty bitty 7th grader.
 
 <img src ="https://github.com/vivianknee/FastPages/blob/master/images/cyber.png?raw=true" width="380" height="280">
 
