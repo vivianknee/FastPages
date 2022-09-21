@@ -204,6 +204,14 @@
   
 
   
+      ,"page9": {
+          "title": "Design with JS",
+          "content": "",
+          "url": "https://vivianknee.github.io/FastPages/_pages/submenu.html",
+          "relUrl": "/_pages/submenu.html",
+          "date": ""
+      }
+      
   
 
   
@@ -213,7 +221,10 @@
   
 
   
-      ,"page12": {
+  
+
+  
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://vivianknee.github.io/FastPages/robots.txt",
