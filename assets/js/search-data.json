@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Using the Javascript Kernel",
-            "content": "This link will take you to my markdown on how I use HTML fragments and JavaScript data to build a table .",
+            "content": "This link will take you to my markdown on how I use HTML fragments and JavaScript data to build a table . console.log output . &quot;Good Luck!&quot; is a parameter and console.log is a function the outputs the parameter into the console. . console.log(&quot;Good luck!&quot;); . NameError Traceback (most recent call last) c: Users vivia vscode FastPages _notebooks 2022-09-21-javascript.ipynb Cell 3 in &lt;cell line: 1&gt;() -&gt; &lt;a href=&#39;vscode-notebook-cell:/c%3A/Users/vivia/vscode/FastPages/_notebooks/2022-09-21-javascript.ipynb#W3sZmlsZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt; console.log(&#34;Good luck!&#34;) NameError: name &#39;console&#39; is not defined . console.log output showing use of variable . This is a sequence of code as there are two lines. msg is defined as a variable for the string which is then outputted to the console using the function console.log . var msg = &quot;Hello, World!&quot;; console.log(msg); . Input In [2] var msg = &#34;Hello, World!&#34;; ^ SyntaxError: invalid syntax .",
             "url": "https://vivianknee.github.io/FastPages/jupyter/week5/2022/09/21/javascript.html",
             "relUrl": "/jupyter/week5/2022/09/21/javascript.html",
             "date": " • Sep 21, 2022"
@@ -181,7 +181,7 @@
   
       ,"page2": {
           "title": "Vocab",
-          "content": "AP CSP Vocabulary Notes . Vocabulary . input = instructions you give to a computer | sequence = several lines of code together | output = the information the computer gives to you | key (name) --&gt; value (Vivian) | Variables: a way to name, store, data and reference data. Lists and Dictionaries are variables with extended features for storing and retrieving data. Lists, think of [] square brackets, are a way of grouping data in an ordered sequence | Dictionaries, think of {} curly braces, are a way of grouping data into in key-value relationships | . | Concatenation: the operation of joining two strings together | jekyll:used to | liquid: | . Linux/Ubuntu Commands . pwd = print working directory | mkdir = make directory | cd = change directory | ls = list directory &lt;/ul&gt; | | .",
+          "content": "AP CSP Vocabulary Notes . Vocabulary . input = instructions you give to a computer | sequence = several lines of code together | output = the information the computer gives to you | key (name) --&gt; value (Vivian) | Variables: a way to name, store, data and reference data. Lists and Dictionaries are variables with extended features for storing and retrieving data. Lists, think of [] square brackets, are a way of grouping data in an ordered sequence | Dictionaries, think of {} curly braces, are a way of grouping data into in key-value relationships | . | Concatenation: the operation of joining two strings together | static text: text that does not change. for example, a string | . Linux/Ubuntu Commands . pwd = print working directory | mkdir = make directory | cd = change directory | ls = list directory &lt;/ul&gt; | | .",
           "url": "https://vivianknee.github.io/FastPages/Vocab/",
           "relUrl": "/Vocab/",
           "date": ""
