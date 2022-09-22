@@ -65,7 +65,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/FastPages/_pages/002apcspblog.html">APCSP Blog</a><a class="page-link" href="/FastPages/about/">About Me</a><a class="page-link" href="/FastPages/Vocab/">Vocab</a><a class="page-link" href="/FastPages/categories/">Tags</a><a class="page-link" href="/FastPages/search/">Search</a><a class="page-link" href="/FastPages/_pages/submenu.html">Design with JS</a></div>
+        <div class="trigger"><a class="page-link" href="/FastPages/_pages/002apcspblog.html">APCSP Blog</a><a class="page-link" href="/FastPages/about/">About Me</a><a class="page-link" href="/FastPages/Vocab/">Vocab</a><a class="page-link" href="/FastPages/categories/">Tags</a><a class="page-link" href="/FastPages/_pages/js.html">Design with JS</a><a class="page-link" href="/FastPages/search/">Search</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -210,7 +210,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Hello, World!
+<pre>Good Luck!
 </pre>
 </div>
 </div>
@@ -243,6 +243,113 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Good Luck!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Showing-reuse-of-a-function">Showing reuse of a function<a class="anchor-link" href="#Showing-reuse-of-a-function"> </a></h3><blockquote><p>I am now reusing the function in the previous cell blocks. This process is referred to as procedural abstraction</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Reuse of logIT&quot;</span><span class="p">)</span>
+<span class="nx">logIt</span><span class="p">(</span><span class="s2">&quot;My name is Vivian!&quot;</span><span class="p">);</span>
+<span class="nx">logIt</span><span class="p">(</span><span class="s2">&quot;Born in &quot;</span> <span class="o">+</span> <span class="mf">2006</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Reuse of logIT
+My name is Vivian!
+Born in 2006
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Dynamic-or-Loosely-typed-language-(string,-number)">Dynamic or Loosely typed language (string, number)<a class="anchor-link" href="#Dynamic-or-Loosely-typed-language-(string,-number)"> </a></h3><blockquote><p>Here, I define a new function to show how Javascript doesn't require me to specify what type of information will be stored in a variable in advance. Instead, the variable type is determined at runtime.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">logItType</span><span class="p">(</span><span class="nx">output</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">output</span><span class="p">,</span> <span class="s2">&quot;;&quot;</span><span class="p">,</span> <span class="nx">output</span><span class="p">);</span> <span class="c1">//&quot;typeof&quot; keyword returns the type.</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Looking at dynamic nature of types in JavaScript&quot;</span><span class="p">)</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="s2">&quot;Hello, I am graduating in&quot;</span><span class="p">);</span> <span class="c1">// String</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="mf">2024</span><span class="p">);</span>    <span class="c1">// Number</span>
+<span class="nx">logItType</span><span class="p">([</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">]);</span>  <span class="c1">// Object is generic for this Array, which similar to Python List</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="s2">&quot;more years till I start my freshman year at college!&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Looking at dynamic nature of types in JavaScript
+string ; Hello, I am graduating in
+number ; 2024
+object ; [ 1, 2 ]
+string ; more years till I start my freshman year at college!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

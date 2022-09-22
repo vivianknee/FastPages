@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Using the Javascript Kernel",
-            "content": "This link will take you to my markdown on how I use HTML fragments and JavaScript data to build a table . console.log output . &quot;Good Luck!&quot; is a parameter and console.log is a function the outputs the parameter into the console. . console.log(&quot;Good luck!&quot;); . Good luck! . console.log output showing use of variable . This is a sequence of code as there are two lines. msg is defined as a variable for the string which is then outputted to the console using the function console.log . var msg = &quot;Good Luck!&quot;; console.log(msg); . Hello, World! . console.log output showing use of a function . The function logIt(output) is defined within the {}. logIt(msg) is the line that calls back to the function and activates it. . function logIt(output) { console.log(output); } logIt(msg); .",
+            "content": "This link will take you to my markdown on how I use HTML fragments and JavaScript data to build a table . console.log output . &quot;Good Luck!&quot; is a parameter and console.log is a function the outputs the parameter into the console. . console.log(&quot;Good luck!&quot;); . Good luck! . console.log output showing use of variable . This is a sequence of code as there are two lines. msg is defined as a variable for the string which is then outputted to the console using the function console.log . var msg = &quot;Good Luck!&quot;; console.log(msg); . Good Luck! . console.log output showing use of a function . The function logIt(output) is defined within the {}. logIt(msg) is the line that calls back to the function and activates it. . function logIt(output) { console.log(output); } logIt(msg); . Good Luck! . Showing reuse of a function . I am now reusing the function in the previous cell blocks. This process is referred to as procedural abstraction . console.log(&quot;Reuse of logIT&quot;) logIt(&quot;My name is Vivian!&quot;); logIt(&quot;Born in &quot; + 2006) . Reuse of logIT My name is Vivian! Born in 2006 . Dynamic or Loosely typed language (string, number) . Here, I define a new function to show how Javascript doesn&#39;t require me to specify what type of information will be stored in a variable in advance. Instead, the variable type is determined at runtime. . function logItType(output) { console.log(typeof output, &quot;;&quot;, output); //&quot;typeof&quot; keyword returns the type. } console.log(&quot;Looking at dynamic nature of types in JavaScript&quot;) logItType(&quot;Hello, I am graduating in&quot;); // String logItType(2024); // Number logItType([1, 2]); // Object is generic for this Array, which similar to Python List logItType(&quot;more years till I start my freshman year at college!&quot;) . Looking at dynamic nature of types in JavaScript string ; Hello, I am graduating in number ; 2024 object ; [ 1, 2 ] string ; more years till I start my freshman year at college! .",
             "url": "https://vivianknee.github.io/FastPages/jupyter/week5/2022/09/21/javascript.html",
             "relUrl": "/jupyter/week5/2022/09/21/javascript.html",
             "date": " • Sep 21, 2022"
@@ -196,22 +196,22 @@
   
 
   
-  
-
-  
-
-  
-  
-
-  
-      ,"page9": {
+      ,"page6": {
           "title": "Design with JS",
           "content": "",
-          "url": "https://vivianknee.github.io/FastPages/_pages/submenu.html",
-          "relUrl": "/_pages/submenu.html",
+          "url": "https://vivianknee.github.io/FastPages/_pages/js.html",
+          "relUrl": "/_pages/js.html",
           "date": ""
       }
       
+  
+
+  
+  
+
+  
+
+  
   
 
   
