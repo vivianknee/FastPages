@@ -18,8 +18,7 @@ title: Vocab
         </ul>
     </li>
     <li>Concatenation: the operation of joining two strings together </li>
-    <li>jekyll:used to</li> 
-    <li>liquid:</li>
+    <li>static text: text that does not change. for example, a string</li>
 </ul>
 
 **Linux/Ubuntu Commands** 
