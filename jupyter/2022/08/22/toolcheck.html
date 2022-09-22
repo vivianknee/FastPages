@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This code will run to see if I have all the necessary packages installed. These tools include java, javascript, python, bash, jupyter, and conda." />
 <meta property="og:description" content="This code will run to see if I have all the necessary packages installed. These tools include java, javascript, python, bash, jupyter, and conda." />
-<link rel="canonical" href="https://vivianknee.github.io/FastPages/jupyter/week1/2022/08/22/toolcheck.html" />
-<meta property="og:url" content="https://vivianknee.github.io/FastPages/jupyter/week1/2022/08/22/toolcheck.html" />
+<link rel="canonical" href="https://vivianknee.github.io/FastPages/jupyter/2022/08/22/toolcheck.html" />
+<meta property="og:url" content="https://vivianknee.github.io/FastPages/jupyter/2022/08/22/toolcheck.html" />
 <meta property="og:site_name" content="Vivian Ni" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-08-22T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Tool Check" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-22T00:00:00-05:00","datePublished":"2022-08-22T00:00:00-05:00","description":"This code will run to see if I have all the necessary packages installed. These tools include java, javascript, python, bash, jupyter, and conda.","headline":"Tool Check","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/FastPages/jupyter/week1/2022/08/22/toolcheck.html"},"url":"https://vivianknee.github.io/FastPages/jupyter/week1/2022/08/22/toolcheck.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-22T00:00:00-05:00","datePublished":"2022-08-22T00:00:00-05:00","description":"This code will run to see if I have all the necessary packages installed. These tools include java, javascript, python, bash, jupyter, and conda.","headline":"Tool Check","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/FastPages/jupyter/2022/08/22/toolcheck.html"},"url":"https://vivianknee.github.io/FastPages/jupyter/2022/08/22/toolcheck.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/FastPages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://vivianknee.github.io/FastPages/feed.xml" title="Vivian Ni" /><link rel="shortcut icon" type="image/x-icon" href="/FastPages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -87,9 +87,6 @@ window.onload = wrap_img;
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
         <a class="category-tags-link" href="/FastPages/categories/#jupyter">jupyter</a>
-        &nbsp;
-      
-        <a class="category-tags-link" href="/FastPages/categories/#week1">week1</a>
         
       
       </p>
@@ -149,17 +146,17 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="n">Python</span> <span class="n">Check</span> 
-<span class="n">test</span><span class="o">=</span><span class="s2">&quot;python3&quot;</span> <span class="c1"># keyword</span>
-<span class="n">check</span><span class="o">=</span><span class="err">`</span><span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="err">$</span><span class="n">test</span><span class="err">`</span> <span class="c1"># run command</span>
-<span class="n">n</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="c1">#check} # determine length</span>
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> Python Check 
+<span class="nv">test</span><span class="o">=</span><span class="s2">&quot;python3&quot;</span> <span class="c1"># keyword</span>
+<span class="nv">check</span><span class="o">=</span><span class="sb">`</span>jupyter kernelspec list <span class="p">|</span> grep <span class="nv">$test</span><span class="sb">`</span> <span class="c1"># run command</span>
+<span class="nv">n</span><span class="o">=</span><span class="si">${#</span><span class="nv">check</span><span class="si">}</span> <span class="c1"># determine length</span>
 
-<span class="k">if</span> <span class="p">[[</span> <span class="err">$</span><span class="p">{</span><span class="n">n</span><span class="p">}</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">]];</span>  <span class="c1"># testt length</span>
-<span class="n">then</span> <span class="c1"># greater than zero</span>
-    <span class="n">echo</span> <span class="s2">&quot;$check&quot;</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># testt length</span>
+<span class="k">then</span> <span class="c1"># greater than zero</span>
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$check</span><span class="s2">&quot;</span>
 <span class="k">else</span> <span class="c1"># less than zero</span>
-    <span class="n">echo</span> <span class="s2">&quot;$test not found&quot;</span>
-<span class="n">fi</span>
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$test</span><span class="s2"> not found&quot;</span>
+<span class="k">fi</span>
 </pre></div>
 
     </div>
@@ -191,8 +188,8 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
-<span class="n">python2</span> <span class="o">--</span><span class="n">version</span>
+<div class=" highlight hl-bash"><pre><span></span>python --version
+python2 --version
 </pre></div>
 
     </div>
@@ -231,11 +228,43 @@ Python 2.7.18
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">jupyter</span> <span class="o">--</span><span class="n">version</span>
-<span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span>
+<div class=" highlight hl-bash"><pre><span></span>jupyter --version
+jupyter kernelspec list
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Selected Jupyter core packages...
+IPython          : 8.2.0
+ipykernel        : 6.9.1
+ipywidgets       : 7.6.5
+jupyter_client   : 6.1.12
+jupyter_core     : 4.9.2
+jupyter_server   : 1.13.5
+jupyterlab       : 3.3.2
+nbclient         : 0.5.13
+nbconvert        : 6.4.4
+nbformat         : 5.3.0
+notebook         : 6.4.8
+qtconsole        : 5.3.0
+traitlets        : 5.1.1
+Available kernels:
+  bash          /home/vivian/.local/share/jupyter/kernels/bash
+  java          /home/vivian/.local/share/jupyter/kernels/java
+  javascript    /home/vivian/.local/share/jupyter/kernels/javascript
+  python3       /home/vivian/.local/share/jupyter/kernels/python3
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -256,18 +285,18 @@ Python 2.7.18
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="n">Conda</span> <span class="n">Check</span>
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> Conda Check
 <span class="c1"># test for a kernel installation</span>
-<span class="n">test</span><span class="o">=</span><span class="s2">&quot;jupyter&quot;</span> <span class="c1"># keyword</span>
-<span class="n">check</span><span class="o">=</span><span class="err">`</span><span class="n">conda</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="err">$</span><span class="n">test</span><span class="err">`</span> <span class="c1"># run command</span>
-<span class="n">n</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="c1">#check} # determine length</span>
+<span class="nv">test</span><span class="o">=</span><span class="s2">&quot;jupyter&quot;</span> <span class="c1"># keyword</span>
+<span class="nv">check</span><span class="o">=</span><span class="sb">`</span>conda list <span class="p">|</span> grep <span class="nv">$test</span><span class="sb">`</span> <span class="c1"># run command</span>
+<span class="nv">n</span><span class="o">=</span><span class="si">${#</span><span class="nv">check</span><span class="si">}</span> <span class="c1"># determine length</span>
 
-<span class="k">if</span> <span class="p">[[</span> <span class="err">$</span><span class="p">{</span><span class="n">n</span><span class="p">}</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">]];</span>  <span class="c1"># testt length</span>
-<span class="n">then</span> <span class="c1"># greater than zero</span>
-    <span class="n">echo</span> <span class="s2">&quot;$check&quot;</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># testt length</span>
+<span class="k">then</span> <span class="c1"># greater than zero</span>
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$check</span><span class="s2">&quot;</span>
 <span class="k">else</span> <span class="c1"># less than zero</span>
-    <span class="n">echo</span> <span class="s2">&quot;$test not found&quot;</span>
-<span class="n">fi</span>
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$test</span><span class="s2"> not found&quot;</span>
+<span class="k">fi</span>
 </pre></div>
 
     </div>
@@ -307,7 +336,7 @@ jupyterlab_widgets        1.0.0              pyhd3eb1b0_1
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">conda</span> <span class="nb">list</span>
+<div class=" highlight hl-bash"><pre><span></span>conda list
 </pre></div>
 
     </div>
@@ -781,18 +810,18 @@ zstd                      1.4.9                haebb681_0
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">echo</span> <span class="n">Java</span> <span class="n">Check</span>
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> Java Check
 <span class="c1"># test for a kernel installation</span>
-<span class="n">test</span><span class="o">=</span><span class="s2">&quot;java&quot;</span> <span class="c1"># keyword</span>
-<span class="n">check</span><span class="o">=</span><span class="err">`</span><span class="n">jupyter</span> <span class="n">kernelspec</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">grep</span> <span class="err">$</span><span class="n">test</span><span class="err">`</span> <span class="c1"># run command</span>
-<span class="n">n</span><span class="o">=</span><span class="err">$</span><span class="p">{</span><span class="c1">#check} # determine length</span>
+<span class="nv">test</span><span class="o">=</span><span class="s2">&quot;java&quot;</span> <span class="c1"># keyword</span>
+<span class="nv">check</span><span class="o">=</span><span class="sb">`</span>jupyter kernelspec list <span class="p">|</span> grep <span class="nv">$test</span><span class="sb">`</span> <span class="c1"># run command</span>
+<span class="nv">n</span><span class="o">=</span><span class="si">${#</span><span class="nv">check</span><span class="si">}</span> <span class="c1"># determine length</span>
 
-<span class="k">if</span> <span class="p">[[</span> <span class="err">$</span><span class="p">{</span><span class="n">n</span><span class="p">}</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">]];</span>  <span class="c1"># testt length</span>
-<span class="n">then</span> <span class="c1"># greater than zero</span>
-    <span class="n">echo</span> <span class="s2">&quot;$check&quot;</span>
+<span class="k">if</span> <span class="o">[[</span> <span class="si">${</span><span class="nv">n</span><span class="si">}</span> &gt; <span class="m">0</span> <span class="o">]]</span><span class="p">;</span>  <span class="c1"># testt length</span>
+<span class="k">then</span> <span class="c1"># greater than zero</span>
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$check</span><span class="s2">&quot;</span>
 <span class="k">else</span> <span class="c1"># less than zero</span>
-    <span class="n">echo</span> <span class="s2">&quot;$test not found&quot;</span>
-<span class="n">fi</span>
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$test</span><span class="s2"> not found&quot;</span>
+<span class="k">fi</span>
 </pre></div>
 
     </div>
@@ -830,7 +859,7 @@ zstd                      1.4.9                haebb681_0
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/FastPages/jupyter/week1/2022/08/22/toolcheck.html" hidden></a>
+</script><a class="u-url" href="/FastPages/jupyter/2022/08/22/toolcheck.html" hidden></a>
 </article>
 
       </div>
