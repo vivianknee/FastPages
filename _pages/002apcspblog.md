@@ -10,7 +10,7 @@ comments: true
 
 | Week | Sprint | Review Ticket | Summary |
 |-|-|-|-|
-| 5 | UI Starters | [Review Ticket 5]() | |
+| 5 | UI Starters | [Review Ticket 5](https://github.com/vivianknee/FastPages/issues/11#issue-1384505077) | |
 | 4 | Python Web Server Project | [Review Ticket 4](https://github.com/vivianknee/FastPages/issues/10#issue-1378861672) | In the video I made for week 4, I go over my [CSP Journey and takeaways from the psychology video](https://vivianknee.github.io/FastPages/markdown/week4/2022/09/16/personalcspjourney.html) as well as the [process](https://vivianknee.github.io/FastPages/markdown/week4/2022/09/16/docker.html) I took to do my local server |
 | 3 | Creative Development | [Review Ticket 3](https://github.com/vivianknee/FastPages/issues/9#issue-1369289899) | This week, we focused on creating a sample create task in preparation for the AP exam using javascript and code.org app lab. Here is the [blog](https://vivianknee.github.io/FastPages/markdown/week3/2022/09/07/AppLabquiz.html) I wrote during the process. |
 | 2 | Data Abstraction | [Review Ticket 2](https://github.com/vivianknee/FastPages/issues/8#issue-1360542831) | This week we started learning about  [Lists, Dictionaries, and Iterations](https://vivianknee.github.io/FastPages/jupyter/week2/2022/08/30/lists.html) and how to store data with them. We learned how to print and format dictionaries as well as do other more advanced things with them. In addition, we also messed around with html and the themes of our website. For example we applied a dark mode css file which changed the entire look of the site. |
