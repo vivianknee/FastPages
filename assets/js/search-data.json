@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Javascript and HTML",
-            "content": "Using HTML fragments and Javascript to build a table. . Click Me! Ready to continue? . yes? .",
+            "content": "Using HTML fragments and Javascript to build a table. . Click Me! Ready to continue? . &lt;button onclick=&#39;document.getElementById(&#39;myImage&#39;).src=&quot;https://github.com/vivianknee/FastPages/blob/master/images/yes.png&quot;&#39;&gt;yes&lt;/button&gt; .",
             "url": "https://vivianknee.github.io/FastPages/markdown/week5/2022/09/21/javascripttable.html",
             "relUrl": "/markdown/week5/2022/09/21/javascripttable.html",
             "date": " • Sep 21, 2022"
