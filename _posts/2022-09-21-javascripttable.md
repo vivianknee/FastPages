@@ -11,7 +11,7 @@ comments: true
 
 <p id="intro">Using HTML fragments and Javascript to build a table.</p>
 
-<button type="button" onclick='document.getElementById("intro").innerHTML = "Scroll to find out!"'>Click Me!</button>
+<button type="button" onclick='document.getElementById("intro").innerHTML = "Scroll to see!"'>Click Me!</button>
 
 </body>
 </html>
