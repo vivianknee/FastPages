@@ -15,9 +15,9 @@ comments: true
 
 <p>Ready to continue?</p>
 
-<button onclick="document.getElementById('myImage').src='yes.png'">yes</button>
+<button onclick="document.getElementById('myImage').src='/images/yes.png'">yes</button>
 
-<img id="myImage" src="no.png" style="width:100px">
+<img id="myImage" src="/images/no.png" style="width:100px">
 
 </body>
 </html>
