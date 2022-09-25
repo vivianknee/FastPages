@@ -426,7 +426,12 @@ string ; {&#34;name&#34;:&#34;Mr M&#34;,&#34;ghID&#34;:&#34;jm1021&#34;,&#34;cla
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Build-a-Classroom-Array/List-of-Persons-and-JSON">Build a Classroom Array/List of Persons and JSON<a class="anchor-link" href="#Build-a-Classroom-Array/List-of-Persons-and-JSON"> </a></h3>
+<h3 id="Build-a-Classroom-Array/List-of-Persons-and-JSON">Build a Classroom Array/List of Persons and JSON<a class="anchor-link" href="#Build-a-Classroom-Array/List-of-Persons-and-JSON"> </a></h3><blockquote><ul>
+<li>Building an Array, "var students" is an array of many persons</li>
+<li>Building a Classroom, this show forEach iteration through an array and .push adding to an array</li>
+</ul>
+</blockquote>
+
 </div>
 </div>
 </div>
@@ -481,23 +486,21 @@ string ; {&#34;name&#34;:&#34;Mr M&#34;,&#34;ghID&#34;:&#34;jm1021&#34;,&#34;cla
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>object ; [ Person { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#39;Teacher&#39; },
   Person {
-    name: &#39;Anthony&#39;,
-    ghID: &#39;tonyhieu&#39;,
-    classOf: 2022,
+    name: &#39;Vivian&#39;,
+    ghID: &#39;vivanknee&#39;,
+    classOf: 2024,
     role: &#39;Student&#39; },
-  Person { name: &#39;Bria&#39;, ghID: &#39;B-G101&#39;, classOf: 2023, role: &#39;Student&#39; },
-  Person { name: &#39;Allie&#39;, ghID: &#39;xiaoa0&#39;, classOf: 2023, role: &#39;Student&#39; },
+  Person { name: &#39;Emma&#39;, ghID: &#39;e-shen&#39;, classOf: 2024, role: &#39;Student&#39; },
   Person {
-    name: &#39;Tigran&#39;,
-    ghID: &#39;Tigran7&#39;,
-    classOf: 2023,
+    name: &#39;Amay&#39;,
+    ghID: &#39;amayadvani&#39;,
+    classOf: 2024,
     role: &#39;Student&#39; },
   Person {
-    name: &#39;Rebecca&#39;,
-    ghID: &#39;Rebecca-123&#39;,
-    classOf: 2023,
-    role: &#39;Student&#39; },
-  Person { name: &#39;Vidhi&#39;, ghID: &#39;unknown&#39;, classOf: 2024, role: &#39;Student&#39; } ]
+    name: &#39;Sarah&#39;,
+    ghID: &#39;sarahliu&#39;,
+    classOf: 2024,
+    role: &#39;Student&#39; } ]
 string ; Mr M
 string ; {&#34;name&#34;:&#34;Mr M&#34;,&#34;ghID&#34;:&#34;jm1021&#34;,&#34;classOf&#34;:1977,&#34;role&#34;:&#34;Teacher&#34;}
 object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#39;Teacher&#39; }
@@ -513,7 +516,15 @@ object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="IJavaScript-and-Table-formatting-using-toHTML-method">IJavaScript and Table formatting using toHTML method<a class="anchor-link" href="#IJavaScript-and-Table-formatting-using-toHTML-method"> </a></h3>
+<h3 id="IJavaScript-and-Table-formatting-using-toHTML-method">IJavaScript and Table formatting using toHTML method<a class="anchor-link" href="#IJavaScript-and-Table-formatting-using-toHTML-method"> </a></h3><blockquote><p>This example builds a Classroom method _toHTML which is passed to the IJavaScript interpreter:$$.html which renders output similarly to a real website.&gt; JavaScript in the _toHTML method is broken into three parts...</p>
+<ul>
+<li>Style part is building CSS inline formatting</li>
+<li>Body part is constructing the Table Rows (tr), Table Headings (th), and Table Data (td). The table data is obtained from a Classroom object. The JavaScript for loop allows the construction of a new row of data for each person object in the Array.</li>
+<li>Return part creates the HTML fragment for rendering</li>
+</ul>
+<p>The last line:$$.html is IJavaScript HTML interpreter and by passing the parameter of the _toHTML method it obtains HTML to render</p>
+</blockquote>
+
 </div>
 </div>
 </div>
@@ -581,7 +592,7 @@ object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style="display:inline-block;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;"><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Class Of</mark></th><th><mark>Role</mark></th></tr><tr><td>Mr M</td><td>jm1021</td><td>1977</td><td>Teacher</td><tr><tr><td>Anthony</td><td>tonyhieu</td><td>2022</td><td>Student</td><tr><tr><td>Bria</td><td>B-G101</td><td>2023</td><td>Student</td><tr><tr><td>Allie</td><td>xiaoa0</td><td>2023</td><td>Student</td><tr><tr><td>Tigran</td><td>Tigran7</td><td>2023</td><td>Student</td><tr><tr><td>Rebecca</td><td>Rebecca-123</td><td>2023</td><td>Student</td><tr><tr><td>Vidhi</td><td>unknown</td><td>2024</td><td>Student</td><tr>&lt;/table&gt;&lt;/div&gt;
+<div style="display:inline-block;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;"><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Class Of</mark></th><th><mark>Role</mark></th></tr><tr><td>Mr M</td><td>jm1021</td><td>1977</td><td>Teacher</td><tr><tr><td>Vivian</td><td>vivanknee</td><td>2024</td><td>Student</td><tr><tr><td>Emma</td><td>e-shen</td><td>2024</td><td>Student</td><tr><tr><td>Amay</td><td>amayadvani</td><td>2024</td><td>Student</td><tr><tr><td>Sarah</td><td>sarahliu</td><td>2024</td><td>Student</td><tr>&lt;/table&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
@@ -595,7 +606,7 @@ object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#
 &lt;/div&gt;
  
 
-</tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></table></div></div></div></div></div></div></div>
+</tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></table></div></div></div></div></div></div></div>
 
 
   </div><!-- from https://github.com/utterance/utterances -->
