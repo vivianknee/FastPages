@@ -516,7 +516,7 @@ object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="IJavaScript-and-Table-formatting-using-toHTML-method">IJavaScript and Table formatting using toHTML method<a class="anchor-link" href="#IJavaScript-and-Table-formatting-using-toHTML-method"> </a></h3><blockquote><p>This example builds a Classroom method _toHTML which is passed to the IJavaScript interpreter:$$.html which renders output similarly to a real website.&gt; JavaScript in the _toHTML method is broken into three parts...</p>
+<h3 id="IJavaScript-and-Table-formatting-using-toHTML-method">IJavaScript and Table formatting using toHTML method<a class="anchor-link" href="#IJavaScript-and-Table-formatting-using-toHTML-method"> </a></h3><blockquote><p>This example builds a Classroom method _toHTML which is passed to the IJavaScript interpreter:$$.html which renders output similarly to a real website.&gt; &gt;JavaScript in the _toHTML method is broken into three parts...</p>
 <ul>
 <li>Style part is building CSS inline formatting</li>
 <li>Body part is constructing the Table Rows (tr), Table Headings (th), and Table Data (td). The table data is obtained from a Classroom object. The JavaScript for loop allows the construction of a new row of data for each person object in the Array.</li>
@@ -546,6 +546,7 @@ object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#
   
     <span class="c1">// HTML Body of Table is build as a series of concatenations (+=)</span>
     <span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+    
     <span class="c1">// Heading for Array Columns</span>
     <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
     <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Name&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
@@ -553,6 +554,7 @@ object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#
     <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Class Of&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
     <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Role&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
     <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
+
     <span class="c1">// Data of Array, iterate through each row of compsci.classroom </span>
     <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">compsci</span><span class="p">.</span><span class="nx">classroom</span><span class="p">)</span> <span class="p">{</span>
       <span class="c1">// tr for each row, a new line</span>
@@ -592,7 +594,7 @@ object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style="display:inline-block;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;"><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Class Of</mark></th><th><mark>Role</mark></th></tr><tr><td>Mr M</td><td>jm1021</td><td>1977</td><td>Teacher</td><tr><tr><td>Vivian</td><td>vivanknee</td><td>2024</td><td>Student</td><tr><tr><td>Emma</td><td>e-shen</td><td>2024</td><td>Student</td><tr><tr><td>Amay</td><td>amayadvani</td><td>2024</td><td>Student</td><tr><tr><td>Sarah</td><td>sarahliu</td><td>2024</td><td>Student</td><tr>&lt;/table&gt;&lt;/div&gt;
+<div style="display:inline-block;border: 2px solid blue;box-shadow: 0.8em 0.4em 0.4em black;"><table><tr><th><mark>Name</mark></th><th><mark>GitHub ID</mark></th><th><mark>Class Of</mark></th><th><mark>Role</mark></th></tr><tr><td>Mr M</td><td>jm1021</td><td>1977</td><td>Teacher</td><tr><tr><td>Vivian</td><td>vivanknee</td><td>2024</td><td>Student</td><tr><tr><td>Emma</td><td>e-shen</td><td>2024</td><td>Student</td><tr><tr><td>Amay</td><td>amayadvani</td><td>2024</td><td>Student</td><tr><tr><td>Sarah</td><td>sarahliu</td><td>2024</td><td>Student</td><tr>&lt;/table&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
