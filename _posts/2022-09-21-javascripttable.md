@@ -8,10 +8,14 @@ comments: true
 ---
 <html>
 <body>
-<link rel="stylesheet" href="javascript.css">
+
 <p id="intro">Using HTML fragments and Javascript to build a table.</p>
 
 <button type="button" onclick='document.getElementById("intro").innerHTML = "Keep reading to learn more!"'>Click Me!</button>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
 
 </body>
 </html>
