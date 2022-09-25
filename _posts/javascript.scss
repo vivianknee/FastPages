@@ -7,4 +7,10 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    transition-duration: 0.4s;
+  }
+
+  .button:hover {
+    background-color: #ef7171;  
+    color: white;
   }
