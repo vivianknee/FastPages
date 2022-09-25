@@ -13,9 +13,11 @@ comments: true
 
 <button type="button" onclick='document.getElementById("intro").innerHTML = "Keep reading to learn more!"'>Click Me!</button>
 
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+<p>Ready to continue?</p>
 
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+<button onclick="document.getElementById('myImage').src='yes.png'">yes?</button>
+
+<img id="myImage" src="no.png" style="width:100px">
 
 </body>
 </html>
