@@ -3,9 +3,9 @@
     
         "post0": {
             "title": "Javascript and HTML",
-            "content": "| JS Table | JS Kernel | Calculator | . &lt;!DOCTYPE html&gt; . Using HTML fragments and Javascript to build a table. . Click Me! .",
-            "url": "https://vivianknee.github.io/FastPages/markdown/week5/2022/09/21/javascripttable.html",
-            "relUrl": "/markdown/week5/2022/09/21/javascripttable.html",
+            "content": "| JS Table | JS Kernel | . Using HTML fragments and Javascript to build a table. . Click Me! .",
+            "url": "https://vivianknee.github.io/FastPages/frontend/jsTable",
+            "relUrl": "/frontend/jsTable",
             "date": " • Sep 21, 2022"
         }
         
@@ -196,7 +196,7 @@
   
       ,"page5": {
           "title": "Frontend",
-          "content": "| JS Table | JS Kernel | Calculator | .",
+          "content": "| JS Table | JS Kernel | .",
           "url": "https://vivianknee.github.io/FastPages/_pages/Frontend.html",
           "relUrl": "/_pages/Frontend.html",
           "date": ""
