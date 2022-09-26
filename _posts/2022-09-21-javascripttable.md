@@ -8,7 +8,7 @@ title: Javascript and HTML
 comments: true
 ---
 {% include nav_frontend.html %}
-<!DOCTYPE html>
+
 <html>
 <body>
 <p id="intro">Using HTML fragments and Javascript to build a table.</p>
