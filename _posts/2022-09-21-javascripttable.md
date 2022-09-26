@@ -6,13 +6,13 @@ categories: [markdown, week5]
 title: Javascript and HTML
 comments: true
 ---
+{% include nav_frontend.html %}
+<!DOCTYPE html>
 <html>
 <body>
-
 <p id="intro">Using HTML fragments and Javascript to build a table.</p>
 
 <button type="button" onclick='document.getElementById("intro").innerHTML = "Keep reading to learn more!"'>Click Me!</button>
-
 
 <div id="myTable"></div>
 
