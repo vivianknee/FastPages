@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      7 min read
     
 </span></p>
 
@@ -609,6 +609,112 @@ object ; { name: &#39;Mr M&#39;, ghID: &#39;jm1021&#39;, classOf: 1977, role: &#
 &lt;/div&gt;
 
 &lt;/div&gt;
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="kd">function</span> <span class="nx">book</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">author</span><span class="p">,</span> <span class="nx">genre</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span> 
+    <span class="k">this</span><span class="p">.</span><span class="nx">author</span> <span class="o">=</span> <span class="nx">author</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">genre</span> <span class="o">=</span> <span class="nx">genre</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">books</span> <span class="o">=</span> <span class="p">[</span> 
+    <span class="k">new</span> <span class="nx">book</span><span class="p">(</span><span class="s2">&quot;Angels and Demons&quot;</span><span class="p">,</span> <span class="s2">&quot;Dan Brown&quot;</span><span class="p">,</span> <span class="s2">&quot;Action&quot;</span><span class="p">),</span>
+    <span class="k">new</span> <span class="nx">book</span><span class="p">(</span><span class="s2">&quot;Scythe&quot;</span><span class="p">,</span> <span class="s2">&quot;Neal Shusterman&quot;</span><span class="p">,</span> <span class="s2">&quot;Dystopian Fiction&quot;</span><span class="p">),</span>
+    <span class="k">new</span> <span class="nx">book</span><span class="p">(</span><span class="s2">&quot;Inferno&quot;</span><span class="p">,</span> <span class="s2">&quot;Dan Brown&quot;</span><span class="p">,</span> <span class="s2">&quot;Action&quot;</span><span class="p">),</span>
+    <span class="k">new</span> <span class="nx">book</span><span class="p">(</span><span class="s2">&quot;Holes&quot;</span><span class="p">,</span> <span class="s2">&quot;Louis Sachar&quot;</span><span class="p">,</span> <span class="s2">&quot;Realistic Fiction&quot;</span><span class="p">),</span>
+    <span class="k">new</span> <span class="nx">book</span><span class="p">(</span><span class="s2">&quot;Murder on the Orient Express&quot;</span><span class="p">,</span> <span class="s2">&quot;Agatha Christie&quot;</span><span class="p">,</span> <span class="s2">&quot;Mystery&quot;</span><span class="p">),</span>
+<span class="p">];</span>
+
+<span class="c1">// define a library and build Library objects and json</span>
+<span class="kd">function</span> <span class="nx">library</span><span class="p">(</span><span class="nx">books</span><span class="p">){</span>  
+    <span class="c1">// add each book to library</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">books</span> <span class="o">=</span> <span class="nx">books</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">library</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">books</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">book</span> <span class="p">=&gt;</span> <span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">library</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">book</span><span class="p">);});</span>
+<span class="p">}</span>
+<span class="nx">printBooks</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">library</span><span class="p">(</span><span class="nx">books</span><span class="p">);</span>
+
+<span class="nx">library</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">_toHtml</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;display:inline-block;&quot;</span> <span class="o">+</span>
+    <span class="s2">&quot;border: 2px solid blue;&quot;</span> <span class="o">+</span>
+    <span class="s2">&quot;box-shadow: 0.8em 0.4em 0.4em black;&quot;</span>
+  <span class="p">);</span>
+  
+  <span class="c1">// HTML Body of Table is build as a series of concatenations (+=)</span>
+<span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+
+<span class="c1">// Heading for Array Columns</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/table&gt;&quot;</span><span class="p">;</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Title&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Author&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Genre&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
+
+<span class="c1">// Data of Array, iterate through each row of vShelf.library</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">printBooks</span><span class="p">.</span><span class="nx">library</span><span class="p">)</span> <span class="p">{</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">author</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">genre</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/table&gt;&quot;</span><span class="p">;</span>
+
+ <span class="c1">// Build and HTML fragment of div, table, table body</span>
+ <span class="k">return</span> <span class="p">(</span>
+    <span class="s2">&quot;&lt;div style=&#39;&quot;</span> <span class="o">+</span> <span class="nx">style</span> <span class="o">+</span> <span class="s2">&quot;&#39;&gt;&quot;</span> <span class="o">+</span>
+      <span class="s2">&quot;&lt;table&gt;&quot;</span> <span class="o">+</span>
+        <span class="nx">body</span> <span class="o">+</span>
+      <span class="s2">&quot;&lt;/table&gt;&quot;</span> <span class="o">+</span>
+    <span class="s2">&quot;&lt;/div&gt;&quot;</span>
+  <span class="p">);</span>
+<span class="p">};</span>
+<span class="nx">$$</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">printBooks</span><span class="p">.</span><span class="nx">_toHtml</span><span class="p">());</span>
+<span class="c1">//document.getElementById(&#39;myTable&#39;).innerHTML = body;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+evalmachine.&lt;anonymous&gt;:48
+    &#34;&lt;div style=&#39;&#34; + style + &#34;&#39;&gt;&#34; +
+                     ^
+
+ReferenceError: style is not defined
+    at library._toHtml (evalmachine.&lt;anonymous&gt;:48:22)
+    at evalmachine.&lt;anonymous&gt;:55:20
+    at ContextifyScript.Script.runInThisContext (vm.js:25:33)
+    at Object.runInThisContext (vm.js:97:38)
+    at run ([eval]:1020:15)
+    at onRunRequest ([eval]:864:18)
+    at onMessage ([eval]:828:13)
+    at emitTwo (events.js:106:13)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:758:12)</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
     
 
 &lt;/div&gt;
