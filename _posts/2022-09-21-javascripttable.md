@@ -41,21 +41,18 @@ title: Javascript and HTML
     var style = (
         "display:inline-block;" +
         "border: 2px solid blue;" +
-        "box-shadow: 0.8em 0.4em 0.4em black;"
     );
 
     // HTML Body of Table is build as a series of concatenations (+=)
     var body = "";
 
     // Heading for Array Columns
-
     body += "<tr>";
     body += "<th>" + "Title" + "</th>";
     body += "<th>" + "Author" + "</th>";
     body += "<th>" + "Genre" + "</th>";
     body += "</tr>";
 
-    // Data of Array, iterate through each row of vShelf.library
     for (var row of printBooks.library) {
     body += "<tr>";
     body += "<td>" + row.name + "</td>";
