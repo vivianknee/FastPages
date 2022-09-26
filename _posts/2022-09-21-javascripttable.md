@@ -10,14 +10,8 @@ title: Javascript and HTML
 
 <html>
 <body>
-<p id="intro">Using HTML fragments and Javascript to build a table.</p>
 
-<button type="button" onclick='document.getElementById("intro").innerHTML = "Keep reading to learn more!"'>Click Me!</button>
-
-<div id="myTable">
-    <h1>GeeksforGeeks</h1>
-        <p>This is the text which has already been typed into the div</p>
-</div>
+<div id="myTable"></div>
 
 <script>
     function book(name, author, genre) {
@@ -64,7 +58,7 @@ title: Javascript and HTML
     }
     body += "</table>";
 
-    //document.getElementById('myTable').innerHTML += body;
+    document.getElementById('myTable').innerHTML = "<p>This is the text which has already been typed into the div</p>";
 
 </script>
 
