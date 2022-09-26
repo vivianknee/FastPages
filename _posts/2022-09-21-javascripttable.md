@@ -17,18 +17,18 @@ comments: true
 <div id="myTable"></div>
 
 <script>
-    function book(name, author) {
+    function book(name, author, genre) {
         this.name = name; 
         this.author = author;
         this.genre = genre;
     }
 
     var books = [ 
-        new book("Angels and Demons", "Dan Brown", "Action"),
-        new book("Scythe", "Neal Shusterman", "Dystopian Fiction"),
-        new book("Inferno", "Dan Brown", "Action"),
-        new book("Holes", "Louis Sachar", "Realistic Fiction"),
-        new book("Murder on the Orient Express", "Agatha Christie"),
+        new books("Angels and Demons", "Dan Brown", "Action"),
+        new books("Scythe", "Neal Shusterman", "Dystopian Fiction"),
+        new books("Inferno", "Dan Brown", "Action"),
+        new books("Holes", "Louis Sachar", "Realistic Fiction"),
+        new books("Murder on the Orient Express", "Agatha Christie", "Mystery"),
     ];
 
     // define a library and build Library objects and json
@@ -42,7 +42,7 @@ comments: true
 
     // HTML Body of Table is build as a series of concatenations (+=)
     var body = "";
-    
+
     // Heading for Array Columns
     body += "</table>";
     body += "<tr>";
@@ -53,11 +53,11 @@ comments: true
 
     // Data of Array, iterate through each row of vShelf.library
     for (var row of printBooks.library) {
-      body += "<tr>";
-      body += "<td>" + row.name + "</td>";
-      body += "<td>" + row.author + "</td>";
-      body += "<td>" + row.genre + "</td>";
-      body += "<tr>";
+    body += "<tr>";
+    body += "<td>" + row.name + "</td>";
+    body += "<td>" + row.author + "</td>";
+    body += "<td>" + row.genre + "</td>";
+    body += "<tr>";
     }
     body += "</table>";
 
