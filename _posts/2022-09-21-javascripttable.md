@@ -1,7 +1,8 @@
 ---
 layout: post
 description: Using HTML fragments and JavaScript data to build a table
-author: Vivian Ni
+author: Vivian 
+permalink: /frontend/jsTable
 categories: [markdown, week5]
 title: Javascript and HTML
 comments: true
