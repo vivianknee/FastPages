@@ -62,7 +62,8 @@ comments: true
     }
     body += "</table>";
 
-    document.getElementById('myTable').innerHTML = body;
+    document.getElementById('myTable').innerHTML += body;
+
 </script>
 
 </body>
