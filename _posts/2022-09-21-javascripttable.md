@@ -40,13 +40,11 @@ title: Javascript and HTML
     library.prototype._toHtml = function() {
     var style = (
         "display:inline-block;" +
-        "border: 2px solid blue;" +
+        "border: 2px solid blue;"
     );
 
-    // HTML Body of Table is build as a series of concatenations (+=)
     var body = "";
 
-    // Heading for Array Columns
     body += "<tr>";
     body += "<th>" + "Title" + "</th>";
     body += "<th>" + "Author" + "</th>";
