@@ -58,7 +58,7 @@ title: Javascript and HTML
     }
     body += "</table>";
 
-    document.getElementById('myTable').innerHTML = "<p>This is the text which has already been typed into the div</p>";
+    document.getElementById('myTable').innerHTML = body;
 
 </script>
 
