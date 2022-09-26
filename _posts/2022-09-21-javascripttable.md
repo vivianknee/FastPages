@@ -10,6 +10,9 @@ title: Javascript and HTML
 
 <html>
 <body>
+<p id="intro">Using HTML fragments and Javascript to build a table.</p>
+
+<button type="button" onclick='document.getElementById("intro").innerHTML = "yay!"'>Click Me!</button>
 
 <div id="myTable"></div>
 
