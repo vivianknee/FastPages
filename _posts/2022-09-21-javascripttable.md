@@ -37,11 +37,18 @@ title: Javascript and HTML
     }
     printBooks = new library(books);
 
+    library.prototype._toHtml = function() {
+    var style = (
+        "display:inline-block;" +
+        "border: 2px solid blue;" +
+        "box-shadow: 0.8em 0.4em 0.4em black;"
+    );
+
     // HTML Body of Table is build as a series of concatenations (+=)
     var body = "";
 
     // Heading for Array Columns
-    body += "</table>";
+
     body += "<tr>";
     body += "<th>" + "Title" + "</th>";
     body += "<th>" + "Author" + "</th>";
@@ -56,9 +63,19 @@ title: Javascript and HTML
     body += "<td>" + row.genre + "</td>";
     body += "<tr>";
     }
-    body += "</table>";
 
-    document.getElementById('myTable').innerHTML = body;
+
+    // Build and HTML fragment of div, table, table body
+    return (
+        "<div style='" + style + "'>" +
+            "<table>" +
+                body +
+            "</table>" +
+        "</div>"
+        );
+    };
+    
+    document.getElementById('myTable').innerHTML = printBooks._toHtml();
 
 </script>
 
