@@ -32,43 +32,34 @@ comments: true
     ];
 
     // define a library and build Library objects and json
-    function (books){  
+    function library(books){  
         // add each book to library
         this.books = books;
-        this.book.forEach(book => {this.library.push(book);});
+        this.library = [];
+        this.books.forEach(book => {this.library.push(book);});
     }
-    printFruits = new library(books);
+    printBooks = new library(books);
 
     // HTML Body of Table is build as a series of concatenations (+=)
     var body = "";
     
     // Heading for Array Columns
+    body += "</table>";
     body += "<tr>";
-    body += "<th><mark>" + "Title" + "</mark></th>";
-    body += "<th><mark>" + "Author" + "</mark></th>";
-    body += "<th><mark>" + "Genre" + "</mark></th>";
+    body += "<td>" + "Title" + "</td>";
+    body += "<td>" + "Author" + "</td>";
+    body += "<td>" + "Genre" + "</td>";
     body += "</tr>";
 
     // Data of Array, iterate through each row of vShelf.library
-    for (var row of vShelf.library) {
-      // tr for each row, a new line
+    for (var row of printBooks.library) {
       body += "<tr>";
-      // td for each column of data
       body += "<td>" + row.name + "</td>";
       body += "<td>" + row.author + "</td>";
       body += "<td>" + row.genre + "</td>";
-      // tr to end line
       body += "<tr>";
     }
-  
-     // Build and HTML fragment of div, table, table body
-    return (
-      "<div style='" + style + "'>" +
-        "<table>" +
-          body +
-        "</table>" +
-      "</div>"
-    );
+    body += "</table>";
 
     document.getElementById('myTable').innerHTML = body;
 </script>
