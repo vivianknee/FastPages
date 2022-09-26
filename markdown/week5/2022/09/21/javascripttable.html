@@ -109,61 +109,50 @@ window.onload = wrap_img;
 <button type="button" onclick="document.getElementById(&quot;intro&quot;).innerHTML = &quot;Keep reading to learn more!&quot;">Click Me!</button>
 
 
-<div id="myTable">
-</div>
+<div id="myTable"></div>
 
 <script>
-function Person(name, ghID, classOf) {
+function book(name, author) {
     this.name = name; 
-    this.ghID = ghID;
-    this.classOf = classOf;
-    this.role = "";
+    this.author = author;
 }
 
 // define a setter for role in Person data
-Person.prototype.setRole = function(role) {
-    this.role = role;
+Person.prototype.setGenre = function(genre) {
+    this.genre = genre;
 }
 
 // define a JSON conversion "method" associated with Person
 Person.prototype.toJSON = function() {
-    const obj = {name: this.name, ghID: this.ghID, classOf: this.classOf, role: this.role};
+    const obj = {name: this.name, author: this.author, genre: this.genre};
     const json = JSON.stringify(obj);
     return json;
 }
-
-var teacher = new Person("Mr M", "jm1021", 1977);
-
-var students = [ 
-    new Person("Vivian", "vivanknee", 2024),
-    new Person("Emma", "e-shen", 2024),
-    new Person("Amay", "amayadvani", 2024),
-    new Person("Sarah", "sarahliu", 2024),
+var books = [ 
+    new book("Angels and Demons", "Dan Brown"),
+    new book("Scythe", "Neal Shusterman"),
+    new book("Inferno", "Dan Brown"),
+    new book("Holes", "Louis Sachar"),
+    new book("Murder on the Orient Express", "Agatha Christie"),
 ];
 
-// define a classroom and build Classroom objects and json
-function Classroom(teacher, students){ // 1 teacher, many student
-    // start Classroom with Teacher
-    teacher.setRole("Teacher");
-    this.teacher = teacher;
-    this.classroom = [teacher];
-    // add each Student to Classroom
-    this.students = students;
-    this.students.forEach(student => { student.setRole("Student"); this.classroom.push(student); });
+// define a library and build Library objects and json
+function (books){  
+    // add each book to library
+    this.books = books;
+    this.book.forEach(book => { book.setGenre("Student"); this.library.push(book); });
     // build json/string format of Classroom
     this.json = [];
-    this.classroom.forEach(person => this.json.push(person.toJSON()));
+    this.library.forEach(book => this.json.push(book.toJSON()));
 }
 
-// make a CompSci classroom from formerly defined teacher and students
-compsci = new Classroom(teacher, students);
+vShelf = new library(genre);
 
-Classroom.prototype._toHtml = function() {
+library.prototype._toHtml = function() {
     // HTML Style is build using inline structure
     var style = (
       "display:inline-block;" +
       "border: 2px solid blue;" +
-      "box-shadow: 0.8em 0.4em 0.4em black;"
     );
   
     // HTML Body of Table is build as a series of concatenations (+=)
@@ -171,21 +160,19 @@ Classroom.prototype._toHtml = function() {
     
     // Heading for Array Columns
     body += "<tr>";
-    body += "<th><mark>" + "Name" + "</mark></th>";
-    body += "<th><mark>" + "GitHub ID" + "</mark></th>";
-    body += "<th><mark>" + "Class Of" + "</mark></th>";
-    body += "<th><mark>" + "Role" + "</mark></th>";
+    body += "<th><mark>" + "Title" + "</mark></th>";
+    body += "<th><mark>" + "Author" + "</mark></th>";
+    body += "<th><mark>" + "Genre" + "</mark></th>";
     body += "</tr>";
 
-    // Data of Array, iterate through each row of compsci.classroom 
-    for (var row of compsci.classroom) {
+    // Data of Array, iterate through each row of vShelf.library
+    for (var row of vShelf.library) {
       // tr for each row, a new line
       body += "<tr>";
       // td for each column of data
       body += "<td>" + row.name + "</td>";
-      body += "<td>" + row.ghID + "</td>";
-      body += "<td>" + row.classOf + "</td>";
-      body += "<td>" + row.role + "</td>";
+      body += "<td>" + row.author + "</td>";
+      body += "<td>" + row.genre + "</td>";
       // tr to end line
       body += "<tr>";
     }
@@ -201,14 +188,8 @@ Classroom.prototype._toHtml = function() {
   
   };
 
-// Create a document fragment:
-const dFrag = document.createDocumentFragment();
+document.getElementById('myTable').innerHTML = body;
 
-dFrag.appendChild(compsci._toHtml);
-
-
-// Add fragment to a list: 
-document.getElementById('myTable').appendChild(dFrag);
 </script>
 
 </body>
