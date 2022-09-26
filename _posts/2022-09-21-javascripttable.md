@@ -5,7 +5,6 @@ author: Vivian
 permalink: /frontend/jsTable
 categories: [markdown, week5]
 title: Javascript and HTML
-comments: true
 ---
 {% include nav_frontend.html %}
 
@@ -15,7 +14,10 @@ comments: true
 
 <button type="button" onclick='document.getElementById("intro").innerHTML = "Keep reading to learn more!"'>Click Me!</button>
 
-<div id="myTable"></div>
+<div id="myTable">
+    <h1>GeeksforGeeks</h1>
+        <p>This is the text which has already been typed into the div</p>
+</div>
 
 <script>
     function book(name, author, genre) {
@@ -62,7 +64,7 @@ comments: true
     }
     body += "</table>";
 
-    document.getElementById('myTable').innerHTML += body;
+    //document.getElementById('myTable').innerHTML += body;
 
 </script>
 
