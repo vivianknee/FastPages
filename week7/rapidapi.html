@@ -10,17 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="APIs can be found all over the internet. A great consolidator of many APIs is RapidAPI. In this blog we will use a site to consolidates API stats. Learning a few lines of code and you can start extracting lots of data from the internet via APIs." />
 <meta property="og:description" content="APIs can be found all over the internet. A great consolidator of many APIs is RapidAPI. In this blog we will use a site to consolidates API stats. Learning a few lines of code and you can start extracting lots of data from the internet via APIs." />
-<link rel="canonical" href="https://vivianknee.github.io/FastPages/week6/rapidapi" />
-<meta property="og:url" content="https://vivianknee.github.io/FastPages/week6/rapidapi" />
+<link rel="canonical" href="https://vivianknee.github.io/FastPages/week7/rapidapi" />
+<meta property="og:url" content="https://vivianknee.github.io/FastPages/week7/rapidapi" />
 <meta property="og:site_name" content="Vivian Ni" />
-<meta property="og:image" content="https://vivianknee.github.io/FastPages/images/rapidapi.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-10-03T00:00:00-05:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://vivianknee.github.io/FastPages/images/rapidapi.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Python RapidAPI" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-03T00:00:00-05:00","datePublished":"2022-10-03T00:00:00-05:00","description":"APIs can be found all over the internet. A great consolidator of many APIs is RapidAPI. In this blog we will use a site to consolidates API stats. Learning a few lines of code and you can start extracting lots of data from the internet via APIs.","headline":"Python RapidAPI","image":"https://vivianknee.github.io/FastPages/images/rapidapi.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/FastPages/week6/rapidapi"},"url":"https://vivianknee.github.io/FastPages/week6/rapidapi"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-10-03T00:00:00-05:00","datePublished":"2022-10-03T00:00:00-05:00","description":"APIs can be found all over the internet. A great consolidator of many APIs is RapidAPI. In this blog we will use a site to consolidates API stats. Learning a few lines of code and you can start extracting lots of data from the internet via APIs.","headline":"Python RapidAPI","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/FastPages/week7/rapidapi"},"url":"https://vivianknee.github.io/FastPages/week7/rapidapi"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/FastPages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://vivianknee.github.io/FastPages/feed.xml" title="Vivian Ni" /><link rel="shortcut icon" type="image/x-icon" href="/FastPages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -75,7 +73,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Python RapidAPI</h1><p class="page-description">APIs can be found all over the internet.  A great consolidator of many APIs is <mark>RapidAPI</mark>.  In this blog we will use a site to consolidates API stats.  Learning a few lines of code and you can start extracting lots of data from the internet via APIs.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-03T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Python RapidAPI</h1><p class="page-description">APIs can be found all over the internet.  A great consolidator of many APIs is RapidAPI. In this blog we will use a site to consolidates API stats.  Learning a few lines of code and you can start extracting lots of data from the internet via APIs.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-10-03T00:00:00-05:00" itemprop="datePublished">
         Oct 3, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -88,7 +86,7 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/FastPages/categories/#week6">week6</a>
+        <a class="category-tags-link" href="/FastPages/categories/#week7">week7</a>
         
       
       </p>
@@ -127,9 +125,10 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h3"><a href="#Python,-RapidAPI-Terms">Python, RapidAPI Terms </a></li>
-<li class="toc-entry toc-h3"><a href="#Covid19-RapidAPI-Example">Covid19 RapidAPI Example </a></li>
+<li class="toc-entry toc-h3"><a href="#Getting-an-API">Getting an API </a></li>
 <li class="toc-entry toc-h3"><a href="#Digital-Coin-Example">Digital Coin Example </a></li>
 <li class="toc-entry toc-h3"><a href="#Formatting-Digital-Coin-example">Formatting Digital Coin example </a></li>
+<li class="toc-entry toc-h3"><a href="#Using-a-API">Using a API </a></li>
 <li class="toc-entry toc-h3"><a href="#Go-deeper-into-APIs">Go deeper into APIs </a></li>
 <li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
 </ul><!--
@@ -173,15 +172,15 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Covid19-RapidAPI-Example">
-<a class="anchor" href="#Covid19-RapidAPI-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Covid19 RapidAPI Example<a class="anchor-link" href="#Covid19-RapidAPI-Example"> </a>
+<h3 id="Getting-an-API">
+<a class="anchor" href="#Getting-an-API" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting an API<a class="anchor-link" href="#Getting-an-API"> </a>
 </h3>
 <blockquote>
 <p>To begin the API journey.  You need to find an API provider.</p>
 </blockquote>
 <ul>
 <li>RapidAPI is a great option.  You must setup and account, but there are many free options.</li>
-<li>Goto this page for starters, the <a href="https://rapidapi.com/spamakashrajtech/api/corona-virus-world-and-india-data/">Corona virus World and India data</a>- Under Code Snippets pick Python - Requests</li>
+<li>Goto this page for starters, the <a href="https://rapidapi.com/hub">RapidAPI Hub</a>- Under Code Snippets pick Python - Requests</li>
 </ul>
 <p>RapidAPI, you will select Python Requests type of code to work with you Notebook.</p>
 <ul>
@@ -436,6 +435,38 @@ Did you insert a valid key in X-RapidAPI-Key of API cell above?
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Using-a-API">
+<a class="anchor" href="#Using-a-API" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using a API<a class="anchor-link" href="#Using-a-API"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://corona-virus-world-and-india-data.p.rapidapi.com/api"</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'x-rapidapi-key'</span><span class="p">:</span> <span class="s2">"dec069b877msh0d9d0827664078cp1a18fajsn2afac35ae063"</span><span class="p">,</span>
+    <span class="s1">'x-rapidapi-host'</span><span class="p">:</span> <span class="s2">"corona-virus-world-and-india-data.p.rapidapi.com"</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Go-deeper-into-APIs">
 <a class="anchor" href="#Go-deeper-into-APIs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Go deeper into APIs<a class="anchor-link" href="#Go-deeper-into-APIs"> </a>
 </h3>
@@ -489,7 +520,7 @@ Did you insert a valid key in X-RapidAPI-Key of API cell above?
 
 
 
-  </div><a class="u-url" href="/FastPages/week6/rapidapi" hidden></a>
+  </div><a class="u-url" href="/FastPages/week7/rapidapi" hidden></a>
 </article>
 
       </div>
