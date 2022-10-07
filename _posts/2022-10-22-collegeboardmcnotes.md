@@ -9,18 +9,22 @@ comments: true
 
 
 ## 9/26/22
-### Program Design and Development Quiz
+## Program Design and Development Quiz
 Outline
 - 3 question quiz testing my knowledge of coding procedures
 - Score: 3/3
+
 Notes/Process
-- 
+- In this question I noticed a few things. 
+    - count is set to 1 outside of the loop
+    - 
 
 ## 9/4/22
 ## Collaboration Quiz
 Outline:
 - 3 question quiz testing my knowledge on collaboration
 - Score: 3/3
+
 Notes/Process
 - Most of the questions in this quiz were answered based on common sense. Some answers had more positive connotations than others so picking the right answer was easy.
 - I understood that facilitating collaboration between group members was important.
@@ -31,5 +35,7 @@ Notes/Process
 Outline
 - 6 question quiz testing my understanding of the behavior of code
 - Score: 6/6
+
 Notes/Process
+- tbd
 
