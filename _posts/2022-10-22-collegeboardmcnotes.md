@@ -15,13 +15,20 @@ Outline
 - Score: 3/3
 
 Notes/Process
-<img src="https://github.com/vivianknee/FastPages/blob/master/images/PDDq1.PNG?raw=true" width="350" height="250">
+![](/assets/images/PDDq1.PNG)
 - count is set to 1 outside of the loop
 - the loop adds 2 to the variable count each time meaning it is printing odd numbers
 - since the loop is set to stop once the count is greater than max, this means that the function will print all positive odd integers that are less than or qual to max
 
-<img src="https://github.com/vivianknee/FastPages/blob/master/images/PDDq2.PNG?raw=true" width="350" height="250">
+![](/assets/images/PDDq2.PNG)
+- the variable result is set to x + y
+- a new result variable is set to the previous result divided by x
+- therefore, the printed result must be (x + y)/x where x must not be 0(then it would be undefined)
 
+![](/assets/images/PDDq3.PNG)
+- newList is = to numList
+- the elements j and k are interchanged for numList and newList
+- since j and k are indices, they must be valid values, hence the values of j and k must both be between 1 and length(numList)
 
 
 ## 9/4/22
