@@ -46,7 +46,7 @@ Outline
 
 Notes/Process
 - There was a set of questions looking for what data was necessary to fulfill the task. For those questions, I used logic and reasoning to figure out what was necessary and what was not.
-![]({{ site.baseurl }}/images/PF1.PNG)
+![]({{ site.baseurl }}/images/PFq1.PNG)
 - this was a pretty self explanatory if statement. 
 - It sets y as a variable when x is less than 0 meaning if y follows the criteria , it will print the value.
 - if the criteria set by the variable are not met, nothing will print.
