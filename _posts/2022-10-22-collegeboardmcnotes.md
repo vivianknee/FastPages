@@ -7,8 +7,7 @@ title: CollegeBoard APCSP MC Notes
 comments: true
 ---
 
-## 9/26/22
-## Program Design and Development Quiz
+## Program Design and Development Quiz (9/26/22)
 Outline
 - 3 question quiz testing my knowledge of coding procedures
 - Score: 3/3
@@ -29,8 +28,7 @@ Notes/Process
 - the elements j and k are interchanged for numList and newList
 - since j and k are indices, they must be valid values, hence the values of j and k must both be between 1 and length(numList)
 
-## 9/4/22
-## Collaboration Quiz
+## Collaboration Quiz (9/4/22)
 Outline:
 - 3 question quiz testing my knowledge on collaboration
 - Score: 3/3
@@ -41,7 +39,7 @@ Notes/Process
 - I learned that user participation should be used to advance software development
 - I also learned that assembling a diverse team allows for multiple perspectives.
 
-## Program Function and Purpose Quiz
+## Program Function and Purpose Quiz (9/4/22)
 Outline
 - 6 question quiz testing my understanding of the behavior of code
 - Score: 6/6
