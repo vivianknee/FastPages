@@ -15,9 +15,14 @@ Outline
 - Score: 3/3
 
 Notes/Process
-- In this question I noticed a few things. 
-    - count is set to 1 outside of the loop
-    - 
+<img src="https://github.com/vivianknee/FastPages/blob/master/images/PDDq1.PNG?raw=true" width="350" height="250">
+- count is set to 1 outside of the loop
+- the loop adds 2 to the variable count each time meaning it is printing odd numbers
+- since the loop is set to stop once the count is greater than max, this means that the function will print all positive odd integers that are less than or qual to max
+
+<img src="https://github.com/vivianknee/FastPages/blob/master/images/PDDq2.PNG?raw=true" width="350" height="250">
+
+
 
 ## 9/4/22
 ## Collaboration Quiz
