@@ -7,7 +7,6 @@ title: CollegeBoard APCSP MC Notes
 comments: true
 ---
 
-
 ## 9/26/22
 ## Program Design and Development Quiz
 Outline
@@ -30,7 +29,6 @@ Notes/Process
 - the elements j and k are interchanged for numList and newList
 - since j and k are indices, they must be valid values, hence the values of j and k must both be between 1 and length(numList)
 
-
 ## 9/4/22
 ## Collaboration Quiz
 Outline:
@@ -49,5 +47,9 @@ Outline
 - Score: 6/6
 
 Notes/Process
-- tbd
+- There was a set of questions looking for what data was necessary to fulfill the task. For those questions, I used logic and reasoning to figure out what was necessary and what was not.
+![]({{ site.baseurl }}/images/PF1.PNG)
+- this was a pretty self explanatory if statement. 
+- It sets y as a variable when x is less than 0 meaning if y follows the criteria , it will print the value.
+- if the criteria set by the variable are not met, nothing will print.
 
