@@ -10,7 +10,8 @@ comments: true
 
 | Week | Sprint | Review Ticket | Summary |
 |-|-|-|-|
-| 6 |  | [Review Ticket 6]() | |
+| 7 | API | [Review Ticket 7](https://github.com/vivianknee/FastPages/issues/12#issue-1402364510) |  |
+| 6 | Deployment | N/A | We worked with AWS |
 | 5 | UI Starters | [Review Ticket 5](https://github.com/vivianknee/FastPages/issues/11#issue-1384505077) | This week we learned how to use HTML Fragments and Javascript to create objects, arrays, and datatables. Here is me using [Javascript with Jupyter notebook](https://vivianknee.github.io/FastPages/week5/jsKernel) and the kernel. I also made a separate [javascript table](https://vivianknee.github.io/FastPages/frontend/jsTable) to show what books I like. Finally, I made a [frontend](https://vivianknee.github.io/FastPages/_pages/Frontend.html) table using HTML. |
 | 4 | Python Web Server Project | [Review Ticket 4](https://github.com/vivianknee/FastPages/issues/10#issue-1378861672) | In the video I made for week 4, I go over my [CSP Journey and takeaways from the psychology video](https://vivianknee.github.io/FastPages/markdown/week4/2022/09/16/personalcspjourney.html) as well as the [process](https://vivianknee.github.io/FastPages/markdown/week4/2022/09/16/docker.html) I took to do my local server |
 | 3 | Creative Development | [Review Ticket 3](https://github.com/vivianknee/FastPages/issues/9#issue-1369289899) | This week, we focused on creating a sample create task in preparation for the AP exam using javascript and code.org app lab. Here is the [blog](https://vivianknee.github.io/FastPages/markdown/week3/2022/09/07/AppLabquiz.html) I wrote during the process. |
