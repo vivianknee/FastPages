@@ -47,7 +47,7 @@
     
         ,"post4": {
             "title": "Big Idea Project",
-            "content": ". Program Purpose and Function Our Programs function is to help people with different illnesses identify their sickness by entering various symptoms that we are pulling from a health API | . | Data Abstraction There will most likely be variables involved to make our code more organized. | . | Managing Complexity . | Procedural Abstraction . | Algorithm Implementation We are going to create a function that takes user inputs and compares them to a list of data that we have from the API. We will code the function to respond accordingly based on the user input. How is still to be determined | . | Testing |",
+            "content": ". .",
             "url": "https://vivianknee.github.io/FastPages/markdown/week5/2022/09/21/bigidea.html",
             "relUrl": "/markdown/week5/2022/09/21/bigidea.html",
             "date": " • Sep 21, 2022"
