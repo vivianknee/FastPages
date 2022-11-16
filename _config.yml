@@ -37,6 +37,7 @@ url: "https://vivianknee.github.io" # the base hostname & protocol for your site
 baseurl: "/FastPages" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
+
 minima:
   social_links:
     github: vivianknee
