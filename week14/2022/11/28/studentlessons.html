@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      14 min read
     
 </span></p>
 
@@ -737,6 +737,39 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Come back again!
+Total Number of Records:  3
+	 Product: Cheese
+	 Expired: True
+	 Cost: 15
+	 This product is no good
+
+
+	 Product: Wine
+	 Expired: False
+	 Cost: 75
+	 This product is too expensive
+
+
+	 Product: Pie
+	 Expired: False
+	 Cost: 15
+	 This is a cheap product
+
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -785,11 +818,9 @@ window.onload = wrap_img;
 
 <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Have humans ever reached the moon? a. False b. True"</span><span class="p">)</span> <span class="c1">#asks the question in terminal</span>
 <span class="k">if</span> <span class="p">(</span><span class="n">rsp</span> <span class="o">==</span> <span class="s2">"True"</span><span class="p">):</span>
-    <span class="n">answer</span> <span class="o">=</span> <span class="kc">True</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span> <span class="c1">#prints "is correct" if the rsp was correct</span>
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="n">answer</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
 
 <span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"How many hearts does an octopus have? a. 8 b. 4 c. 3 d. 1"</span><span class="p">)</span>
@@ -799,7 +830,8 @@ window.onload = wrap_img;
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
 
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Which of the following countries have won the world cup a. Brazil b. France c. Japan d. China"</span><span class="p">)</span>
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Which of the following countries have won the world cup?(Type your answer separated by ',') a. Brazil b. France c. Japan d. China"</span><span class="p">)</span>
+<span class="c1"># rsp = "a,b"</span>
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"Brazil"</span> <span class="ow">and</span> <span class="s2">"France"</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
