@@ -783,7 +783,7 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions."</span><span class="p">)</span> <span class="c1">#str(questions) turns the number 3 that is = to questions into a string that can be printed</span>
 <span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"Are you ready to take a test?"</span><span class="p">)</span>
 
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Have humans ever reached the moon?"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"a. False"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"b. True"</span><span class="p">)</span> <span class="c1">#asks the question in terminal</span>
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Have humans ever reached the moon? a. False b. True"</span><span class="p">)</span> <span class="c1">#asks the question in terminal</span>
 <span class="k">if</span> <span class="p">(</span><span class="n">rsp</span> <span class="o">==</span> <span class="s2">"True"</span><span class="p">):</span>
     <span class="n">answer</span> <span class="o">=</span> <span class="kc">True</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span> <span class="c1">#prints "is correct" if the rsp was correct</span>
@@ -792,15 +792,15 @@ window.onload = wrap_img;
     <span class="n">answer</span> <span class="o">=</span> <span class="kc">False</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
 
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"How many hearts does an octopus have?"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"a. 8"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"b. 4"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"c. 3"</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"d. 1"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"if"</span><span class="p">:</span>
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"How many hearts does an octopus have? a. 8 b. 4 c. 3 d. 1"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"3"</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
 
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Each 'if' command contains an '_________' to determine a true or false condition?"</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"expression"</span><span class="p">:</span>
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"Which of the following countries have won the world cup a. Brazil b. France c. Japan d. China"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"Brazil"</span> <span class="ow">and</span> <span class="s2">"France"</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
@@ -808,6 +808,29 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, vivian running /bin/python3
+You will be asked 3 questions.
+Question: Are you ready to take a test?
+Answer: 
+Question: Have humans ever reached the moon? a. False b. True
+yes is incorrect!
+Question: How many hearts does an octopus have? a. 8 b. 4 c. 3 d. 1
+True is incorrect!
+Question: Which of the following countries have won the world cup a. Brazil b. France c. Japan d. China
+3 is incorrect!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
