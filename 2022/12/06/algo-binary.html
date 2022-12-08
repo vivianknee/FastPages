@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      2 min read
     
 </span></p>
 
@@ -381,14 +381,7 @@ Sure I will play outside!
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Rules for Algorithm to Start (Determining Whether a Number is Even or Odd)<ul>
-<li>step/rule 1: start with any positive integer</li>
-<li>step/rule 2: if the preceding term is even; divide by 2</li>
-<li>step/rule 3: if the preceding term is odd; multiply by 3 and add 1</li>
-<li>step/rule 4: repeat steps until you arrive at 1</li>
-<li>fact: the sequence should ALWAYS end up at 1 if repeated.</li>
-</ul>
-</li>
+<li>Algorithm to Start (Determining Whether a Number is Even or Odd)</li>
 </ul>
 
 </div>
@@ -405,16 +398,15 @@ Sure I will play outside!
 
 <span class="n">varx</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter any positive Integer"</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">varx</span><span class="p">)</span>
-<span class="k">while</span> <span class="n">varx</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
-
+<span class="n">new</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">new</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">):</span> 
     <span class="k">if</span> <span class="p">(</span><span class="n">varx</span> <span class="o">%</span><span class="k">2</span> == 0):
-        <span class="n">varx</span> <span class="o">=</span> <span class="n">varx</span><span class="o">/</span><span class="mi">2</span>       
-        <span class="nb">print</span><span class="p">(</span><span class="n">varx</span><span class="p">)</span>                
+        <span class="n">new</span> <span class="o">==</span> <span class="n">varx</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"your new number is: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">new</span><span class="p">))</span>
+
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">varx</span> <span class="o">=</span> <span class="n">varx</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span>      
-        <span class="nb">print</span><span class="p">(</span><span class="n">varx</span><span class="p">)</span>              
-<span class="nb">print</span><span class="p">(</span><span class="n">varx</span><span class="p">)</span>  
+        <span class="n">new</span> <span class="o">==</span> <span class="n">varx</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Your new number is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">new</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -428,112 +420,10 @@ Sure I will play outside!
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>choose value for x
-6
-3.0
-10.0
-5.0
-16.0
-8.0
-4.0
-2.0
-1.0
-1.0
 </pre>
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Binary Search<ul>
-<li>search algorithm that finds the position of a target value within a sorted array. </li>
-<li>compares the target value to the middle element of the array. </li>
-<li>An algorithm for iterating to find a value inside a data set</li>
-<li>Binary Search Algorithm starts in the middle of a data set of numbers and eliminates half the data. This process repeats until the desired value is found or until all elements have been eliminated.</li>
-<li>In order to use binary search effectively and properly, data must be stored in order</li>
-<li>COLLEGE BOARD INDEX STARTS AT 1 NOT 0</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Heres an easy way to put it:</p>
-<ul>
-<li>binary search fidns the desired element by continuously chopping the search area in half</li>
-<li>say the element you are looking for is 'f'</li>
-</ul>
-<p>[a b c d e f g h]</p>
-<ul>
-<li>We would start in the middle at element 'd'</li>
-<li>
-<p>becuase our target is greater than d we will eliminate everything left of 'd' including 'd' (chopping it in half)</p>
-<p>[e f g h] is what now remains</p>
-<ul>
-<li>again we would 'chop in half'</li>
-<li>say we iterate through 'g' and 'h', our desired element is still not found so we would eliminate 'g; and 'h' and continue the process</li>
-</ul>
-<p>[e f]</p>
-<ul>
-<li>now we are down to 2 elements</li>
-<li>'chopping in half' will give us our desired element</li>
-</ul>
-<p>[f]</p>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">BinarySearch</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">):</span>
-
-    <span class="c1"># Repeat until the pointers low and high meet each other </span>
-    <span class="k">while</span> <span class="n">low</span> <span class="o">&lt;=</span> <span class="n">high</span><span class="p">:</span>
-
-        <span class="n">mid</span> <span class="o">=</span> <span class="n">low</span> <span class="o">+</span> <span class="p">(</span><span class="n">high</span> <span class="o">-</span> <span class="n">low</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span> <span class="c1"># find the middle (taking the higest index number plus the lowest and divided by two)</span>
-
-        <span class="k">if</span> <span class="n">array</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span> <span class="c1"># if desired number is the middle is found return desired number (middle number) </span>
-            <span class="k">return</span> <span class="n">mid</span>
-
-        <span class="k">elif</span> <span class="n">array</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">:</span> 
-            <span class="n">low</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
-
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">high</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>
-
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
-
-
-<span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
-<span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
-
-<span class="n">result</span> <span class="o">=</span> <span class="n">BinarySearch</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Element is present at index "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Not found"</span><span class="p">)</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
 
@@ -553,30 +443,15 @@ Sure I will play outside!
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Binary Search with Iteration<ul>
-<li>Compare x with the middle element.</li>
-<li>If x matches with the middle element, we return the mid index.</li>
-<li>Else if x is greater than the mid element, then x can only lie in the right (greater) half subarray after the mid element. Then we apply the algorithm again for the right half.</li>
-<li>Else if x is smaller, the target x must lie in the left (lower) half. So we apply the algorithm for the left half.</li>
-</ul>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Flow chart for Situation<ul>
+<li>FlowChart for Situation<ul>
 <li>You're playing a short game using a random number generator from 1 to 20</li>
 <li>On each turn, a player will generate 3 random numbers</li>
 <li>They get to keep the highest number that they generate as their score</li>
 </ul>
 </li>
 </ul>
-<p><img src="https://github.com/vivianknee/FastPages/blob/master/images/randomFlow.png?raw=true" alt="randomFlow"></p>
+<p><a href="https://docs.google.com/drawings/d/1_cPj4VegdhM9HvCq8o0PEbi6QhlcjS_8MHo2i8su0xA/edit?usp=sharing">Link to Google Drawing</a></p>
+<p><img src="https://github.com/vivianknee/FastPages/blob/master/images/googleDrawing.png?raw=true" alt="googleDrawing"></p>
 
 </div>
 </div>
@@ -594,8 +469,11 @@ Sure I will play outside!
 
 <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">num3</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span> <span class="mi">3</span><span class="p">)</span> <span class="c1">#generates a random number and equates it to num1, num2, and num3</span>
 <span class="n">Num</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">num1</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">num2</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">num3</span><span class="p">)])</span> <span class="c1">#adds num1, num2, and num3 to the list ‘Num’</span>
-<span class="n">newScore</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">Num</span><span class="p">)</span> <span class="c1">#uses max syntax to find the largest number in the list Num</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"You rolled the numbers "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">", "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">", "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num3</span><span class="p">)</span> <span class="o">+</span> <span class="s2">". Your score is: "</span> <span class="o">+</span> <span class="n">newScore</span><span class="p">)</span> <span class="c1">##prints new score</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">Num</span><span class="p">:</span> <span class="c1">#iterates through each number in the list Num</span>
+    <span class="n">newScore</span> <span class="o">=</span> <span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">Num</span><span class="p">)))</span> <span class="c1">#map makes the list a list of integers. uses max syntax to find the largest number in the list Num. </span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You rolled the numbers "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">Num</span><span class="p">)</span> <span class="o">+</span> <span class="s2">". Your score is: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">newScore</span><span class="p">))</span> <span class="c1">##prints new score</span>
 </pre></div>
 
     </div>
@@ -608,7 +486,7 @@ Sure I will play outside!
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>You rolled the numbers 15, 1, 4. Your score is: 4
+<pre>You rolled the numbers ['12', '2', '4']. Your score is: 12
 </pre>
 </div>
 </div>
