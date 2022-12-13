@@ -16,4 +16,4 @@ title: Student Lessons
 | Unit 3 Sections 12&13 | Calling and Developing Procedures | [Notes and HW](https://vivianknee.github.io/FastPages/2022/12/08/devlop-procedures.html) |
 | Unit 3 Sections 14&15 | Libraries and Random Values | [Notes and HW](https://vivianknee.github.io/FastPages/2022/12/12/lib-rand-values.html) |
 | Unit 3 Sections 16 | Simulations | [Notes and HW](https://vivianknee.github.io/FastPages/2022/13/12/simulations.html) |
-| Unit 3 Sections 17&18 | Algorithm Efficiency and Undecidable Problems | [Notes and HW]() |
+| Unit 3 Sections 17&18 | Algorithm Efficiency and Undecidable Problems | [Notes and HW](https://vivianknee.github.io/FastPages/2022/14/12/algo-und-problems.html) |
