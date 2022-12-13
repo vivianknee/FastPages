@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -367,15 +367,79 @@ When x=5  f(x)'= 20
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li>
-<p>Write a procedure that generates n random numbers, then sorts those numbers into lists of even and odd numbers (JS or Python, Python will be easier).</p>
-</li>
-<li>
-<p>Using NumPy and only coding in python cell, find the answer to the following questions: a. What is the derivative of 2x^5 - 6x^2 + 24x? b. What is the derivative of (13x^4 + 4x^2) / 2 when x = 9?</p>
-</li>
-<li>
-<p>Suppose you have a group of 10 dogs and 10 cats, and you want to create a random order for them. Show how random number generation could be used to create this random order.</p>
-</li>
+<li>Write a procedure that generates n random numbers, then sorts those numbers into lists of even and odd numbers (JS or Python, Python will be easier).</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="nb">list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1">#generating 100 random numbers in the range of 0-200 (in this case my n random numbers is 100. Im setting a range to prevent ridiculous numbers)</span>
+<span class="n">random</span><span class="o">.</span> <span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">200</span><span class="p">),</span> <span class="mi">100</span><span class="p">)</span> 
+<span class="k">def</span> <span class="nf">splitevenodd</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span> 
+   <span class="n">evenlist</span> <span class="o">=</span> <span class="p">[]</span> 
+   <span class="n">oddlist</span> <span class="o">=</span> <span class="p">[]</span> 
+   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">:</span> 
+        <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span> 
+            <span class="n">evenlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="n">oddlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Even lists:"</span><span class="p">,</span> <span class="n">evenlist</span><span class="p">)</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Odd lists:"</span><span class="p">,</span> <span class="n">oddlist</span><span class="p">)</span> 
+
+<span class="n">splitevenodd</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Using NumPy and only coding in python cell, find the answer to the following questions: a. What is the derivative of 2x^5 - 6x^2 + 24x? b. What is the derivative of (13x^4 + 4x^2) / 2 when x = 9?</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is the derivative of 2x^5 - 6x^2 + 24x?"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What is the derivative of 13x^4 + 4x^2 / 2 when x = 9?"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Suppose you have a group of 10 dogs and 10 cats, and you want to create a random order for them. Show how random number generation could be used to create this random order.</li>
 </ol>
 
 </div>
