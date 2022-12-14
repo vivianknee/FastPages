@@ -383,7 +383,11 @@ When x=5  f(x)'= 20
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 <span class="nb">list</span> <span class="o">=</span> <span class="p">[]</span>
 
-<span class="n">num</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span> <span class="n">sample</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">200</span><span class="p">),</span> <span class="mi">100</span><span class="p">)</span> <span class="c1">#generating 100 random numbers in the range of 0-200 (in this case my n random numbers is 100. Im setting a range to prevent ridiculous numbers)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"How many numbers would you like to generate?"</span><span class="p">))</span>
+<span class="nb">min</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What is the smallest number you would like to generate?"</span><span class="p">))</span>
+<span class="nb">max</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What is the biggest number you would like to generate?"</span><span class="p">))</span>
+
+<span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span> <span class="c1">#generating 100 random numbers in the range of 0-200 (in this case my n random numbers is 100. Im setting a range to prevent ridiculous numbers)</span>
 <span class="nb">list</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">splitevenodd</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span> 
@@ -394,8 +398,8 @@ When x=5  f(x)'= 20
             <span class="n">evenlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
         <span class="k">else</span><span class="p">:</span> 
             <span class="n">oddlist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> 
-   <span class="nb">print</span><span class="p">(</span><span class="s2">"Even lists:"</span><span class="p">,</span> <span class="n">evenlist</span><span class="p">)</span> 
-   <span class="nb">print</span><span class="p">(</span><span class="s2">"Odd lists:"</span><span class="p">,</span> <span class="n">oddlist</span><span class="p">)</span> 
+   <span class="nb">print</span><span class="p">(</span><span class="s2">"Even list:"</span><span class="p">,</span> <span class="n">evenlist</span><span class="p">)</span> 
+   <span class="nb">print</span><span class="p">(</span><span class="s2">"Odd list:"</span><span class="p">,</span> <span class="n">oddlist</span><span class="p">)</span> 
 
 <span class="n">splitevenodd</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
 </pre></div>
@@ -410,8 +414,8 @@ When x=5  f(x)'= 20
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Even lists: [134, 166, 68, 70, 2, 88, 146, 46, 42, 114, 110, 34, 90, 140, 112, 186, 170, 4, 56, 162, 184, 174, 156, 106, 22, 48, 144, 8, 190, 142, 6, 152, 116, 62, 96, 18, 164, 178, 28, 138, 128, 148, 66, 120, 84, 16, 0]
-Odd lists: [113, 37, 119, 167, 47, 143, 29, 139, 159, 87, 59, 11, 93, 115, 3, 7, 85, 71, 77, 5, 45, 165, 199, 131, 169, 151, 189, 191, 107, 187, 179, 39, 173, 175, 195, 105, 153, 81, 117, 121, 127, 69, 83, 25, 133, 89, 135, 53, 157, 23, 55, 111, 149]
+<pre>Even list: [34, 50, 80, 24, 50, 16, 98, 34, 88, 72]
+Odd list: [27, 83, 87, 43, 63, 9, 35, 85, 5, 79, 85, 7, 21, 81, 59]
 </pre>
 </div>
 </div>
@@ -450,11 +454,11 @@ Odd lists: [113, 37, 119, 167, 47, 143, 29, 139, 159, 87, 59, 11, 93, 115, 3, 7,
 
 <span class="c1">#-----------------------------------</span>
 
-<span class="n">eq2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mf">6.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="n">eq2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">poly1d</span><span class="p">([</span><span class="mf">6.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span> <span class="c1">#i simplified your derivative which shud be fine right?</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"g(x)=</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">eq2</span><span class="p">)</span>
 
 <span class="n">derivative2</span> <span class="o">=</span> <span class="n">eq2</span><span class="o">.</span><span class="n">deriv</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"The derivative of 13x^4 + 4x^2 / 2 when x = 9 is:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">derivative2</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The derivative of 13x^4 + 4x^2 / 2 (g(x)) when x = 9 is:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">derivative2</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
 </pre></div>
 
     </div>
