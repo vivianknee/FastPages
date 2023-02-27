@@ -235,6 +235,58 @@ A better model:
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This is a code segment that maintains cors security and only allows the frontend site to fetch from a specific url, which in our case would be the backend deployed server.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">fetch</span><span class="p">(</span><span class="s1">'http://example.com/api/data'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="n">method</span><span class="p">:</span> <span class="s1">'GET'</span><span class="p">,</span>
+  <span class="n">headers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s1">'Content-Type'</span><span class="p">:</span> <span class="s1">'application/json'</span><span class="p">,</span>
+    <span class="s1">'Access-Control-Allow-Origin'</span><span class="p">:</span> <span class="s1">'*'</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+<span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">response</span> <span class="o">=&gt;</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+<span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">data</span> <span class="o">=&gt;</span> <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+<span class="o">.</span><span class="n">catch</span><span class="p">(</span><span class="n">error</span> <span class="o">=&gt;</span> <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">error</span><span class="p">));</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>the '*' means that the backend url can be accessed with any request from any site through cors. If you only wanted the backend site to be accessed by the frontend, you would replace the asterisk with your site url.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here another way to bypass cors while still having it implemented. We used this method in trimester 1.</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
