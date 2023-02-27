@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -334,6 +334,13 @@ A better model:
 <h2 id="CORS-but-deployed-backend">
 <a class="anchor" href="#CORS-but-deployed-backend" aria-hidden="true"><span class="octicon octicon-link"></span></a>CORS but deployed backend<a class="anchor-link" href="#CORS-but-deployed-backend"> </a>
 </h2>
+<ul>
+<li>The Access Control Allow Origin header is actually automatically implemented when you setup your backend server on AWS. When you set up the nginx configuration files, you'll notice:
+<img src="https://github.com/vivianknee/FastPages/blob/master/images/aws.jpg?raw=true" alt="aws">
+As you can see the same exact line <strong>'Access-Control-Allow-Origin': '*'</strong> is present in the nginx files in sites-available and sites-enabled</li>
+<li>because of this, your frontend server doesn't need any code to bypass cors because its already implemented on the server side. The extension mentioned previously is also no longer needed</li>
+</ul>
+
 </div>
 </div>
 </div>
