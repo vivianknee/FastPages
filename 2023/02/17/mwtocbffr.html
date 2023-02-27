@@ -145,11 +145,16 @@ window.onload = wrap_img;
 <ul>
 <li>Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.</li>
 <li>Its essentially a security feature</li>
-<li>But unfortunately CORS is very annoying and this error can prevent any sort of backend connection</li>
+<li>But unfortunately CORS is very annoying and this error can prevent any sort of backend connection without proper code. Usually this error will appear when a header for cors is not specified and your backend url is not permitted by cors</li>
 </ul>
 <p><img src="https://github.com/vivianknee/FastPages/blob/master/images/error.jpg?raw=true" alt="error"></p>
 <p>I'm sure you've seen it... 
-So heres a method to bypass CORS locally. Eventually, when both your frontend and backend are deployed, it's good practice to have CORS implemented since your site could have some security risk if you simply bypass it. However, for local testing, this is a great tool to speed up testing, debugging, etc.</p>
+So heres a method to bypass CORS locally. Eventually, when both your frontend and backend are deployed, it's good practice to have CORS implemented since your site could have some security risk if you simply bypass it. 
+In this blog I've provided two methods to get around cors</p>
+<ol>
+<li>Local method with google extension</li>
+<li>Access-Control-Allow-Origin</li>
+</ol>
 
 </div>
 </div>
