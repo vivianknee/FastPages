@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -222,13 +222,50 @@ So heres a method to bypass CORS locally. Eventually, when both your frontend an
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>What is the Access-Control-Allow-Origin response header?</p>
 <ul>
 <li>Another method we have done in the past is adding a 'Access-Control-Allow-Origin' header on the requested resource</li>
+<li>The Access-Control-Allow-Origin header is included in the response(response comes from backend) from site B to a request(fetch from frontend) site A, and identifies the permitted origin of the request. A web browser compares the Access-Control-Allow-Origin with the requesting website's origin and permits access to the response if they match.
+<img src="https://github.com/vivianknee/FastPages/blob/master/images/sites.jpg?raw=true" alt="sites">
+A better model:
+<img src="https://github.com/vivianknee/FastPages/blob/master/images/system.jpg?raw=true" alt="system">
+</li>
 </ul>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">const</span> <span class="n">url</span> <span class="o">=</span> <span class="s2">"backendurl.com"</span><span class="p">;</span>
+
+  <span class="o">//</span> <span class="n">prepare</span> <span class="n">fetch</span> <span class="n">GET</span> <span class="n">options</span>
+  <span class="n">const</span> <span class="n">options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">method</span><span class="p">:</span> <span class="s1">'GET'</span><span class="p">,</span> <span class="o">//</span> <span class="o">*</span><span class="n">GET</span><span class="p">,</span> <span class="n">POST</span><span class="p">,</span> <span class="n">PUT</span><span class="p">,</span> <span class="n">DELETE</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span>
+    <span class="n">mode</span><span class="p">:</span> <span class="s1">'cors'</span><span class="p">,</span> <span class="o">//</span> <span class="n">no</span><span class="o">-</span><span class="n">cors</span><span class="p">,</span> <span class="o">*</span><span class="n">cors</span><span class="p">,</span> <span class="n">same</span><span class="o">-</span><span class="n">origin</span>
+    <span class="n">cache</span><span class="p">:</span> <span class="s1">'default'</span><span class="p">,</span> <span class="o">//</span> <span class="o">*</span><span class="n">default</span><span class="p">,</span> <span class="n">no</span><span class="o">-</span><span class="n">cache</span><span class="p">,</span> <span class="n">reload</span><span class="p">,</span> <span class="n">force</span><span class="o">-</span><span class="n">cache</span><span class="p">,</span> <span class="n">only</span><span class="o">-</span><span class="k">if</span><span class="o">-</span><span class="n">cached</span>
+    <span class="n">credentials</span><span class="p">:</span> <span class="s1">'omit'</span><span class="p">,</span> <span class="o">//</span> <span class="n">include</span><span class="p">,</span> <span class="o">*</span><span class="n">same</span><span class="o">-</span><span class="n">origin</span><span class="p">,</span> <span class="n">omit</span>
+    <span class="n">headers</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s1">'Content-Type'</span><span class="p">:</span> <span class="s1">'application/json'</span>
+      <span class="o">//</span> <span class="s1">'Content-Type'</span><span class="p">:</span> <span class="s1">'application/x-www-form-urlencoded'</span><span class="p">,</span>
+    <span class="p">},</span>
+  <span class="p">};</span>
+  <span class="o">//</span> <span class="n">prepare</span> <span class="n">fetch</span> <span class="n">PUT</span> <span class="n">options</span><span class="p">,</span> <span class="n">clones</span> <span class="k">with</span> <span class="n">JS</span> <span class="n">Spread</span> <span class="n">Operator</span> <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+  <span class="n">const</span> <span class="n">put_options</span> <span class="o">=</span> <span class="p">{</span><span class="o">...</span><span class="n">options</span><span class="p">,</span> <span class="n">method</span><span class="p">:</span> <span class="s1">'PUT'</span><span class="p">};</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
