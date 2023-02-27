@@ -150,6 +150,15 @@ window.onload = wrap_img;
 <li>Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.</li>
 <li>Its essentially a security feature</li>
 </ul>
+<p>How it goes down:</p>
+<ol>
+<li>The browser(frontend) sends the GET request with an extra Origin HTTP header to service.example.com (deployed backend) containing the domain that served the parent page <br>
+<code>Origin: http://www.example.com</code> // frontend url</li>
+<li>The server at service.example.com sends one of these responses:
+<br>
+<code>Access-Control-Allow-Origin: http://www.example.com</code> //backend allows the frontend url to access its contents <br>
+<code>Access-Control-Allow-Origin: *</code> //backend allows any site to access its contents</li>
+</ol>
 
 </div>
 </div>
