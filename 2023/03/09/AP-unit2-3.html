@@ -13,14 +13,12 @@
 <link rel="canonical" href="https://vivianknee.github.io/FastPages/2023/03/09/AP-unit2-3.html" />
 <meta property="og:url" content="https://vivianknee.github.io/FastPages/2023/03/09/AP-unit2-3.html" />
 <meta property="og:site_name" content="Vivian Ni" />
-<meta property="og:image" content="https://vivianknee.github.io/FastPages/images/python.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-03-09T00:00:00-06:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://vivianknee.github.io/FastPages/images/python.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Unit 2.3 Extracting Information from Data, Pandas" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-09T00:00:00-06:00","datePublished":"2023-03-09T00:00:00-06:00","description":"Data connections, trends, and correlation. Pandas is introduced as it could be valuable for PBL, data validation, as well as understanding College Board Topics.","headline":"Unit 2.3 Extracting Information from Data, Pandas","image":"https://vivianknee.github.io/FastPages/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/FastPages/2023/03/09/AP-unit2-3.html"},"url":"https://vivianknee.github.io/FastPages/2023/03/09/AP-unit2-3.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-09T00:00:00-06:00","datePublished":"2023-03-09T00:00:00-06:00","description":"Data connections, trends, and correlation. Pandas is introduced as it could be valuable for PBL, data validation, as well as understanding College Board Topics.","headline":"Unit 2.3 Extracting Information from Data, Pandas","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/FastPages/2023/03/09/AP-unit2-3.html"},"url":"https://vivianknee.github.io/FastPages/2023/03/09/AP-unit2-3.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/FastPages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://vivianknee.github.io/FastPages/feed.xml" title="Vivian Ni" /><link rel="shortcut icon" type="image/x-icon" href="/FastPages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -119,7 +117,6 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#Files-To-Get">Files To Get </a></li>
 <li class="toc-entry toc-h1"><a href="#Pandas-and-DataFrames">Pandas and DataFrames </a></li>
 <li class="toc-entry toc-h1"><a href="#Cleaning-Data">Cleaning Data </a></li>
 <li class="toc-entry toc-h1"><a href="#Extracting-Info">Extracting Info </a>
@@ -158,23 +155,6 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Files-To-Get">
-<a class="anchor" href="#Files-To-Get" aria-hidden="true"><span class="octicon octicon-link"></span></a>Files To Get<a class="anchor-link" href="#Files-To-Get"> </a>
-</h1>
-<p>Save this file to your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/2023-03-09-AP-unit2-3.ipynb">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/2023-03-09-AP-unit2-3.ipynb</a></p>
-<p>Save these files into a subfolder named <strong>files</strong> in your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/data.csv">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/data.csv</a></p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/grade.json">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/grade.json</a></p>
-<p>Save this image into a subfolder named <strong>images</strong> in your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/images/table_dataframe.png">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/images/table_dataframe.png</a></p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
