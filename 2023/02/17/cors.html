@@ -390,6 +390,7 @@ So here's a method to bypass CORS locally. Eventually, when both your frontend a
 </li>
 <li>As you can see the header <code>"Access-Control-Allow-Origin" *</code> is present in the nginx files in sites-available and sites-enabled</li>
 <li>The line <code>proxy_pass http://localhost:8777</code> is allowing the frontend local url to access the deployed backend site</li>
+<li>Another thing to note however is that the "<em>" allows any frontend site to access the backend. In order to secure this, you need to put something different in place of the </em>. Will go over this in the next sections</li>
 </ul>
 
 </div>
@@ -440,17 +441,13 @@ So here's a method to bypass CORS locally. Eventually, when both your frontend a
 <h4 id="Deployed-Backend">
 <a class="anchor" href="#Deployed-Backend" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deployed Backend<a class="anchor-link" href="#Deployed-Backend"> </a>
 </h4>
+<p><img src="https://github.com/vivianknee/FastPages/blob/master/images/aws.jpg?raw=true" alt="aws"></p>
 <ul>
-<li>works the same way as Local x Deployed ?</li>
+<li>In the Local x Deployed we talked about the the header <code>"Access-Control-Allow-Origin" *</code> that is present in the nginx files in sites-available and sites-enabled</li>
+<li>Instead of using the "*", replace it with the url of your frontend site.</li>
+<li>This secures you server and ensures that the only website that can access your backend server is the your frontend server!
+here is an example…</li>
 </ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>This is a code segment that maintains cors security and only allows the frontend site to fetch from a specific url, which in our case would be the backend deployed server.</p>
 
 </div>
 </div>
@@ -462,65 +459,18 @@ So here's a method to bypass CORS locally. Eventually, when both your frontend a
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">fetch</span><span class="p">(</span><span class="s1">'http://example.com/api/data'</span><span class="p">,</span> <span class="p">{</span>
-  <span class="n">method</span><span class="p">:</span> <span class="s1">'GET'</span><span class="p">,</span>
-  <span class="n">headers</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s1">'Content-Type'</span><span class="p">:</span> <span class="s1">'application/json'</span><span class="p">,</span>
-    <span class="s1">'Access-Control-Allow-Origin'</span><span class="p">:</span> <span class="s1">'*'</span>
-  <span class="p">}</span>
-<span class="p">})</span>
-<span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">response</span> <span class="o">=&gt;</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
-<span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">data</span> <span class="o">=&gt;</span> <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
-<span class="o">.</span><span class="n">catch</span><span class="p">(</span><span class="n">error</span> <span class="o">=&gt;</span> <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">error</span><span class="p">));</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>the '*' means that the backend url can be accessed with any request from any site through cors. If you only wanted the backend site to be accessed by the frontend, you would replace the asterisk with your site url.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Here's another way. We used this method in trimester 1.</p>
-
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">const</span> <span class="n">url</span> <span class="o">=</span> <span class="s2">"backendurl.com"</span><span class="p">;</span>
-
-  <span class="o">//</span> <span class="n">prepare</span> <span class="n">fetch</span> <span class="n">GET</span> <span class="n">options</span>
-  <span class="n">const</span> <span class="n">options</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="n">method</span><span class="p">:</span> <span class="s1">'GET'</span><span class="p">,</span> <span class="o">//</span> <span class="o">*</span><span class="n">GET</span><span class="p">,</span> <span class="n">POST</span><span class="p">,</span> <span class="n">PUT</span><span class="p">,</span> <span class="n">DELETE</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span>
-    <span class="n">mode</span><span class="p">:</span> <span class="s1">'cors'</span><span class="p">,</span> <span class="o">//</span> <span class="n">no</span><span class="o">-</span><span class="n">cors</span><span class="p">,</span> <span class="o">*</span><span class="n">cors</span><span class="p">,</span> <span class="n">same</span><span class="o">-</span><span class="n">origin</span>
-    <span class="n">cache</span><span class="p">:</span> <span class="s1">'default'</span><span class="p">,</span> <span class="o">//</span> <span class="o">*</span><span class="n">default</span><span class="p">,</span> <span class="n">no</span><span class="o">-</span><span class="n">cache</span><span class="p">,</span> <span class="n">reload</span><span class="p">,</span> <span class="n">force</span><span class="o">-</span><span class="n">cache</span><span class="p">,</span> <span class="n">only</span><span class="o">-</span><span class="k">if</span><span class="o">-</span><span class="n">cached</span>
-    <span class="n">credentials</span><span class="p">:</span> <span class="s1">'omit'</span><span class="p">,</span> <span class="o">//</span> <span class="n">include</span><span class="p">,</span> <span class="o">*</span><span class="n">same</span><span class="o">-</span><span class="n">origin</span><span class="p">,</span> <span class="n">omit</span>
-    <span class="n">headers</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s1">'Content-Type'</span><span class="p">:</span> <span class="s1">'application/json'</span>
-      <span class="o">//</span> <span class="s1">'Content-Type'</span><span class="p">:</span> <span class="s1">'application/x-www-form-urlencoded'</span><span class="p">,</span>
-    <span class="p">},</span>
-  <span class="p">};</span>
-  <span class="o">//</span> <span class="n">prepare</span> <span class="n">fetch</span> <span class="n">PUT</span> <span class="n">options</span><span class="p">,</span> <span class="n">clones</span> <span class="k">with</span> <span class="n">JS</span> <span class="n">Spread</span> <span class="n">Operator</span> <span class="p">(</span><span class="o">...</span><span class="p">)</span>
-  <span class="n">const</span> <span class="n">put_options</span> <span class="o">=</span> <span class="p">{</span><span class="o">...</span><span class="n">options</span><span class="p">,</span> <span class="n">method</span><span class="p">:</span> <span class="s1">'PUT'</span><span class="p">};</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">location</span> <span class="o">/</span> <span class="p">{</span>
+    <span class="n">proxy_pass</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">8085</span><span class="p">;</span>
+    <span class="c1"># Preflighted requests</span>
+    <span class="k">if</span> <span class="p">(</span><span class="err">$</span><span class="n">request_method</span> <span class="o">=</span> <span class="n">OPTIONS</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="n">add_header</span> <span class="err">“</span><span class="n">Access</span><span class="o">-</span><span class="n">Control</span><span class="o">-</span><span class="n">Allow</span><span class="o">-</span><span class="n">Credentials</span><span class="err">”</span>  <span class="err">“</span><span class="n">true</span><span class="err">”</span><span class="p">;</span>
+            <span class="n">add_header</span> <span class="err">“</span><span class="n">Access</span><span class="o">-</span><span class="n">Control</span><span class="o">-</span><span class="n">Allow</span><span class="o">-</span><span class="n">Origin</span><span class="err">”</span>  <span class="err">“</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">nighthawkcoders</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="err">”</span><span class="p">;</span>
+            <span class="n">add_header</span> <span class="err">“</span><span class="n">Access</span><span class="o">-</span><span class="n">Control</span><span class="o">-</span><span class="n">Allow</span><span class="o">-</span><span class="n">Methods</span><span class="err">”</span> <span class="err">“</span><span class="n">GET</span><span class="p">,</span> <span class="n">POST</span><span class="p">,</span> <span class="n">OPTIONS</span><span class="p">,</span> <span class="n">HEAD</span><span class="err">”</span><span class="p">;</span>
+            <span class="n">add_header</span> <span class="err">“</span><span class="n">Access</span><span class="o">-</span><span class="n">Control</span><span class="o">-</span><span class="n">Allow</span><span class="o">-</span><span class="n">MaxAge</span><span class="err">”</span>  <span class="mi">600</span><span class="p">;</span>
+            <span class="n">add_header</span> <span class="err">“</span><span class="n">Access</span><span class="o">-</span><span class="n">Control</span><span class="o">-</span><span class="n">Allow</span><span class="o">-</span><span class="n">Headers</span><span class="err">”</span> <span class="err">“</span><span class="n">Content</span><span class="o">-</span><span class="n">Type</span><span class="p">,</span> <span class="n">Authorization</span><span class="p">,</span> <span class="n">x</span><span class="o">-</span><span class="n">csrf</span><span class="o">-</span><span class="n">token</span><span class="err">”</span><span class="p">;</span>
+            <span class="k">return</span> <span class="mi">200</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 
     </div>
