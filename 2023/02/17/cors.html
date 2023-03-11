@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      5 min read
     
 </span></p>
 
@@ -134,6 +134,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#Deployed-x-Local">Deployed x Local </a>
 <ul>
+<li class="toc-entry toc-h4"><a href="#Deployed-Frontend">Deployed Frontend </a></li>
 <li class="toc-entry toc-h4"><a href="#Local-Backend">Local Backend </a></li>
 </ul>
 </li>
@@ -228,8 +229,8 @@ So here's a method to bypass CORS locally. Eventually, when both your frontend a
 <a class="anchor" href="#Setup-local-frontend" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup local frontend<a class="anchor-link" href="#Setup-local-frontend"> </a>
 </h4>
 <ul>
-<li>Use the url from the picture above to write a 'fetch' statement (doesn't have to be like whats written below) to reference the local url and your api</li>
 <li>run the command <code>bundle exec jekyll serve</code> in terminal to start your frontend locally </li>
+<li>Use the url from the picture above to write a 'fetch' statement (doesn't have to be like whats written below) to reference the local url and your api</li>
 </ul>
 
 </div>
@@ -387,7 +388,7 @@ So here's a method to bypass CORS locally. Eventually, when both your frontend a
 <li>When you set up the nginx configuration files, you'll notice:
 <img src="https://github.com/vivianknee/FastPages/blob/master/images/aws.jpg?raw=true" alt="aws">
 </li>
-<li>As you can see the header <strong>'Access-Control-Allow-Origin': '*'</strong> is present in the nginx files in sites-available and sites-enabled</li>
+<li>As you can see the header <code>"Access-Control-Allow-Origin" *</code> is present in the nginx files in sites-available and sites-enabled</li>
 <li>The line <code>proxy_pass http://localhost:8777</code> is allowing the frontend local url to access the deployed backend site</li>
 </ul>
 
@@ -401,8 +402,12 @@ So here's a method to bypass CORS locally. Eventually, when both your frontend a
 <a class="anchor" href="#Deployed-x-Local" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deployed x Local<a class="anchor-link" href="#Deployed-x-Local"> </a>
 </h2>
 <ul>
-<li>This combination should work identical to the Local x Local combination. Thus any solutions for that combination also apply to this combination.
-#### Deployed Frontend</li>
+<li>This combination should work identical to the Local x Local combination. Thus any solutions for that combination also apply to this combination.</li>
+</ul>
+<h4 id="Deployed-Frontend">
+<a class="anchor" href="#Deployed-Frontend" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deployed Frontend<a class="anchor-link" href="#Deployed-Frontend"> </a>
+</h4>
+<ul>
 <li>Go to your repository on github</li>
 <li>when you scroll down, under the section called "Environment", click the link that says "github pages"</li>
 <li>Then click "view deployment"</li>
@@ -436,12 +441,7 @@ So here's a method to bypass CORS locally. Eventually, when both your frontend a
 <a class="anchor" href="#Deployed-Backend" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deployed Backend<a class="anchor-link" href="#Deployed-Backend"> </a>
 </h4>
 <ul>
-<li>The Access Control Allow Origin header is actually automatically implemented when you setup your backend server on AWS. </li>
-<li>setup AWS by following the deployment guide on the APCSP Website</li>
-<li>When you set up the nginx configuration files, you'll notice:
-<img src="https://github.com/vivianknee/FastPages/blob/master/images/aws.jpg?raw=true" alt="aws">
-As you can see the same exact line <strong>'Access-Control-Allow-Origin': '*'</strong> is present in the nginx files in sites-available and sites-enabled</li>
-<li>NOTE: because of this, your frontend server doesn't need any code to bypass cors because its already implemented on the server side. The extension mentioned previously is also no longer needed when both frontend and backend are deployed</li>
+<li>works the same way as Local x Deployed ?</li>
 </ul>
 
 </div>
