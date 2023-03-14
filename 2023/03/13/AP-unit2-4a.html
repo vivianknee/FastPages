@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      10 min read
     
 </span></p>
 
@@ -239,15 +239,13 @@ window.onload = wrap_img;
 <p>Define columns, initialization, and CRUD methods for users table in sqlite.db</p>
 </blockquote>
 <ul>
-<li>Comment on these items in the class, purpose and defintion.<ul>
-<li>class User</li>
-<li>db.Model inheritance</li>
+<li>Comment on these items in the class, purpose and definition.<ul>
+<li>class User:define the properties of the user including name, dob, password, etc.    - db.Model inheritance: he ability to create a new model class that inherits from an existing model class, thereby inheriting all of its fields and methods</li>
 <li>
-<em>init</em> method</li>
+<em>init</em> method: constructor of the user objects</li>
 <li>
-<code>@property</code>, <code>@&lt;column&gt;.setter</code>
-</li>
-<li>create, read, update, delete methods</li>
+<code>@property</code>, <code>@&lt;column&gt;.setter</code>: these are the getter and setter methods respectively</li>
+<li>create, read, update, delete methods: these methods allow you to manipulate and access the data in the sqlite.db. Read allows you to view the data, create builds the data into the table, and update and delete do as the name states.</li>
 </ul>
 </li>
 </ul>
@@ -418,14 +416,11 @@ window.onload = wrap_img;
 <h2 id="Initial-Data">
 <a class="anchor" href="#Initial-Data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Data<a class="anchor-link" href="#Initial-Data"> </a>
 </h2>
-<blockquote>
-<p>Uses SQLALchemy db.create_all() to initialize rows into sqlite.db</p>
-</blockquote>
 <ul>
 <li>Comment on how these work?<ol>
-<li>Create All Tables from db Object</li>
-<li>User Object Constructors</li>
-<li>Try / Except </li>
+<li>Create All Tables from db Object: Uses SQLALchemy db.create_all() to initialize rows into sqlite.db </li>
+<li>User Object Constructors: uses getter and setter methods to initialize user objects.</li>
+<li>Try / Except : this feature is cleaning out bad or replicated data. It ensures that there will be no user with the same id.</li>
 </ol>
 </li>
 </ul>
@@ -476,6 +471,25 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Created new uid toby
+Created new uid niko
+Created new uid lex
+Created new uid whit
+Created new uid indi
+Created new uid raven
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -490,8 +504,7 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>Comment on purpose of following<ol>
-<li>User.query.filter_by</li>
-<li>user.password</li>
+<li>User.query.filter_by:this filters the database by uid and identifies the user whose uid matches the input    2. user.password: once the uid is received, the function check-credentials compares that inputted password to the password of the user with the inputted uid. In essence, this is like a security feature. </li>
 </ol>
 </li>
 </ul>
@@ -542,10 +555,21 @@ window.onload = wrap_img;
 </blockquote>
 <ul>
 <li>Comment on purpose of following<ol>
-<li>user.find_by_uid() and try/except</li>
-<li>user = User(...)</li>
-<li>user.dob and try/except</li>
-<li>user.create() and try/except</li>
+<li>user.find_by_uid() and try/except:- the find_by_uid() filters the database by uid and identifies the user whose uid matches the input. it then returns that user.        - the try/except feature is cleaning out bad or replicated data. It ensures that there will be no user with the same id.</li>
+<li>user = User(...)<ul>
+<li>this initializes the user objects before date of birth</li>
+</ul>
+</li>
+<li>user.dob and try/except:  <ul>
+<li>user.dob is a placeholder for the birth date of the user. It ensures that users write their date of birth in the right format otherwise an exception occurs and the date of birth is set to the default.</li>
+<li>the try/except feature is cleaning out bad or replicated data. It ensures that there will be no user with the same id.</li>
+</ul>
+</li>
+<li>user.create() and try/except:  <ul>
+<li>user.create() creates a new user to add the the sqlite table based off of the input it receives from the user.</li>
+<li>the try/except feature is cleaning out bad or replicated data. It ensures that there will be no user with the same id.</li>
+</ul>
+</li>
 </ol>
 </li>
 </ul>
@@ -603,6 +627,22 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Invalid date 2006-13-05 require YYYY-mm-dd, date defaulted to 03-14-2023
+Created
+ {'id': 7, 'name': 'Vivian', 'uid': 'vivian', 'dob': '03-14-2023', 'age': 0}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -647,6 +687,52 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[{'id': 1,
+  'name': 'Thomas Edison',
+  'uid': 'toby',
+  'dob': '02-11-1847',
+  'age': 176},
+ {'id': 2,
+  'name': 'Nikola Tesla',
+  'uid': 'niko',
+  'dob': '03-14-2023',
+  'age': 0},
+ {'id': 3,
+  'name': 'Alexander Graham Bell',
+  'uid': 'lex',
+  'dob': '03-14-2023',
+  'age': 0},
+ {'id': 4,
+  'name': 'Eli Whitney',
+  'uid': 'whit',
+  'dob': '03-14-2023',
+  'age': 0},
+ {'id': 5,
+  'name': 'Indiana Jones',
+  'uid': 'indi',
+  'dob': '10-21-1920',
+  'age': 102},
+ {'id': 6,
+  'name': 'Marion Ravenwood',
+  'uid': 'raven',
+  'dob': '10-21-1921',
+  'age': 101},
+ {'id': 7, 'name': 'Vivian', 'uid': 'vivian', 'dob': '03-14-2023', 'age': 0}]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -657,7 +743,6 @@ window.onload = wrap_img;
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h1>
 <ul>
-<li>Add this Blog to you own Blogging site.  In the Blog add notes and observations on each code cell.</li>
 <li>Change blog to your own database.</li>
 <li>Add additional CRUD<ul>
 <li>Add Update functionality to this blog.</li>
