@@ -164,10 +164,22 @@ window.onload = wrap_img;
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+
+<pre><code>- the columns of a database aka the information that populates the datatable.
+</code></pre>
 <ul>
-<li>What is the purpose of identity Column in SQL database?</li>
-<li>What is the purpose of a primary key in SQL database?</li>
-<li>What are the Data Types in SQL table?</li>
+<li>What is the purpose of identity Column in SQL database?<ul>
+<li>the purpose is to have unique rows of data and to be able to differentiate different users. </li>
+</ul>
+</li>
+<li>What is the purpose of a primary key in SQL database?<ul>
+<li>the primary key has to be unique because it is used as an identifier for different people. For example, name would not be a good primary key because two people could have the same name.</li>
+</ul>
+</li>
+<li>What are the Data Types in SQL table?<ul>
+<li>strings, integers, boolean, images</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -182,7 +194,7 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span>
 
-<span class="n">database</span> <span class="o">=</span> <span class="s1">'files/sqlite.db'</span> <span class="c1"># this is location of database</span>
+<span class="n">database</span> <span class="o">=</span> <span class="s1">'instance/sqlite.db'</span> <span class="c1"># this is location of database</span>
 
 <span class="k">def</span> <span class="nf">schema</span><span class="p">():</span>
     
@@ -206,6 +218,24 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(0, 'id', 'INTEGER', 1, None, 1)
+(1, '_name', 'VARCHAR(255)', 1, None, 0)
+(2, '_uid', 'VARCHAR(255)', 1, None, 0)
+(3, '_password', 'VARCHAR(255)', 1, None, 0)
+(4, '_dob', 'DATE', 0, None, 0)
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -265,6 +295,25 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 'Thomas Edison', 'toby', 'sha256$gRhudbL9RNf1qOP4$6b84e9244bb4c39e031818978b9ee4fd7ee055fe5eabe89409f90fae329c6fb1', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$0cdBBYDROTNdHLaO$1b971fdcf8906b6ef0c8dbb6d1b8d2b533e184294e74d21a0a4d0e10ce468ff7', '2023-03-16')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$1X5Y8NoVgH0fgt2p$555eb91c22b67ccde3a75fbc72ede3c5dec40dc892e21d24296e7b1ee60e74b6', '2023-03-16')
+(4, 'Eli Whitney', 'whit', 'sha256$neAZVOgyPJZdAhCI$1f9f742f555e8623ef2b82b104623c53d5cf4e4ac065bfe668a1687fb6832ed3', '2023-03-16')
+(5, 'Indiana Jones', 'indi', 'sha256$BjUVuGIU4TXfUSl1$d023a0dc98c4cbee132c31d7bca105d3d67bc024b5e98800f7466037df264c9e', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$tPS7jBri7vMiR3Yp$f52f04634886508e3d5f370bfef2099fa99e3b50db31c9a58c9233909a433336', '1921-10-21')
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
