@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      7 min read
     
 </span></p>
 
@@ -252,10 +252,23 @@ window.onload = wrap_img;
 <p>Uses SQL SELECT statement to read data</p>
 </blockquote>
 <ul>
-<li>What is a connection object?  After you google it, what do you think it does?</li>
-<li>Same for cursor object?</li>
-<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
-<li>Is "results" an object?  How do you know?</li>
+<li>What is a connection object? After you google it, what do you think it does?<ul>
+<li>Each open SQLite database is represented by a Connection object, which is created using sqlite3.connect() . Their main purpose is creating Cursor objects, and Transaction control.</li>
+</ul>
+</li>
+<li>Same for cursor object?<ul>
+<li>simplifies the code for the user. an instance using which you can invoke methods that execute SQLite statements, fetch data from the result sets of the queries. </li>
+</ul>
+</li>
+<li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?<ul>
+<li>the cursor object contains attributes like special variables, function variables, and class variables</li>
+<li>conn object contains attributes like special variables and function variables</li>
+</ul>
+</li>
+<li>Is "results" an object?  How do you know?<ul>
+<li>results is an object because it has attributes</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -298,25 +311,6 @@ window.onload = wrap_img;
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, 'Thomas Edison', 'toby', 'sha256$gRhudbL9RNf1qOP4$6b84e9244bb4c39e031818978b9ee4fd7ee055fe5eabe89409f90fae329c6fb1', '1847-02-11')
-(2, 'Nikola Tesla', 'niko', 'sha256$0cdBBYDROTNdHLaO$1b971fdcf8906b6ef0c8dbb6d1b8d2b533e184294e74d21a0a4d0e10ce468ff7', '2023-03-16')
-(3, 'Alexander Graham Bell', 'lex', 'sha256$1X5Y8NoVgH0fgt2p$555eb91c22b67ccde3a75fbc72ede3c5dec40dc892e21d24296e7b1ee60e74b6', '2023-03-16')
-(4, 'Eli Whitney', 'whit', 'sha256$neAZVOgyPJZdAhCI$1f9f742f555e8623ef2b82b104623c53d5cf4e4ac065bfe668a1687fb6832ed3', '2023-03-16')
-(5, 'Indiana Jones', 'indi', 'sha256$BjUVuGIU4TXfUSl1$d023a0dc98c4cbee132c31d7bca105d3d67bc024b5e98800f7466037df264c9e', '1920-10-21')
-(6, 'Marion Ravenwood', 'raven', 'sha256$tPS7jBri7vMiR3Yp$f52f04634886508e3d5f370bfef2099fa99e3b50db31c9a58c9233909a433336', '1921-10-21')
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -329,8 +323,15 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+<li>Compare create() in both SQL lessons.  What is better or worse in the two implementations?<ul>
+<li>out of the two create(), i think the sqlite3 method using conn and cur is better. It is able to accomplish the same thing with less code. It is less complicated and just as efficient. </li>
+</ul>
+</li>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?<ul>
+<li>SQL INSERT is a command used to add new records or rows of data to a database table</li>
+<li>User <strong>init</strong> is a method used in object-oriented programming languages like Python. The <strong>init</strong> method is used to initialize the properties or attributes of an object when it is created.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
 
@@ -374,7 +375,7 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#create()</span>
+<span class="n">create</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -443,7 +444,7 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#update()</span>
+<span class="n">update</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -462,10 +463,19 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?<ul>
+<li>When you perform a delete operation on a SQLite database, you are permanently removing data from the database. If you accidentally delete the wrong data or forget to include a WHERE clause in your delete statement, you can end up losing valuable data.</li>
+</ul>
+</li>
 </ul>
 </blockquote>
+<ul>
+<li>In the print statements, what is the "f" and what does {uid} do?<ul>
+<li>{uid} gets the uid of the user in question</li>
+<li>f is the syntax for formatted string literals. Inside this string, you can write a Python expression between { } characters that can refer to variables or literal values.</li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
@@ -504,7 +514,7 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#delete()</span>
+<span class="n">delete</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -523,7 +533,10 @@ window.onload = wrap_img;
 <blockquote>
 <p>CRUD and Schema interactions from one location by running menu. Observe input at the top of VSCode, observe output underneath code cell.</p>
 <ul>
-<li>Why does the menu repeat?</li>
+<li>Why does the menu repeat?<ul>
+<li>a recursion is happening. As the function continues, it calls itself, thus the menu is always repeating</li>
+</ul>
+</li>
 <li>Could you refactor this menu?  Make it work with a List?</li>
 </ul>
 </blockquote>
@@ -563,6 +576,20 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Perform Jupyter 'Run All' prior to starting menu
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
