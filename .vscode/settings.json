@@ -25,6 +25,7 @@
         "seaborn",
         "Siri",
         "sklearn",
-        "splitevenodd"
+        "splitevenodd",
+        "sqlalchemy"
     ]
 }
