@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      16 min read
     
 </span></p>
 
@@ -155,6 +155,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#--Record-your-findings-when-testing-the-time-elapsed-of-the-different-algorithms.">- Record your findings when testing the time elapsed of the different algorithms. </a></li>
+<li class="toc-entry toc-h2"><a href="#the-answer-is-option-3">the answer is option 3 </a></li>
+<li class="toc-entry toc-h2"><a href="#the-answer-is-False">the answer is False </a></li>
 </ul>
 </li>
 </ul><!--
@@ -909,6 +911,352 @@ Time taken: 2.0933010578155518 seconds
 <p>Complete the Time and Space Complexity analysis questions linked below.
 <a href="https://www.geeksforgeeks.org/practice-questions-time-complexity-analysis/">Practice</a></p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>What is the time, and space complexity of the following code:<ul>
+<li>O(N * M) time, O(1) space</li>
+<li>O(N + M) time, O(N + M) space</li>
+<li>O(N + M) time, O(1) space</li>
+<li>O(N * M) time, O(N + M) space</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+  <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">random</span><span class="p">()</span>
+ 
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">M</span><span class="p">):</span>
+  <span class="n">b</span><span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="n">random</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>the answer is option 3</p>
+<ul>
+<li>this is because the first loop is O(N) and the second loop is O(M). Since N and M are independent variables, so we can’t say which one is the leading term. Therefore Time complexity of the given problem will be O(N+M).</li>
+<li>Since variables size does not depend on the size of the input, therefore  Space Complexity will be constant or O(1)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>What is the time complexity of the following code: <ul>
+<li>O(N)</li>
+<li>O(N*log(N))</li>
+<li>O(N * Sqrt(N))</li>
+<li>O(N*N)</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">N</span><span class="p">)):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="n">j</span><span class="p">;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>the answer is option 4</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>What is the time complexity of the following code: <ul>
+<li>O(n)</li>
+<li>O(N log N)</li>
+<li>O(n^2)</li>
+<li>O(n^2Logn)</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">j</span><span class="p">)):</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>the answer is option 2</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>What does it mean when we say that an algorithm X is asymptotically more efficient than Y?<ul>
+<li>X will always be a better choice for small inputs</li>
+<li>X will always be a better choice for large inputs</li>
+<li>Y will always be a better choice for small inputs</li>
+<li>X will always be a better choice for all inputs</li>
+</ul>
+</li>
+</ol>
+<p>the answer is option 2</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>What is the time complexity of the following code:<ul>
+<li>O(N)</li>
+<li>O(Sqrt(N))</li>
+<li>O(N / 2)</li>
+<li>O(log N)</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">N</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+  <span class="n">a</span> <span class="o">+=</span> <span class="n">i</span>
+  <span class="n">i</span> <span class="o">//=</span> <span class="mi">2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>the answer is option 4</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Which of the following best describes the useful criterion for comparing the efficiency of algorithms?<ul>
+<li>Time</li>
+<li>Memory</li>
+<li>Both of the above</li>
+<li>None of the above</li>
+</ul>
+</li>
+</ol>
+<p>the answer is option 3.</p>
+<ul>
+<li>this is because both time and memory are things that programmers must take into consideration when determining the efficiency of algorithms. Coders need to ensure that the algorithm doesn't take up too much memory but also make sure the program runs in reasonable time.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>How is time complexity measured?<ul>
+<li>By counting the number of algorithms in an algorithm.</li>
+<li>By counting the number of primitive operations performed by the algorithm on a given input size.</li>
+<li>By counting the size of data input to the algorithm.</li>
+<li>None of the above</li>
+</ul>
+</li>
+</ol>
+<p>the answer is option 2</p>
+<ul>
+<li>Time complexity is measured by counting the fundamental operations for the computation that the algorithm needs to perform</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>What will be the time complexity of the following code?<ul>
+<li>O(n)</li>
+<li>O(k)</li>
+<li>O(logkn)</li>
+<li>O(lognk)</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">*</span><span class="n">k</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="the-answer-is-option-3">
+<a class="anchor" href="#the-answer-is-option-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>the answer is option 3<a class="anchor-link" href="#the-answer-is-option-3"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>What will be the time complexity of the following code?<ul>
+<li>n</li>
+<li>(n+1)</li>
+<li>n(n-1)</li>
+<li>n(n+1)</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+    <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="o">+</span><span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>the answer is option 3</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Algorithm A and B have a worst-case running time of O(n) and O(logn), respectively. Therefore, algorithm B always runs faster than algorithm A.<ul>
+<li>True</li>
+<li>False</li>
+</ul>
+</li>
+</ol>
+<h2 id="the-answer-is-False">
+<a class="anchor" href="#the-answer-is-False" aria-hidden="true"><span class="octicon octicon-link"></span></a>the answer is False<a class="anchor-link" href="#the-answer-is-False"> </a>
+</h2>
 </div>
 </div>
 </div>
