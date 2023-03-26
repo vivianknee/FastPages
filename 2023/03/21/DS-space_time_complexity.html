@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      16 min read
+      18 min read
     
 </span></p>
 
@@ -156,7 +156,6 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h2"><a href="#--Record-your-findings-when-testing-the-time-elapsed-of-the-different-algorithms.">- Record your findings when testing the time elapsed of the different algorithms. </a></li>
 <li class="toc-entry toc-h2"><a href="#the-answer-is-option-3">the answer is option 3 </a></li>
-<li class="toc-entry toc-h2"><a href="#the-answer-is-False">the answer is False </a></li>
 </ul>
 </li>
 </ul><!--
@@ -961,7 +960,7 @@ Time taken: 2.0933010578155518 seconds
 <p>the answer is option 3</p>
 <ul>
 <li>this is because the first loop is O(N) and the second loop is O(M). Since N and M are independent variables, so we can’t say which one is the leading term. Therefore Time complexity of the given problem will be O(N+M).</li>
-<li>Since variables size does not depend on the size of the input, therefore  Space Complexity will be constant or O(1)</li>
+<li>Since variables size does not depend on the size of the input, therefore Space Complexity will be constant or O(1). The algorithm stores the sum of N random numbers in one variable which is a. Thus the only space being used is the variable a thus the space is always 1.</li>
 </ul>
 
 </div>
@@ -990,10 +989,10 @@ Time taken: 2.0933010578155518 seconds
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">N</span><span class="p">)):</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="n">j</span><span class="p">;</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">N</span><span class="p">)):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="n">j</span>
 </pre></div>
 
     </div>
@@ -1007,6 +1006,9 @@ Time taken: 2.0933010578155518 seconds
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>the answer is option 4</p>
+<ul>
+<li>there are two nested loops that both iterate over the same collection, thus the time taken to complete the algorithm grows quadratically with the size of the collection. </li>
+</ul>
 
 </div>
 </div>
@@ -1035,8 +1037,8 @@ Time taken: 2.0933010578155518 seconds
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
-  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">j</span><span class="p">)):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">):</span> <span class="c1">#iterates over the second half of the range from "n//2" to "n".</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">j</span><span class="p">)):</span> <span class="c1">#the step size, "pow(2,j)", finds the 2^"j". So, the step size of the loop doubles with each iteration.</span>
         <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">+</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
 </pre></div>
 
@@ -1051,6 +1053,9 @@ Time taken: 2.0933010578155518 seconds
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>the answer is option 2</p>
+<ul>
+<li>the algorithm appears to be dividing n/2 which is a characteristic of binary search. Binary search appears as a log function so this algorithm's time complexity is N log N</li>
+</ul>
 
 </div>
 </div>
@@ -1068,6 +1073,10 @@ Time taken: 2.0933010578155518 seconds
 </li>
 </ol>
 <p>the answer is option 2</p>
+<ul>
+<li>The worst-case time complexity of an algorithm is a measure of the largest amount of time it takes to run for any input size n. When we say that algorithm X is asymptotically more efficient than algorithm Y, we mean that X has a smaller worst-case time complexity than Y. This implies that as the input size increases towards infinity, X will eventually become faster than Y for large enough inputs.</li>
+<li>For example, if the worst-case time complexity of algorithm X is O(n log n) and the worst-case time complexity of algorithm Y is O(n^2), we say that X is asymptotically more efficient than Y, because the growth rate of X is slower than that of Y as the input size increases. In practice, this means that as the input size gets larger, X will become faster than Y for large enough inputs.</li>
+</ul>
 
 </div>
 </div>
@@ -1098,8 +1107,8 @@ Time taken: 2.0933010578155518 seconds
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">i</span> <span class="o">=</span> <span class="n">N</span>
 <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
-  <span class="n">a</span> <span class="o">+=</span> <span class="n">i</span>
-  <span class="n">i</span> <span class="o">//=</span> <span class="mi">2</span>
+  <span class="n">a</span> <span class="o">+=</span> <span class="n">i</span> <span class="c1"># adds the current value of "i" to the value of "a" and assigns the result to "a".</span>
+  <span class="n">i</span> <span class="o">//=</span> <span class="mi">2</span> <span class="c1">#divides "i" by 2 and assigns result to "i". halves "i" in each iteration of the loop.</span>
 </pre></div>
 
     </div>
@@ -1113,6 +1122,9 @@ Time taken: 2.0933010578155518 seconds
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>the answer is option 4</p>
+<ul>
+<li>based on how the code works, I can determine that every time it iterates, the value of "i" is being halved and added and assigned to the variable a. As "i" is halved more and more, it slowly approaches 0 thus I can imagine that N decreases in larger quantities at first but slows down later which follows a pattern of log N.</li>
+</ul>
 
 </div>
 </div>
@@ -1151,7 +1163,7 @@ Time taken: 2.0933010578155518 seconds
 </ol>
 <p>the answer is option 2</p>
 <ul>
-<li>Time complexity is measured by counting the fundamental operations for the computation that the algorithm needs to perform</li>
+<li>To determine the time complexity of an algorithm, we first identify the operations that the algorithm performs, and then we count the number of times each operation is executed as a function of the input size n.</li>
 </ul>
 
 </div>
@@ -1164,8 +1176,8 @@ Time taken: 2.0933010578155518 seconds
 <li>What will be the time complexity of the following code?<ul>
 <li>O(n)</li>
 <li>O(k)</li>
-<li>O(logkn)</li>
-<li>O(lognk)</li>
+<li>O(logk(n))</li>
+<li>O(logn(k))</li>
 </ul>
 </li>
 </ol>
@@ -1224,8 +1236,8 @@ Time taken: 2.0933010578155518 seconds
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span> <span class="c1">#iterates "n" times, with "i" taking on values from 0 to n-1.</span>
+  <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span> <span class="c1"># iterates "i" times, with "j" taking on values from 0 to i-1.</span>
     <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="o">+</span><span class="mi">1</span>
 </pre></div>
 
@@ -1240,6 +1252,9 @@ Time taken: 2.0933010578155518 seconds
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>the answer is option 3</p>
+<ul>
+<li>the first for statement runs (n) times. the second for runs (n-1) times because "i" takes on values from 0 to n-1. Thus the overall time complexity is n*(n-1)</li>
+</ul>
 
 </div>
 </div>
@@ -1254,9 +1269,11 @@ Time taken: 2.0933010578155518 seconds
 </ul>
 </li>
 </ol>
-<h2 id="the-answer-is-False">
-<a class="anchor" href="#the-answer-is-False" aria-hidden="true"><span class="octicon octicon-link"></span></a>the answer is False<a class="anchor-link" href="#the-answer-is-False"> </a>
-</h2>
+<p>the answer is False</p>
+<ul>
+<li>to have a worst case running time means that as the input size increases towards infinity, algorithm B will eventually become faster than A for large enough inputs. However for smaller inputs, it may be the case that algorithm A is faster, thus B does not always run faster than A</li>
+</ul>
+
 </div>
 </div>
 </div>
