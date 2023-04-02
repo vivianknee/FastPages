@@ -182,11 +182,11 @@ window.onload = wrap_img;
 <span class="nb">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span>  
 
 <span class="c1"># What do you notice in the output?</span>
-<span class="c1"># there are no duplicates. each type of number is outputted only once</span>
-<span class="c1"># the numbers are outputted in increasing order 1,2,3</span>
+    <span class="c1"># there are no duplicates. each type of number is outputted only once</span>
+    <span class="c1"># the numbers are outputted in increasing order 1,2,3</span>
 
 <span class="c1"># Why do you think Sets are in the same tech talk as Hashmaps/Hashtables?</span>
-<span class="c1"># they are in the same ted talk because datastructures and hashtables also do not permit duplicates</span>
+    <span class="c1"># they are in the same ted talk because datastructures and hashtables also do not permit duplicates</span>
 </pre></div>
 
     </div>
@@ -256,7 +256,7 @@ window.onload = wrap_img;
 <span class="p">}</span>
 
 <span class="c1"># What data structures do you see?</span>
-<span class="c1"># strings, integers, list, dictionary</span>
+    <span class="c1"># strings, integers, list, dictionary</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
@@ -359,13 +359,11 @@ The Man
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Jack Antonoff'</span><span class="p">,</span> <span class="s1">'Joel Little'</span><span class="p">,</span> <span class="s1">'Taylor Swift'</span><span class="p">,</span> <span class="s1">'Louis Bell'</span><span class="p">,</span> <span class="s1">'Frank Dukes'</span><span class="p">]</span>
+<span class="n">my_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"producer"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_set</span><span class="p">)</span> 
 
 <span class="c1"># What can you change to make sure there are no duplicate producers?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
-
-<span class="c1"># Printing the dictionary</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
+    <span class="c1">#use the "set" syntax to remove duplicates</span>
 </pre></div>
 
     </div>
@@ -378,7 +376,7 @@ The Man
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight'}, 'producer': ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Louis Bell', 'Frank Dukes']}
+<pre>{'Taylor Swift', 'Frank Dukes', 'Joel Little', 'Louis Bell', 'Jack Antonoff'}
 </pre>
 </div>
 </div>
@@ -398,9 +396,9 @@ The Man
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="mi">19</span><span class="p">:</span> <span class="s2">"All Of The Girls You Loved Before"</span><span class="p">})</span>
 
-<span class="c1"># How would add an additional genre to the dictionary, like electropop? </span>
-<span class="c1"># </span>
-<span class="c1"># </span>
+<span class="c1"># How would you add an additional genre to the dictionary, like electropop? </span>
+    <span class="c1">#use 'append'</span>
+<span class="n">lover_album</span><span class="p">[</span><span class="s2">"genre"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"electropop"</span><span class="p">)</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
@@ -416,7 +414,7 @@ The Man
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}, 'producer': ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Louis Bell', 'Frank Dukes']}
+<pre>{'title': 'Lover', 'artist': 'Taylor Swift', 'year': 2019, 'genre': ['Pop', 'Synth-pop', 'electropop'], 'tracks': {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}, 'producer': ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Louis Bell', 'Frank Dukes']}
 </pre>
 </div>
 </div>
@@ -436,10 +434,6 @@ The Man
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># iterate using a for loop for key and value</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
-
-<span class="c1"># Write your own code to print tracks in readable format</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
 </pre></div>
 
     </div>
@@ -455,9 +449,69 @@ The Man
 <pre>title: Lover
 artist: Taylor Swift
 year: 2019
-genre: ['Pop', 'Synth-pop']
+genre: ['Pop', 'Synth-pop', 'electropop']
 tracks: {1: 'I Forgot That You Existed', 2: 'Cruel Summer', 3: 'Lover', 4: 'The Man', 5: 'The Archer', 6: 'I Think He Knows', 7: 'Miss Americana &amp; The Heartbreak Prince', 8: 'Paper Rings', 9: 'Cornelia Street', 10: 'Death By A Thousand Cuts', 11: 'London Boy', 12: "Soon You'll Get Better (feat. Dixie Chicks)", 13: 'False God', 14: 'You Need To Calm Down', 15: 'Afterglow', 16: 'Me! (feat. Brendon Urie of Panic! At The Disco)', 17: "It's Nice To Have A Friend", 18: 'Daylight', 19: 'All Of The Girls You Loved Before'}
 producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Louis Bell', 'Frank Dukes']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Title:"</span><span class="p">,</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"title"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Artist:"</span><span class="p">,</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"artist"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Year:"</span><span class="p">,</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"year"</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Genre:"</span><span class="p">,</span> <span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">lover_album</span><span class="p">[</span><span class="s2">"genre"</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Tracks:"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">track_number</span><span class="p">,</span> <span class="n">track_title</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"  </span><span class="si">{}</span><span class="s2">: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">track_number</span><span class="p">,</span> <span class="n">track_title</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Title: Lover
+Artist: Taylor Swift
+Year: 2019
+Genre: Pop, Synth-pop, electropop
+Tracks:
+  1: I Forgot That You Existed
+  2: Cruel Summer
+  3: Lover
+  4: The Man
+  5: The Archer
+  6: I Think He Knows
+  7: Miss Americana &amp; The Heartbreak Prince
+  8: Paper Rings
+  9: Cornelia Street
+  10: Death By A Thousand Cuts
+  11: London Boy
+  12: Soon You'll Get Better (feat. Dixie Chicks)
+  13: False God
+  14: You Need To Calm Down
+  15: Afterglow
+  16: Me! (feat. Brendon Urie of Panic! At The Disco)
+  17: It's Nice To Have A Friend
+  18: Daylight
+  19: All Of The Girls You Loved Before
 </pre>
 </div>
 </div>
@@ -485,11 +539,25 @@ producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Loui
 <span class="n">search</span><span class="p">()</span>
 
 <span class="c1"># This is a very basic code segment, how can you improve upon this code?</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+    <span class="c1"># Add more functionality to the search function by allowing the user to search for specific information within the dictionary (e.g. album title, artist, year, genre, tracks, etc.) instead of just searching for a specific key.</span>
+    <span class="c1"># Use more descriptive error messages to help the user understand why their search was invalid</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['Pop', 'Synth-pop', 'electropop']
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -508,17 +576,16 @@ producer: ['Taylor Swift', 'Jack Antonoff', 'Joel Little', 'Taylor Swift', 'Loui
 </li>
 </ul>
 <p><img src="https://github.com/vivianknee/FastPages/blob/master/images/listvdic.jpg?raw=true" alt="listvdic"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Expand upon the code given to you, possible improvements in comments</li>
-<li>
-<p>Build your own album showing features of a python dictionary</p>
-</li>
-<li>
-<p>For Mr. Yeung's class: Justify your favorite Taylor Swift song, answer may effect seed</p>
-<ul>
-<li>my favorite taylor swift song is <em>Cruel Summer</em> because it brings back the best memories from the best summer of my life. I got to spend a month at UCSD and met a bunch of great people there. At the end of the program, the staff held a dance and my friends and I would just go crazy when <em>Cruel Summer</em> was playing. Even now, when I hear that song, I think of those memories and those people.</li>
-</ul>
-</li>
+<li>Build your own album showing features of a python dictionary</li>
 </ul>
 
 </div>
