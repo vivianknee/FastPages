@@ -621,9 +621,72 @@ Tracks:
         <span class="mi">18</span><span class="p">:</span> <span class="s2">"sour grapes"</span>
     <span class="p">}</span>
 <span class="p">}</span>
+
+<span class="k">def</span> <span class="nf">print_album</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Artists:"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">artist</span> <span class="ow">in</span> <span class="n">vivian_album</span><span class="p">[</span><span class="s2">"artists"</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"- </span><span class="si">{</span><span class="n">artist</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Genre:"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">genre</span> <span class="ow">in</span> <span class="n">vivian_album</span><span class="p">[</span><span class="s2">"genre"</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"- </span><span class="si">{</span><span class="n">genre</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">Tracks:"</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">track_number</span><span class="p">,</span> <span class="n">track_title</span> <span class="ow">in</span> <span class="n">vivian_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">track_number</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">track_title</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">print_album</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Artists:
+- The Weekend
+- Billie Eilish
+- Joji
+- keshi
+- Rex Orange County
+- SZA
+- clairo
+- Taylor Swift
+
+Genre:
+- Pop
+- indie-pop
+- lofi
+- Rap
+
+Tracks:
+1. After Hours
+2. Cruel Summer
+3. Sanctuary
+4. Its You
+5. Summer
+6. Amazing
+7. Best Friend
+8. Kill Bill
+9. Snooze
+10. Amobea
+11. Die for You
+12. Save your Tears
+13. good girls go to hell
+14. My Future
+15. Watch
+16. Bellyache
+17. cupid
+18. sour grapes
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
