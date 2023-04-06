@@ -79,7 +79,6 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 ![Full Stack]({{site.baseurl}}/images/fullstack.png)
 
-
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is transported of the network. For College Board and future Computer Knowledge you should become familiar with the following ...
 
 ```
@@ -108,8 +107,9 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 ### Fault Tolerance
 > Watch both Daily videos for 4.2
-
 - Complete the network activity, summarize your understanding of fault tolerance.
+
+![Computer Networks]({{site.baseurl}}/images/networks.png)
 
 
 ### Parallel and Distributed Computing
@@ -121,6 +121,7 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 
 > Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.
+
 - Review this [article](https://www.anyscale.com/blog/writing-your-first-distributed-python-application-with-ray)...  Can you get parallel code on images to work more effectively?  I have not tried Ray.
 
 - Code example from ChatGPT using squares.  This might be more interesting if nums we generated to be a lot bigger.
