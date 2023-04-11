@@ -150,7 +150,10 @@ The "network" layer is responsible for ***routing data packets between networks*
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily video 4.3. Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
-- What is naturally Distributed in Frontend/Backend architecture?  
+- What is naturally Distributed in Frontend/Backend architecture? 
+    - workload: The frontend and backend components typically run on separate machines or servers, allowing them to handle different tasks independently. This distribution of workload can help improve performance and scalability, as each component can be optimized for its specific tasks and resources can be allocated more efficiently.
+    - data storage: The backend component typically handles data storage and retrieval, allowing the frontend component to focus on presentation and user interaction.
+    - communication: The two components communicate via APIs or other protocols, allowing them to exchange data and coordinate their actions. 
 
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
 
