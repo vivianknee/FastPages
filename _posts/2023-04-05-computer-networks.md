@@ -155,6 +155,7 @@ The "network" layer is responsible for ***routing data packets between networks*
     - data storage: The backend component typically handles data storage and retrieval, allowing the frontend component to focus on presentation and user interaction.
     - communication: The two components communicate via APIs or other protocols, allowing them to exchange data and coordinate their actions. 
 
+
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there are options in this command for parallel computing within the server that runs python/gunicorn. Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
     - The command sets an environment variable `GUNICORN_CMD_ARGS` with the value `--workers=1 --bind=0.0.0.0:8086` in a Dockerfile.
     - The option `--workers=1` in `GUNICORN_CMD_ARGS` specifies the number of worker processes that Gunicorn should spawn. In this case, it is set to 1, meaning that Gunicorn will only use a single worker process to handle incoming requests.
