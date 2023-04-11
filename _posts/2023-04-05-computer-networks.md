@@ -47,13 +47,13 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - The bandwidth of a computer network is the maximum amount of data that can be sent in a fixed amount of time.
     - Bandwidth is usually measured in bits per second
 
-- Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+- Complete Vocabulary Matching Activity.  Incorporate this into your learnings from the year. To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
+    - Path- a: is a sequence of directly connected computing devices that begins at the sender and ends at the receiver.
+    - Route- e: is the process of finding a path from sender to receiver.
+    - Computer System- b: a group of computing devices and programs working together for a common purpose.
+    - Computer Device- c: a physical artifact that can run a program. some examples include computers, tablets, servers, routers, and smart sensors.
+    - Bandwidth- d: the maximum amount of data that can be sent in a fixed amount of time.
+    - Computer Network- f: a group of interconnected computing devices capable of sending or receiving data.
 
 > Watch/review College Board Daily Video 4.1.2
 
