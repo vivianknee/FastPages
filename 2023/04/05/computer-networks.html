@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      10 min read
     
 </span></p>
 
@@ -307,12 +307,15 @@ window.onload = wrap_img;
 </blockquote>
 
 <ul>
-  <li>
-    <p>What is naturally Distributed in Frontend/Backend architecture?</p>
+  <li>What is naturally Distributed in Frontend/Backend architecture?
+    <ul>
+      <li>workload: The frontend and backend components typically run on separate machines or servers, allowing them to handle different tasks independently. This distribution of workload can help improve performance and scalability, as each component can be optimized for its specific tasks and resources can be allocated more efficiently.</li>
+      <li>data storage: The backend component typically handles data storage and retrieval, allowing the frontend component to focus on presentation and user interaction.</li>
+      <li>communication: The two components communicate via APIs or other protocols, allowing them to exchange data and coordinate their actions.</li>
+    </ul>
   </li>
-  <li>
-    <p>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a></p>
-  </li>
+  <li>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a>
+</li>
 </ul>
 
 <blockquote>
