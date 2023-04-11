@@ -47,6 +47,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - The bandwidth of a computer network is the maximum amount of data that can be sent in a fixed amount of time.
     - Bandwidth is usually measured in bits per second
 
+
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from the year. To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
     - Path- a: is a sequence of directly connected computing devices that begins at the sender and ends at the receiver.
     - Route- e: is the process of finding a path from sender to receiver.
@@ -76,6 +77,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - HTTP is a protocol used by the world wide web: **True**
         - used for transferring data between web servers and web clients
 
+
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprietary) communication protocols.
     - Access to the internet depends on the ability to connect a computing device to an internet connected device.
@@ -93,6 +95,8 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - The world wide web uses the internet
 
 - Go over AP videos, vocabulary, and essential knowledge. Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas
+
+![Internet]({{site.baseurl}}/images/internetdiagram.png)
 
 ![Full Stack]({{site.baseurl}}/images/fullstack.png)
 
