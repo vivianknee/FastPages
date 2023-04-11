@@ -155,12 +155,16 @@ The "network" layer is responsible for ***routing data packets between networks*
     - data storage: The backend component typically handles data storage and retrieval, allowing the frontend component to focus on presentation and user interaction.
     - communication: The two components communicate via APIs or other protocols, allowing them to exchange data and coordinate their actions. 
 
-- Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
+- Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there are options in this command for parallel computing within the server that runs python/gunicorn. Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
+    - The command sets an environment variable `GUNICORN_CMD_ARGS` with the value `--workers=1 --bind=0.0.0.0:8086` in a Dockerfile.
+    - The option `--workers=1` in `GUNICORN_CMD_ARGS` specifies the number of worker processes that Gunicorn should spawn. In this case, it is set to 1, meaning that Gunicorn will only use a single worker process to handle incoming requests.
+    - Therefore, this command does not enable parallel computing within the server that runs Python/Gunicorn. Instead, it restricts Gunicorn to using only one worker process, which may limit its ability to handle multiple requests concurrently. However, setting the number of workers to 1 may be appropriate for some applications with low traffic volume or for development purposes.
 
 
-> Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.
+> Last week we discussed parallel computing on local machine.  There are many options. Here is something to get parallel computing work with a tool called Ray.
 
 - Review this [article](https://www.anyscale.com/blog/writing-your-first-distributed-python-application-with-ray)...  Can you get parallel code on images to work more effectively?  I have not tried Ray.
+    - For image processing tasks, the appropriate parallelization strategy might involve using a data parallel approach, where the same computation is applied to different parts of the image simultaneously. 
 
 - Code example from ChatGPT using squares.  This might be more interesting if nums we generated to be a lot bigger.
 
