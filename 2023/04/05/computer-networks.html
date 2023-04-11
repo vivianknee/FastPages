@@ -314,21 +314,26 @@ window.onload = wrap_img;
       <li>communication: The two components communicate via APIs or other protocols, allowing them to exchange data and coordinate their actions.</li>
     </ul>
   </li>
-  <li>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a>
-</li>
+  <li>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there are options in this command for parallel computing within the server that runs python/gunicorn. Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a>
+    <ul>
+      <li>The command sets an environment variable <code class="language-plaintext highlighter-rouge">GUNICORN_CMD_ARGS</code> with the value <code class="language-plaintext highlighter-rouge">--workers=1 --bind=0.0.0.0:8086</code> in a Dockerfile.</li>
+      <li>The option <code class="language-plaintext highlighter-rouge">--workers=1</code> in <code class="language-plaintext highlighter-rouge">GUNICORN_CMD_ARGS</code> specifies the number of worker processes that Gunicorn should spawn. In this case, it is set to 1, meaning that Gunicorn will only use a single worker process to handle incoming requests.</li>
+      <li>Therefore, this command does not enable parallel computing within the server that runs Python/Gunicorn. Instead, it restricts Gunicorn to using only one worker process, which may limit its ability to handle multiple requests concurrently. However, setting the number of workers to 1 may be appropriate for some applications with low traffic volume or for development purposes.</li>
+    </ul>
+  </li>
 </ul>
 
 <blockquote>
-  <p>Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.</p>
+  <p>Last week we discussed parallel computing on local machine.  There are many options. Here is something to get parallel computing work with a tool called Ray.</p>
 </blockquote>
 
 <ul>
-  <li>
-    <p>Review this <a href="https://www.anyscale.com/blog/writing-your-first-distributed-python-application-with-ray">article</a>…  Can you get parallel code on images to work more effectively?  I have not tried Ray.</p>
+  <li>Review this <a href="https://www.anyscale.com/blog/writing-your-first-distributed-python-application-with-ray">article</a>…  Can you get parallel code on images to work more effectively?  I have not tried Ray.
+    <ul>
+      <li>For image processing tasks, the appropriate parallelization strategy might involve using a data parallel approach, where the same computation is applied to different parts of the image simultaneously.</li>
+    </ul>
   </li>
-  <li>
-    <p>Code example from ChatGPT using squares.  This might be more interesting if nums we generated to be a lot bigger.</p>
-  </li>
+  <li>Code example from ChatGPT using squares.  This might be more interesting if nums we generated to be a lot bigger.</li>
 </ul>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">ray</span>
