@@ -58,6 +58,23 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
+    - Open standards and protocols enable different manufacturers and developers to build hardware and software that can communicate with hardware and software on the rest of the internet: **True**
+        - Open standards and protocols are technical specifications that are publicly available and not proprietary to any specific company or organization
+    - IETF is a task force used to enforce laws to keep manufacturers out of the internet: **False**
+        - IETF stands for "Internet Engineering Task Force." It is not a task force used to enforce laws, nor is it intended to keep manufacturers out of the internet. 
+        - it is a community of engineers and technical experts who work together to develop and promote internet standards and protocols. 
+    - Routes are determined in advance and are not flexible: **False**
+        - Routing is the process of selecting the best path for data to travel through a network
+        - it is based on factors such as network congestion, available bandwidth, and the number of hops between devices thus it varies
+    - A protocol is an agreed upon set of rules that specify the behavior of a system: **True**
+    - UDP guarantees transfers and is faster: **False**
+        - UDP does not guarantee the delivery of data 
+        - UDP ,however, is generally faster than TCP due to its lack of error-checking and retransmission mechanisms
+    - The world wide web is the internet: **False**
+        - The World Wide Web is an information system that operates over the Internet
+        - it is one of many applications that run over the Internet
+    - HTTP is a protocol used by the world wide web: **True**
+        - used for transferring data between web servers and web clients
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprietary) communication protocols.
@@ -75,7 +92,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - HTTP is a protocol used by the world wide web
     - The world wide web uses the internet
 
-- Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas
+- Go over AP videos, vocabulary, and essential knowledge. Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas
 
 ![Full Stack]({{site.baseurl}}/images/fullstack.png)
 
