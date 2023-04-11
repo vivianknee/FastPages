@@ -127,14 +127,28 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 
 ### Fault Tolerance
-> Watch both Daily videos for 4.2
-- Complete the network activity, summarize your understanding of fault tolerance.
-
+- in class activity
 ![Computer Networks]({{site.baseurl}}/images/networks.png)
 
+> Watch both Daily videos for 4.2
+- Complete the network activity, summarize your understanding of fault tolerance.
+    - fewer direct connections means that you dont have to expend as many resources, however if one connection breaks, the whole system might be unconnected
+    - if every device has a direct connection to one another, this means there is redundancy. redundancy is good in ensuring that if one connection goes down, there are more to support it. 
+    - However, having a lot of direct connections uses up more resources
+    - redundancy is the inclusion of extra components that can be used to mitigate failure of a system if other components fail
+
+![network1]({{site.baseurl}}/images/network1.png)
+- for each of the devices, there are at least two other paths to the other devices so this network is **fault tolerant**
+
+![network2]({{site.baseurl}}/images/network2.png)
+- most of the devices have two paths which it can use to communicate to other devices. 
+- however, device F has only once connection, so if that connection is cut off, it can no longer communicate with other devices thus this network is **faulty**
+
+![network3]({{site.baseurl}}/images/network3.png)
+- every single connection is made through the path A-G so if the connection between A and G were to be broken, the entire network would be down. Thus this network is **faulty**
 
 ### Parallel and Distributed Computing
-> Review previous lecture on Parallel Computing and watch Daily video 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
+> Review previous lecture on Parallel Computing and watch Daily video 4.3. Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
 - What is naturally Distributed in Frontend/Backend architecture?  
 
