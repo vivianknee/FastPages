@@ -2,4 +2,13 @@
 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.108.133, ...
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... failed: Operation timed out.
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... failed: Operation timed out.
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... 
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... failed: Operation timed out.
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 15393 (15K) [text/plain]
+Saving to: ‘2023-04-21-P5Y-BinaryMathLesson-student-copy.ipynb’
+
+     0K .......... .....                                      100% 18.9M=0.001s
+
+2023-04-21 14:47:25 (18.9 MB/s) - ‘2023-04-21-P5Y-BinaryMathLesson-student-copy.ipynb’ saved [15393/15393]
+
