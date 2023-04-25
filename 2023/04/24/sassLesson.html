@@ -388,7 +388,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This is how to call the mixin in a scss class</p>
+<p>This is how to call the mixin in a scss selector</p>
 
 </div>
 </div>
@@ -519,7 +519,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">//</span><span class="k">class</span> <span class="nc">called</span> <span class="n">invert</span><span class="o">.</span> <span class="n">this</span> <span class="n">would</span> <span class="n">go</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">styling</span> <span class="n">section</span>
+<div class=" highlight hl-python"><pre><span></span><span class="o">//</span><span class="n">selector</span> <span class="n">called</span> <span class="n">invert</span><span class="o">.</span> <span class="n">this</span> <span class="n">would</span> <span class="n">go</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">styling</span> <span class="n">section</span>
 
 <span class="o">.</span><span class="n">invert</span> <span class="p">{</span>
     <span class="o">//</span> <span class="n">instead</span> <span class="n">of</span> <span class="n">putting</span> <span class="n">a</span> <span class="n">single</span> <span class="n">color</span><span class="p">,</span> <span class="n">the</span> <span class="n">background</span> <span class="n">color</span> <span class="n">calls</span> <span class="n">the</span> <span class="n">function</span> <span class="n">to</span> <span class="n">invert</span> <span class="n">colors</span>
@@ -600,6 +600,28 @@ b. Directive</p>
 <ol>
 <li>Use SASS to create something that uses either extend or mixin. (0.9)</li>
 </ol>
+
+<pre><code>// mixin to align text
+@mixin align-text($alignment) {
+  text-align: $alignment;
+}
+
+// using the mixin for different selectors
+.text-center {
+  @include align-text(center);
+}
+
+.text-left {
+  @include align-text(left);
+}
+
+.text-right {
+  @include align-text(right);
+}
+
+.text-justify {
+  @include align-text(justify);
+}</code></pre>
 <ol>
 <li>Extra credit: Research other SASS features and blog about what you learned or add to your SASS project with any extra features not covered in this lesson. More points will be given if both are done.</li>
 </ol>
