@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      15 min read
+      17 min read
     
 </span></p>
 
@@ -1298,15 +1298,11 @@ Jose Azocar, OF, .257, 0, 10, .630, 28
 <li>Make a data file - content is up to you, just make sure there are integer values - and print</li>
 <li>Run Panda and Numpy commands<ul>
 <li>Panda:<ul>
-<li>Find Min and Max values</li>
-<li>Sort in order - can be order of least to greatest or vice versa</li>
-<li>Create a smaller data frame and merge it with your data file</li>
-</ul>
+<li>Find Min and Max values <code>DONE</code>
 </li>
-<li>Numpy:<ul>
-<li>Random number generation</li>
-<li>create a multi-dimensional array (multiple elements)</li>
-<li>create an array with linearly spaced intervals between values</li>
+<li>Sort in order - can be order of least to greatest or vice versa <code>DONE</code>
+</li>
+<li>Create a smaller data frame and merge it with your data file</li>
 </ul>
 </li>
 </ul>
@@ -1316,6 +1312,268 @@ Jose Azocar, OF, .257, 0, 10, .630, 28
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1">#read csv and sort cars bt 'Price' from largest to smallest</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'files/cars.csv'</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'price'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">columns</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">'brand'</span><span class="p">,</span><span class="s1">'color'</span><span class="p">,</span><span class="s1">'price'</span><span class="p">]]</span>
+
+<span class="c1">#print max and min price </span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Max price"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">columns</span><span class="p">[</span><span class="n">columns</span><span class="o">.</span><span class="n">price</span> <span class="o">==</span> <span class="n">columns</span><span class="o">.</span><span class="n">price</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Min price"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">columns</span><span class="p">[</span><span class="n">columns</span><span class="o">.</span><span class="n">price</span> <span class="o">==</span> <span class="n">columns</span><span class="o">.</span><span class="n">price</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--Price Top 10---------"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">columns</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--Price Bottom 10------"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">columns</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Max price
+             brand   color  price
+466  mercedes-benz  silver  84900
+
+Min price
+         brand   color  price
+420  chevrolet  silver      0
+
+--Price Top 10---------
+               brand   color  price
+466    mercedes-benz  silver  84900
+274            dodge    blue  67000
+371              bmw   black  61200
+384             ford    blue  58500
+393            lexus  silver  55600
+44              ford   black  55000
+353  harley-davidson   black  54680
+49              ford   black  54000
+365             ford   white  53500
+95               bmw    blue  53500
+
+--Price Bottom 10------
+         brand      color  price
+312  chevrolet      white     25
+435       ford       gray     25
+366       ford       gray     25
+359        gmc      white     25
+356  chevrolet       gray     25
+431  chevrolet      black     25
+281      dodge  dark blue     25
+495  chevrolet      white     25
+337       ford      white     25
+420  chevrolet     silver      0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Numpy:<ul>
+<li>Random number generation</li>
+<li>create a multi-dimensional array (multiple elements)</li>
+<li>create an array with linearly spaced intervals between values</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1">#generate a random float between 0 and 1</span>
+<span class="n">rand_num</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rand_num</span><span class="p">)</span>
+
+<span class="c1">#generate an array of random integers between 0 and 9 of shape (3, 3)</span>
+<span class="n">rand_int_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rand_int_arr</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0.6292344914864445
+[[1 5 2]
+ [5 6 8]
+ [6 0 9]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">zeros_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">zeros_arr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1">#3D array of shape (2, 3, 4) with all elements initialized to 1</span>
+<span class="n">ones_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ones_arr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1">#4D array of shape (2, 3, 4, 5) with random values from a uniform distribution between 0 and 1</span>
+<span class="n">rand_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rand_arr</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]
+
+ [[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+
+[[[[0.69454421 0.25366735 0.62689366 0.05798716 0.74825873]
+   [0.69778232 0.61132514 0.54655762 0.40403862 0.65147631]
+   [0.97553812 0.77913322 0.31808833 0.57513014 0.35863899]
+   [0.20359516 0.76592339 0.43124031 0.15114225 0.3493766 ]]
+
+  [[0.67244372 0.03946627 0.07425983 0.06087298 0.30959492]
+   [0.35133701 0.24914212 0.25632278 0.62202084 0.44463593]
+   [0.76932932 0.76368062 0.67173279 0.57528139 0.19141534]
+   [0.39764306 0.93538301 0.04580841 0.43151847 0.88632047]]
+
+  [[0.78310536 0.12142801 0.43033277 0.97682331 0.37624081]
+   [0.32095465 0.89554322 0.80179843 0.31590317 0.98404534]
+   [0.45835424 0.04334572 0.53331907 0.10332215 0.10766188]
+   [0.37454712 0.44691308 0.50645191 0.06003819 0.89792116]]]
+
+
+ [[[0.23559808 0.11186871 0.74537817 0.77480432 0.3943096 ]
+   [0.17925438 0.42741998 0.76370867 0.87989194 0.36730361]
+   [0.9865686  0.58989814 0.61920217 0.18708545 0.86876402]
+   [0.70983845 0.71948041 0.11860737 0.44125761 0.23699935]]
+
+  [[0.93309175 0.05639055 0.45737159 0.22089487 0.06226306]
+   [0.32174774 0.89890656 0.26657832 0.66688099 0.94565335]
+   [0.48496424 0.6564781  0.33571213 0.29516873 0.37305638]
+   [0.50712549 0.3881677  0.97568008 0.22705107 0.89444921]]
+
+  [[0.97299418 0.44940697 0.13837203 0.90397256 0.46153437]
+   [0.23003891 0.7189639  0.88782935 0.48223166 0.57705983]
+   [0.61361953 0.01423833 0.58950627 0.51969851 0.97962168]
+   [0.01615048 0.06880791 0.47888203 0.0512829  0.27490386]]]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">lin_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lin_arr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="c1">#10 linearly spaced values between 1 and 3</span>
+<span class="n">lin_arr_2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lin_arr_2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[0.   0.25 0.5  0.75 1.  ]
+
+[1.         1.22222222 1.44444444 1.66666667 1.88888889 2.11111111
+ 2.33333333 2.55555556 2.77777778 3.        ]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
