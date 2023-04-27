@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      18 min read
     
 </span></p>
 
@@ -143,7 +143,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Timestamp-Class">Timestamp Class </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#CSV-FILES!">CSV FILES! </a></li>
+<li class="toc-entry toc-h1"><a href="#CSV-FILES!">CSV FILES! </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#WHAT-DO-YOU-GUYS-THINK-df.agg-means-in-context-of-pandas-and-what-does-it-stand-for.">WHAT DO YOU GUYS THINK df.agg means in context of pandas and what does it stand for. </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#Our-Frontend-Data-Analysis-Project">Our Frontend Data Analysis Project </a></li>
 <li class="toc-entry toc-h1"><a href="#Popcorn-Hacks">Popcorn Hacks </a></li>
 <li class="toc-entry toc-h1"><a href="#Main-Hack">Main Hack </a></li>
@@ -574,6 +578,10 @@ window.onload = wrap_img;
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Now from learning this, can you find a different way from how we can solve the sum or products of a dataset other than how we learned before?</p>
+<ul>
+<li>you can use built in python functions</li>
+<li>you can use for loops</li>
+</ul>
 
 </div>
 </div>
@@ -585,10 +593,31 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#this code finds the sum and product of a dataset using a for loop</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">sum_data</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">prod_data</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+    <span class="n">sum_data</span> <span class="o">+=</span> <span class="n">x</span>
+    <span class="n">prod_data</span> <span class="o">*=</span> <span class="n">x</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sum_data</span><span class="p">,</span> <span class="n">prod_data</span><span class="p">)</span> 
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>15 120
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -1253,7 +1282,6 @@ Jose Azocar, OF, .257, 0, 10, .630, 28
 
 <span class="n">agg_df</span> <span class="o">=</span> <span class="n">grouped_df</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">'total_rooms'</span><span class="p">:</span> <span class="s1">'sum'</span><span class="p">,</span> <span class="s1">'population'</span><span class="p">:</span> <span class="s1">'mean'</span><span class="p">,</span> <span class="s1">'longitude'</span><span class="p">:</span> <span class="s1">'count'</span><span class="p">})</span>
 
-<span class="c1"># WHAT DO YOU GUYS THINK df.agg means in context of pandas and what does it stand for.</span>
 
 
 <span class="nb">print</span><span class="p">(</span><span class="n">agg_df</span><span class="p">)</span>
@@ -1266,6 +1294,20 @@ Jose Azocar, OF, .257, 0, 10, .630, 28
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="WHAT-DO-YOU-GUYS-THINK-df.agg-means-in-context-of-pandas-and-what-does-it-stand-for.">
+<a class="anchor" href="#WHAT-DO-YOU-GUYS-THINK-df.agg-means-in-context-of-pandas-and-what-does-it-stand-for." aria-hidden="true"><span class="octicon octicon-link"></span></a>WHAT DO YOU GUYS THINK df.agg means in context of pandas and what does it stand for.<a class="anchor-link" href="#WHAT-DO-YOU-GUYS-THINK-df.agg-means-in-context-of-pandas-and-what-does-it-stand-for."> </a>
+</h3>
+<ul>
+<li>df.agg() is used to apply aggregation functions on a grouped DataFrame. In this case, the DataFrame df is first grouped by the 'total_rooms' column using the groupby() method. Then, aggregation functions are applied to each group using the agg() method.</li>
+<li>agg() stands for "aggregate" and is used to compute summary statistics for each group in a grouped DataFrame</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
