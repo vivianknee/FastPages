@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -614,6 +614,18 @@ window.onload = wrap_img;
 <ol>
 <li>Use SASS to create something that uses either extend or mixin. (0.9)</li>
 </ol>
+
+<pre><code>@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+.danger {
+  @include important-text;
+  background-color: green;
+}</code></pre>
 
 <pre><code>// mixin to align text
 @mixin align-text($alignment) {
