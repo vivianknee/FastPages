@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      5 min read
     
 </span></p>
 
@@ -94,38 +94,64 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 </ul><p><img src="/FastPages/images/2021score.png" alt=""></p>
 
-<p><strong>Q66:</strong>
-<img src="/FastPages/images/2020q66.png" alt=""></p>
+<p><strong>Q68:</strong>
+<img src="/FastPages/images/2021q68.png" alt=""></p>
+<ul>
+  <li>the answer is also [10,10,20,20,10,10] because while it will remove the 10 that is farthest to the right, and also the 10 that is second in the list. It will not remove the first 10 or the 10 in the fifth position. Thus there will still be duplicates in this list after going through the program</li>
+</ul>
 
-<p><strong>Q66:</strong>
-<img src="/FastPages/images/2020q66.png" alt=""></p>
+<p><strong>Q59: RunRoutr is a fitness tracking application for smartphones that creates suggested running routes so that users can run with each other. Upon downloading the application, each user creates a username, a personal profile, and a contact list of friends who also use the application. The application uses the smartphone’s GPS unit to track a user’s location, running speed, and distance traveled. Users can use the application to review information and statistics about their previous runs. At the beginning of a run, users indicate the distance they want to run from their current location, and the application suggests a running route. Once a user accepts a suggested route, the application shares the suggested route with other compatible users in the area so that they can run together. Users are considered compatible if they are on each other’s contact lists or if they typically run at similar speeds. A basic RunRoutr account is free, but it displays advertisements that are targeted to individual users based on data collected by the application. For example, if a user’s running route begins or ends near a particular store, the application may display an advertisement for that store. Users have the ability to pay a monthly fee for a premium account, which removes advertisements from the application. Adrianna uses RunRoutr to suggest a running route. All compatible users near Adrianna receive a notification that shows her running route. Which of the following data is not obtained using data collected from Adrianna’s smartphone but necessary for RunRoutr to share Adrianna’s running route?</strong></p>
+<ul>
+  <li>every single one of the choices can be accessed from Adrianna’s smartphone except for the location of other runners, thus that is the correct answer.</li>
+</ul>
 
-<p><strong>Q66:</strong>
-<img src="/FastPages/images/2020q66.png" alt=""></p>
+<p><strong>Q52:A sorted list of numbers contains 128 elements. Which of the following is closest to the maximum number of list elements that can be examined when performing a binary search for a value in the list?</strong></p>
+<ul>
+  <li>Binary search only works for ordered lists so I can assume the list being iterated is ordered.</li>
+  <li>Binary Search is looking for an item that is predetermined so since the list is ordered, the search will know whether the item is in the upper or lower half of the list when conducting the search</li>
+  <li>Thus the max times, the list will be examined is closest to 8 because 128 elements is closest to 2^8</li>
+</ul>
 
-<p><strong>Q66:</strong>
-<img src="/FastPages/images/2020q66.png" alt=""></p>
+<p><strong>Q30:Which of the following best explains how data is transmitted on the Internet?</strong></p>
+<ul>
+  <li>the answer is “Data is broken into packets, which can be sent along different paths.”</li>
+  <li>Data transmitted on the Internet is broken into packets and then reassembled upon arrival. Packets may travel along different paths, arriving at the destination in order, out of order, or not at all.</li>
+</ul>
 
-<p><strong>Q66:</strong>
-<img src="/FastPages/images/2020q66.png" alt=""></p>
+<p><strong>Q25:</strong>
+<img src="/FastPages/images/2021q25.png" alt=""></p>
+<ul>
+  <li>I had to notice that as j is increasing and being added to result, the procedure returns the sum of the integers from 1 to n.</li>
+  <li>The procedure initially sets result to 1 and j to 2. In the REPEAT UNTIL loop, result is first assigned the sum of result and j, or 1 + 2. The value of j is then increased to 3. In each subsequent iteration of the loop, result is increased by each successive value of j (3, 4, 5, etc.) until j exceeds n. Therefore, the procedure returns the sum of the integers from 1 to n.</li>
+</ul>
 
-<p><strong>Q66:</strong>
-<img src="/FastPages/images/2020q66.png" alt=""></p>
+<p><strong>Q23:Which of the following statements about the Internet is true?</strong></p>
+<ul>
+  <li>The answer is the “Internet is designed to scale to support an increasing number of users.”</li>
+  <li>The Internet was designed to be scalable, using open protocols to easily connect additional computing devices to the network.</li>
+  <li>The Internet was not designed to be completely secure. Encryption is not required for communications.</li>
+</ul>
 
-<p><strong>Q66:</strong>
-<img src="/FastPages/images/2020q66.png" alt=""></p>
+<p><strong>Q21:A video-streaming Web site keeps count of the number of times each video has been played since it was first added to the site. The count is updated each time a video is played and is displayed next to each video to show its popularity. At one time, the count for the most popular video was about two million. Sometime later, the same video displayed a seven-digit negative number as its count, while the counts for the other videos displayed correctly. Which of the following is the most likely explanation for the error?</strong></p>
+<ul>
+  <li>The count for the video became larger than the maximum value allowed by the data type used to store the count.</li>
+  <li>This situation is consistent with the behavior of an overflow error. When the value of the count exceeded the maximum value that can be represented by a fixed number of bits, the count overflowed and wrapped around to a negative number.</li>
+</ul>
 
-<p><strong>Q66:</strong>
-<img src="/FastPages/images/2020q66.png" alt=""></p>
+<p><strong>Q19:Which of the following best explains how devices and information can be susceptible to unauthorized access if weak passwords are used?</strong></p>
+<ul>
+  <li>the answer is not “Unauthorized individuals can exploit vulnerabilities in encryption algorithms to determine a user’s password from their encryption key.” because the exploitation of encryption algorithms is not related to password strength.</li>
+  <li>the answer is “Unauthorized individuals can use data mining and other techniques to guess a user’s password.” because weak passwords can often be guessed based on publicly available information about a user</li>
+</ul>
 
-<p><strong>Q66:</strong>
-<img src="/FastPages/images/2020q66.png" alt=""></p>
+<p><strong>Q14:</strong>
+<img src="/FastPages/images/2021q14.png" alt=""></p>
+<ul>
+  <li>the answer is not “In line 6, &lt; should be changed to ≥.” because there might be one instance where count &gt; count-1 and the program would return true, but then there might be a chance that the next two terms do not satisfy this condition. So doing this overlooks certain possibilities</li>
+  <li>Thus “Lines 8 and 12 should be interchanged.” is the right answer</li>
+  <li>As is, the procedure traverses numberList from left to right and returns true whenever it encounters a value that is less than the preceding value. If it never encounters such a value, false is returned. This has the effect of returning true whenever the list is not increasing and returning false whenever the list is increasing, which is the opposite of what is intended. By interchanging lines 8 and 12, the procedure will return true or false appropriately.</li>
+</ul>
 
-<p><strong>Q66:</strong>
-<img src="/FastPages/images/2020q66.png" alt=""></p>
-
-<p><strong>Q66:</strong>
-<img src="/FastPages/images/2020q66.png" alt=""></p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
