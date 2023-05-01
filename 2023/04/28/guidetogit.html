@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      12 min read
     
 </span></p>
 
@@ -455,14 +455,243 @@ window.onload = wrap_img;
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h1>
 <ul>
-<li>Show how you incorporate three tools that we have installed into your project. 0.1 points for each feature. (0.3). This can include code, but definitely blog about it.</li>
-<li>frontend hack goes here</li>
-<li>backend hack goes here</li>
+<li>Show how you incorporate three tools that we have installed into your project. 0.1 points for each feature. (0.3). This can include code, but definitely blog about it.<ul>
+<li>Used javascript to write a function that filters data that is fetched from the backend. Additionally, javascript is used to write a fetch method to actually access the data in the backend.</li>
+<li>Used python to adapt the API and Model code. API acts as a bridge between frontend and backend. Model code creates my Car objects and populates a data table which is accessed by fetch call on the frontend. </li>
+<li>
+</ul>
+</li>
+<li>frontend hack goes here<ul>
+<li>frontend code below utilizes javascript to do a fetch call to the backend (which is deployed with AWS)</li>
+<li>Below the fetch call is a function that does filtering. It iterates through the list which contains data from the backend. Users select values from drop down menus on the user interface. These values are compared to the values of the cars in the list "all_cars". matches are pushed to a list called "result", which are then pushed to a table on the user's screen.</li>
+</ul>
+</li>
 </ul>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+ <span class="n">function</span> <span class="n">getAllCars</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">fetch</span><span class="p">(</span><span class="s1">'https://finalssvgcars.duckdns.org/api/cars/'</span><span class="p">)</span><span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">response</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">();</span>
+            <span class="p">})</span><span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+                <span class="n">all_cars</span> <span class="o">=</span> <span class="n">data</span><span class="p">;</span>
+            <span class="p">})</span><span class="o">.</span><span class="n">catch</span><span class="p">(</span><span class="n">function</span><span class="p">(</span><span class="n">err</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">err</span><span class="p">);</span>
+            <span class="p">});</span>
+    <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">function</span> <span class="n">getCarResults</span><span class="p">(</span><span class="n">brand</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">powersource</span><span class="p">,</span> <span class="n">pricerange</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">var</span> <span class="n">result</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">const</span> <span class="n">car</span> <span class="n">of</span> <span class="n">all_cars</span><span class="p">){</span>
+          <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">car</span><span class="p">);</span>
+          <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"price range from data is:"</span> <span class="o">+</span> <span class="n">typeof</span> <span class="n">car</span><span class="p">[</span><span class="s2">"pricerange"</span><span class="p">]</span> <span class="o">+</span> <span class="n">car</span><span class="p">[</span><span class="s2">"pricerange"</span><span class="p">])</span>
+          <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"being compared to:"</span> <span class="o">+</span> <span class="n">typeof</span> <span class="n">pricerange</span> <span class="o">+</span> <span class="n">pricerange</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="p">((</span><span class="n">car</span><span class="p">[</span><span class="s2">"brand"</span><span class="p">]</span> <span class="o">===</span> <span class="n">brand</span> <span class="o">||</span> <span class="o">!</span>brand<span class="o">)</span> <span class="o">&amp;&amp;</span>
+            <span class="p">(</span><span class="n">car</span><span class="p">[</span><span class="s2">"color"</span><span class="p">]</span> <span class="o">===</span> <span class="n">color</span> <span class="o">||</span> <span class="o">!</span>color<span class="o">)</span> <span class="o">&amp;&amp;</span>
+            <span class="p">(</span><span class="n">car</span><span class="p">[</span><span class="s2">"type"</span><span class="p">]</span> <span class="o">===</span> <span class="nb">type</span> <span class="o">||</span> <span class="o">!</span><span class="nb">type</span><span class="o">)</span> <span class="o">&amp;&amp;</span> 
+            <span class="p">(</span><span class="n">car</span><span class="p">[</span><span class="s2">"powersource"</span><span class="p">]</span> <span class="o">===</span> <span class="n">powersource</span> <span class="o">||</span> <span class="o">!</span>powersource<span class="o">)</span> <span class="o">&amp;&amp;</span> 
+            <span class="p">(</span><span class="n">car</span><span class="p">[</span><span class="s2">"pricerange"</span><span class="p">]</span> <span class="o">===</span> <span class="n">parseInt</span><span class="p">(</span><span class="n">pricerange</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">||</span> <span class="o">!</span>pricerange<span class="o">))</span> <span class="o">{</span>
+            <span class="n">result</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">car</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">length</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">'No Cars Found'</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">else</span> <span class="p">{</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">length</span> <span class="o">+</span> <span class="s1">'Cars Found'</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>backend hack goes here<ul>
+<li>not all of the code but this is the function initCars which pre-defines Car objects and populates them into a database</li>
+<li>I've also included CRUD features which are responsible for Create, read, add, and deleting objects from the database</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">initCars</span><span class="p">():</span>
+    <span class="k">with</span> <span class="n">app</span><span class="o">.</span><span class="n">app_context</span><span class="p">():</span>
+        <span class="sd">"""Create database and tables"""</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">create_all</span><span class="p">()</span>
+
+        <span class="sd">"""Tester data for table"""</span>
+        <span class="n">c1</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'1'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Acura'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'2'</span><span class="p">)</span>
+        <span class="n">c2</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'2'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Hyundai'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'sedan'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span> 
+        <span class="n">c3</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'3'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Mazda'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'sedan'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span>
+        <span class="n">c4</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'4'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Honda'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span>
+        <span class="n">c5</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'5'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Dodge'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'2'</span><span class="p">)</span>
+        <span class="n">c6</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'6'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Toyota'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'truck'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'2'</span><span class="p">)</span> 
+        <span class="n">c7</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'7'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Hyundai'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'blue'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'sedan'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span>
+        <span class="n">c8</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'8'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Chevrolet'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'truck'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'2'</span><span class="p">)</span>
+        <span class="n">c9</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'9'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Jeep'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span>
+        <span class="n">c10</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'10'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Nissan'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'silver'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'sedan'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span> 
+        <span class="n">c11</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'11'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Lexus'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'sedan'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'2'</span><span class="p">)</span>
+        <span class="n">c12</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'12'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Kia'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span>
+        <span class="n">c13</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'13'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Mazda'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'truck'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'2'</span><span class="p">)</span>
+        <span class="n">c14</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'14'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Ford'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'sedan'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'2'</span><span class="p">)</span> 
+        <span class="n">c15</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'15'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Kia'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'truck'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'2'</span><span class="p">)</span>
+        <span class="n">c16</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'16'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Ford'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span>
+        <span class="n">c17</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'17'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Jeep'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'truck'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span>
+        <span class="n">c18</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'18'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Toyota'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'electric'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'3'</span><span class="p">)</span> 
+        <span class="n">c19</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'19'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Kia'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'silver'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'truck'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span>
+        <span class="n">c20</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'20'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Honda'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span>
+        <span class="n">c21</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'21'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Hyundai'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'sedan'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'1'</span><span class="p">)</span>
+        <span class="n">c22</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'22'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Chevrolet'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'3'</span><span class="p">)</span> 
+        <span class="n">c23</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'23'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Jeep'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'3'</span><span class="p">)</span>
+        <span class="n">c24</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'24'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'BMW'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'gray'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'sedan'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'4'</span><span class="p">)</span>
+        <span class="n">c25</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'25'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Ferrari'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'yellow'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'ice'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'sports'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'4'</span><span class="p">)</span>
+        <span class="n">c26</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'26'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Tesla'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'electric'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'4'</span><span class="p">)</span> 
+        <span class="n">c27</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'27'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Tesla'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'blue'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'electric'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'4'</span><span class="p">)</span>
+        <span class="n">c28</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'28'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Ford'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'white'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'electric'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'truck'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'3'</span><span class="p">)</span>
+        <span class="n">c29</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'29'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Ford'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'blue'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'electric'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'truck'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'4'</span><span class="p">)</span>
+        <span class="n">c30</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'30'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Audi'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'electric'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'4'</span><span class="p">)</span> 
+        <span class="n">c31</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'31'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Ferrari'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'electric'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'sports'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'4'</span><span class="p">)</span>
+        <span class="n">c32</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'32'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Mercedes'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'silver'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'electric'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'sedan'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'4'</span><span class="p">)</span>
+        <span class="n">c33</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'33'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Mazda'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'silver'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'electric'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'2'</span><span class="p">)</span>
+        <span class="n">c34</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'34'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Nissan'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'blue'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'electric'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'2'</span><span class="p">)</span> 
+        <span class="n">c35</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="s1">'35'</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s1">'Subaru'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s1">'electric'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">'suv'</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s1">'2'</span><span class="p">)</span>
+
+        <span class="n">cars</span> <span class="o">=</span> <span class="p">[</span><span class="n">c1</span><span class="p">,</span> <span class="n">c2</span><span class="p">,</span> <span class="n">c3</span><span class="p">,</span> <span class="n">c4</span><span class="p">,</span> <span class="n">c5</span><span class="p">,</span> <span class="n">c6</span><span class="p">,</span> <span class="n">c7</span><span class="p">,</span> <span class="n">c8</span><span class="p">,</span> <span class="n">c9</span><span class="p">,</span> <span class="n">c10</span><span class="p">,</span> <span class="n">c11</span><span class="p">,</span> <span class="n">c12</span><span class="p">,</span> <span class="n">c13</span><span class="p">,</span> <span class="n">c14</span><span class="p">,</span> <span class="n">c15</span><span class="p">,</span> <span class="n">c16</span><span class="p">,</span> <span class="n">c17</span><span class="p">,</span> <span class="n">c18</span><span class="p">,</span> <span class="n">c19</span><span class="p">,</span> <span class="n">c20</span><span class="p">,</span> <span class="n">c21</span><span class="p">,</span> <span class="n">c22</span><span class="p">,</span> <span class="n">c23</span><span class="p">,</span> <span class="n">c24</span><span class="p">,</span> <span class="n">c25</span><span class="p">,</span> <span class="n">c26</span><span class="p">,</span> <span class="n">c27</span><span class="p">,</span> <span class="n">c28</span><span class="p">,</span> <span class="n">c29</span><span class="p">,</span> <span class="n">c30</span><span class="p">,</span> <span class="n">c31</span><span class="p">,</span> <span class="n">c32</span><span class="p">,</span> <span class="n">c33</span><span class="p">,</span> <span class="n">c34</span><span class="p">,</span> <span class="n">c35</span><span class="p">]</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">Car</span><span class="p">)</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">rollback</span><span class="p">()</span>
+
+        <span class="sd">"""Builds sample car/note(s) data"""</span>
+        <span class="k">for</span> <span class="n">car</span> <span class="ow">in</span> <span class="n">cars</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">car</span><span class="o">.</span><span class="n">create</span><span class="p">()</span>
+            <span class="k">except</span> <span class="n">IntegrityError</span><span class="p">:</span>
+                <span class="sd">'''fails with bad or duplicate data'''</span>
+                <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Records exist, duplicate email, or error: </span><span class="si">{</span><span class="n">car</span><span class="o">.</span><span class="n">model</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>  <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># creates a person object from User(db.Model) class, passes initializers</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>  <span class="c1"># add prepares to persist person object to Users table</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>  <span class="c1"># SqlAlchemy "unit of work pattern" requires a manual commit</span>
+            <span class="k">return</span> <span class="bp">self</span>
+        <span class="k">except</span> <span class="n">IntegrityError</span><span class="p">:</span>
+            <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">remove</span><span class="p">()</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+    <span class="c1"># CRUD read converts self to dictionary</span>
+    <span class="c1"># returns dictionary</span>
+    <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+            <span class="s2">"image"</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">image</span><span class="p">,</span>
+            <span class="s2">"brand"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">brand</span><span class="p">,</span>
+            <span class="s2">"color"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">color</span><span class="p">,</span>
+            <span class="s2">"type"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">type</span><span class="p">,</span>
+            <span class="s2">"powersource"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">powersource</span><span class="p">,</span>
+            <span class="s2">"pricerange"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">pricerange</span>
+        <span class="p">}</span>
+
+    <span class="c1"># CRUD update: updates user name, password, phone</span>
+    <span class="c1"># returns self</span>
+    <span class="k">def</span> <span class="nf">update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">image</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">brand</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">powersource</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span> <span class="n">pricerange</span><span class="o">=</span><span class="s2">""</span><span class="p">):</span>
+        <span class="sd">"""only updates values with length"""</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">image</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">image</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">brand</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">brand</span> <span class="o">=</span> <span class="n">brand</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">color</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">type</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">type</span> <span class="o">=</span> <span class="nb">type</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">powersource</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">powersource</span> <span class="o">=</span> <span class="n">powersource</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">pricerange</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">pricerange</span> <span class="o">=</span> <span class="n">pricerange</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="c1"># CRUD delete: remove self</span>
+    <span class="c1"># None</span>
+    <span class="k">def</span> <span class="nf">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+        <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
