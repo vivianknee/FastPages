@@ -118,7 +118,6 @@ window.onload = wrap_img;
 </li>
 <li><p>Coding with jQuery</p>
 <ul>
-<li>Jupyter Notebook <a href="https://github.com/nighthawkcoders/APCSP/blob/master/_notebooks/2022-09-19-PBL-javascript_tutorial.ipynb">GitHub</a>, wget: <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/2022-09-19-PBL-javascript_tutorial.ipynb">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/2022-09-19-PBL-javascript_tutorial.ipynb</a></li>
 <li>Markdown <a href="https://nighthawkcoders.github.io/APCSP/frontend/jquery">Fetch example</a> in GitHub project for <a href="https://github.com/nighthawkcoders/APCSP/blob/master/_posts/2023-06-01-jquery-sort.md">APCSP</a></li>
 <li>HTML <a href="https://flask.nighthawkcodingsociety.com/table/">Static example</a> in GitHub project for <a href="https://github.com/nighthawkcoders/flask_portfolio/blob/main/templates/table.html">flask_portfolio</a></li>
 </ul>
@@ -152,9 +151,9 @@ window.onload = wrap_img;
     <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
         <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
             <span class="p">#</span><span class="nn">output</span> <span class="p">{</span>
-                <span class="k">background-color</span><span class="p">:</span> <span class="mh">#353b45</span><span class="p">;</span>
+                <span class="k">background-color</span><span class="p">:</span> <span class="mh">#000000</span><span class="p">;</span>
                 <span class="k">padding</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
-                <span class="k">border</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#ccc</span><span class="p">;</span>
+                <span class="k">border</span><span class="p">:</span> <span class="mi">3</span><span class="kt">px</span> <span class="kc">solid</span> <span class="mh">#f9f9f9</span><span class="p">;</span>
             <span class="p">}</span>
         <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -181,9 +180,9 @@ window.onload = wrap_img;
     <head>
         <style>
             #output {
-                background-color: #353b45;
+                background-color: #000000;
                 padding: 10px;
-                border: 3px solid #ccc;
+                border: 3px solid #f9f9f9;
             }
         </style>
     </head>
@@ -237,6 +236,7 @@ window.onload = wrap_img;
 <span class="c1">// Document Object Model (DOM) output; output to HTML, CSS which is standard for a Web Page</span>
 <span class="c1">// &lt;mark&gt;select element method&lt;/mark&gt;: DOM native JavaScript get, document.getElementByID</span>
 <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;output&quot;</span><span class="p">).</span><span class="nx">textContent</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span><span class="p">;</span>
+
 <span class="c1">// &lt;mark&gt;jQuery CSS-style method&lt;/mark&gt;: Tag for DOM selector, $(&#39;#output&#39;)</span>
 <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#output&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;br&gt;&lt;b&gt;Hello World Again!&#39;</span><span class="p">);</span>  <span class="c1">// br is break or new line, b is bold</span>
 
@@ -259,10 +259,10 @@ window.onload = wrap_img;
 
 
 
-<div id="6a9e64a7-5f5d-475e-abcf-f99f93b896f1"></div>
+<div id="9cfb60e0-c55a-41de-a39b-854f8df2b260"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#6a9e64a7-5f5d-475e-abcf-f99f93b896f1');
+var element = $('#9cfb60e0-c55a-41de-a39b-854f8df2b260');
 console.log("JavaScript/Jupyter Output Intro");
 
 // Browser Console output; debugging or tracing
@@ -272,6 +272,7 @@ console.log("Hello, World Again!");
 // Document Object Model (DOM) output; output to HTML, CSS which is standard for a Web Page
 // <mark>select element method</mark>: DOM native JavaScript get, document.getElementByID
 document.getElementById("output").textContent = "Hello, World!";
+
 // <mark>jQuery CSS-style method</mark>: Tag for DOM selector, $('#output')
 $('#output').append('<br><b>Hello World Again!');  // br is break or new line, b is bold
 
@@ -335,10 +336,10 @@ element.append('<br><b>Hello World Again!');
 
 
 
-<div id="c874f55d-3d2d-46fc-8c21-559023c397bd"></div>
+<div id="67a71cb9-acf9-4074-b27b-744539f3dd5d"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#c874f55d-3d2d-46fc-8c21-559023c397bd');
+var element = $('#67a71cb9-acf9-4074-b27b-744539f3dd5d');
 console.log("Variable Definition");
 
 var msg = "Hello, World!";
@@ -420,10 +421,10 @@ element.text(msg);
 
 
 
-<div id="c32c514f-55e3-4a57-a82c-ead67add61c2"></div>
+<div id="709f26d4-2a56-44f2-92dd-ba629f598c6d"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#c32c514f-55e3-4a57-a82c-ead67add61c2');
+var element = $('#709f26d4-2a56-44f2-92dd-ba629f598c6d');
 console.log("Function Definition");
 
 /* Function: logIt
@@ -531,10 +532,10 @@ logIt(msg + "  " + classOf); // concatenation of strings
 
 
 
-<div id="25a1b47c-1bb7-4c20-9f84-b55e969d4e87"></div>
+<div id="24cc29a5-74d0-40a3-85d5-0a7aa9c1b784"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#25a1b47c-1bb7-4c20-9f84-b55e969d4e87');
+var element = $('#24cc29a5-74d0-40a3-85d5-0a7aa9c1b784');
 console.log("Examine Data Types");
 
 // Function to add typeof to output
@@ -781,10 +782,10 @@ logIt(JSON.stringify(person));  //method used to convert this object into readab
 
 
 
-<div id="250de060-2842-4440-b95b-ae01ad3ddde2"></div>
+<div id="e59613a8-333a-4acc-bafd-216dd59dff74"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#250de060-2842-4440-b95b-ae01ad3ddde2');
+var element = $('#e59613a8-333a-4acc-bafd-216dd59dff74');
 console.log("Person objects");
 
 /* class: Person
@@ -1002,10 +1003,10 @@ student.logIt(); // log to console
 
 
 
-<div id="1568c562-1970-4177-b6d8-4140a5998176"></div>
+<div id="f078e5dd-cb8c-4846-8aee-c538119acac5"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#1568c562-1970-4177-b6d8-4140a5998176');
+var element = $('#f078e5dd-cb8c-4846-8aee-c538119acac5');
 console.log("Classroom object");
 
 /* class: Person
@@ -1194,10 +1195,10 @@ $('#jsonText').text(compsci.json);  // posts/embeds/writes compsci.json to HTML 
 
 
 
-<div id="79392629-029b-4550-82dc-25d73d68fafb"></div>
+<div id="1572c16b-9a04-4f02-a0e8-f7b5a0de7521"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#79392629-029b-4550-82dc-25d73d68fafb');
+var element = $('#1572c16b-9a04-4f02-a0e8-f7b5a0de7521');
 console.log("Classroom Web Page");
 
 // extract JSON text from HTML page
