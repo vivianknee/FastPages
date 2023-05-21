@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      13 min read
     
 </span></p>
 
@@ -444,8 +444,7 @@ What is happening with this sort?</p>
 <li>
 <p>Implement new cell(s) and/or organize cells to do the following.</p>
 <ul>
-<li>Create your own list</li>
-<li>Use your expertise sorting algorithm (selection, insertion, merge). Note, I got my bubble sort from Geek for Geeks and made modifications. Each student in a group should have a unique algorithm.</li>
+<li>Create your own list and sorting algorithm </li>
 <li>Test your list with my bubble sort</li>
 <li>Test my list with your new sort</li>
 <li>Research analysis on sorting:comparisons, swaps, time.  Build this into your hacks.    - Find a better way to print the data, key first, then other elements in viewable form.</li>
@@ -531,6 +530,294 @@ age
 [{'name': 'Risa', 'age': 18, 'city': 'New York'}, {'name': 'Shekar', 'age': 18, 'city': 'San Francisco'}, {'name': 'Ryan', 'age': 21, 'city': 'Los Angeles'}, {'name': 'John', 'age': 63, 'city': 'Eugene'}]
 city
 [{'name': 'John', 'age': 63, 'city': 'Eugene'}, {'name': 'Ryan', 'age': 21, 'city': 'Los Angeles'}, {'name': 'Risa', 'age': 18, 'city': 'New York'}, {'name': 'Shekar', 'age': 18, 'city': 'San Francisco'}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Creating my own list and sorting algorithm (merge)</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">mergeSort</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">sortkey</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># makes sure list isn't alr sorted</span>
+        <span class="n">left_arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span> <span class="c1">#starts at beginning and goes to mid</span>
+        <span class="n">right_arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">:]</span> <span class="c1">#starts at middle and goes to end</span>
+        
+        <span class="c1"># recursion for merge sort</span>
+        <span class="n">mergeSort</span><span class="p">(</span><span class="n">left_arr</span><span class="p">,</span> <span class="n">sortkey</span><span class="p">)</span>
+        <span class="n">mergeSort</span><span class="p">(</span><span class="n">right_arr</span><span class="p">,</span> <span class="n">sortkey</span><span class="p">)</span>
+        
+        <span class="c1"># merge step</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># keep track of leftmost element in left arr</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># keep track of leftmost element in right arr</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># merged array index</span>
+        
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">left_arr</span><span class="p">)</span> <span class="ow">and</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">right_arr</span><span class="p">):</span> <span class="c1"># keep going until one array is at the end of the index</span>
+            <span class="k">if</span> <span class="n">compareArrItem</span><span class="p">(</span><span class="n">left_arr</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">right_arr</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">sortkey</span><span class="p">):</span>
+                <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">left_arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">right_arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+                <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span> <span class="c1"># add 1 to k each time so that next item is added to next index of arr</span>
+        
+        <span class="c1">#checking for leftovers</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">left_arr</span><span class="p">):</span> 
+            <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">left_arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">right_arr</span><span class="p">):</span>
+            <span class="n">arr</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">right_arr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+<span class="k">def</span> <span class="nf">compareArrItem</span><span class="p">(</span><span class="n">item1</span><span class="p">,</span> <span class="n">item2</span><span class="p">,</span> <span class="n">sortkey</span><span class="p">):</span> <span class="c1">#return true if item1 is less than item2</span>
+    <span class="k">return</span> <span class="n">item1</span><span class="p">[</span><span class="n">sortkey</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">item2</span><span class="p">[</span><span class="n">sortkey</span><span class="p">]</span>
+    
+<span class="c1"># my list is a group of users and their enjoyment rating out of 10 of DVASS(our group project) which includes uno, war, black jack, and the memory game as well as how many hours they spent playing the games</span>
+<span class="n">dvass_survey</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Vivian"</span><span class="p">,</span> <span class="s2">"rating"</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">"hours"</span><span class="p">:</span> <span class="mi">7</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Drew"</span><span class="p">,</span> <span class="s2">"rating"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">"hours"</span><span class="p">:</span> <span class="mi">80</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Aliya"</span><span class="p">,</span> <span class="s2">"rating"</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s2">"hours"</span><span class="p">:</span> <span class="mi">8</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Sreeja"</span><span class="p">,</span> <span class="s2">"rating"</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s2">"hours"</span><span class="p">:</span> <span class="mi">5</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Sri"</span><span class="p">,</span> <span class="s2">"rating"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">"hours"</span><span class="p">:</span> <span class="mi">11</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"mort"</span><span class="p">,</span> <span class="s2">"rating"</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span> <span class="s2">"hours"</span><span class="p">:</span> <span class="mi">50</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">"name"</span><span class="p">:</span> <span class="s2">"yeung"</span><span class="p">,</span> <span class="s2">"rating"</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">"hours"</span><span class="p">:</span> <span class="mi">67</span><span class="p">}</span>
+    <span class="p">]</span>
+
+<span class="n">mergeSort</span><span class="p">(</span><span class="n">dvass_survey</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dvass_survey</span><span class="p">)</span>
+<span class="n">mergeSort</span><span class="p">(</span><span class="n">dvass_survey</span><span class="p">,</span> <span class="s1">'hours'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dvass_survey</span><span class="p">)</span>
+        
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'name': 'Aliya', 'rating': 7, 'hours': 8}, {'name': 'Sreeja', 'rating': 8, 'hours': 5}, {'name': 'Vivian', 'rating': 8, 'hours': 7}, {'name': 'Sri', 'rating': 10, 'hours': 11}, {'name': 'Drew', 'rating': 10, 'hours': 80}, {'name': 'mort', 'rating': 50, 'hours': 50}, {'name': 'yeung', 'rating': 100, 'hours': 67}]
+[{'name': 'Sreeja', 'rating': 8, 'hours': 5}, {'name': 'Vivian', 'rating': 8, 'hours': 7}, {'name': 'Aliya', 'rating': 7, 'hours': 8}, {'name': 'Sri', 'rating': 10, 'hours': 11}, {'name': 'mort', 'rating': 50, 'hours': 50}, {'name': 'yeung', 'rating': 100, 'hours': 67}, {'name': 'Drew', 'rating': 10, 'hours': 80}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Test my list with given bubble sort</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bubbleSort</span><span class="p">(</span><span class="n">dvass_survey</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dvass_survey</span><span class="p">)</span>
+<span class="n">bubbleSort</span><span class="p">(</span><span class="n">dvass_survey</span><span class="p">,</span> <span class="s1">'hours'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dvass_survey</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'name': 'Aliya', 'rating': 7, 'hours': 8}, {'name': 'Sreeja', 'rating': 8, 'hours': 5}, {'name': 'Vivian', 'rating': 8, 'hours': 7}, {'name': 'Sri', 'rating': 10, 'hours': 11}, {'name': 'Drew', 'rating': 10, 'hours': 80}, {'name': 'mort', 'rating': 50, 'hours': 50}, {'name': 'yeung', 'rating': 100, 'hours': 67}]
+[{'name': 'Sreeja', 'rating': 8, 'hours': 5}, {'name': 'Vivian', 'rating': 8, 'hours': 7}, {'name': 'Aliya', 'rating': 7, 'hours': 8}, {'name': 'Sri', 'rating': 10, 'hours': 11}, {'name': 'mort', 'rating': 50, 'hours': 50}, {'name': 'yeung', 'rating': 100, 'hours': 67}, {'name': 'Drew', 'rating': 10, 'hours': 80}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Test give list with my new sort</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mergeSort</span><span class="p">(</span><span class="n">list_of_people</span><span class="p">,</span> <span class="s1">'age'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">list_of_people</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{'name': 'Shekar', 'age': 18, 'city': 'San Francisco'}, {'name': 'Risa', 'age': 18, 'city': 'New York'}, {'name': 'Ryan', 'age': 21, 'city': 'Los Angeles'}, {'name': 'John', 'age': 63, 'city': 'Eugene'}]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Research analysis on sorting: comparisons, swaps, time.  Build this into your hacks.
+Bubble Sort:</p>
+<ul>
+<li>Comparisons: Bubble Sort makes a maximum of n*(n-1)/2 comparisons in the worst case, where n is the number of elements.</li>
+<li>Swaps: Bubble Sort makes a maximum of n*(n-1)/2 swaps in the worst case.</li>
+<li>Time Complexity: Bubble Sort has an average and worst-case time complexity of O(n^2).</li>
+</ul>
+<p>Insertion Sort:</p>
+<ul>
+<li>Comparisons: Insertion Sort makes a maximum of n*(n-1)/2 comparisons in the worst case.</li>
+<li>Swaps: Insertion Sort makes a maximum of n*(n-1)/2 swaps in the worst case.</li>
+<li>Time Complexity: Insertion Sort has an average and worst-case time complexity of O(n^2). However, it performs well on partially sorted or small lists.</li>
+</ul>
+<p>Selection Sort:</p>
+<ul>
+<li>Comparisons: Selection Sort makes a maximum of n*(n-1)/2 comparisons in the worst case.</li>
+<li>Swaps: Selection Sort makes a maximum of n swaps in the worst case.</li>
+<li>Time Complexity: Selection Sort has an average and worst-case time complexity of O(n^2).</li>
+</ul>
+<p>Merge Sort:</p>
+<ul>
+<li>Comparisons: Merge Sort makes a maximum of n*log(n) comparisons in the worst case.</li>
+<li>Swaps: Merge Sort requires additional memory for merging and does not involve element swaps.</li>
+<li>Time Complexity: Merge Sort has an average and worst-case time complexity of O(n log n).</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Find a better way to print the data, key first, then other elements in viewable form.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mergeSort</span><span class="p">(</span><span class="n">dvass_survey</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">mergePrint</span><span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+   <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">user</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"#"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s1">' in '</span> <span class="o">+</span> <span class="n">key</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">user</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">":"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>
+
+<span class="n">mergePrint</span><span class="p">(</span><span class="n">dvass_survey</span><span class="p">,</span> <span class="s1">'rating'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>#1 in rating
+	name: Aliya
+	rating: 7
+	hours: 8
+
+#2 in rating
+	name: Vivian
+	rating: 8
+	hours: 7
+
+#3 in rating
+	name: Sreeja
+	rating: 8
+	hours: 5
+
+#4 in rating
+	name: Drew
+	rating: 10
+	hours: 80
+
+#5 in rating
+	name: Sri
+	rating: 10
+	hours: 11
+
+#6 in rating
+	name: mort
+	rating: 50
+	hours: 50
+
+#7 in rating
+	name: yeung
+	rating: 100
+	hours: 67
+
 </pre>
 </div>
 </div>
