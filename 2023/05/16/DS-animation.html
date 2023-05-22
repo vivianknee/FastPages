@@ -228,20 +228,12 @@ window.onload = wrap_img;
             <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="s2">"A"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">]</span> <span class="c1"># hexadecimal</span>
             <span class="p">]</span>
     
-    <span class="n">tree</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">" *"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span>
-            <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">" ^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span>
-            <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span>
-            <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span>
-            <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span>
-            <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">"T"</span><span class="p">,</span><span class="s2">"T"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">]]</span>
-    
 
     <span class="c1"># pack into a list of matrices with titles</span>
     <span class="n">matrices</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">[</span><span class="s2">"Keypad"</span><span class="p">,</span> <span class="n">keypad</span><span class="p">],</span> 
         <span class="p">[</span><span class="s2">"Keyboard"</span><span class="p">,</span> <span class="n">keyboard</span><span class="p">],</span> 
         <span class="p">[</span><span class="s2">"Number Systems"</span><span class="p">,</span> <span class="n">numbers</span><span class="p">],</span>
-        <span class="p">[</span><span class="s2">"Tree"</span><span class="p">,</span> <span class="n">tree</span><span class="p">]</span>
     <span class="p">]</span>
 
     <span class="c1"># loop 2D matrix with returning list in [key, value] arrangement</span>
@@ -321,29 +313,58 @@ For loop with shortcut (*) row expansion
 0 1 2 3 4 5 6 7 8 9
 0 1 2 3 4 5 6 7 8 9 A B C D E F
 
-Tree 6 x ~7
-Classic nested loops using ij indexes
-    *    
-    ^    
-   ^ ^   
-  ^ ^ ^   
- ^ ^ ^ ^   
-   T T   
-Enhanced nested for loops
-    *    
-    ^    
-   ^ ^   
-  ^ ^ ^   
- ^ ^ ^ ^   
-   T T   
-For loop with shortcut (*) row expansion
-    *   
-    ^   
-   ^ ^  
-  ^ ^ ^  
- ^ ^ ^ ^  
-   T T  
+</pre>
+</div>
+</div>
 
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>My christmas tree</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tree</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">" *"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span>
+        <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">" ^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span>
+        <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span>
+        <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span>
+        <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span>
+        <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">"T"</span><span class="p">,</span><span class="s2">"T"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">]]</span>
+
+<span class="n">print_matrix1</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Classic nested loops using ij indexes
+    *    
+    ^    
+   ^ ^   
+  ^ ^ ^   
+ ^ ^ ^ ^   
+   T T   
 </pre>
 </div>
 </div>
@@ -363,7 +384,7 @@ For loop with shortcut (*) row expansion
 <blockquote>
 <p>Example below populate a 2D array.  Key concepts are ij loop and assignments.  Observe the object that is created in console.  Learn the basics of iteration through 2D array in JavaScript.</p>
 <ul>
-<li>Candy challenge:Work of pairs.  Create one of the Python examples (christmas tree, keyboard, ...). Use the element.append to output within the notebook.   As you work on JavaScript make sure your development environment is setup like JavaScript programmer.</li>
+<li>Candy challenge:Work of pairs. Create one of the Python examples (christmas tree, keyboard, ...). Use the element.append to output within the notebook.   As you work on JavaScript make sure your development environment is setup like JavaScript programmer.</li>
 </ul>
 </blockquote>
 
@@ -385,7 +406,6 @@ For loop with shortcut (*) row expansion
 <span class="cm">*/</span>
 
 <span class="kd">var</span> <span class="nx">arr2D</span> <span class="o">=</span> <span class="p">[];</span>
-<span class="kd">var</span> <span class="nx">tree</span> <span class="o">=</span> <span class="p">[];</span>
 <span class="kd">var</span> <span class="nx">rows</span> <span class="o">=</span> <span class="mf">3</span><span class="p">;</span>
 <span class="kd">var</span> <span class="nx">cols</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
  
@@ -397,17 +417,8 @@ For loop with shortcut (*) row expansion
     <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">rows</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">tree</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">=</span><span class="p">[];</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">cols</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">tree</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">+</span> <span class="nx">j</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr2D</span><span class="p">);</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tree</span><span class="p">)</span>
 <span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">arr2D</span><span class="p">);</span>
-<span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">tree</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -422,10 +433,10 @@ For loop with shortcut (*) row expansion
 
 
 
-<div id="ac947b12-af96-4091-9d40-d5627027a1f6"></div>
+<div id="47e74dfd-3613-4333-a4aa-822a872c9177"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#ac947b12-af96-4091-9d40-d5627027a1f6');
+var element = $('#47e74dfd-3613-4333-a4aa-822a872c9177');
 
 /*
 * Creator: Nighthawk Coding Society
@@ -433,7 +444,6 @@ Construct a two-dimensional array in JS
 */
 
 var arr2D = [];
-var tree = [];
 var rows = 3;
 var cols = 4;
  
@@ -445,23 +455,40 @@ for (var i = 0; i < rows; i++) {
     }
 }
 
-for (var i = 0; i < rows; i++) {
-    tree[i]=[];
-    for (var j = 0; j < cols; j++) {
-        tree[i][j] = i + j;
-    }
-}
-
 console.log(arr2D);
-console.log(tree)
 element.append(arr2D);
-element.append(tree);
 
 </script>
 </div>
 
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%js</span>
+
+<span class="kr">const</span> <span class="nx">myArray</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">" *"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span> <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">" ^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span> <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span> <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span> <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">"^"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">],</span> <span class="p">[</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">"T"</span><span class="p">,</span><span class="s2">"T"</span><span class="p">,</span><span class="s2">""</span><span class="p">,</span><span class="s2">""</span><span class="p">]]</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">rows</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">myArray</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span><span class="mf">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">col</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">myArray</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
