@@ -433,10 +433,10 @@ For loop with shortcut (*) row expansion
 
 
 
-<div id="47e74dfd-3613-4333-a4aa-822a872c9177"></div>
+<div id="0d02dc85-b80a-4756-bcaf-16a5eaf37e3b"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#47e74dfd-3613-4333-a4aa-822a872c9177');
+var element = $('#0d02dc85-b80a-4756-bcaf-16a5eaf37e3b');
 
 /*
 * Creator: Nighthawk Coding Society
@@ -485,10 +485,44 @@ element.append(arr2D);
     <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">j</span> <span class="o">=</span><span class="mf">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">col</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="nx">myArray</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
     <span class="p">}</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myArray</span><span class="p">);</span>
+    <span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">myArray</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+
+<div id="b5164a80-9402-46cf-8d03-870ff24826b4"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#b5164a80-9402-46cf-8d03-870ff24826b4');
+
+const myArray = [["","",""," *","","",""], ["","",""," ^","","",""], ["","","","^","^","",""], ["","","^","^","^","",""], ["","^","^","^","^","",""], ["","","","T","T","",""]]
+
+for (let i = 0; i < rows; i++) {
+    myArray[i] = [];
+    for (let j =0; j < col; j++) {
+        myArray[i][j] = null;
+    }
+    console.log(myArray);
+    element.append(myArray);
+}
+
+</script>
+</div>
+
+</div>
+
 </div>
 </div>
 
