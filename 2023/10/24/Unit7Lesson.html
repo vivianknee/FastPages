@@ -1,0 +1,1946 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unit 7 Lesson | Vivian Ni</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unit 7 Lesson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Array List" />
+<meta property="og:description" content="Array List" />
+<link rel="canonical" href="https://vivianknee.github.io/FastPages/2023/10/24/Unit7Lesson.html" />
+<meta property="og:url" content="https://vivianknee.github.io/FastPages/2023/10/24/Unit7Lesson.html" />
+<meta property="og:site_name" content="Vivian Ni" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-24T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unit 7 Lesson" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-24T00:00:00-05:00","datePublished":"2023-10-24T00:00:00-05:00","description":"Array List","headline":"Unit 7 Lesson","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/FastPages/2023/10/24/Unit7Lesson.html"},"url":"https://vivianknee.github.io/FastPages/2023/10/24/Unit7Lesson.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FastPages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://vivianknee.github.io/FastPages/feed.xml" title="Vivian Ni" /><link rel="shortcut icon" type="image/x-icon" href="/FastPages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/FastPages/">Vivian Ni</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/FastPages/_pages/002apcspblog.html">APCSP Blog</a><a class="page-link" href="/FastPages/_pages/003lessons.html">Student Lessons</a><a class="page-link" href="/FastPages/about/">About Me</a><a class="page-link" href="/FastPages/Vocab/">Vocab</a><a class="page-link" href="/FastPages/categories/">Tags</a><a class="page-link" href="/FastPages/_pages/Frontend.html">Frontend</a><a class="page-link" href="/FastPages/search/">Search</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 7 Lesson</h1><p class="page-description">Array List</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-10-24T00:00:00-05:00" itemprop="datePublished">
+        Oct 24, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      24 min read
+    
+</span></p>
+
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-10-24-Unit7Lesson.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unit-7:-ArrayList">Unit 7: ArrayList<a class="anchor-link" href="#Unit-7:-ArrayList"> </a></h1><blockquote><p>Mastering the concept of Java's ArrayList. AP Exam weighting:2.5-7.5%.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="7.1:-ArrayList-Intro">7.1: ArrayList Intro<a class="anchor-link" href="#7.1:-ArrayList-Intro"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>ArrayLists are dynamic, meaning their size can grow or shrink as needed, but arrays are static in size</li>
+<li>Instead of creating a new array of a different size and copying the data from the initial array to the new one, we can use ArrayLists</li>
+</ul>
+<table>
+<thead><tr>
+<th>Arrays</th>
+<th>ArrayLists</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fixed Length</td>
+<td>Resizable Length</td>
+</tr>
+<tr>
+<td>Fundamental Java feature</td>
+<td>Part of a framework</td>
+</tr>
+<tr>
+<td>An object with no methods</td>
+<td>Class with many methods</td>
+</tr>
+<tr>
+<td>Not as flexible</td>
+<td>Designed to be very flexible</td>
+</tr>
+<tr>
+<td>Can store primitive data</td>
+<td>Not designed to store primitives</td>
+</tr>
+<tr>
+<td></td>
+<td>Slightly slower than arrays</td>
+</tr>
+<tr>
+<td></td>
+<td>Need an import statement</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In order to use the ArrayList class, the ArrayList class needs to be imported from the java util package. This can be done by writing import java.util.ArrayList at the top of the class file.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>  <span class="c1">// Import the ArrayList class</span>
+
+<span class="c1">// Declare and initialize an ArrayList of integers</span>
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">numbersList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>ArrayList objects are created in the same fashion as other object classes. The primary difference with ArrayLists is that the element type of the ArrayList must be specified using angled bracket &lt;&gt;. In this example, E represents the data type that will be used in the ArrayList. This can be replaced by an object data type:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">E</span><span class="o">&gt;</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can actually declare ArrayLists without specifying the type that will be included in the ArrayList, but specifying the data type is smarter because it allows the compiler to find errors before run time, so its more efficient and easy to spot errors.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">ArrayList</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Quick-lil-popcorn-hack">Quick lil popcorn hack<a class="anchor-link" href="#Quick-lil-popcorn-hack"> </a></h4><p>Create 2 ArrayLists, 1 called <code>studentName</code> and 1 called <code>studentAge</code></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Student</span>
+<span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">//Initialize your ArrayLists</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">studentName</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">studentAge</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="7.2:-ArrayList-Methods">7.2: ArrayList Methods<a class="anchor-link" href="#7.2:-ArrayList-Methods"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Learning-Objectives">Learning Objectives<a class="anchor-link" href="#Learning-Objectives"> </a></h3><p>Students will be able to represent collections of related object reference data using <code>ArrayList</code> objects.</p>
+<h3 id="Essential-Knowledge">Essential Knowledge<a class="anchor-link" href="#Essential-Knowledge"> </a></h3><ul>
+<li><p>Iteration statements provide a means to access all the elements stored within an <code>ArrayList</code>. This process is referred to as "traversing the <code>ArrayList</code>."</p>
+</li>
+<li><p>The following <code>ArrayList</code> methods, including what they do and when they are used, are part of the Java Quick Reference:</p>
+<ul>
+<li><code>int size()</code> - Returns the count of elements within the list.</li>
+<li><code>boolean add(E obj)</code> - Appends the object <code>obj</code> to the end of the list and returns <code>true</code>.</li>
+<li><code>void add(int index, E obj)</code> - Inserts <code>obj</code> at the specified <code>index</code>, shifting elements at and above that position to the right (incrementing their indices by 1) and increasing the list's size by 1.</li>
+<li><code>E get(int index)</code> - Retrieves the element at the given <code>index</code> in the list.</li>
+<li><code>E set(int index, E obj)</code> - Replaces the element at the specified <code>index</code> with <code>obj</code> and returns the previous element at that index.</li>
+<li><code>E remove(int index)</code> - Deletes the element at the specified <code>index</code>, shifting all subsequent elements one index to the left, reducing the list's size by one, and returning the removed element.</li>
+</ul>
+</li>
+<li><p>Java allows the generic <code>ArrayList&lt;E&gt;</code>, where the generic type <code>E</code> specifies the type of element.</p>
+</li>
+<li><p>When <code>ArrayList&lt;E&gt;</code> is specified, the types of the reference parameters and return type when using the methods are type <code>E</code>.</p>
+</li>
+<li><p><code>ArrayList&lt;E&gt;</code> is preferred over <code>ArrayList</code> because it allows the compiler to find errors that would otherwise be found at runtime.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Size-of-the-ArrayList">Size of the <code>ArrayList</code><a class="anchor-link" href="#Size-of-the-ArrayList"> </a></h3><ul>
+<li><code>int size();</code> : Returns the number of elements in the list.</li>
+</ul>
+<p>Consider the following code:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">a1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a1</span><span class="p">.</span><span class="na">size</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Adding-Items-to-an-ArrayList">Adding Items to an <code>ArrayList</code><a class="anchor-link" href="#Adding-Items-to-an-ArrayList"> </a></h3><ul>
+<li><code>boolean add(E obj);</code> : Appends <code>obj</code> to the end of the list and returns true.</li>
+<li><code>void add(int index, E obj)</code> : Inserts <code>obj</code> at position <code>index</code>, as long as <code>index</code> is within the list's length. It moves each element in the list 1 index higher and adds 1 to the list's size.</li>
+</ul>
+<p>Consider the following code:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span> <span class="n">a2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">a2</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
+<span class="n">a2</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">2.0</span><span class="p">);</span>
+<span class="n">a2</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">3.0</span><span class="p">);</span>
+<span class="n">a2</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a2</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1.0, 4.0, 2.0, 3.0]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Let's-Look-at-an-Example">Let's Look at an Example<a class="anchor-link" href="#Let's-Look-at-an-Example"> </a></h3><p>Consider the following code:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">h</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+<span class="n">h</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+<span class="n">h</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+<span class="n">h</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;HeLLO&quot;</span><span class="p">);</span>
+<span class="n">h</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+<span class="n">h</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Hola&quot;</span><span class="p">);</span>
+
+<span class="n">h</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">26.2</span><span class="p">);</span>
+<span class="n">h</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span> <span class="n">String</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">));</span>
+<span class="n">h</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, consider this code:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">g</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+<span class="n">g</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+<span class="n">g</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+<span class="n">g</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;HeLLO&quot;</span><span class="p">);</span>
+<span class="n">g</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+<span class="n">g</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Hola&quot;</span><span class="p">);</span>
+
+<span class="n">g</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span> <span class="n">String</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">));</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">g</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[Hello, Hola, Hello, HeLLO, Hello, Hello]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question:</strong> Why does this code work? You cannot add a double to an arraylist with a String datatype</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Deleting-Items-from-an-ArrayList">Deleting Items from an <code>ArrayList</code><a class="anchor-link" href="#Deleting-Items-from-an-ArrayList"> </a></h3><p><code>E remove(int index)</code> : Removes the element at position <code>index</code>, and moves the elements at position <code>index + 1</code> and higher to the left. It also subtracts one from the list's size. The return value is the element formerly at position <code>index</code>.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// If you are confused of what list g is, look back at the previous code.</span>
+<span class="n">g</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">String</span> <span class="n">former</span> <span class="o">=</span> <span class="n">g</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">former</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Updating-Items-in-an-ArrayList">Updating Items in an <code>ArrayList</code><a class="anchor-link" href="#Updating-Items-in-an-ArrayList"> </a></h3><p><code>E set(int index, E obj)</code> : Replaces the element at position <code>index</code> with <code>obj</code> and returns the element formerly at position <code>index</code>.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">helloFormer</span> <span class="o">=</span> <span class="n">g</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Bonjour&quot;</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">helloFormer</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">g</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello
+[Hola, Bonjour, Hello, Hello]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Accessing-Items-in-an-ArrayList">Accessing Items in an <code>ArrayList</code><a class="anchor-link" href="#Accessing-Items-in-an-ArrayList"> </a></h3><p><code>E get(int index)</code> Returns the element at position <code>index</code> in the list.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">hello</span> <span class="o">=</span> <span class="n">g</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">hello</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">g</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello
+[Hola, Bonjour, Hello, Hello]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Passing-an-ArrayList-as-a-Method-Parameter">Passing an <code>ArrayList</code> as a Method Parameter<a class="anchor-link" href="#Passing-an-ArrayList-as-a-Method-Parameter"> </a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The only time that it is wise to use <code>ArrayList</code> instead of <code>ArrayList&lt;E&gt;</code> is when it is as a function parameter and it is only using <code>ArrayList&lt;&gt;.get(E)</code> or <code>ArrayList&lt;&gt;.size()</code>. Consider the following code:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">private</span> <span class="kt">void</span> <span class="nf">accessOnly</span><span class="p">(</span><span class="n">ArrayList</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">0</span><span class="p">));</span> <span class="c1">// Change the index to the one you want to access</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Array is empty&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">myList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">accessOnly</span><span class="p">(</span><span class="n">myList</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Array is empty
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Returning-an-ArrayList-from-a-Method">Returning an <code>ArrayList</code> from a Method<a class="anchor-link" href="#Returning-an-ArrayList-from-a-Method"> </a></h3><p>In order for you to return an <code>ArrayList</code>, the data type must be specified, and the return type must be the same as the return value. Consider the following code:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="nf">returnTheSame</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span> <span class="c1">// Initialize the ArrayList</span>
+    <span class="n">arr</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">arr</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">result</span> <span class="o">=</span> <span class="n">returnTheSame</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[Hello]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h3><ul>
+<li><p>The learning objective is that "Students will be able to represent collections of related object reference data using <code>ArrayList</code> objects." What does this mean to you?</p>
+</li>
+<li><p>Answer the following questions:</p>
+<ul>
+<li><p>Look back at <em>Size of the <code>ArrayList</code></em>. What does the code output and why?</p>
+<ul>
+<li>it prints the size of the array. since nothing has been added to it, the size is 0 and thus the output is 0</li>
+</ul>
+</li>
+<li><p>Look back at <em>Adding items to an <code>ArrayList</code></em>. What does the code output and why? What type of function is <code>void</code>, and what will be the return value?</p>
+<ul>
+<li>the code outputs the array with the values that have been added using the ".add" syntax</li>
+<li>a void function is a function that does not return anything. in this case, void is used to indicate that the add method does not return a value</li>
+</ul>
+</li>
+<li><p>Look back at Example 1. What two lines did we remove? Why?</p>
+<ul>
+<li>im not sure</li>
+</ul>
+</li>
+<li><p>If an <code>ArrayList</code> is being used as a parameter, what are the only two methods I can use from it? What would happen if I tried to use any other methods?</p>
+<ul>
+<li>you can use read methods like get and size. you can also use iterate methods like for each loops</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Using the Hack Helper, write code that will:</p>
+<ul>
+<li>Add 2 items to the list.</li>
+<li>Remove an item from the list anywhere of the user's choice.</li>
+<li>Replace am item anywhere in the list of the user's choice.</li>
+<li>Get the first and last element of the list, no matter the length.</li>
+<li>Return the items added, removed, replaced, and the list's size, in one string.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Hack-Helper">Hack Helper<a class="anchor-link" href="#Hack-Helper"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListMethodsExample</span> <span class="p">{</span>
+
+    <span class="kd">private</span> <span class="n">String</span> <span class="nf">manipulateList</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">nums</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        
+        <span class="c1">// add 2 items to the list</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span>
+        
+        <span class="c1">// remove an item from the list (user&#39;s choice: index 1)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">nums</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+        <span class="p">}</span>
+        
+        <span class="c1">// replace an item in the list (user&#39;s choice: index 0)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">nums</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span> <span class="p">{</span>
+            <span class="n">nums</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+        <span class="p">}</span>
+        
+        <span class="c1">// get the first and last element of the list (no matter the length)</span>
+        <span class="kt">int</span> <span class="n">firstElement</span> <span class="o">=</span> <span class="o">!</span><span class="n">nums</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">()</span> <span class="o">?</span> <span class="n">nums</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">lastElement</span> <span class="o">=</span> <span class="o">!</span><span class="n">nums</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">()</span> <span class="o">?</span> <span class="n">nums</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+        
+        <span class="c1">// return the items added, removed, replaced, and the list&#39;s size in one string</span>
+        <span class="n">String</span> <span class="n">result</span> <span class="o">=</span> <span class="s">&quot;Items added: 10, 20\n&quot;</span><span class="p">;</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="s">&quot;Item removed: 20\n&quot;</span><span class="p">;</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="s">&quot;Item replaced: 30\n&quot;</span><span class="p">;</span>
+        <span class="n">result</span> <span class="o">+=</span> <span class="s">&quot;List size: &quot;</span> <span class="o">+</span> <span class="n">nums</span><span class="p">.</span><span class="na">size</span><span class="p">();</span>
+        
+        <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ArrayListMethodsExample</span> <span class="n">example</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayListMethodsExample</span><span class="p">();</span>
+        <span class="n">String</span> <span class="n">output</span> <span class="o">=</span> <span class="n">example</span><span class="p">.</span><span class="na">manipulateList</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">output</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">ArrayListMethodsExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Items added: 10, 20
+Item removed: 20
+Item replaced: 30
+List size: 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="7.3:-Traversing-Arraylists">7.3: Traversing Arraylists<a class="anchor-link" href="#7.3:-Traversing-Arraylists"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Learning-Objectives:">Learning Objectives:<a class="anchor-link" href="#Learning-Objectives:"> </a></h3><ul>
+<li><p>With an Arraylist you can traverse objects using a for or while loop.</p>
+</li>
+<li><p>Traversing objects is similar to iterating through objects.</p>
+</li>
+</ul>
+<h3 id="Essential-Knowledge:">Essential Knowledge:<a class="anchor-link" href="#Essential-Knowledge:"> </a></h3><ul>
+<li><p>Iteration statements can be used to accsess all the elements in an Arraylist. This is called traversing the Arraylist.</p>
+</li>
+<li><p>Deleting elements during a traversal of an Arraylist requires special techniques to avoid skiping elements. This is called traversing the Arraylist.</p>
+</li>
+<li><p>The indicies of an Arraylist start at 0; If you try to use any value lower than 0, you will get an <em>ArrayIndexOutOfBoundsException</em> error</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">roster</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        <span class="n">roster</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+        <span class="n">roster</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">);</span>
+        <span class="n">roster</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Java&quot;</span><span class="p">);</span>
+        
+        <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">roster</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">String</span> <span class="n">element</span> <span class="o">=</span> <span class="n">roster</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">element</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">sum</span> <span class="o">+=</span> <span class="n">element</span><span class="p">.</span><span class="na">length</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">sum</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Breakdown:">Breakdown:<a class="anchor-link" href="#Breakdown:"> </a></h4><ul>
+<li><p>We are first declaring a new arraylist and adding a few elements.</p>
+</li>
+<li><p>Next, we set the "sum" variable as 0.</p>
+</li>
+<li><p>We set a for loop to traverse through the arraylist, iterating through all the indices in the arraylist and adding up the lengths of all the values.</p>
+</li>
+<li><p>Lastly, we print it out.</p>
+</li>
+</ul>
+<h4 id="Loop-Conditions:">Loop Conditions:<a class="anchor-link" href="#Loop-Conditions:"> </a></h4><ul>
+<li>There are a few diffrent loop conditions you can use to traverse an Arraylist:<blockquote><p>First, there are three major parts of a for loop:&gt;Initialisation, in which you declare the index, can be modified to change where you want to traverse from.
+Boolean condition, in which you declare the stop condition, can be modified in order to change the index you want to stop traversing in.</p>
+</blockquote>
+</li>
+</ul>
+<blockquote><p>Update, in which you declare how many indexes to go through, can be modified to skip certain indicies and traverse in a certain direction.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Practice:">Practice:<a class="anchor-link" href="#Practice:"> </a></h4><p>Suppose we have an arraylist named grades, and we want to remove the entries that are lower than 70.
+replace the question marks with code to solve the problem:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span> <span class="n">grades</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        <span class="n">grades</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">68.9</span><span class="p">);</span>
+        <span class="n">grades</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">71.0</span><span class="p">);</span>
+        <span class="n">grades</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">100.0</span><span class="p">);</span>
+        <span class="n">grades</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">80.0</span><span class="p">);</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span> <span class="n">grades</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">grades</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">70</span><span class="p">){</span>
+                <span class="n">grades</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">grades</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[71.0, 100.0, 80.0]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Using-Enhanced-For-Loop-With-Traversing:">Using Enhanced For-Loop With Traversing:<a class="anchor-link" href="#Using-Enhanced-For-Loop-With-Traversing:"> </a></h4><ul>
+<li><p>Using Enhanced for loop is easier to read and write and is also more concise and avoids errors.</p>
+</li>
+<li><p>Indexes are not explicitly used and copies of the current element are made at each iteration.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">roster</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        <span class="n">roster</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+        <span class="n">roster</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">);</span>
+        <span class="n">roster</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Java&quot;</span><span class="p">);</span>
+
+        <span class="c1">// Using an enhanced for loop to iterate through the ArrayList</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">element</span> <span class="p">:</span> <span class="n">roster</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">element</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Common-mistakes:">Common mistakes:<a class="anchor-link" href="#Common-mistakes:"> </a></h4><ul>
+<li><p>Using the Wrong Data Type: Ensure that you declare your ArrayList with the correct data type. Using the wrong data type can lead to type mismatches and errors.</p>
+</li>
+<li><p>Incorrect Indexing: Be cautious when using a standard for loop. Off-by-one errors or accessing elements that don't exist can lead to runtime exceptions.</p>
+</li>
+<li><p>Modifying the List During Iteration: Modifying an ArrayList (adding or removing elements) while iterating over it can lead to a ConcurrentModificationException. To avoid this, use an Iterator or create a copy of the list if modifications are needed.</p>
+</li>
+<li><p>Not Checking for Null Elements: When using enhanced for loops or iterators, check for null elements if there's a possibility that your list contains them to avoid NullPointerExceptions.</p>
+</li>
+<li><p>Inefficient Searching: If you need to find a specific element, avoid using a linear search within a loop. Use appropriate methods like contains() or indexOf() to find elements efficiently.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks:">Hacks:<a class="anchor-link" href="#Hacks:"> </a></h2><ul>
+<li>Create a scenario which requires the use of arraylist traversal and create code to solve it. </li>
+<li>Extra points to creative scenarios</li>
+<li>90% credit to any working code and scenario</li>
+<li>80% credit to incomplete code if you provide explanation of it</li>
+<li>-10% deduction for late submition</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>my scenario is about a treasure hunt game where a group of adventurers is exploring a maze. They have found various items along the way and need to figure out what they've collected to continue their adventure.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TreasureHuntGame</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">itemsFound</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+        <span class="c1">// adventurers finding items and adding them to the list.</span>
+        <span class="n">itemsFound</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Golden Key&quot;</span><span class="p">);</span>
+        <span class="n">itemsFound</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Torch&quot;</span><span class="p">);</span>
+        <span class="n">itemsFound</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Map&quot;</span><span class="p">);</span>
+        <span class="n">itemsFound</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Potion&quot;</span><span class="p">);</span>
+        <span class="n">itemsFound</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Treasure Map&quot;</span><span class="p">);</span>
+        <span class="n">itemsFound</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Compass&quot;</span><span class="p">);</span>
+ 
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Items Found:&quot;</span><span class="p">);</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">item</span> <span class="p">:</span> <span class="n">itemsFound</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;- &quot;</span> <span class="o">+</span> <span class="n">item</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="c1">// check if the adventurers have found the essential items to continue.</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">itemsFound</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="s">&quot;Golden Key&quot;</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">itemsFound</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="s">&quot;Treasure Map&quot;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nCongratulations! You have the Golden Key and the Treasure Map. You can continue your adventure to find the hidden treasure!&quot;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nYou need the Golden Key and the Treasure Map to continue your adventure. Keep searching!&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">TreasureHuntGame</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Items Found:
+- Golden Key
+- Torch
+- Map
+- Potion
+- Treasure Map
+- Compass
+
+Congratulations! You have the Golden Key and the Treasure Map. You can continue your adventure to find the hidden treasure!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="7.4:-Developing-Algorithms-Using-ArrayLists">7.4: Developing Algorithms Using ArrayLists<a class="anchor-link" href="#7.4:-Developing-Algorithms-Using-ArrayLists"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Learning-Objectives">Learning Objectives<a class="anchor-link" href="#Learning-Objectives"> </a></h3><p>In the context of <code>ArrayList</code> objects, this module aims to teach the following skills:</p>
+<p>a. Iterating through <code>ArrayLists</code> using <code>for</code> or <code>while</code> loops.</p>
+<p>b. Iterating through <code>ArrayLists</code> using enhanced <code>for</code> loops.</p>
+<p>In the realm of algorithms, within the context of specific requirements that demand the utilization of <code>ArrayList</code> traversals, students will be able to:</p>
+<ul>
+<li>Recognize established algorithms.</li>
+<li>Customize existing algorithms.</li>
+<li>Create new algorithms.</li>
+</ul>
+<h3 id="Essential-Knowledge">Essential Knowledge<a class="anchor-link" href="#Essential-Knowledge"> </a></h3><ul>
+<li><p>Iteration statements provide a means to access all the elements stored within an <code>ArrayList</code>. This process is referred to as "traversing the <code>ArrayList</code>."</p>
+</li>
+<li><p>The following methods related to <code>ArrayLists</code>, their functions, and appropriate use are covered in the Java Quick Reference:</p>
+<ul>
+<li><code>int size()</code> - Returns the count of elements within the list.</li>
+<li><code>boolean add(E obj)</code> - Appends the object <code>obj</code> to the end of the list and returns <code>true</code>.</li>
+<li><code>void add(int index, E obj)</code> - Inserts <code>obj</code> at the specified <code>index</code>, shifting elements at and above that position to the right (incrementing their indices by 1) and increasing the list's size by 1.</li>
+<li><code>E get(int index)</code> - Retrieves the element at the given <code>index</code> in the list.</li>
+<li><code>E set(int index, E obj)</code> - Replaces the element at the specified <code>index</code> with <code>obj</code> and returns the previous element at that index.</li>
+<li><code>E remove(int index)</code> - Deletes the element at the specified <code>index</code>, shifting all subsequent elements one index to the left, reducing the list's size by one, and returning the removed element.</li>
+</ul>
+</li>
+<li><p>There exist established algorithms for <code>ArrayLists</code> that make use of traversals to:</p>
+<ul>
+<li>Insert elements.</li>
+<li>Remove elements.</li>
+<li>Apply the same algorithms commonly used with 1D arrays.</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Popcorn-Hacks:">Popcorn Hacks:<a class="anchor-link" href="#Popcorn-Hacks:"> </a></h2><p>Before you uncomment the code and run it, guess what the code will do based on what you've learned.</p>
+<ul>
+<li>it will iterate through the length of values prints the max value in an array.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Let's-Look-at-an-Example-(Example-1)">Let's Look at an Example (Example 1)<a class="anchor-link" href="#Let's-Look-at-an-Example-(Example-1)"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListExample</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="nf">findMax</span><span class="p">(</span><span class="kt">double</span><span class="o">[]</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">max</span> <span class="o">=</span> <span class="n">values</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">;</span>
+    
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">index</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+           <span class="k">if</span> <span class="p">(</span><span class="n">values</span><span class="o">[</span><span class="n">index</span><span class="o">]</span> <span class="o">&gt;</span> <span class="n">max</span><span class="p">)</span> <span class="p">{</span>
+               <span class="n">max</span> <span class="o">=</span> <span class="n">values</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="p">;</span>
+           <span class="p">}</span>
+        <span class="p">}</span>
+    
+        <span class="k">return</span> <span class="n">max</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">double</span><span class="o">[]</span> <span class="n">nums</span> <span class="o">=</span> <span class="p">{</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">69.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">};</span>
+        <span class="n">ArrayListExample</span> <span class="n">example</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayListExample</span><span class="p">();</span>
+        <span class="kt">double</span> <span class="n">max</span> <span class="o">=</span> <span class="n">example</span><span class="p">.</span><span class="na">findMax</span><span class="p">(</span><span class="n">nums</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Maximum value: &quot;</span> <span class="o">+</span> <span class="n">max</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">ArrayListExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Maximum value: 69.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Take a closer look at the <code>findMax()</code> method. It takes in a list of doubles as parameters. It will then use a <code>for</code> loop to find the maximum value in the list. Now, using what we know, can we replace the list of doubles with an ArrayList of Doubles? We sure can! Take a look at how we can use ArrayList to do just that:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListExample</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="nf">findMax</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">max</span> <span class="o">=</span> <span class="n">values</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">index</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+           <span class="k">if</span> <span class="p">(</span><span class="n">values</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">max</span><span class="p">)</span> <span class="p">{</span>
+               <span class="n">max</span> <span class="o">=</span> <span class="n">values</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">index</span><span class="p">);</span>
+           <span class="p">}</span>
+        <span class="p">}</span>
+    
+        <span class="k">return</span> <span class="n">max</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span> <span class="n">nums</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">3.0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">2.0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">2.0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">69.0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">2.0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">4.0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">6.0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">2.0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">5.0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mf">10.0</span><span class="p">);</span>
+        
+        <span class="n">ArrayListExample</span> <span class="n">example</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayListExample</span><span class="p">();</span>
+        <span class="kt">double</span> <span class="n">max</span> <span class="o">=</span> <span class="n">example</span><span class="p">.</span><span class="na">findMax</span><span class="p">(</span><span class="n">nums</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Maximum value: &quot;</span> <span class="o">+</span> <span class="n">max</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">ArrayListExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Maximum value: 69.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Let's-Look-at-an-Example-(Example-2)">Let's Look at an Example (Example 2)<a class="anchor-link" href="#Let's-Look-at-an-Example-(Example-2)"> </a></h3><p>Take a look at this code:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListExample</span> <span class="p">{</span>
+    <span class="c1">//finds the minimum</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="nf">findMin</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">Integer</span><span class="p">.</span><span class="na">MAX_VALUE</span><span class="p">;</span> 
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">currentValue</span> <span class="p">:</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//uses enhanced for loop</span>
+           <span class="k">if</span> <span class="p">(</span><span class="n">currentValue</span> <span class="o">&lt;</span> <span class="n">min</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//if current value is less than current min</span>
+               <span class="n">min</span> <span class="o">=</span> <span class="n">currentValue</span><span class="p">;</span> <span class="c1">//replace</span>
+           <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">min</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">nums</span> <span class="o">=</span> <span class="p">{</span><span class="mi">420</span><span class="p">,</span> <span class="mi">703</span><span class="p">,</span> <span class="mi">2034</span><span class="p">,</span> <span class="mi">582</span><span class="p">,</span> <span class="mi">1047</span><span class="p">,</span> <span class="mi">4545</span><span class="p">};</span>
+        <span class="n">ArrayListExample</span> <span class="n">example</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayListExample</span><span class="p">();</span>
+        <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">example</span><span class="p">.</span><span class="na">findMin</span><span class="p">(</span><span class="n">nums</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Minimum value: &quot;</span> <span class="o">+</span> <span class="n">min</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">ArrayListExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Minimum value: 420
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, can we use ArrayLists to make this code better? We sure can! Take a look at the new and improved code that uses ArrayLists:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListExample</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="nf">findMin</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">Integer</span><span class="p">.</span><span class="na">MAX_VALUE</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">currentValue</span> <span class="p">:</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span>
+           <span class="k">if</span> <span class="p">(</span><span class="n">currentValue</span> <span class="o">&lt;</span> <span class="n">min</span><span class="p">)</span> <span class="p">{</span>
+               <span class="n">min</span> <span class="o">=</span> <span class="n">currentValue</span><span class="p">;</span>
+           <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">min</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">nums</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">420</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">703</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">2034</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">582</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1047</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">4545</span><span class="p">);</span>
+        <span class="n">ArrayListExample</span> <span class="n">example</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayListExample</span><span class="p">();</span>
+        <span class="kt">int</span> <span class="n">min</span> <span class="o">=</span> <span class="n">example</span><span class="p">.</span><span class="na">findMin</span><span class="p">(</span><span class="n">nums</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Minimum value: &quot;</span> <span class="o">+</span> <span class="n">min</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">ArrayListExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Minimum value: 420
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h3><ul>
+<li><p>Answer the questions:</p>
+<ul>
+<li><p>Look back at the examples. What's similar? What's different?</p>
+<ul>
+<li>Both aim to find the minimum value within a list of integers. they both have a findMin Method that performs the task of finding the minimum value. they also both use a for-each loop to iterate through the elements</li>
+<li>The first code snippet uses an array of integers (int[]). The second code snippet uses an ArrayList of integers (ArrayList<Integer>). In the first code , elements are accessed using array indexing, while in the second code, elements are accessed using the for-each loop with an ArrayList.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+<li><p>Why do we use <code>ArrayList</code>? Why not just regular lists?</p>
+<ul>
+<li>ArrayLists offer dynamic sizing, making it easier to manage collections that you want to add or delete from. They provide more abstraction and are more flexible since they can store objects of any type.</li>
+</ul>
+</li>
+&lt;/ul&gt;
+&lt;/li&gt;
+<li><p>Demonstrate at least two <code>ArrayList</code> methods that aren't <code>ArrayList&lt;&gt;.size()</code> and <code>ArrayList&lt;&gt;.get()</code>.</p>
+<ul>
+<li>two methods that aren't size and get are add and remove</li>
+</ul>
+</li>
+&lt;/ul&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Colors</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">colors</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+        <span class="c1">// adding elements to the ArrayList using the add method.</span>
+        <span class="n">colors</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Red&quot;</span><span class="p">);</span>
+        <span class="n">colors</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Blue&quot;</span><span class="p">);</span>
+        <span class="n">colors</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Green&quot;</span><span class="p">);</span>
+        
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;ArrayList after adding elements: &quot;</span> <span class="o">+</span> <span class="n">colors</span><span class="p">);</span>
+
+        <span class="c1">// removing the element at index 1 (which is &quot;Blue&quot;).</span>
+        <span class="n">colors</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+        
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;ArrayList after removing an element: &quot;</span> <span class="o">+</span> <span class="n">colors</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Colors</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>ArrayList after adding elements: [Red, Blue, Green]
+ArrayList after removing an element: [Red, Green]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Write the method <code>findSum()</code> using the Hack Helper and incorporating <code>ArrayList</code>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Hack-Helper">Hack Helper<a class="anchor-link" href="#Hack-Helper"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListHacks</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="nf">findSum</span><span class="p">(</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">value</span> <span class="p">:</span> <span class="n">values</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">sum</span> <span class="o">+=</span> <span class="n">value</span><span class="p">;</span> <span class="c1">// accumulate the sum</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">sum</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">nums</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+        <span class="n">nums</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="mi">8</span><span class="p">);</span>
+
+        <span class="n">ArrayListHacks</span> <span class="n">hacks</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayListHacks</span><span class="p">();</span>
+        <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">hacks</span><span class="p">.</span><span class="na">findSum</span><span class="p">(</span><span class="n">nums</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Sum of the numbers: &quot;</span> <span class="o">+</span> <span class="n">sum</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">ArrayListHacks</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Sum of the numbers: 19
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="7.5-Searching">7.5 Searching<a class="anchor-link" href="#7.5-Searching"> </a></h1><h3 id="Learning-Objectives">Learning Objectives<a class="anchor-link" href="#Learning-Objectives"> </a></h3><ul>
+<li>Apply sequential/linear search algorithms to search for specific information in array or <code>arraylist</code> objects</li>
+</ul>
+<h3 id="Essential-Knowledge:">Essential Knowledge:<a class="anchor-link" href="#Essential-Knowledge:"> </a></h3><ul>
+<li>Sequential/linear search alogorithms check each element in order untill the desired value is found or all elementsin the array or <code>arraylist</code> have been checked</li>
+</ul>
+<h3 id="Search-Process">Search Process<a class="anchor-link" href="#Search-Process"> </a></h3><ul>
+<li><p>Linear searching fits a standard for loop perfectly! We need to specify each element, one at a time, and do not need to track the index after execution</p>
+</li>
+<li><p>Inside the for loop, we retrieve the value from the structure at the specified index and compare it to the searched value</p>
+</li>
+<li><p>If it matches we return the index, otherwise we keep looking!</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Searching-Linear-Structures">Searching Linear Structures<a class="anchor-link" href="#Searching-Linear-Structures"> </a></h3><h4 id="Finding-information-with-a-computer-is-something-we-need-to-know-how-to-do.-Linear-search-algorithms-are-BEST-used-when-we-do-not-have-any-idea-about-the-order-of-the-data-and-so-we-need-to-look-at-each-element-to-determine-if-what-we-are-looking-for-is-in-fact-inside-the-array-or-ArrayList.">Finding information with a computer is something we need to know how to do. Linear search algorithms are BEST used when we do not have any idea about the order of the data and so we need to look at each element to determine if what we are looking for is in fact inside the array or <code>ArrayList</code>.<a class="anchor-link" href="#Finding-information-with-a-computer-is-something-we-need-to-know-how-to-do.-Linear-search-algorithms-are-BEST-used-when-we-do-not-have-any-idea-about-the-order-of-the-data-and-so-we-need-to-look-at-each-element-to-determine-if-what-we-are-looking-for-is-in-fact-inside-the-array-or-ArrayList."> </a></h4><h4 id="When-searching,-we-do-need-to-remember-that-different-data-types-require-comparisons!">When searching, we do need to remember that different data types require comparisons!<a class="anchor-link" href="#When-searching,-we-do-need-to-remember-that-different-data-types-require-comparisons!"> </a></h4><ul>
+<li>When looking at <code>int</code> values, the == operator is the tool to use!</li>
+<li>When searching for a <code>double</code> value, we need to make sure the value is close enough by doing some math!</li>
+<li><code>Object</code> instances should always use the <code>.equals(otheThing)</code> method to check for a match!</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Searching-an-ArrayList-of-Double">Searching an <code>ArrayList</code> of Double<a class="anchor-link" href="#Searching-an-ArrayList-of-Double"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kt">int</span> <span class="nf">where</span><span class="p">(</span><span class="kt">double</span> <span class="n">magicNumber</span><span class="p">,</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span> <span class="n">realNumbers</span><span class="p">,</span> <span class="kt">double</span> <span class="n">delta</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">realNumbers</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">index</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">(</span><span class="n">magicNumber</span> <span class="o">-</span> <span class="n">realNumbers</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">index</span><span class="p">))</span> <span class="o">&lt;</span> <span class="n">delta</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">index</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Explanation">Explanation<a class="anchor-link" href="#Explanation"> </a></h3><blockquote><p>The where function searches through a list of numbers to find and return the position of the first number that is very close to a specific target number, known as magicNumber. If no number in the list is close enough to the target number, the function returns -1, indicating that no match was found.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Searching-an-ArrayList-of-book-for-a-String">Searching an <code>ArrayList</code> of book for a <code>String</code><a class="anchor-link" href="#Searching-an-ArrayList-of-book-for-a-String"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kt">int</span> <span class="nf">findTheWord</span><span class="p">(</span><span class="n">String</span> <span class="n">searchedPhrase</span><span class="p">,</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Book</span><span class="o">&gt;</span> <span class="n">myBooks</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">index</span> <span class="o">&lt;</span> <span class="n">myBooks</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">index</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Book</span> <span class="n">currentBook</span> <span class="o">=</span> <span class="n">myBooks</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">index</span><span class="p">);</span>
+        <span class="n">String</span> <span class="n">currentPhrase</span> <span class="o">=</span> <span class="n">currentBook</span><span class="p">.</span><span class="na">getDescription</span><span class="p">();</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">currentPhrase</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">searchedPhrase</span><span class="p">))</span>
+        <span class="p">{</span>
+            <span class="k">return</span> <span class="n">index</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Explanation">Explanation<a class="anchor-link" href="#Explanation"> </a></h3><blockquote><p>This little code snippet is like a treasure hunt through a collection of books; it's on a mission to find the one book whose description matches exactly with a special phrase you're looking for. If it finds the perfect match, it'll excitedly tell you where it is in the collection, but if not, it'll sadly let you know with a -1 that the search was a bust.</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Questions">Questions<a class="anchor-link" href="#Questions"> </a></h2><h4 id="Should-we-use-==-when-looking-for-an-Object?">Should we use == when looking for an Object?<a class="anchor-link" href="#Should-we-use-==-when-looking-for-an-Object?"> </a></h4><blockquote><p>No, that only will return true if the variable and the element stored at that index point to the same memory, are aliases of each other</p>
+</blockquote>
+<h4 id="Why-did-we-subtract-the-double-values?">Why did we subtract the double values?<a class="anchor-link" href="#Why-did-we-subtract-the-double-values?"> </a></h4><blockquote><p>To make sure that the lack of preciosin that is inherit in the data type is handled within our code</p>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Why-does-order-sometimes-matter?">Why does order sometimes matter?<a class="anchor-link" href="#Why-does-order-sometimes-matter?"> </a></h2><h4 id="When-searching-for-a-value-to-remove-from-a-list,-if-we-search-forward-we-have-to-make-sure-to-adjust-the-loop-control-variable,-or-we-might-skip-what-we-are-looking-for-when-removing!">When searching for a value to remove from a list, if we search forward we have to make sure to adjust the loop control variable, or we might skip what we are looking for when removing!<a class="anchor-link" href="#When-searching-for-a-value-to-remove-from-a-list,-if-we-search-forward-we-have-to-make-sure-to-adjust-the-loop-control-variable,-or-we-might-skip-what-we-are-looking-for-when-removing!"> </a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="7.6-Sorting">7.6 Sorting<a class="anchor-link" href="#7.6-Sorting"> </a></h1><h3 id="Learning-Objectives">Learning Objectives<a class="anchor-link" href="#Learning-Objectives"> </a></h3><ul>
+<li>Apply selection sort and insertion sort algorithms to sort the elements of array or <code>ArrayList</code> objects.</li>
+</ul>
+<h3 id="Essential-Knowledge:">Essential Knowledge:<a class="anchor-link" href="#Essential-Knowledge:"> </a></h3><ul>
+<li>Selection sort and insertion sort are iterative sorting algorithms that can be used to sort elements in an array or <code>ArrayList</code>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Selection-Sort">Selection Sort<a class="anchor-link" href="#Selection-Sort"> </a></h2><blockquote><p>This is one of the easiest sorts to demonstrate. The selection sort identifies either the maximum or minimum of the compared values and iterates over the structure checking if the item stored at the index matches that condition, if so, it will swap the value stored at that index and continue. This implementation uses a helper method to perform the swap operation since variables can hold only one value at a time!</p>
+</blockquote>
+<p>Example:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// with normal arrays</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">outerLoop</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">outerLoop</span> <span class="o">&lt;</span> <span class="n">myDucks</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">outerLoop</span> <span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">minIndex</span> <span class="o">=</span> <span class="n">outerLoop</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outerLoop</span> <span class="o">+</span><span class="mi">1</span><span class="p">;</span> <span class="n">inner</span> <span class="o">&lt;</span> <span class="n">myDucks</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">inner</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">myDucks</span><span class="o">[</span><span class="n">inner</span><span class="o">]</span><span class="p">.</span><span class="na">compareT</span><span class="p">(</span><span class="n">myDucks</span><span class="o">[</span><span class="n">minIndex</span><span class="o">]</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">minIndex</span> <span class="o">=</span> <span class="n">inner</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">minIndex</span> <span class="o">!=</span> <span class="n">outerLoop</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">swapItems</span><span class="p">(</span><span class="n">minIndex</span><span class="p">,</span> <span class="n">outerloop</span><span class="p">,</span> <span class="n">myDucks</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// with array lists</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">outerLoop</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">outerLoop</span> <span class="o">&lt;</span> <span class="n">myDucks</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">outerLoop</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">minIndex</span> <span class="o">=</span> <span class="n">outerLoop</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outerLoop</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">inner</span> <span class="o">&lt;</span> <span class="n">myDucks</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">inner</span><span class="o">++</span><span class="p">)</span> 
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">myDucks</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">inner</span><span class="p">).</span><span class="na">compareT</span><span class="p">(</span><span class="n">myDucks</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">minIndex</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> 
+        <span class="p">{</span>
+            <span class="n">minIndex</span> <span class="o">=</span> <span class="n">inner</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">minIndex</span> <span class="o">!=</span> <span class="n">outerLoop</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">swapItems</span><span class="p">(</span><span class="n">minIndex</span><span class="p">,</span> <span class="n">outerLoop</span><span class="p">,</span> <span class="n">myDucks</span><span class="p">);</span> 
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="cm">/*</span>
+<span class="cm">This code performs a selection sort on the myDucks ArrayList, ordering its elements based on the compareT method. </span>
+<span class="cm">During each iteration of the outer loop, it finds the index of the minimum element in the unsorted portion of the list and swaps it with the first element of the unsorted portion.</span>
+<span class="cm"> */</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Insertion-Sort-Algorithm">Insertion Sort Algorithm<a class="anchor-link" href="#Insertion-Sort-Algorithm"> </a></h2><blockquote><p>The insertion sort is characterized by building a sorted structure as it proceeds. It inserts each value it finds at the appropriate location in the data structure. This is often accomplished by using a while loop as the inner loop.</p>
+</blockquote>
+<p>Example:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">outer</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">outer</span> <span class="o">&lt;</span> <span class="n">randomList</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">outer</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">DebugDuck</span> <span class="n">tested</span> <span class="o">=</span> <span class="n">randomList</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">outer</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">inner</span> <span class="o">=</span> <span class="n">outer</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+
+    <span class="k">while</span> <span class="p">(</span> <span class="n">innter</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">tested</span><span class="p">.</span><span class="na">compareTo</span><span class="p">(</span><span class="n">randomList</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">inner</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">ramdomList</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">inner</span> <span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">randomList</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">inner</span><span class="p">));</span>
+        <span class="n">inner</span><span class="o">--</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">randomList</span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">inner</span> <span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">tested</span><span class="p">)</span>
+<span class="p">}</span>
+<span class="c1">// This code arranges a list of DebugDuck objects in order using the insertion sort method, </span>
+<span class="c1">// by moving through the list and putting each item in its proper place one by one.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="7.7:-Ethical-Issues-around-Data-Collection">7.7: Ethical Issues around Data Collection<a class="anchor-link" href="#7.7:-Ethical-Issues-around-Data-Collection"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Learning-Objectives:">Learning Objectives:<a class="anchor-link" href="#Learning-Objectives:"> </a></h3><ul>
+<li>Explaining the risks of privacy from collecting and storing personal data on computer systems.</li>
+</ul>
+<h3 id="Essential-Knowledge:">Essential Knowledge:<a class="anchor-link" href="#Essential-Knowledge:"> </a></h3><ul>
+<li>When using the computer, personal privacy is at risk. Programmers should attempt to safeguard personal privacy.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Privacy-Protection:">Privacy Protection:<a class="anchor-link" href="#Privacy-Protection:"> </a></h4><ul>
+<li>A simple way to protect privacy is to delete personal user info after done using it.</li>
+<li>Another way is to minimize the amount of data used by the program in order to protect privacy.</li>
+<li>Anonymizing personal data via the object method <em>hashCode()</em> is another way.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks:">Hacks:<a class="anchor-link" href="#Hacks:"> </a></h2><ul>
+<li>Think of other ways to safeguard user privacy (any other method not listed is fine)</li>
+<li>Extra points to creative solutions</li>
+<li>90% credit to any solution</li>
+<li>80% credit to incomplete solution (how did you do that?)</li>
+<li>-10% deduction for late submition</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Encrypt sensitive user data both at rest and in transit. </li>
+<li>Use data masking techniques to replace sensitive information with masked or fake data</li>
+<li>Automatically delete user data that is no longer needed after a certain period. </li>
+<li>Use AI and machine learning for user data protection by detecting and preventing privacy breaches in real-time.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Grading:">Grading:<a class="anchor-link" href="#Grading:"> </a></h1><ul>
+<li>7.2 Hacks (0.19)</li>
+<li>7.3 Hacks (0.19)</li>
+<li>7.4 Hacks (0.19)</li>
+<li>7.7 Hacks (0.19)</li>
+<li>Popcorn Hacks (0.19)</li>
+<li>Anything else creative or above-and-beyond showing your understanding of ArrayLists (0.05)</li>
+</ul>
+
+</div>
+</div>
+</div>
+&lt;/div&gt;
+ 
+
+</Integer></li></ul></li></ul></li></ul></div></div></div></div>
+
+
+  </div><a class="u-url" href="/FastPages/2023/10/24/Unit7Lesson.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FastPages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://vivianknee.github.io/FastPages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FastPages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>CSP Fastpages</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FastPages/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/NighthawkCoding" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FastPages/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FastPages/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
