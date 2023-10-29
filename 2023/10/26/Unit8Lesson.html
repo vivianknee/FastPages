@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unit 8 Lesson | Vivian Ni</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unit 8 Lesson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="2DArrays" />
+<meta property="og:description" content="2DArrays" />
+<link rel="canonical" href="https://vivianknee.github.io/FastPages/2023/10/26/Unit8Lesson.html" />
+<meta property="og:url" content="https://vivianknee.github.io/FastPages/2023/10/26/Unit8Lesson.html" />
+<meta property="og:site_name" content="Vivian Ni" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-26T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unit 8 Lesson" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-26T00:00:00-05:00","datePublished":"2023-10-26T00:00:00-05:00","description":"2DArrays","headline":"Unit 8 Lesson","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/FastPages/2023/10/26/Unit8Lesson.html"},"url":"https://vivianknee.github.io/FastPages/2023/10/26/Unit8Lesson.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FastPages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://vivianknee.github.io/FastPages/feed.xml" title="Vivian Ni" /><link rel="shortcut icon" type="image/x-icon" href="/FastPages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/FastPages/">Vivian Ni</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/FastPages/_pages/002apcspblog.html">APCSP Blog</a><a class="page-link" href="/FastPages/_pages/003lessons.html">Student Lessons</a><a class="page-link" href="/FastPages/about/">About Me</a><a class="page-link" href="/FastPages/Vocab/">Vocab</a><a class="page-link" href="/FastPages/categories/">Tags</a><a class="page-link" href="/FastPages/_pages/Frontend.html">Frontend</a><a class="page-link" href="/FastPages/search/">Search</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 8 Lesson</h1><p class="page-description">2DArrays</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-10-26T00:00:00-05:00" itemprop="datePublished">
+        Oct 26, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      24 min read
+    
+</span></p>
+
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-10-26-Unit8Lesson.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="8.1">8.1<a class="anchor-link" href="#8.1"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="What-is-a-2D-array">What is a 2D array<a class="anchor-link" href="#What-is-a-2D-array"> </a></h2><p>A 2D array is an array of arrays.</p>
+<p><img src="https://github.com/Krishiv111/KPNSTeam/assets/111609656/fc04c520-ec82-414e-897c-0b0753c73f8d" alt="image.png" /></p>
+<h2 id="Why-use-2D-arrays?">Why use 2D arrays?<a class="anchor-link" href="#Why-use-2D-arrays?"> </a></h2><p>1D array of people</p>
+
+<pre><code>{
+"Patrick Mahomes"
+"Mr. Mortensen"
+"Taylor Swift"
+"Margot Robbie"
+}</code></pre>
+<p>2D array of men and women</p>
+
+<pre><code>{
+{ "Patrick Mahomes", "Mr. Mortensen"} ,
+{"Taylor Swift", "Margot Robbie"}
+}</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Declaring-a-2D-Array">Declaring a 2D Array<a class="anchor-link" href="#Declaring-a-2D-Array"> </a></h2><p>Very similar to declaring a 1D array.</p>
+
+<pre><code>DataType[] name // 1D array
+DataType[][] name // 2D array</code></pre>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span><span class="o">[][]</span> <span class="n">intArray</span><span class="p">;</span> <span class="c1">//primitive</span>
+<span class="n">String</span><span class="o">[][]</span> <span class="n">stringArray</span><span class="p">;</span> <span class="c1">//object</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Initalizing-a-2D-Array">Initalizing a 2D Array<a class="anchor-link" href="#Initalizing-a-2D-Array"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TwoDArrayExample</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">rows</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">cols</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+        
+        <span class="c1">// Declare and initialize a 2D array</span>
+        <span class="kt">int</span><span class="o">[][]</span> <span class="n">myArray</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">}</span>
+        <span class="p">};</span>
+        
+        <span class="c1">// Access and print elements</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">rows</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">cols</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">myArray</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">TwoDArrayExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Popcorn-HACK-1">Popcorn HACK 1<a class="anchor-link" href="#Popcorn-HACK-1"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TwoDArrayHack1</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+         <span class="c1">// Declare and initialize a 2D array with 5 rows (arrays) and 4 columns (elements per array) of int data type.</span>
+
+        <span class="kt">int</span> <span class="n">rows</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">cols</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+        
+        <span class="kt">int</span> <span class="o">[][]</span> <span class="n">popcornArray</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">}</span>
+        <span class="p">};</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="More-Initializing-and-Accessing-Array-Elements-of-a-2D-Array">More Initializing and Accessing Array Elements of a 2D Array<a class="anchor-link" href="#More-Initializing-and-Accessing-Array-Elements-of-a-2D-Array"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Student</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+
+    <span class="c1">// Constructor to initialize a Student object</span>
+    <span class="kd">public</span> <span class="nf">Student</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Getter method to retrieve the student&#39;s name</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Getter method to retrieve the student&#39;s age</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getAge</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">age</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Method to print student information</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">printInfo</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Name: &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Age: &quot;</span> <span class="o">+</span> <span class="n">age</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TwoDArrayHack2</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Declare and initialize a 2D array with 6 rows and 6 columns of Student objects</span>
+        <span class="n">Student</span><span class="o">[][]</span> <span class="n">studentArray</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="o">[</span><span class="mi">6</span><span class="o">][</span><span class="mi">6</span><span class="o">]</span><span class="p">;</span>
+
+        <span class="c1">// Creating and initializing Student objects in the array</span>
+        <span class="n">studentArray</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="s">&quot;Yuri&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span>
+        <span class="n">studentArray</span><span class="o">[</span><span class="mi">1</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Student</span><span class="p">(</span><span class="s">&quot;Gorlcok&quot;</span><span class="p">,</span> <span class="mi">135</span><span class="p">);</span>
+
+        <span class="c1">// Accessing and using the Student objects&#39; methods</span>
+        <span class="n">String</span> <span class="n">studentName</span> <span class="o">=</span> <span class="n">studentArray</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span>
+        <span class="kt">int</span> <span class="n">studentAge</span> <span class="o">=</span> <span class="n">studentArray</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">getAge</span><span class="p">();</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Student Name: &quot;</span> <span class="o">+</span> <span class="n">studentName</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Student Age: &quot;</span> <span class="o">+</span> <span class="n">studentAge</span><span class="p">);</span>
+
+        <span class="n">studentArray</span><span class="o">[</span><span class="mi">1</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span><span class="p">.</span><span class="na">printInfo</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">TwoDArrayHack2</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Student Name: Yuri
+Student Age: 16
+Name: Gorlcok
+Age: 135
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="More-Initializing-+-Accessing-+-Popcorn-HACK-2">More Initializing + Accessing + Popcorn HACK 2<a class="anchor-link" href="#More-Initializing-+-Accessing-+-Popcorn-HACK-2"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">NFLTeams</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">teamName</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">city</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">championships</span><span class="p">;</span>
+
+    <span class="c1">// Constructor to initialize NFL team data</span>
+    <span class="kd">public</span> <span class="nf">NFLTeams</span><span class="p">(</span><span class="n">String</span> <span class="n">teamName</span><span class="p">,</span> <span class="n">String</span> <span class="n">city</span><span class="p">,</span> <span class="kt">int</span> <span class="n">championships</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">teamName</span> <span class="o">=</span> <span class="n">teamName</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">city</span> <span class="o">=</span> <span class="n">city</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">championships</span> <span class="o">=</span> <span class="n">championships</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Method to display team information</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">displayTeamInfo</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Team: &quot;</span> <span class="o">+</span> <span class="n">teamName</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;City: &quot;</span> <span class="o">+</span> <span class="n">city</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Championships: &quot;</span> <span class="o">+</span> <span class="n">championships</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">NFLTeams2DArray</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Declare a 2D array of NFLTeams to store data for 5 teams and 5 columns</span>
+        <span class="n">NFLTeams</span><span class="o">[][]</span> <span class="n">nflArray</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team1&quot;</span><span class="p">,</span> <span class="s">&quot;City1&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team2&quot;</span><span class="p">,</span> <span class="s">&quot;City2&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team3&quot;</span><span class="p">,</span> <span class="s">&quot;City3&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team4&quot;</span><span class="p">,</span> <span class="s">&quot;City4&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team5&quot;</span><span class="p">,</span> <span class="s">&quot;City5&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">)},</span>
+            <span class="p">{</span><span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team6&quot;</span><span class="p">,</span> <span class="s">&quot;City6&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team7&quot;</span><span class="p">,</span> <span class="s">&quot;City7&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team8&quot;</span><span class="p">,</span> <span class="s">&quot;City8&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team9&quot;</span><span class="p">,</span> <span class="s">&quot;City9&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team10&quot;</span><span class="p">,</span> <span class="s">&quot;City10&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)},</span>
+            <span class="p">{</span><span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team11&quot;</span><span class="p">,</span> <span class="s">&quot;City11&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team12&quot;</span><span class="p">,</span> <span class="s">&quot;City12&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team13&quot;</span><span class="p">,</span> <span class="s">&quot;City13&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team14&quot;</span><span class="p">,</span> <span class="s">&quot;City14&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team15&quot;</span><span class="p">,</span> <span class="s">&quot;City15&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">)},</span>
+            <span class="p">{</span><span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team16&quot;</span><span class="p">,</span> <span class="s">&quot;City16&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team17&quot;</span><span class="p">,</span> <span class="s">&quot;City17&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team18&quot;</span><span class="p">,</span> <span class="s">&quot;City18&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team19&quot;</span><span class="p">,</span> <span class="s">&quot;City19&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team20&quot;</span><span class="p">,</span> <span class="s">&quot;City20&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)},</span>
+            <span class="p">{</span><span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team21&quot;</span><span class="p">,</span> <span class="s">&quot;City21&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team22&quot;</span><span class="p">,</span> <span class="s">&quot;City22&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team23&quot;</span><span class="p">,</span> <span class="s">&quot;City23&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team24&quot;</span><span class="p">,</span> <span class="s">&quot;City24&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="k">new</span> <span class="n">NFLTeams</span><span class="p">(</span><span class="s">&quot;Team25&quot;</span><span class="p">,</span> <span class="s">&quot;City25&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)}</span>
+        <span class="p">};</span>
+
+        <span class="c1">// Print out Team 17&#39;s Team info </span>
+        <span class="n">nflArray</span><span class="o">[</span><span class="mi">3</span><span class="o">][</span><span class="mi">1</span><span class="o">]</span><span class="p">.</span><span class="na">displayTeamInfo</span><span class="p">();</span>
+        
+        <span class="c1">// Print out Team 21&#39;s Team Info</span>
+        <span class="n">nflArray</span><span class="o">[</span><span class="mi">4</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">displayTeamInfo</span><span class="p">();</span>
+
+        <span class="c1">// Print out Team 3&#39;s team Info</span>
+        <span class="n">nflArray</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span><span class="p">.</span><span class="na">displayTeamInfo</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">NFLTeams2DArray</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Team: Team17
+City: City17
+Championships: 4
+Team: Team21
+City: City21
+Championships: 0
+Team: Team3
+City: City3
+Championships: 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Updating-2D-Arrays">Updating 2D Arrays<a class="anchor-link" href="#Updating-2D-Arrays"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Update2DArray</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Create a 3x3 2D array of integers</span>
+        <span class="kt">int</span><span class="o">[][]</span> <span class="n">matrix</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="c1">// Display the original 2D array</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Original 2D Array:&quot;</span><span class="p">);</span>
+        <span class="n">printArray</span><span class="p">(</span><span class="n">matrix</span><span class="p">);</span>
+
+        <span class="c1">// Update specific elements in the array</span>
+        <span class="n">matrix</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>  <span class="c1">// Update the element in the first row, first column</span>
+        <span class="n">matrix</span><span class="o">[</span><span class="mi">1</span><span class="o">][</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="mi">22</span><span class="p">;</span>  <span class="c1">// Update the element in the second row, second column</span>
+        <span class="n">matrix</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="mi">33</span><span class="p">;</span>  <span class="c1">// Update the element in the third row, third column</span>
+
+        <span class="c1">// Display the updated 2D array</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nUpdated 2D Array:&quot;</span><span class="p">);</span>
+        <span class="n">printArray</span><span class="p">(</span><span class="n">matrix</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Helper method to print the 2D array</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printArray</span><span class="p">(</span><span class="kt">int</span><span class="o">[][]</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Update2DArray</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Popcorn-HACK-3">Popcorn HACK 3<a class="anchor-link" href="#Popcorn-HACK-3"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Update2DArrayHACK</span> <span class="p">{</span>
+
+    <span class="c1">// Helper method to print the 2D integer array</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printIntArray</span><span class="p">(</span><span class="kt">int</span><span class="o">[][]</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="c1">// Declare and Initialize a 2D integer array with the same dimensions (5x5)</span>
+        <span class="kt">int</span><span class="o">[][]</span> <span class="n">integerArray</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">25</span><span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="n">integerArray</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="mi">250</span><span class="p">;</span>
+        <span class="n">integerArray</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="mi">69</span><span class="p">;</span>
+        <span class="n">integerArray</span><span class="o">[</span><span class="mi">4</span><span class="o">][</span><span class="mi">4</span><span class="o">]</span> <span class="o">=</span> <span class="mi">96</span><span class="p">;</span>
+        <span class="n">integerArray</span><span class="o">[</span><span class="mi">0</span><span class="o">][</span><span class="mi">4</span><span class="o">]</span> <span class="o">=</span> <span class="mi">125</span><span class="p">;</span>
+        <span class="n">integerArray</span><span class="o">[</span><span class="mi">1</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="mi">135</span><span class="p">;</span>
+
+     <span class="c1">// Update the element in the first row, first column to 250</span>
+     <span class="c1">// Update the element in the third row, third column to 69</span>
+     <span class="c1">// Update the element in the fifth row, fifth column to 96</span>
+    <span class="c1">// Update the element in the first row, fifth column to 125</span>
+     <span class="c1">// Update the element in the second row, third column to 135        </span>
+
+        <span class="c1">// Display the updated 2D integer array</span>
+        <span class="n">printIntArray</span><span class="p">(</span><span class="n">integerArray</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Update2DArrayHACK</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>250 2 3 4 125 
+6 7 135 9 10 
+11 12 69 14 15 
+16 17 18 19 20 
+21 22 23 24 96 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Popcorn-HACK-4---Review-Quiz">Popcorn HACK 4 - Review Quiz<a class="anchor-link" href="#Popcorn-HACK-4---Review-Quiz"> </a></h2>
+<pre><code>What is a 2D array?
+A. A single row of elements.
+B. A data structure with rows and columns.
+C. A list of 2 elements.
+D. A binary representation of data.
+
+Answer: B
+
+How do you declare a 2D array in Java?
+A. int myArray = new int[3][3];
+B. 2DArray myArray = new 2DArray[3][3];
+C. int[][] myArray;
+D. myArray = declare 2D array;
+
+Answer: C
+
+How do you access an element in a 2D array at row 2 and column 3?
+A. myArray[3][2]
+B. myArray[2][3]
+C. myArray[1][2]
+D. myArray[2][1]
+
+Answer: C
+
+What is the purpose of initializing a 2D array?
+A. To specify its data type.
+B. To allocate memory for the array.
+C. To access its elements.
+D. To declare the number of rows and columns.
+
+Answer: A
+
+
+In a 2D array, what does myArray[2][3] represent?
+A. The element in the second row and third column.
+B. The element in the third row and second column.
+C. The element in the third row and fourth column.
+D. The element in the second column and third row.
+
+Answer: C
+
+What happens when you update an element in a 2D array in Java?
+A. The entire array is cleared.
+B. Only the updated element is affected.
+C. The entire row is shifted.
+D. The element is removed from the array.
+
+Answer: B
+
+Which of the following represents a 2D array with 4 rows and 3 columns in Java?
+A. int[4][3] myArray;
+B. myArray[4,3] = int;
+C. int[3][2] myArray;
+D. myArray[3][4] = int;
+
+Answer: C</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="HACKS">HACKS<a class="anchor-link" href="#HACKS"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Finish-Popcorn-HACKS,-type-DONE-Here-when-you-finish---DONE">Finish Popcorn HACKS, type DONE Here when you finish - DONE<a class="anchor-link" href="#Finish-Popcorn-HACKS,-type-DONE-Here-when-you-finish---DONE"> </a></h2><h2 id="HACK-1">HACK 1<a class="anchor-link" href="#HACK-1"> </a></h2><ul>
+<li>Create a class (for object 2D arrays), and declare and initialize a 2D array</li>
+<li>Show updating a 2D array with object functionality</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="8.2">8.2<a class="anchor-link" href="#8.2"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Traversing">Traversing<a class="anchor-link" href="#Traversing"> </a></h2><ul>
+<li>Traversing is known to acsess each element in a array also known as itteration, in the case of 2D Arrays we will acsess elements in the 2D array, but we will need to use specfiic methods of nested for loops, and enhanced for loops.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayTraversalExample</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Array that is created in order to be traversed/itterate through</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">};</span>
+
+        <span class="c1">// Traverse the array and print each element</span>
+        <span class="c1">// How this works: 1. First it sets i to 0 in order to keep track of the index by using a for loop</span>
+        <span class="c1">// Then it checks if the number is greater index if so then it will continue</span>
+        <span class="c1">// uses i++ to continue to go through the indicies </span>
+        <span class="c1">// prints outs the number if greater than index</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Element at index &quot;</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">&quot; is: &quot;</span> <span class="o">+</span> <span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">ArrayTraversalExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Element at index 0 is: 1
+Element at index 1 is: 2
+Element at index 2 is: 3
+Element at index 3 is: 4
+Element at index 4 is: 5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Nested-For-Loop">Nested For Loop<a class="anchor-link" href="#Nested-For-Loop"> </a></h1><ul>
+<li>A nested for loop is a type of loop that contains an inner loop and outer loop, allowing to create a two dimensional piece that will now allow us to traverse through 2D Arrays.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">NestedLoops</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">outer</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">outer</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">outer</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">inner</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">inner</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">inner</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">inner</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">NestedLoops</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 2 
+1 2 
+1 2 
+1 2 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Enhanced-For-Loop">Enhanced For Loop<a class="anchor-link" href="#Enhanced-For-Loop"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">EnhancedForLoopExample</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">String</span><span class="o">[]</span> <span class="n">fruits</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;Apple&quot;</span><span class="p">,</span> <span class="s">&quot;Banana&quot;</span><span class="p">,</span> <span class="s">&quot;Cherry&quot;</span><span class="p">,</span> <span class="s">&quot;Date&quot;</span><span class="p">,</span> <span class="s">&quot;Fig&quot;</span><span class="p">};</span>
+
+        <span class="c1">// Here you use a en enhanced for loop to itterate through the array of strings</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">fruit</span> <span class="p">:</span> <span class="n">fruits</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">fruit</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">EnhancedForLoopExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Apple
+Banana
+Cherry
+Date
+Fig
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Cumulative-Knowledge">Cumulative Knowledge<a class="anchor-link" href="#Cumulative-Knowledge"> </a></h2><ul>
+<li>Hint: Popcorn Hacks</li>
+<li><p>From the class discussion fill these out</p>
+</li>
+<li><p><strong>What does traverse mean?</strong></p>
+<ul>
+<li>iterate</li>
+</ul>
+</li>
+<li><strong>What is a nested loop</strong><ul>
+<li>a loop within a loop</li>
+</ul>
+</li>
+<li><strong>What is an enhanced for loop</strong><ul>
+<li>a simpler way to write a loop that doesn't involve accessing the index</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Nested-Loops-traversing-through-a-2D-Array">Nested Loops traversing through a 2D Array<a class="anchor-link" href="#Nested-Loops-traversing-through-a-2D-Array"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TwoDArrayTraversal</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// First Create the 2D array</span>
+        <span class="kt">int</span><span class="o">[][]</span> <span class="n">twoDArray</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">}</span>
+        <span class="p">};</span>
+        
+        <span class="c1">// Using a Nested loops to traverse the 2D array</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="kt">int</span> <span class="n">element</span> <span class="o">=</span> <span class="n">twoDArray</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">;</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">element</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span> 
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">TwoDArrayTraversal</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 2 3 
+4 5 6 
+7 8 9 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Popcorn-Hack">Popcorn Hack<a class="anchor-link" href="#Popcorn-Hack"> </a></h3><ul>
+<li>What would you replace the question marks with if we did'n't know the dimensions of this 2D Array<ul>
+<li>access the length of the array</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TwoDArrayTraversal</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// First Create the 2D array</span>
+        <span class="kt">int</span><span class="o">[][]</span> <span class="n">twoDArray</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">}</span>
+        <span class="p">};</span>
+        
+        <span class="c1">// Using a Nested loops to traverse the 2D array</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">twoDArray</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//grid makes sense because it gives you dimension</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">twoDArray</span><span class="o">[</span><span class="n">row</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// column makes sense as it starts at 0 </span>
+                <span class="kt">int</span> <span class="n">element</span> <span class="o">=</span> <span class="n">twoDArray</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">;</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">element</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span> 
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">TwoDArrayTraversal</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 2 3 
+4 5 6 
+7 8 9 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Practice">Practice<a class="anchor-link" href="#Practice"> </a></h3><ul>
+<li>Create a 2D Array Based and Traverse through it using a nested loop based on this problem</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TwoDPractice</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        
+        <span class="kt">int</span> <span class="n">numRows</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>  
+        <span class="kt">int</span> <span class="n">numCols</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>  
+
+        <span class="kt">int</span><span class="o">[][]</span> <span class="n">complexIntArray</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">row</span> <span class="p">:</span> <span class="n">complexIntArray</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">element</span> <span class="p">:</span> <span class="n">row</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">element</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span> 
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">TwoDPractice</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Using-Enhanced-For--Loops-to-Traverse-an-Array">Using Enhanced For- Loops to Traverse an Array<a class="anchor-link" href="#Using-Enhanced-For--Loops-to-Traverse-an-Array"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">EnhancedForLoop2DArray</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Define and initialize a 2D array</span>
+        <span class="kt">int</span><span class="o">[][]</span> <span class="n">twoDArray</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="c1">// Use nested enhanced for loops to traverse the 2D array</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">row</span> <span class="p">:</span> <span class="n">twoDArray</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">element</span> <span class="p">:</span> <span class="n">row</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">element</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span> <span class="c1">// Move to the next row</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">EnhancedForLoop2DArray</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 2 3 
+4 5 6 
+7 8 9 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Row-Major-Order-Vs-Column-Major-Order">Row Major Order Vs Column Major Order<a class="anchor-link" href="#Row-Major-Order-Vs-Column-Major-Order"> </a></h1><ul>
+<li><p>PopCorn Hacks</p>
+</li>
+<li><p><strong>Whats the difference between row major order and column major order</strong></p>
+<ul>
+<li>Row-major order stores elements of a multi-dimensional array in memory by rows, meaning that elements in the same row are stored together. So it prints by row</li>
+<li>Column-major order stores elements by columns, so elements in the same column are stored together in memory. likewise prints by column</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PrintArray</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printArray</span><span class="p">(</span><span class="n">String</span><span class="o">[][]</span> <span class="n">grid</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">grid</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">grid</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">grid</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span> 
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">String</span><span class="o">[][]</span> <span class="n">myGrid</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="s">&quot;A&quot;</span><span class="p">,</span> <span class="s">&quot;B&quot;</span><span class="p">,</span> <span class="s">&quot;C&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;D&quot;</span><span class="p">,</span> <span class="s">&quot;E&quot;</span><span class="p">,</span> <span class="s">&quot;F&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;G&quot;</span><span class="p">,</span> <span class="s">&quot;H&quot;</span><span class="p">,</span> <span class="s">&quot;I&quot;</span><span class="p">}</span>
+        <span class="p">};</span>
+        <span class="n">printArray</span><span class="p">(</span><span class="n">myGrid</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">PrintArray</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A B C 
+D E F 
+G H I 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PrintArray</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printArray</span><span class="p">(</span><span class="n">String</span><span class="o">[][]</span> <span class="n">grid</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">grid</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="c1">// outer loop for collums switched</span>
+        <span class="p">{</span> <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">grid</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="c1">//notice the outer is switched with the inner loop for rows</span>
+             <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">grid</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span> 
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">String</span><span class="o">[][]</span> <span class="n">myGrid</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="s">&quot;A&quot;</span><span class="p">,</span> <span class="s">&quot;B&quot;</span><span class="p">,</span> <span class="s">&quot;C&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;D&quot;</span><span class="p">,</span> <span class="s">&quot;E&quot;</span><span class="p">,</span> <span class="s">&quot;F&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;G&quot;</span><span class="p">,</span> <span class="s">&quot;H&quot;</span><span class="p">,</span> <span class="s">&quot;I&quot;</span><span class="p">}</span>
+        <span class="p">};</span>
+        <span class="n">printArray</span><span class="p">(</span><span class="n">myGrid</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">PrintArray</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A D G 
+B E H 
+C F I 
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Practice">Practice<a class="anchor-link" href="#Practice"> </a></h1><ul>
+<li>Print My AP CS A Class Rocks Using a column major traversal.</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PrintArray</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">printArray</span><span class="p">(</span><span class="n">String</span><span class="o">[][]</span> <span class="n">grid</span><span class="p">)</span> <span class="p">{</span>
+        
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">grid</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">grid</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">grid</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">String</span><span class="o">[][]</span> <span class="n">message</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="s">&quot;My&quot;</span><span class="p">,</span> <span class="s">&quot;Ap&quot;</span><span class="p">,</span> <span class="s">&quot;Cs&quot;</span><span class="p">,</span> <span class="s">&quot;R&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;AP&quot;</span><span class="p">,</span> <span class="s">&quot;A&quot;</span><span class="p">,</span> <span class="s">&quot;Class&quot;</span><span class="p">,</span> <span class="s">&quot;o&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;C&quot;</span><span class="p">,</span> <span class="s">&quot;p&quot;</span><span class="p">,</span> <span class="s">&quot; &quot;</span><span class="p">,</span> <span class="s">&quot;c&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;S&quot;</span><span class="p">,</span> <span class="s">&quot; &quot;</span><span class="p">,</span> <span class="s">&quot; &quot;</span><span class="p">,</span> <span class="s">&quot;k&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;s&quot;</span><span class="p">,</span> <span class="s">&quot; &quot;</span><span class="p">,</span> <span class="s">&quot;s&quot;</span><span class="p">,</span> <span class="s">&quot;!&quot;</span><span class="p">},</span>
+        <span class="p">};</span>
+
+        <span class="n">printArray</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">PrintArray</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>My AP C S s Ap A p     Cs Class     s R o c k ! </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Algorithms-That-use-2D-Arrays-Traversing">Algorithms That use 2D Arrays Traversing<a class="anchor-link" href="#Algorithms-That-use-2D-Arrays-Traversing"> </a></h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SearchExample</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">search</span><span class="p">(</span><span class="n">String</span><span class="o">[][]</span> <span class="n">chart</span><span class="p">,</span> <span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">r</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">r</span> <span class="o">&lt;</span> <span class="n">chart</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">r</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">c</span> <span class="o">&lt;</span> <span class="n">chart</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">c</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">chart</span><span class="o">[</span><span class="n">r</span><span class="o">][</span><span class="n">c</span><span class="o">]</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">name</span><span class="p">))</span> <span class="p">{</span>
+                    <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// Name not found in the array</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">String</span><span class="o">[][]</span> <span class="n">chart</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="s">&quot;Alice&quot;</span><span class="p">,</span> <span class="s">&quot;Bob&quot;</span><span class="p">,</span> <span class="s">&quot;Charlie&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;David&quot;</span><span class="p">,</span> <span class="s">&quot;Eve&quot;</span><span class="p">,</span> <span class="s">&quot;Frank&quot;</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">&quot;Grace&quot;</span><span class="p">,</span> <span class="s">&quot;Hannah&quot;</span><span class="p">,</span> <span class="s">&quot;Isaac&quot;</span><span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="n">String</span> <span class="n">nameToSearch</span> <span class="o">=</span> <span class="s">&quot;Krishiv&quot;</span><span class="p">;</span>
+        <span class="kt">boolean</span> <span class="n">found</span> <span class="o">=</span> <span class="n">search</span><span class="p">(</span><span class="n">chart</span><span class="p">,</span> <span class="n">nameToSearch</span><span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">found</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">nameToSearch</span> <span class="o">+</span> <span class="s">&quot; is in the array.&quot;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">nameToSearch</span> <span class="o">+</span> <span class="s">&quot; is not in the array.&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">SearchExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Krishiv is not in the array.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Hacks-8.2">Hacks 8.2<a class="anchor-link" href="#Hacks-8.2"> </a></h1><ul>
+<li>Complete the popcorn hacks </li>
+<li>Main Hack:<ul>
+<li>Traverse Through a 2D Array Using Any of the following methods that we learned </li>
+<li>Traverse Through A 2D Array Using Specfically The Collumn Major Order. (Make Sure your using correct type of nested loop )</li>
+<li>Create your own situration of an Algorthm that needs to traverse a 2D array and then write the code for it </li>
+<li>Extra: Create an Extra Problem or Go further in depth about something we learned (MUST HAVE CODE FOR CREDIT!)</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SeatingArrangement</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span><span class="o">[][]</span> <span class="n">classroom</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">},</span>
+            <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
+        <span class="p">};</span>
+
+        <span class="kt">int</span> <span class="n">numRows</span> <span class="o">=</span> <span class="n">classroom</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">numCols</span> <span class="o">=</span> <span class="n">classroom</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
+
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">rowTotal</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">numRows</span><span class="o">]</span><span class="p">;</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">colTotal</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">numCols</span><span class="o">]</span><span class="p">;</span>
+
+        <span class="c1">// Traverse the 2D array in column-major order to calculate column totals</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">numCols</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">numRows</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">colTotal</span><span class="o">[</span><span class="n">col</span><span class="o">]</span> <span class="o">+=</span> <span class="n">classroom</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Traverse the 2D array to calculate row totals</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">numRows</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">numCols</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">rowTotal</span><span class="o">[</span><span class="n">row</span><span class="o">]</span> <span class="o">+=</span> <span class="n">classroom</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Print row totals</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Row Totals:&quot;</span><span class="p">);</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">rowSum</span> <span class="p">:</span> <span class="n">rowTotal</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">rowSum</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Print column totals</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Column Totals:&quot;</span><span class="p">);</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">colSum</span> <span class="p">:</span> <span class="n">colTotal</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">colSum</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">SeatingArrangement</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Row Totals:
+3
+3
+2
+Column Totals:
+2
+2
+2
+2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Image-Representation-with-2D-Arrays">Image Representation with 2D Arrays<a class="anchor-link" href="#Image-Representation-with-2D-Arrays"> </a></h1><p>Digital images are essentially a collection of small, discrete elements called pixels. Pixels are organized in a 2D grid, where each pixel represents a single point of color or intensity. Each element (pixel) in the 2D array corresponds to one pixel in the image. In a color image, each pixel contains three color components: Red, Green, and Blue (RGB), while in grayscale images, each pixel has a single intensity value.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Traversing-and-Processing-an-Image">Traversing and Processing an Image<a class="anchor-link" href="#Traversing-and-Processing-an-Image"> </a></h2><p>Traversing an image's 2D array involves systematically visiting every pixel in the image grid. This process often uses nested loops, with the outer loop iterating over the rows and the inner loop iterating over the columns. By traversing the array, you gain access to each pixel's information, such as color values or intensity. This structured access is fundamental for various image processing tasks.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.io.*</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.URL</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">javax.imageio.ImageIO</span><span class="p">;</span> <span class="c1">// ImageIO is a class in Java libraries which gives an easy way to use different image formats</span>
+<span class="kn">import</span> <span class="nn">java.awt.image.BufferedImage</span><span class="p">;</span> <span class="c1">// BufferedImage is a class in Java libraries to help perform operations on images (read + write)</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ImageProcessing</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">String</span> <span class="n">imageUrl</span> <span class="o">=</span> <span class="s">&quot;https://user-images.githubusercontent.com/111609656/277895130-d15b0768-01d9-4522-8ef7-4f8bcf69c42e.png&quot;</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">outputFolder</span> <span class="o">=</span> <span class="s">&quot;../images&quot;</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">customFileName</span> <span class="o">=</span> <span class="s">&quot;MORT1.png&quot;</span><span class="p">;</span> 
+
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="n">String</span> <span class="n">outputPath</span> <span class="o">=</span> <span class="n">outputFolder</span> <span class="o">+</span> <span class="n">File</span><span class="p">.</span><span class="na">separator</span> <span class="o">+</span> <span class="n">customFileName</span><span class="p">;</span>
+
+            <span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="k">new</span> <span class="n">URL</span><span class="p">(</span><span class="n">imageUrl</span><span class="p">);</span> <span class="c1">// create URL object</span>
+
+            <span class="k">try</span> <span class="p">(</span><span class="n">InputStream</span> <span class="n">in</span> <span class="o">=</span> <span class="n">url</span><span class="p">.</span><span class="na">openStream</span><span class="p">();</span>   <span class="c1">// try-catch block where errors are handled</span>
+                 <span class="n">OutputStream</span> <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileOutputStream</span><span class="p">(</span><span class="n">outputPath</span><span class="p">))</span> <span class="p">{</span>   <span class="c1">// input stream reads data and output stream writes the data</span>
+
+                <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">]</span><span class="p">;</span>
+                <span class="kt">int</span> <span class="n">bytesRead</span><span class="p">;</span>
+
+                <span class="k">while</span> <span class="p">((</span><span class="n">bytesRead</span> <span class="o">=</span> <span class="n">in</span><span class="p">.</span><span class="na">read</span><span class="p">(</span><span class="n">buffer</span><span class="p">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">out</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">bytesRead</span><span class="p">);</span>
+                <span class="p">}</span>   <span class="c1">// reading the data from the URL and writes in 1024 byte chunks</span>
+            <span class="p">}</span>
+
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Image downloaded and saved to: &quot;</span> <span class="o">+</span> <span class="n">outputPath</span><span class="p">);</span>
+
+            <span class="n">File</span> <span class="n">imageFile</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">outputPath</span><span class="p">);</span>
+            <span class="n">BufferedImage</span> <span class="n">image</span> <span class="o">=</span> <span class="n">ImageIO</span><span class="p">.</span><span class="na">read</span><span class="p">(</span><span class="n">imageFile</span><span class="p">);</span> 
+            <span class="kt">int</span> <span class="n">width</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="na">getWidth</span><span class="p">();</span>
+            <span class="kt">int</span> <span class="n">height</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="na">getHeight</span><span class="p">();</span>   <span class="c1">// get the image dimensions</span>
+
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Success! Image Dimensions (Width x Height): &quot;</span> <span class="o">+</span> <span class="n">width</span> <span class="o">+</span> <span class="s">&quot; x &quot;</span> <span class="o">+</span> <span class="n">height</span><span class="p">);</span>
+
+            <span class="c1">// Process the image using a 2D array</span>
+            <span class="kt">int</span><span class="o">[][]</span> <span class="n">pixels</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">width</span><span class="o">][</span><span class="n">height</span><span class="o">]</span><span class="p">;</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">width</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">height</span><span class="p">;</span> <span class="n">y</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="kt">int</span> <span class="n">pixel</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="na">getRGB</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+                    <span class="c1">// Process the pixel here, e.g., apply filters or transformations</span>
+                    <span class="n">pixels</span><span class="o">[</span><span class="n">x</span><span class="o">][</span><span class="n">y</span><span class="o">]</span> <span class="o">=</span> <span class="n">pixel</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="c1">// Calculate resolution in pixels per inch (PPI)</span>
+            <span class="kt">int</span> <span class="n">ppi</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">image</span><span class="p">.</span><span class="na">getWidth</span><span class="p">()</span> <span class="o">/</span> <span class="p">(</span><span class="n">width</span> <span class="o">*</span> <span class="mf">0.0254</span><span class="p">));</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Resolution: &quot;</span> <span class="o">+</span> <span class="n">ppi</span> <span class="o">+</span> <span class="s">&quot; pixels per inch (PPI)&quot;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">ImageProcessing</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Image downloaded and saved to: ../images/MORT1.png
+Success! Image Dimensions (Width x Height): 1030 x 1372
+Resolution: 39 pixels per inch (PPI)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Grayscale-Conversion-with-Images">Grayscale Conversion with Images<a class="anchor-link" href="#Grayscale-Conversion-with-Images"> </a></h2><p>Grayscale conversion is a fundamental image processing operation. When converting an image to grayscale, you effectively remove color information and retain only the pixel intensity. This is typically done by calculating the average intensity from the RGB components of each pixel. The result is a grayscale image where variations in pixel intensity represent the image's features and details. This operation can serve as a starting point for more complex image processing techniques.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.awt.image.BufferedImage</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.awt.image.ColorConvertOp</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.io.*</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.net.URL</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">javax.imageio.ImageIO</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ImageToGrayscaleWithArray</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">String</span> <span class="n">imageUrl</span> <span class="o">=</span> <span class="s">&quot;https://user-images.githubusercontent.com/111609656/277895164-5f93f1d8-88b5-4b08-b9a1-b54fb6d55d96.png&quot;</span><span class="p">;</span> <span class="c1">// Replace with the actual image URL</span>
+        <span class="n">String</span> <span class="n">outputFolder</span> <span class="o">=</span> <span class="s">&quot;../images&quot;</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">customFileName</span> <span class="o">=</span> <span class="s">&quot;MORT2_Grayscale.png&quot;</span><span class="p">;</span> <span class="c1">// Change this to your desired file name for the grayscale image</span>
+
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="c1">// Define the output file path</span>
+            <span class="n">String</span> <span class="n">outputPath</span> <span class="o">=</span> <span class="n">outputFolder</span> <span class="o">+</span> <span class="n">File</span><span class="p">.</span><span class="na">separator</span> <span class="o">+</span> <span class="n">customFileName</span><span class="p">;</span>
+
+            <span class="c1">// Create a URL object from the image URL</span>
+            <span class="n">URL</span> <span class="n">url</span> <span class="o">=</span> <span class="k">new</span> <span class="n">URL</span><span class="p">(</span><span class="n">imageUrl</span><span class="p">);</span>
+
+            <span class="c1">// Open a connection to the URL and get the input stream</span>
+            <span class="k">try</span> <span class="p">(</span><span class="n">InputStream</span> <span class="n">in</span> <span class="o">=</span> <span class="n">url</span><span class="p">.</span><span class="na">openStream</span><span class="p">();</span>
+                 <span class="n">OutputStream</span> <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileOutputStream</span><span class="p">(</span><span class="n">outputPath</span><span class="p">))</span> <span class="p">{</span>
+
+                <span class="c1">// Read data from the URL and save it to the output file</span>
+                <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="mi">1024</span><span class="o">]</span><span class="p">;</span>
+                <span class="kt">int</span> <span class="n">bytesRead</span><span class="p">;</span>
+
+                <span class="k">while</span> <span class="p">((</span><span class="n">bytesRead</span> <span class="o">=</span> <span class="n">in</span><span class="p">.</span><span class="na">read</span><span class="p">(</span><span class="n">buffer</span><span class="p">))</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">out</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">bytesRead</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="c1">// Read the downloaded image</span>
+            <span class="n">BufferedImage</span> <span class="n">originalImage</span> <span class="o">=</span> <span class="n">ImageIO</span><span class="p">.</span><span class="na">read</span><span class="p">(</span><span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">outputPath</span><span class="p">));</span>
+            <span class="kt">int</span> <span class="n">width</span> <span class="o">=</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">getWidth</span><span class="p">();</span>
+            <span class="kt">int</span> <span class="n">height</span> <span class="o">=</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">getHeight</span><span class="p">();</span>
+
+            <span class="c1">// Create a 2D array to store grayscale values</span>
+            <span class="kt">int</span><span class="o">[][]</span> <span class="n">grayscaleArray</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">width</span><span class="o">][</span><span class="n">height</span><span class="o">]</span><span class="p">;</span>
+
+            <span class="c1">// Convert the image to grayscale and populate the array</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">width</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">height</span><span class="p">;</span> <span class="n">y</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="kt">int</span> <span class="n">pixel</span> <span class="o">=</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">getRGB</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+                    <span class="kt">int</span> <span class="n">red</span> <span class="o">=</span> <span class="p">(</span><span class="n">pixel</span> <span class="o">&gt;&gt;</span> <span class="mi">16</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">;</span>
+                    <span class="kt">int</span> <span class="n">green</span> <span class="o">=</span> <span class="p">(</span><span class="n">pixel</span> <span class="o">&gt;&gt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">;</span>
+                    <span class="kt">int</span> <span class="n">blue</span> <span class="o">=</span> <span class="n">pixel</span> <span class="o">&amp;</span> <span class="mh">0xFF</span><span class="p">;</span>
+                    <span class="kt">int</span> <span class="n">gray</span> <span class="o">=</span> <span class="p">(</span><span class="n">red</span> <span class="o">+</span> <span class="n">green</span> <span class="o">+</span> <span class="n">blue</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span><span class="p">;</span>
+                    <span class="n">grayscaleArray</span><span class="o">[</span><span class="n">x</span><span class="o">][</span><span class="n">y</span><span class="o">]</span> <span class="o">=</span> <span class="n">gray</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="c1">// Save the grayscale image</span>
+            <span class="n">String</span> <span class="n">grayscaleOutputPath</span> <span class="o">=</span> <span class="n">outputFolder</span> <span class="o">+</span> <span class="n">File</span><span class="p">.</span><span class="na">separator</span> <span class="o">+</span> <span class="n">customFileName</span><span class="p">;</span>
+            <span class="n">BufferedImage</span> <span class="n">grayscaleImage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedImage</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">BufferedImage</span><span class="p">.</span><span class="na">TYPE_BYTE_GRAY</span><span class="p">);</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">width</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">height</span><span class="p">;</span> <span class="n">y</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="kt">int</span> <span class="n">grayValue</span> <span class="o">=</span> <span class="n">grayscaleArray</span><span class="o">[</span><span class="n">x</span><span class="o">][</span><span class="n">y</span><span class="o">]</span><span class="p">;</span>
+                    <span class="kt">int</span> <span class="n">grayPixel</span> <span class="o">=</span> <span class="p">(</span><span class="n">grayValue</span> <span class="o">&lt;&lt;</span> <span class="mi">16</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">grayValue</span> <span class="o">&lt;&lt;</span> <span class="mi">8</span><span class="p">)</span> <span class="o">|</span> <span class="n">grayValue</span><span class="p">;</span>
+                    <span class="n">grayscaleImage</span><span class="p">.</span><span class="na">setRGB</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">grayPixel</span><span class="p">);</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="n">ImageIO</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">grayscaleImage</span><span class="p">,</span> <span class="s">&quot;png&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">grayscaleOutputPath</span><span class="p">));</span>
+
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Success! Image converted to grayscale, downloaded, and saved to: &quot;</span> <span class="o">+</span> <span class="n">grayscaleOutputPath</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">ImageToGrayscaleWithArray</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Success! Image converted to grayscale, downloaded, and saved to: ../images/MORT2_Grayscale.png
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Image-Conversion">Image Conversion<a class="anchor-link" href="#Image-Conversion"> </a></h2><p><br /></p>
+<p><b> Why do we Convert Images ? </b>
+some images are lossy while some aren't so depending on what the user may want, the file type and extension of the image can be converted. Images can also be converted just for the sake of changing the color or scaling it.</p>
+<h4 id="How-Does-Image-Conversion-Work:">How Does Image Conversion Work:<a class="anchor-link" href="#How-Does-Image-Conversion-Work:"> </a></h4>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">javax.imageio.ImageIO</span><span class="p">;</span> <span class="c1">// allows you to read and write images in various formats.</span>
+<span class="kn">import</span> <span class="nn">java.io.File</span><span class="p">;</span> <span class="c1">// allows you to work with files and directories in your file system.</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="p">;</span> <span class="c1">// allows you to handle input and output exceptions that may occur during file operations.</span>
+<span class="kn">import</span> <span class="nn">java.awt.image.BufferedImage</span><span class="p">;</span> <span class="c1">// allows you to work with images stored in memory, providing methods to manipulate image data.</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ImageConverter</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="c1">// Input and output file paths</span>
+            <span class="n">String</span><span class="o">[]</span> <span class="n">inputPaths</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s">&quot;/Users/nikhilchakravarthula/vscode/KPNSLESSON/images/woodworker_mort.png&quot;</span><span class="p">,</span>
+                <span class="s">&quot;/Users/nikhilchakravarthula/vscode/KPNSLESSON/images/Mort2.png&quot;</span>
+            <span class="p">};</span>
+            <span class="n">String</span> <span class="n">outputPath</span> <span class="o">=</span> <span class="s">&quot;/Users/nikhilchakravarthula/vscode/KPNSLESSON/imagesConvert&quot;</span><span class="p">;</span>
+
+            <span class="c1">// Loop through each image in the array</span>
+            <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">inputPath</span> <span class="p">:</span> <span class="n">inputPaths</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1">// Read the image</span>
+                <span class="n">File</span> <span class="n">inputFile</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">inputPath</span><span class="p">);</span>
+                <span class="n">BufferedImage</span> <span class="n">img</span> <span class="o">=</span> <span class="n">ImageIO</span><span class="p">.</span><span class="na">read</span><span class="p">(</span><span class="n">inputFile</span><span class="p">);</span>  <span class="c1">// Buffered image is a class in java for handling image data</span>
+
+                <span class="c1">// Write the image</span>
+                <span class="n">String</span> <span class="n">outputFileName</span> <span class="o">=</span> <span class="s">&quot;converted_&quot;</span> <span class="o">+</span> <span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">inputPath</span><span class="p">).</span><span class="na">getName</span><span class="p">().</span><span class="na">replace</span><span class="p">(</span><span class="s">&quot;.png&quot;</span><span class="p">,</span> <span class="s">&quot;.gif&quot;</span><span class="p">);</span>
+                <span class="n">String</span> <span class="n">outputFilePath</span> <span class="o">=</span> <span class="n">outputPath</span> <span class="o">+</span> <span class="n">File</span><span class="p">.</span><span class="na">separator</span> <span class="o">+</span> <span class="n">outputFileName</span><span class="p">;</span>
+                <span class="n">File</span> <span class="n">outputFile</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">outputFilePath</span><span class="p">);</span>
+                <span class="n">ImageIO</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="s">&quot;gif&quot;</span><span class="p">,</span> <span class="n">outputFile</span><span class="p">);</span>
+
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Image conversion successful for: &quot;</span> <span class="o">+</span> <span class="n">inputPath</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">ImageConverter</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Image conversion successful for: /Users/nikhilchakravarthula/vscode/KPNSLESSON/images/woodworker_mort.png
+Image conversion successful for: /Users/nikhilchakravarthula/vscode/KPNSLESSON/images/Mort2.png
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">javax.imageio.ImageIO</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.io.File</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.awt.image.BufferedImage</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ImageConverter</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="c1">// Input and output file paths</span>
+            <span class="n">String</span> <span class="n">inputPath</span> <span class="o">=</span> <span class="s">&quot;/Users/vivia/vscode/ViviannCSA/images/Mort2.png&quot;</span><span class="p">;</span>
+            <span class="n">String</span> <span class="n">outputPath</span> <span class="o">=</span> <span class="s">&quot;/Users/vivia/vscode/ViviannCSA/imagesConvert&quot;</span><span class="p">;</span>
+
+            <span class="c1">// Read the PNG image</span>
+            <span class="n">BufferedImage</span> <span class="n">img</span> <span class="o">=</span> <span class="n">ImageIO</span><span class="p">.</span><span class="na">read</span><span class="p">(</span><span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">inputPath</span><span class="p">));</span>
+
+            <span class="c1">// Convert image to RGB format </span>
+            <span class="n">BufferedImage</span> <span class="n">rgbImage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedImage</span><span class="p">(</span><span class="n">img</span><span class="p">.</span><span class="na">getWidth</span><span class="p">(),</span> <span class="n">img</span><span class="p">.</span><span class="na">getHeight</span><span class="p">(),</span> <span class="n">BufferedImage</span><span class="p">.</span><span class="na">TYPE_INT_RGB</span><span class="p">);</span>
+            <span class="n">rgbImage</span><span class="p">.</span><span class="na">createGraphics</span><span class="p">().</span><span class="na">drawImage</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
+
+            <span class="c1">// Define the output file name and path</span>
+            <span class="n">String</span> <span class="n">outputFileName</span> <span class="o">=</span> <span class="n">inputPath</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">inputPath</span><span class="p">.</span><span class="na">lastIndexOf</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">).</span><span class="na">replace</span><span class="p">(</span><span class="s">&quot;.png&quot;</span><span class="p">,</span> <span class="s">&quot;.jpeg&quot;</span><span class="p">);</span>
+            <span class="n">String</span> <span class="n">outputFilePath</span> <span class="o">=</span> <span class="n">outputPath</span> <span class="o">+</span> <span class="n">File</span><span class="p">.</span><span class="na">separator</span> <span class="o">+</span> <span class="n">outputFileName</span><span class="p">;</span>
+
+            <span class="c1">// Convert and save the image as JPEG</span>
+            <span class="n">ImageIO</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">rgbImage</span><span class="p">,</span> <span class="s">&quot;jpeg&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">outputFilePath</span><span class="p">));</span>
+
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Image conversion successful!&quot;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">ImageConverter</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Scaling-the-Image">Scaling the Image<a class="anchor-link" href="#Scaling-the-Image"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">javax.imageio.ImageIO</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.awt.*</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.awt.image.BufferedImage</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.io.File</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ImageScaler</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="c1">// Input and output file paths</span>
+            <span class="n">String</span> <span class="n">inputPath</span> <span class="o">=</span> <span class="s">&quot;/Users/nikhilchakravarthula/vscode/KPNSLESSON/images/snow_mort.png&quot;</span><span class="p">;</span>
+            <span class="n">String</span> <span class="n">outputPath</span> <span class="o">=</span> <span class="s">&quot;/Users/nikhilchakravarthula/vscode/KPNSLESSON/imagesConvert&quot;</span><span class="p">;</span>
+
+            <span class="c1">// Desired width and height of the scaled image</span>
+            <span class="kt">int</span> <span class="n">scaledWidth</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+            <span class="kt">int</span> <span class="n">scaledHeight</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+
+            <span class="c1">// Read the image</span>
+            <span class="n">File</span> <span class="n">inputFile</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">inputPath</span><span class="p">);</span>
+            <span class="n">BufferedImage</span> <span class="n">inputImage</span> <span class="o">=</span> <span class="n">ImageIO</span><span class="p">.</span><span class="na">read</span><span class="p">(</span><span class="n">inputFile</span><span class="p">);</span>
+
+            <span class="c1">// Scale the image</span>
+            <span class="n">BufferedImage</span> <span class="n">scaledImage</span> <span class="o">=</span> <span class="n">scaleImage</span><span class="p">(</span><span class="n">inputImage</span><span class="p">,</span> <span class="n">scaledWidth</span><span class="p">,</span> <span class="n">scaledHeight</span><span class="p">);</span>
+
+            <span class="c1">// Write the scaled image</span>
+            <span class="n">String</span> <span class="n">outputFileName</span> <span class="o">=</span> <span class="s">&quot;scaled_&quot;</span> <span class="o">+</span> <span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">inputPath</span><span class="p">).</span><span class="na">getName</span><span class="p">();</span>
+            <span class="n">String</span> <span class="n">outputFilePath</span> <span class="o">=</span> <span class="n">outputPath</span> <span class="o">+</span> <span class="n">File</span><span class="p">.</span><span class="na">separator</span> <span class="o">+</span> <span class="n">outputFileName</span><span class="p">;</span>
+            <span class="n">File</span> <span class="n">outputFile</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">outputFilePath</span><span class="p">);</span>
+            <span class="n">ImageIO</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">scaledImage</span><span class="p">,</span> <span class="s">&quot;png&quot;</span><span class="p">,</span> <span class="n">outputFile</span><span class="p">);</span>  
+
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Image scaling successful!&quot;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">BufferedImage</span> <span class="nf">scaleImage</span><span class="p">(</span><span class="n">BufferedImage</span> <span class="n">originalImage</span><span class="p">,</span> <span class="kt">int</span> <span class="n">scaledWidth</span><span class="p">,</span> <span class="kt">int</span> <span class="n">scaledHeight</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Create a new BufferedImage with the desired width and height</span>
+        <span class="n">BufferedImage</span> <span class="n">scaledImage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedImage</span><span class="p">(</span><span class="n">scaledWidth</span><span class="p">,</span> <span class="n">scaledHeight</span><span class="p">,</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">getType</span><span class="p">());</span>
+    
+        <span class="c1">// g2d more into</span>
+        <span class="c1">// Create a Graphics2D object and set the rendering hints for scaling</span>
+        <span class="n">Graphics2D</span> <span class="n">g2d</span> <span class="o">=</span> <span class="n">scaledImage</span><span class="p">.</span><span class="na">createGraphics</span><span class="p">();</span>
+        <span class="n">g2d</span><span class="p">.</span><span class="na">setRenderingHint</span><span class="p">(</span><span class="n">RenderingHints</span><span class="p">.</span><span class="na">KEY_INTERPOLATION</span><span class="p">,</span> <span class="n">RenderingHints</span><span class="p">.</span><span class="na">VALUE_INTERPOLATION_BILINEAR</span><span class="p">);</span>
+    
+        <span class="c1">// Draw the original image on the new BufferedImage with the desired width and height</span>
+        <span class="n">g2d</span><span class="p">.</span><span class="na">drawImage</span><span class="p">(</span><span class="n">originalImage</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">scaledWidth</span><span class="p">,</span> <span class="n">scaledHeight</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
+    
+        <span class="c1">// Dispose of the Graphics2D object</span>
+        <span class="n">g2d</span><span class="p">.</span><span class="na">dispose</span><span class="p">();</span>
+    
+        <span class="k">return</span> <span class="n">scaledImage</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">ImageScaler</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Image scaling successful!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Images-Hack">Images Hack<a class="anchor-link" href="#Images-Hack"> </a></h2><p>Hack: Create a functioning code in which you convert a PNG image to a JPEG image (make it funny).</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.awt.image.BufferedImage</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.io.File</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">javax.imageio.ImageIO</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ImageConverter</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="c1">// load the PNG image</span>
+            <span class="n">BufferedImage</span> <span class="n">pngImage</span> <span class="o">=</span> <span class="n">ImageIO</span><span class="p">.</span><span class="na">read</span><span class="p">(</span><span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="s">&quot;/Users/vivian/vscode/ViviannCSA/images/cat.png&quot;</span><span class="p">));</span>
+
+            <span class="c1">// create a new image in RGB format (JPEG)</span>
+            <span class="n">BufferedImage</span> <span class="n">jpegImage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedImage</span><span class="p">(</span>
+                <span class="n">pngImage</span><span class="p">.</span><span class="na">getWidth</span><span class="p">(),</span>
+                <span class="n">pngImage</span><span class="p">.</span><span class="na">getHeight</span><span class="p">(),</span>
+                <span class="n">BufferedImage</span><span class="p">.</span><span class="na">TYPE_INT_RGB</span>
+            <span class="p">);</span>
+
+            <span class="n">jpegImage</span><span class="p">.</span><span class="na">createGraphics</span><span class="p">().</span><span class="na">drawImage</span><span class="p">(</span><span class="n">pngImage</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="kc">null</span><span class="p">);</span>
+
+            <span class="n">String</span> <span class="n">outputFilePath</span> <span class="o">=</span> <span class="s">&quot;/Users/vivian/vscode/ViviannCSA/images/cat_converted.jpg&quot;</span><span class="p">;</span>
+            <span class="n">File</span> <span class="n">output</span> <span class="o">=</span> <span class="k">new</span> <span class="n">File</span><span class="p">(</span><span class="n">outputFilePath</span><span class="p">);</span>
+
+            <span class="c1">// save as a JPEG file</span>
+            <span class="n">ImageIO</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">jpegImage</span><span class="p">,</span> <span class="s">&quot;jpg&quot;</span><span class="p">,</span> <span class="n">output</span><span class="p">);</span>
+
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;PNG image has been transformed into a JPEG image.&quot;</span><span class="p">);</span>
+
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You can download the converted image from this link: &quot;</span> <span class="o">+</span> <span class="n">outputFilePath</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">IOException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">err</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Error: &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">.</span><span class="na">getMessage</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="n">ImageConverter</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>PNG image has been transformed into a JPEG image.
+You can download the converted image from this link: /Users/vivian/vscode/ViviannCSA/images/cat_converted.jpg
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Grading-for-Hacks">Grading for Hacks<a class="anchor-link" href="#Grading-for-Hacks"> </a></h1><ul>
+<li>0.7 for Completing Lesson Hacks</li>
+<li>0.2 for Popcorn Hacks + Practice</li>
+<li>0.1 for Doing Extra Work</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/FastPages/2023/10/26/Unit8Lesson.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FastPages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://vivianknee.github.io/FastPages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FastPages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>CSP Fastpages</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FastPages/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/NighthawkCoding" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FastPages/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FastPages/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
