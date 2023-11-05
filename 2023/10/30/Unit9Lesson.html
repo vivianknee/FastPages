@@ -1,0 +1,1662 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unit 9 Lesson | Vivian Ni</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unit 9 Lesson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Java Inheritance yup" />
+<meta property="og:description" content="Java Inheritance yup" />
+<link rel="canonical" href="https://vivianknee.github.io/FastPages/2023/10/30/Unit9Lesson.html" />
+<meta property="og:url" content="https://vivianknee.github.io/FastPages/2023/10/30/Unit9Lesson.html" />
+<meta property="og:site_name" content="Vivian Ni" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-30T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unit 9 Lesson" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-30T00:00:00-05:00","datePublished":"2023-10-30T00:00:00-05:00","description":"Java Inheritance yup","headline":"Unit 9 Lesson","mainEntityOfPage":{"@type":"WebPage","@id":"https://vivianknee.github.io/FastPages/2023/10/30/Unit9Lesson.html"},"url":"https://vivianknee.github.io/FastPages/2023/10/30/Unit9Lesson.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/FastPages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://vivianknee.github.io/FastPages/feed.xml" title="Vivian Ni" /><link rel="shortcut icon" type="image/x-icon" href="/FastPages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/FastPages/">Vivian Ni</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/FastPages/_pages/002apcspblog.html">APCSP Blog</a><a class="page-link" href="/FastPages/_pages/003lessons.html">Student Lessons</a><a class="page-link" href="/FastPages/about/">About Me</a><a class="page-link" href="/FastPages/Vocab/">Vocab</a><a class="page-link" href="/FastPages/categories/">Tags</a><a class="page-link" href="/FastPages/_pages/Frontend.html">Frontend</a><a class="page-link" href="/FastPages/search/">Search</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 9 Lesson</h1><p class="page-description">Java Inheritance yup</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-10-30T00:00:00-05:00" itemprop="datePublished">
+        Oct 30, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      24 min read
+    
+</span></p>
+
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2023-10-30-Unit9Lesson.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="9.1-What-is-inheritance?">9.1 What is inheritance?<a class="anchor-link" href="#9.1-What-is-inheritance?"> </a></h1><ul>
+<li>Inheritance is like a family, except the kids only have one parent instead of two</li>
+<li>For example:</li>
+</ul>
+<p><p>
+  <img src="https://raw.githubusercontent.com/Soham360/sturdy-fiesta/main/images/Inherit.png" width="500px" />
+</p>
+The java code for it:</p>
+<div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Mom</span><span class="p">{</span>
+    <span class="c1">// CODE</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nc">Son</span> <span class="kd">extends</span> <span class="n">Mom</span><span class="p">{</span>
+    <span class="c1">// CODE</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nc">Daughter</span> <span class="kd">extends</span> <span class="n">Mom</span><span class="p">{</span>
+    <span class="c1">// CODE</span>
+<span class="p">}</span>
+</pre></div>
+<p>In this example, the Son and Daughter inherits the Mom, meaning it inherit the components of the mother. This makes the "Son" and "Daughter" classes the subclasses of the "Mom" class as they inherit the "Mom" class components and the "Mom" class is the superclass.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="9.2-Using-the-Super-keyword-for-Constructors">9.2 Using the Super keyword for Constructors<a class="anchor-link" href="#9.2-Using-the-Super-keyword-for-Constructors"> </a></h2><ul>
+<li>One keyword to know is the super keyword</li>
+<li>The super keyword allows the subclass to store key variables in the main class's constructor (also known as the super class)</li>
+<li>Example below:</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Vehicle</span> <span class="p">{</span> <span class="c1">//This is the Superclass, it inherits the key variables for its subclasses</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">Name</span><span class="p">;</span> <span class="c1">//They don&#39;t have to be public, but I just put public word for fun</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="n">Sound</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="n">creation</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Mph</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="nf">Vehicle</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">dateMade</span><span class="p">,</span> <span class="n">String</span> <span class="n">sound</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mph</span><span class="p">){</span> <span class="c1">//Similar to the constructor used in Javascript. It maintains values within this superclass</span>
+        <span class="n">Name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span> 
+        <span class="n">Sound</span> <span class="o">=</span> <span class="n">sound</span><span class="p">;</span>
+        <span class="n">creation</span> <span class="o">=</span> <span class="n">dateMade</span><span class="p">;</span>
+        <span class="n">Mph</span> <span class="o">=</span> <span class="n">mph</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Car</span> <span class="kd">extends</span> <span class="n">Vehicle</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="n">capacity</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="nf">Car</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">dateMade</span><span class="p">,</span> <span class="n">String</span> <span class="n">sound</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mph</span><span class="p">,</span> <span class="kt">int</span> <span class="n">passangerCapacity</span><span class="p">){</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">dateMade</span><span class="p">,</span><span class="n">sound</span><span class="p">,</span> <span class="n">mph</span><span class="p">);</span> <span class="c1">//Uses the superclass&#39;s constructor to store the key variables for the Car subclass</span>
+        <span class="n">capacity</span> <span class="o">=</span> <span class="n">passangerCapacity</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Information</span><span class="p">(){</span> <span class="c1">//Prints out the values the super class&#39;s constructors inherits</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="kd">super</span><span class="p">.</span><span class="na">Sound</span> <span class="o">+</span> <span class="s">&quot; &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">Sound</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;I am the &quot;</span> <span class="o">+</span> <span class="kd">super</span><span class="p">.</span><span class="na">Name</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;I was made in &quot;</span> <span class="o">+</span> <span class="kd">super</span><span class="p">.</span><span class="na">creation</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;I move at &quot;</span> <span class="o">+</span> <span class="kd">super</span><span class="p">.</span><span class="na">Mph</span> <span class="o">+</span><span class="s">&quot; miles per hour&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;I hold at most &quot;</span> <span class="o">+</span> <span class="n">capacity</span> <span class="o">+</span> <span class="s">&quot; people&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="n">Car</span> <span class="n">Tesla</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Car</span><span class="p">(</span><span class="s">&quot;Tesla&quot;</span><span class="p">,</span> <span class="mi">2003</span><span class="p">,</span> <span class="s">&quot;VROOM!&quot;</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+        <span class="n">Tesla</span><span class="p">.</span><span class="na">Information</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>VROOM! VROOM!
+I am the Tesla
+I was made in 2003
+I move at 200 miles per hour
+I hold at most 5 people
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Popcorn-Hack:">Popcorn Hack:<a class="anchor-link" href="#Popcorn-Hack:"> </a></h2><p>Make it so that a new instance of Bob runs</p>
+<script>message any of us on slack "I" for an extra 0.01 (max of 1/1)</script>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Worker</span> <span class="p">{</span>
+    <span class="n">String</span> <span class="n">Name</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">Age</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">Salary</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Worker</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="kt">int</span> <span class="n">salary</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">Name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">Age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">Salary</span> <span class="o">=</span> <span class="n">salary</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Bob</span> <span class="kd">extends</span> <span class="n">Worker</span> <span class="p">{</span>
+    <span class="n">String</span> <span class="n">Position</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Bob</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="kt">int</span> <span class="n">salary</span><span class="p">,</span> <span class="n">String</span> <span class="n">position</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">salary</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">Position</span> <span class="o">=</span> <span class="n">position</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Information</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;My name is &quot;</span> <span class="o">+</span> <span class="kd">super</span><span class="p">.</span><span class="na">Name</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;My age is &quot;</span> <span class="o">+</span> <span class="kd">super</span><span class="p">.</span><span class="na">Age</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;My salary is &quot;</span> <span class="o">+</span> <span class="kd">super</span><span class="p">.</span><span class="na">Salary</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;My position is &quot;</span> <span class="o">+</span> <span class="n">Position</span><span class="p">);</span> <span class="c1">// Use &#39;Position&#39; here, not &#39;position&#39;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Bob</span> <span class="n">bob</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bob</span><span class="p">(</span><span class="s">&quot;Vivian&quot;</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="s">&quot;intern&quot;</span><span class="p">);</span>
+        <span class="n">bob</span><span class="p">.</span><span class="na">Information</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>My name is Vivian
+My age is 17
+My salary is 20
+My position is intern
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="9.3-Overriding-Methods">9.3 Overriding Methods<a class="anchor-link" href="#9.3-Overriding-Methods"> </a></h2><p>Method overriding is a concept in object-oriented programming (OOP) that allows a subclass to provide a specific implementation of a method that is already defined in its superclass. This enables a subclass to provide its own behavior for a method while maintaining a relationship with its superclass.</p>
+<p>In the context Java, here's how method overriding works:</p>
+<p>Inheritance: Method overriding is closely related to inheritance. You have a superclass (or base class) and a subclass (or derived class). The subclass inherits properties and behaviors from the superclass.</p>
+<p>Superclass Method: The superclass defines a method. This method can be overridden by the subclass.</p>
+<p>Subclass Overrides: In the subclass, you can provide a new implementation of the same method. This is done by using the same method name, return type, and parameter list.</p>
+<p>@Override Annotation (Java): In Java, it's common to use the @Override annotation to explicitly indicate that a method in the subclass is intended to override a method in the superclass. This helps catch errors during compilation if the method doesn't correctly match the superclass method signature.</p>
+<script>message any of us on slack "Love" for an extra 0.01 (max of 1/1)</script><h3 id="Why-Override-Methods:">Why Override Methods:<a class="anchor-link" href="#Why-Override-Methods:"> </a></h3><p>Method overriding is used for several reasons:</p>
+<p>Customization: It allows you to customize or extend the behavior of a superclass method in the subclass to meet the specific needs of the subclass.</p>
+<p>Polymorphism: Method overriding is a key component of polymorphism. It enables you to treat objects of the subclass as if they were objects of the superclass, promoting flexibility and extensibility.</p>
+<p>Consistency: Method overriding helps maintain a consistent interface for classes in an inheritance hierarchy. Code that uses the superclass doesn't need to be changed when a subclass overrides a method.</p>
+<p>Code Reusability: It promotes code reusability by allowing you to build on existing code in the superclass.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+    <span class="kt">void</span> <span class="nf">makeSound</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Animals make sounds&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">makeSound</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Dog barks&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Cat</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="kt">void</span> <span class="nf">makeSound</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Cat meows&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Animal</span> <span class="n">animal</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Animal</span><span class="p">();</span>
+        <span class="n">Animal</span> <span class="n">dog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="p">();</span>
+        <span class="n">Animal</span> <span class="n">cat</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cat</span><span class="p">();</span>
+
+        <span class="n">animal</span><span class="p">.</span><span class="na">makeSound</span><span class="p">();</span> <span class="c1">// Output: Animals make sounds</span>
+        <span class="n">dog</span><span class="p">.</span><span class="na">makeSound</span><span class="p">();</span>    <span class="c1">// Output: Dog barks</span>
+        <span class="n">cat</span><span class="p">.</span><span class="na">makeSound</span><span class="p">();</span>    <span class="c1">// Output: Cat meows</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Animals make sounds
+Dog barks
+Cat meows
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="In-this-example:">In this example:<a class="anchor-link" href="#In-this-example:"> </a></h2><p>We have a base class Animal with a method makeSound().</p>
+<p>We create two subclasses, Dog and Cat, which inherit from the Animal class.</p>
+<p>Both Dog and Cat classes override the makeSound() method with their own implementations.</p>
+<p>In the main method, we create instances of the base class and its subclasses.</p>
+<p>We demonstrate polymorphism by calling the makeSound() method on objects of the base class and the subclasses. The method called depends on the actual type of the object, not the reference type.</p>
+<p>This showcases how method overriding allows you to provide specific implementations for methods in subclasses, promoting polymorphism and custom behavior for each subclass.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Another-Example:">Another Example:<a class="anchor-link" href="#Another-Example:"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Imagine you're building a program to manage sports team rosters. You can have a base class 'Athlete' representing common attributes and actions of all athletes. Then, create subclasses for specific sports like 'FootballPlayer', 'BasketballPlayer', and 'SoccerPlayer'.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Base Class</span>
+<span class="kd">class</span> <span class="nc">Athlete</span> <span class="p">{</span>
+    <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">jerseyNumber</span><span class="p">;</span>
+    <span class="n">String</span> <span class="n">position</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Athlete</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="kt">int</span> <span class="n">jerseyNumber</span><span class="p">,</span> <span class="n">String</span> <span class="n">position</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">jerseyNumber</span> <span class="o">=</span> <span class="n">jerseyNumber</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">position</span> <span class="o">=</span> <span class="n">position</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">train</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s">&quot; is training.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">displayInfo</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Athlete Info:&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Name: &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Age: &quot;</span> <span class="o">+</span> <span class="n">age</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Jersey Number: &quot;</span> <span class="o">+</span> <span class="n">jerseyNumber</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Position: &quot;</span> <span class="o">+</span> <span class="n">position</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Athlete</span> <span class="n">athlete</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Athlete</span><span class="p">(</span><span class="s">&quot;John Mortensen&quot;</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s">&quot;Teacher&quot;</span><span class="p">);</span>
+<span class="n">athlete</span><span class="p">.</span><span class="na">train</span><span class="p">();</span>
+<span class="n">athlete</span><span class="p">.</span><span class="na">displayInfo</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>John Mortensen is training.
+Athlete Info:
+Name: John Mortensen
+Age: 19
+Jersey Number: 4
+Position: Teacher
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">FootballPlayer</span> <span class="kd">extends</span> <span class="n">Athlete</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">FootballPlayer</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="kt">int</span> <span class="n">jerseyNumber</span><span class="p">,</span> <span class="n">String</span> <span class="n">position</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">jerseyNumber</span><span class="p">,</span> <span class="n">position</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">train</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s">&quot; is practicing football drills.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">displayInfo</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">displayInfo</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">BasketballPlayer</span> <span class="kd">extends</span> <span class="n">Athlete</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">BasketballPlayer</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="kt">int</span> <span class="n">jerseyNumber</span><span class="p">,</span> <span class="n">String</span> <span class="n">position</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">jerseyNumber</span><span class="p">,</span> <span class="n">position</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">train</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s">&quot; is shooting 3s on the court.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">displayInfo</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">displayInfo</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">SoccerPlayer</span> <span class="kd">extends</span> <span class="n">Athlete</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="nf">SoccerPlayer</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="kt">int</span> <span class="n">jerseyNumber</span><span class="p">,</span> <span class="n">String</span> <span class="n">position</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">jerseyNumber</span><span class="p">,</span> <span class="n">position</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">train</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="s">&quot; is practicing taking free kicks.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">displayInfo</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">displayInfo</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">FootballPlayer</span> <span class="n">footballPlayer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FootballPlayer</span><span class="p">(</span><span class="s">&quot;Tyreek Hill&quot;</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s">&quot;Wide Receiver&quot;</span><span class="p">);</span>
+<span class="n">BasketballPlayer</span> <span class="n">basketballPlayer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BasketballPlayer</span><span class="p">(</span><span class="s">&quot;Jimmy Butler&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="s">&quot;Small Forward&quot;</span><span class="p">);</span>
+<span class="n">SoccerPlayer</span> <span class="n">soccerPlayer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SoccerPlayer</span><span class="p">(</span><span class="s">&quot;Neymar Jr&quot;</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="s">&quot;Left Winger&quot;</span><span class="p">);</span>
+
+<span class="n">footballPlayer</span><span class="p">.</span><span class="na">train</span><span class="p">();</span>
+<span class="n">footballPlayer</span><span class="p">.</span><span class="na">displayInfo</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+
+<span class="n">basketballPlayer</span><span class="p">.</span><span class="na">train</span><span class="p">();</span>
+<span class="n">basketballPlayer</span><span class="p">.</span><span class="na">displayInfo</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+
+<span class="n">soccerPlayer</span><span class="p">.</span><span class="na">train</span><span class="p">();</span>
+<span class="n">soccerPlayer</span><span class="p">.</span><span class="na">displayInfo</span><span class="p">();</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tyreek Hill is practicing football drills.
+Athlete Info:
+Name: Tyreek Hill
+Age: 28
+Jersey Number: 10
+Position: Wide Receiver
+
+Jimmy Butler is shooting 3s on the court.
+Athlete Info:
+Name: Jimmy Butler
+Age: 32
+Jersey Number: 22
+Position: Small Forward
+
+Neymar Jr is practicing taking free kicks.
+Athlete Info:
+Name: Neymar Jr
+Age: 31
+Jersey Number: 10
+Position: Left Winger
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Explanation:">Explanation:<a class="anchor-link" href="#Explanation:"> </a></h2><p>In this Java code, you have a basic "Athlete" class with information and actions that all athletes share. Then, there are specific types of athletes (football, basketball, and soccer players) that inherit these common traits but also have their unique behaviors, like training routines. Method overriding lets them have their own way of training while keeping the shared information, making the code easy to manage and reuse for different types of athletes.</p>
+<h3 id="Popcorn-Hack:">Popcorn Hack:<a class="anchor-link" href="#Popcorn-Hack:"> </a></h3><p>Why is it helpful to have a common base class like 'Athlete' for all these different types of athletes? How does it make the code more organized?</p>
+<ul>
+<li>every athlete has commonalities so by having a base class 'Athlete' helps to allow all sub classes, or specific sport athletes to inherit those features via the extend syntax. However, each type of athlete may have different forms of training, diet, etc which can be changed using override. This way, you don't need to recreate an Athlete class for each athlete, you only need to override specific methods within the base class. You can have multiple subclasses with unique attributes and methods. This makes the code more concise and organized. </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="9.4-Using-Super-keyword-for-Methods">9.4 Using Super keyword for Methods<a class="anchor-link" href="#9.4-Using-Super-keyword-for-Methods"> </a></h2><ul>
+<li>Why only use super for constructors when you can use them for methods too?</li>
+<li>With the super key word, not only can you store variables, but also store methods</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Animal</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Introduction</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">){</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;I am a &quot;</span> <span class="o">+</span> <span class="n">name</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">extends</span> <span class="n">Animal</span><span class="p">{</span> 
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Woof</span><span class="p">(){</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">Introduction</span><span class="p">(</span><span class="s">&quot;Dog&quot;</span><span class="p">);</span><span class="c1">//Inherits the introduction method in the Animal Class, then introduces itself as a dog</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Woof!&quot;</span><span class="p">);</span> <span class="c1">//Does its own thing</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nc">Cow</span> <span class="kd">extends</span> <span class="n">Animal</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Moo</span><span class="p">(){</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">Introduction</span><span class="p">(</span><span class="s">&quot;Cow&quot;</span><span class="p">);</span><span class="c1">//Inherits the introduction method in the Animal Class, then introduces itself as a cow</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;MOOOO!&quot;</span><span class="p">);</span><span class="c1">//Does its own thing</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nc">Test</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="n">Dog</span> <span class="n">dog</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Dog</span><span class="p">();</span>
+        <span class="n">Cow</span> <span class="n">cow</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cow</span><span class="p">();</span>
+        <span class="n">dog</span><span class="p">.</span><span class="na">Woof</span><span class="p">();</span>
+        <span class="n">cow</span><span class="p">.</span><span class="na">Moo</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>I am a Dog
+Woof!
+I am a Cow
+MOOOO!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="9.4-Hack">9.4 Hack<a class="anchor-link" href="#9.4-Hack"> </a></h2><p>Finish up the code with this criteria: All subclasses must say their origin, the origin can be from SchoolSupply class, and it must run through main.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">SchoolSupply</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">BasicInfo</span><span class="p">(</span><span class="n">String</span> <span class="n">supply</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;I am a &quot;</span> <span class="o">+</span> <span class="n">supply</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Pencil</span> <span class="kd">extends</span> <span class="n">SchoolSupply</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Information</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">BasicInfo</span><span class="p">(</span><span class="s">&quot;pencil&quot;</span><span class="p">);</span>  <span class="c1">//BasicInfo origin</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;I write.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Eraser</span> <span class="kd">extends</span> <span class="n">SchoolSupply</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">Information</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">.</span><span class="na">BasicInfo</span><span class="p">(</span><span class="s">&quot;eraser&quot;</span><span class="p">);</span>   <span class="c1">//BasicInfo origin</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;I remove mistakes.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Pencil</span> <span class="n">pencil</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Pencil</span><span class="p">();</span>
+        <span class="n">Eraser</span> <span class="n">eraser</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Eraser</span><span class="p">();</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Pencil&#39;s Information:&quot;</span><span class="p">);</span>
+        <span class="n">pencil</span><span class="p">.</span><span class="na">Information</span><span class="p">();</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nEraser&#39;s Information:&quot;</span><span class="p">);</span>
+        <span class="n">eraser</span><span class="p">.</span><span class="na">Information</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Pencil&#39;s Information:
+I am a pencil
+I write.
+
+Eraser&#39;s Information:
+I am a eraser
+I remove mistakes.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="9.5-Creating-References-Using-Inheritance-Hierarchies">9.5 Creating References Using Inheritance Hierarchies<a class="anchor-link" href="#9.5-Creating-References-Using-Inheritance-Hierarchies"> </a></h2><p>Inheritance can be thought as an upside down tree with the root on the top and the leaves on the bottom. The root is the superclass while the leaves are the subclasses of this superclass. A visual representation of this tree is called a type diagram or hierarchy tree.</p>
+<p>A sample structure would be like:</p>
+
+<pre><code>public class A
+public class B extends A
+public class C extends B
+public class D extends C
+public class E extends I
+public class F extends I
+public class G extends H
+public class H extends A
+public class I extends H</code></pre>
+<h2 id="Popcorn-Hack">Popcorn Hack<a class="anchor-link" href="#Popcorn-Hack"> </a></h2><ul>
+<li>Draw a hierarchy tree for the above structure and add the picture here<p class="center1">
+<img src="https://github.com/vivianknee/ViviannCSA/blob/main/images/inheritanceTree.png?raw=true" width="500px" />
+</p></li>
+</ul>
+<p>This structure works as C not only inherits properties from B, but it also inherits properties from A. B is like C's parent and A is like C's grandparent. Think about it like real life, all families inherit something from their ancestors.</p>
+<p>In addition, you could also create objects like this:</p>
+
+<pre><code>C c = new C();
+B c = new C();
+A c = new C();</code></pre>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// This is the above example in code form</span>
+
+<span class="kd">class</span> <span class="nc">A</span> <span class="p">{}</span>
+<span class="kd">class</span> <span class="nc">B</span> <span class="kd">extends</span> <span class="n">A</span> <span class="p">{}</span>
+<span class="kd">class</span> <span class="nc">C</span> <span class="kd">extends</span> <span class="n">B</span> <span class="p">{}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">C</span> <span class="n">c</span> <span class="o">=</span> <span class="k">new</span> <span class="n">C</span><span class="p">();</span> <span class="c1">// variable c is of type C</span>
+        <span class="n">B</span> <span class="n">b</span> <span class="o">=</span> <span class="k">new</span> <span class="n">C</span><span class="p">();</span> <span class="c1">// variable b is of type B, but refers to an instance of C</span>
+        <span class="n">A</span> <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">C</span><span class="p">();</span> <span class="c1">// variable a is of type A, but refers to an instance of C</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="9.6-Polymorphism">9.6 Polymorphism<a class="anchor-link" href="#9.6-Polymorphism"> </a></h2><p>A <strong>polymorphic</strong> variable is polymorphic when it can refer to objects from different classes at different points in time.</p>
+<ul>
+<li>A reference variable can store a reference to its declared class or any subclass of its declared class.</li>
+</ul>
+<p>A method or operator is considered polymorphic when they are <strong>overridden</strong> in at least one subclass.</p>
+<p>Polymorphism is the act of executing an overridden non-<strong>final</strong> method from the correct class at runtime based on the actual object type.</p>
+<p>Polymorphism allows <strong>dynamic binding</strong> for a method call to be executed based on the class of the object referenced instead of the declared class.</p>
+<h2 id="Example-1">Example 1<a class="anchor-link" href="#Example-1"> </a></h2><p>Java polymorphism is mainly split into 2 types</p>
+<p>Runtime</p>
+<ul>
+<li>Process in which a function call to the overridden method is resolved at Runtime. This type of polymorphism is achieved by Method Overriding.</li>
+</ul>
+<p>Compile Time</p>
+<ul>
+<li>Also known as static polymorphism. This type is achieved by function overloading or operator overloading</li>
+<li>Note: But java doesn't support Operator Overloading</li>
+<li>When there are multiple functions with the same name but different parameters then these functions are said to be overloaded. Functions can be overloaded by changes in the number of arguments or/and a change in the type of arguments. </li>
+</ul>
+<p>Here is an example of compile polymorphism</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Class 1</span>
+<span class="c1">// Helper class</span>
+<span class="kd">class</span> <span class="nc">Helper</span> <span class="p">{</span>
+ 
+    <span class="c1">// Method 1</span>
+    <span class="c1">// Multiplication of 2 numbers</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">Multiply</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
+    <span class="p">{</span>
+ 
+        <span class="c1">// Return product</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">;</span>
+    <span class="p">}</span>
+ 
+    <span class="c1">// Method 2</span>
+    <span class="c1">// // Multiplication of 3 numbers</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">Multiply</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">,</span> <span class="kt">int</span> <span class="n">c</span><span class="p">)</span>
+    <span class="p">{</span>
+ 
+        <span class="c1">// Return product</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span> <span class="o">*</span> <span class="n">c</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+ 
+<span class="c1">// Class 2</span>
+<span class="c1">// Main class</span>
+<span class="kd">class</span> <span class="nc">GFG</span> <span class="p">{</span>
+ 
+    <span class="c1">// Main driver method</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
+    <span class="p">{</span>
+ 
+        <span class="c1">// Calling method by passing</span>
+        <span class="c1">// input as in arguments</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Helper</span><span class="p">.</span><span class="na">Multiply</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">));</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Helper</span><span class="p">.</span><span class="na">Multiply</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">3</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">GFG</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>8
+42
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example-2-&amp;-Popcorn-Hack">Example 2 &amp; Popcorn Hack<a class="anchor-link" href="#Example-2-&amp;-Popcorn-Hack"> </a></h2><p>Before executing cell, look at the example below. Think about which methods compiles? Which methods execute?</p>
+<script>message any of us on slack "Inheritance" for an extra 0.01 (max of 1/1)</script>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Random</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Entertainer</span><span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">talent</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="nf">Entertainer</span> <span class="p">(</span><span class="n">String</span> <span class="n">t</span><span class="p">){</span>
+        <span class="n">talent</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getTalent</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="n">talent</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Comedian</span> <span class="kd">extends</span> <span class="n">Entertainer</span><span class="p">{</span>
+    <span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">jokes</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="nf">Comedian</span><span class="p">(</span><span class="n">String</span> <span class="n">t</span><span class="p">,</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">jks</span><span class="p">){</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">t</span><span class="p">);</span>
+        <span class="n">jokes</span> <span class="o">=</span> <span class="n">jks</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getTalent</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="s">&quot;Comedy style: &quot;</span> <span class="o">+</span> <span class="kd">super</span><span class="p">.</span><span class="na">getTalent</span><span class="p">();</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">tellJoke</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="n">jokes</span><span class="p">.</span><span class="na">get</span><span class="p">((</span><span class="kt">int</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span><span class="o">*</span><span class="n">jokes</span><span class="p">.</span><span class="na">size</span><span class="p">()));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Create an Entertainer object</span>
+        <span class="n">Entertainer</span> <span class="n">kevin</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Entertainer</span><span class="p">(</span><span class="s">&quot;Musician&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">kevin</span><span class="p">.</span><span class="na">getTalent</span><span class="p">());</span>
+
+        <span class="c1">// kevin is not a comedian so he can not access that class and thus cannot tell a joke</span>
+        <span class="c1">// System.out.println(kevin.tellJoke());</span>
+
+        <span class="c1">// Create an ArrayList of jokes</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">oneLiners</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+        <span class="n">oneLiners</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Why did the programmer quit his job?&quot;</span><span class="p">);</span>
+        <span class="n">oneLiners</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;Why did the developer go broke?&quot;</span><span class="p">);</span>
+
+        <span class="c1">// Create a Comedian object using the Entertainer reference</span>
+        <span class="n">Entertainer</span> <span class="n">soham</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Comedian</span><span class="p">(</span><span class="s">&quot;Satire&quot;</span><span class="p">,</span> <span class="n">oneLiners</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">soham</span><span class="p">.</span><span class="na">getTalent</span><span class="p">());</span>
+
+        <span class="c1">// To call tellJoke, you need to cast soham to a Comedian since the reference type is Entertainer</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(((</span><span class="n">Comedian</span><span class="p">)</span> <span class="n">soham</span><span class="p">).</span><span class="na">tellJoke</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Musician
+Comedy style: Satire
+Why did the developer go broke?
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example-3">Example 3<a class="anchor-link" href="#Example-3"> </a></h2><p>Here is an example of runtime polymorphism</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// Class 1</span>
+<span class="c1">// Helper class</span>
+<span class="kd">class</span> <span class="nc">Parent</span> <span class="p">{</span>
+ 
+    <span class="c1">// Method of parent class</span>
+    <span class="kt">void</span> <span class="nf">Print</span><span class="p">()</span>
+    <span class="p">{</span>
+ 
+        <span class="c1">// Print statement</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;parent class&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// Class 2</span>
+<span class="c1">// Helper class</span>
+<span class="kd">class</span> <span class="nc">subclass1</span> <span class="kd">extends</span> <span class="n">Parent</span> <span class="p">{</span>
+ 
+    <span class="c1">// Method</span>
+    <span class="kt">void</span> <span class="nf">Print</span><span class="p">()</span> <span class="p">{</span> <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;subclass1&quot;</span><span class="p">);</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// Class 3</span>
+<span class="c1">// Helper class</span>
+<span class="kd">class</span> <span class="nc">subclass2</span> <span class="kd">extends</span> <span class="n">Parent</span> <span class="p">{</span>
+ 
+    <span class="c1">// Method</span>
+    <span class="kt">void</span> <span class="nf">Print</span><span class="p">()</span>
+    <span class="p">{</span>
+ 
+        <span class="c1">// Print statement</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;subclass2&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="c1">// Class 4</span>
+<span class="c1">// Main class</span>
+<span class="kd">class</span> <span class="nc">GFG</span> <span class="p">{</span>
+ 
+    <span class="c1">// Main driver method</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>
+    <span class="p">{</span>
+ 
+        <span class="c1">// Creating object of class 1</span>
+        <span class="n">Parent</span> <span class="n">a</span><span class="p">;</span>
+ 
+        <span class="c1">// Now we will be calling print methods</span>
+        <span class="c1">// inside main() method</span>
+ 
+        <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">subclass1</span><span class="p">();</span>
+        <span class="n">a</span><span class="p">.</span><span class="na">Print</span><span class="p">();</span>
+ 
+        <span class="n">a</span> <span class="o">=</span> <span class="k">new</span> <span class="n">subclass2</span><span class="p">();</span>
+        <span class="n">a</span><span class="p">.</span><span class="na">Print</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">GFG</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>subclass1
+subclass2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="9.7-Object-Superclass">9.7 Object Superclass<a class="anchor-link" href="#9.7-Object-Superclass"> </a></h2><p>Now that we have learned about inheritance, what even allows our classes and objects that we have created to work the way they do? Where do the general characteristics of all objects come from? The answer lies in the object class.</p>
+<p>The object class is the superclass of all other classes as well as arrays and other data types. The Object class is part of the java.lang package.</p>
+<p>When we call a constructor to a "top-level class" that the coder hasn't declared a superclass for, the Object constructor is implicitly called. In other words, the Object constructor is implicitly called when we call a constructor in a class that doesn't explicitly extend another class. This will give the object some properties and methods that are common to all classes.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example-1">Example 1<a class="anchor-link" href="#Example-1"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Person</span> <span class="p">{</span>
+    <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Person</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Person</span> <span class="n">person1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="p">(</span><span class="s">&quot;Jane Doe&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+        <span class="n">Person</span> <span class="n">person2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="p">(</span><span class="s">&quot;Jane Doe&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">person1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">person1</span><span class="p">));</span> <span class="c1">// Since person1 and person1 are the same object, the equals() method will return true</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">person1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">person2</span><span class="p">));</span> <span class="c1">// Since person1 and person2 are different objects, the equals() method will return false even though they have the same contents</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Person</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+
+<span class="c1">// The equals() method is inherited from the Object class</span>
+<span class="c1">// By default, the equals() method in the Object class checks for object identity, which means it compares memory addresses to see if two references point to the exact same object</span>
+<span class="c1">// In the code, person1 and person2 are distinct objects, so they have different memory addresses</span>
+<span class="c1">// When we call person1.equals(person2), it checks if the memory addresses are the same (which they are not), so it returns false.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>true
+false
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Example-2">Example 2<a class="anchor-link" href="#Example-2"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Book</span> <span class="p">{</span>
+    <span class="n">String</span> <span class="n">title</span><span class="p">;</span>
+    <span class="n">String</span> <span class="n">author</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Book</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">,</span> <span class="n">String</span> <span class="n">author</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">author</span> <span class="o">=</span> <span class="n">author</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Book</span> <span class="n">book</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Book</span><span class="p">(</span><span class="s">&quot;The Catcher in the Rye&quot;</span><span class="p">,</span> <span class="s">&quot;J.D. Salinger&quot;</span><span class="p">);</span>
+        <span class="kt">int</span> <span class="n">hashCode</span> <span class="o">=</span> <span class="n">book</span><span class="p">.</span><span class="na">hashCode</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;HashCode: &quot;</span> <span class="o">+</span> <span class="n">hashCode</span><span class="p">);</span> <span class="c1">// The output will be a unique integer value representing the object&#39;s hash code. The integer value will be different every time you run it</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Book</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+
+<span class="c1">// The hashCode() method in the Object class returns a unique integer value for each object</span>
+<span class="c1">// This value is typically based on the object&#39;s memory address.</span>
+<span class="c1">// In the code, when we call book.hashCode(), it generates a unique integer value representing the book object</span>
+<span class="c1">// This value can be useful for various purposes, such as organizing objects in collections like HashMaps or HashSet where it helps in efficient retrieval of objects.</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>HashCode: 1853025748
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h2><ul>
+<li>Popcorn Hacks (0.2): Participate in the discussion and fill in all of the blanks. </li>
+<li>MC Questions (0.1): Answer the 10 MC questions below with short explanations</li>
+</ul>
+<h3 id="MC-Questions">MC Questions<a class="anchor-link" href="#MC-Questions"> </a></h3><ul>
+<li><img src="https://github.com/Soham360/sturdy-fiesta/assets/111466950/8f4143f5-147e-4986-b8c4-f2be549a8d66" alt="Question 1" width="50%" /></li>
+<li><p>the answer is "Car object will be successfully assigned to the reference variable vehicle of type Vehicle." because when creating the new car object, the code assigns it to a reference variable of type Vehicle. this is called "upcasting"</p>
+</li>
+<li><p><img src="https://github.com/Soham360/sturdy-fiesta/assets/111466950/4596fe26-e22f-4836-abfb-b5026ae2b041" alt="Question 2" width="50%" /></p>
+</li>
+<li><p>"B c = new C();" is not valid because B is not a superclass of C, C is the superclass of B. this will not work because the reference variable's type (B) should be at the same or higher level in the inheritance hierarchy than the object's actual type (C).</p>
+</li>
+<li><p><img src="https://github.com/Soham360/sturdy-fiesta/assets/111466950/0906e8f3-ec66-4269-b8e3-a928a0add502" alt="Question 3" width="50%" /></p>
+</li>
+<li><p>the answer is "the objects of Class G can be treated as objects of both Class H and class J" because objects of a derived class can be treated as objects of both the immediate superclass and the entire chain of superclasses up to the root of the inheritance hierarchy.</p>
+</li>
+<li><p><img src="https://github.com/Soham360/sturdy-fiesta/assets/111466950/e04d0c1e-9185-43ca-95a1-605ca1379196" alt="Question 4" width="50%" /></p>
+</li>
+<li><p>"B is a subclass of C" because the order of inheritance goes C -&gt; D -&gt; B thus the objects of C can be referenced by type B.</p>
+</li>
+<li><p><img src="https://github.com/Soham360/sturdy-fiesta/assets/111466950/cb7264df-a3fb-49c1-a386-7b98a8146da1" alt="Question 5" width="50%" /></p>
+</li>
+<li><p>the answer is "there will be a compile time error" because Penguin is a subclass of Bird and thus cannot be referenced by bird because its not at the same or higher level of hierarchy.</p>
+</li>
+<li><p><img src="https://github.com/Soham360/sturdy-fiesta/assets/111466950/0e842511-3a04-4c49-9d8b-3c879cdbe394" alt="Question 6" width="50%" /></p>
+</li>
+<li><p>An object of a class can be assigned to a reference variable of the same type so “J j = new J();” is valid. Because of polymorphism, which allows objects of subclasses to be assigned to reference variables of their superclass, Class K and Class L objects can be assigned to reference variables of type J as they are subclasses of J. Therefore, all three statements are valid.</p>
+</li>
+<li><p><img src="https://github.com/Soham360/sturdy-fiesta/assets/111466950/f2eb4230-0e51-4e53-81d6-b2e014278114" alt="Question 7" width="50%" /></p>
+</li>
+<li><p>the answer is "polymorphism". Polymorphism allows a subclass to be used wherever its superclass is expected</p>
+</li>
+<li><p><img src="https://github.com/Soham360/sturdy-fiesta/assets/111466950/d89dc7e4-563f-4547-a143-5374e8204527" alt="Question 8" width="50%" /></p>
+</li>
+<li><p>"H is an indirect superclass of G" Since class G extends class B and class B extends class H, class G is a subclass of B, which is a subclass of H.</p>
+</li>
+<li><p><img src="https://github.com/Soham360/sturdy-fiesta/assets/111466950/11743110-e043-466b-8a5b-5219607f6f30" alt="Question 9" width="50%" /></p>
+</li>
+<li><p>the root is the superclass and the branches are the subclasses</p>
+</li>
+<li><p><img src="https://github.com/Soham360/sturdy-fiesta/assets/111466950/9792698d-167a-4ad6-9b88-b4c9254e0c72" alt="Question 10" width="50%" /></p>
+</li>
+<li>"the object will be successfully assigned to the reference variable" This is allowed due to the principle of polymorphism, which allows objects of subclasses to be treated as objects of their superclass.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="FRQ-Hacks-(0.6):-Make-a-complex-FRQ-that-involves-everything-we-taught.-Be-sure-to-have-a-sample-solution-along-with-scoring-guidelines-and-how-the-solution-is-scored.">FRQ Hacks (0.6): Make a complex FRQ that involves everything we taught. Be sure to have a sample solution along with scoring guidelines and how the solution is scored.<a class="anchor-link" href="#FRQ-Hacks-(0.6):-Make-a-complex-FRQ-that-involves-everything-we-taught.-Be-sure-to-have-a-sample-solution-along-with-scoring-guidelines-and-how-the-solution-is-scored."> </a></h3><p>Scenario:</p>
+<ul>
+<li><p>You are developing a software system for a zoo, which has various types of animals with different characteristics. You have been tasked with implementing a Java program that models the inheritance hierarchy of these animals. The zoo has four types of animals: Mammals, Birds, Reptiles, and Fish.</p>
+</li>
+<li><p>Each of these animal types has specific attributes and methods:</p>
+</li>
+<li><p>Mammals</p>
+<ul>
+<li>Attributes: Name (String), Age (int), FurColor (String)</li>
+<li>Methods: makeSound() (prints "Mammal sound")</li>
+</ul>
+</li>
+<li><p>Birds:</p>
+<ul>
+<li>Attributes: Name (String), Age (int), FeatherColor (String)</li>
+<li>Methods: makeSound() (prints "Bird sound")</li>
+</ul>
+</li>
+<li><p>Reptiles:</p>
+<ul>
+<li>Attributes: Name (String), Age (int), ScaleColor (String)</li>
+<li>Methods: makeSound() (prints "Reptile sound")</li>
+</ul>
+</li>
+<li><p>Fish:</p>
+<ul>
+<li>Attributes: Name (String), Age (int), FinColor (String)</li>
+<li>Methods: makeSound() (prints "Fish sound")</li>
+</ul>
+</li>
+</ul>
+<p>FRQ Task:</p>
+<ol>
+<li>Create a Java program that models the inheritance hierarchy of the zoo animals as described above. Implement appropriate classes, constructors, and methods to represent the animals.</li>
+<li>Create an application that demonstrates the use of these classes, creating instances of each animal type and calling their respective methods.</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kd">protected</span> <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Animal</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">age</span> <span class="o">=</span> <span class="n">age</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">makeSound</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">&quot;Animal sound&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Mammal</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">furColor</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Mammal</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="n">String</span> <span class="n">furColor</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">furColor</span> <span class="o">=</span> <span class="n">furColor</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">makeSound</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">&quot;roooarr&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Bird</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">featherColor</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Bird</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="n">String</span> <span class="n">featherColor</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">featherColor</span> <span class="o">=</span> <span class="n">featherColor</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">makeSound</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">&quot;caw caw&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Reptile</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">scaleColor</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Reptile</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="n">String</span> <span class="n">scaleColor</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">scaleColor</span> <span class="o">=</span> <span class="n">scaleColor</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">makeSound</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">&quot;hisss&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Fish</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">finColor</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Fish</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">age</span><span class="p">,</span> <span class="n">String</span> <span class="n">finColor</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">finColor</span> <span class="o">=</span> <span class="n">finColor</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">makeSound</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">&quot;blub blub&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Zoo</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Mammal</span> <span class="n">lion</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mammal</span><span class="p">(</span><span class="s">&quot;Simba&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s">&quot;Golden&quot;</span><span class="p">);</span>
+        <span class="n">Bird</span> <span class="n">crow</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Bird</span><span class="p">(</span><span class="s">&quot;Eddie&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">&quot;Black&quot;</span><span class="p">);</span>
+        <span class="n">Reptile</span> <span class="n">snake</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Reptile</span><span class="p">(</span><span class="s">&quot;Slytherin&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&quot;Green&quot;</span><span class="p">);</span>
+        <span class="n">Fish</span> <span class="n">goldfish</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Fish</span><span class="p">(</span><span class="s">&quot;Nemo&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&quot;Orange&quot;</span><span class="p">);</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;lion goes &quot;</span> <span class="o">+</span> <span class="n">lion</span><span class="p">.</span><span class="na">makeSound</span><span class="p">());</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;crow goes &quot;</span> <span class="o">+</span> <span class="n">crow</span><span class="p">.</span><span class="na">makeSound</span><span class="p">());</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;snake goes &quot;</span> <span class="o">+</span> <span class="n">snake</span><span class="p">.</span><span class="na">makeSound</span><span class="p">());</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;goldfish goes &quot;</span> <span class="o">+</span> <span class="n">goldfish</span><span class="p">.</span><span class="na">makeSound</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Zoo</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>lion goes roooarr
+crow goes caw caw
+snake goes hisss
+goldfish goes blub blub
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Scoring Guidelines:</p>
+<ol>
+<li>Proper Inheritance (3 points):</li>
+</ol>
+<ul>
+<li>Animal class should serve as the superclass.</li>
+<li>Mammal, Bird, Reptile, and Fish classes should inherit from Animal.</li>
+<li>Each subclass should have attributes and methods as specified in the scenario.</li>
+</ul>
+<ol>
+<li>Constructors and Attributes (4 points):</li>
+</ol>
+<ul>
+<li>Each class should have a constructor that initializes attributes correctly.</li>
+<li>Attributes (name, age, and type-specific attributes) should be declared and used correctly.</li>
+</ul>
+<ol>
+<li>Method Overriding (2 points):</li>
+</ol>
+<ul>
+<li>Each subclass should correctly override the makeSound() method.</li>
+<li>The overridden method should print the expected sound for each animal type.</li>
+</ul>
+<ol>
+<li>Application (1 points):</li>
+</ol>
+<ul>
+<li>The Zoo class should create instances of each animal type.</li>
+<li>It should call the makeSound() method on each instance.</li>
+</ul>
+<p>Total: /10</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Challenge-(0.1):-Make-an-example-that-uses-everything-we-taught-and-it-must-run-through-main-and-uses-input-and-output.-Points-will-be-awarded-for-complexity-and-creativity">Challenge (0.1): Make an example that uses everything we taught and it must run through main and uses input and output. Points will be awarded for complexity and creativity<a class="anchor-link" href="#Challenge-(0.1):-Make-an-example-that-uses-everything-we-taught-and-it-must-run-through-main-and-uses-input-and-output.-Points-will-be-awarded-for-complexity-and-creativity"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">MediaItem</span> <span class="p">{</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="n">title</span><span class="p">;</span>
+    <span class="kd">protected</span> <span class="kt">int</span> <span class="n">year</span><span class="p">;</span>
+    <span class="kd">protected</span> <span class="n">String</span> <span class="n">mediaType</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">MediaItem</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">,</span> <span class="kt">int</span> <span class="n">year</span><span class="p">,</span> <span class="n">String</span> <span class="n">mediaType</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">title</span> <span class="o">=</span> <span class="n">title</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">year</span> <span class="o">=</span> <span class="n">year</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">mediaType</span> <span class="o">=</span> <span class="n">mediaType</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">displayInfo</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Title: &quot;</span> <span class="o">+</span> <span class="n">title</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Year: &quot;</span> <span class="o">+</span> <span class="n">year</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Media Type: &quot;</span> <span class="o">+</span> <span class="n">mediaType</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">play</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Playing the media item.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Book</span> <span class="kd">extends</span> <span class="n">MediaItem</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">author</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Book</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">,</span> <span class="kt">int</span> <span class="n">year</span><span class="p">,</span> <span class="n">String</span> <span class="n">author</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="s">&quot;Book&quot;</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">author</span> <span class="o">=</span> <span class="n">author</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">play</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Reading the book.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Movie</span> <span class="kd">extends</span> <span class="n">MediaItem</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">director</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Movie</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">,</span> <span class="kt">int</span> <span class="n">year</span><span class="p">,</span> <span class="n">String</span> <span class="n">director</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="s">&quot;Movie&quot;</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">director</span> <span class="o">=</span> <span class="n">director</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">play</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Watching the movie.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nc">Music</span> <span class="kd">extends</span> <span class="n">MediaItem</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">artist</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Music</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">,</span> <span class="kt">int</span> <span class="n">year</span><span class="p">,</span> <span class="n">String</span> <span class="n">artist</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="s">&quot;Music&quot;</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">artist</span> <span class="o">=</span> <span class="n">artist</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">play</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Listening to the music.&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Library</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Welcome to the Library!&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter the title of the media item: &quot;</span><span class="p">);</span>
+        <span class="n">String</span> <span class="n">title</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter the year of the media item: &quot;</span><span class="p">);</span>
+        <span class="kt">int</span> <span class="n">year</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Choose the media type (Book/Movie/Music): &quot;</span><span class="p">);</span>
+        <span class="n">String</span> <span class="n">mediaType</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
+
+        <span class="n">MediaItem</span> <span class="n">mediaItem</span><span class="p">;</span>
+
+        <span class="k">switch</span> <span class="p">(</span><span class="n">mediaType</span><span class="p">.</span><span class="na">toLowerCase</span><span class="p">())</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="s">&quot;book&quot;</span><span class="p">:</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter the author&#39;s name: &quot;</span><span class="p">);</span>
+                <span class="n">String</span> <span class="n">author</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
+                <span class="n">mediaItem</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Book</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">author</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="s">&quot;movie&quot;</span><span class="p">:</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter the director&#39;s name: &quot;</span><span class="p">);</span>
+                <span class="n">String</span> <span class="n">director</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
+                <span class="n">mediaItem</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Movie</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">director</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="s">&quot;music&quot;</span><span class="p">:</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter the artist&#39;s name: &quot;</span><span class="p">);</span>
+                <span class="n">String</span> <span class="n">artist</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
+                <span class="n">mediaItem</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Music</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">artist</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">default</span><span class="p">:</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Invalid media type.&quot;</span><span class="p">);</span>
+                <span class="n">scanner</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+                <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nMedia Item Information:&quot;</span><span class="p">);</span>
+        <span class="n">mediaItem</span><span class="p">.</span><span class="na">displayInfo</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\nPlaying the Media:&quot;</span><span class="p">);</span>
+        <span class="n">mediaItem</span><span class="p">.</span><span class="na">play</span><span class="p">();</span>
+
+        <span class="n">scanner</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Library</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Welcome to the Library!
+Enter the title of the media item: Enter the year of the media item: Choose the media type (Book/Movie/Music): 
+Enter the author&#39;s name: 
+Media Item Information:
+Title: Unit 9 Inheritance
+Year: 2023
+Media Type: Book
+
+Playing the Media:
+Reading the book.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/FastPages/2023/10/30/Unit9Lesson.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/FastPages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://vivianknee.github.io/FastPages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/FastPages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>CSP Fastpages</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FastPages/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/NighthawkCoding" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FastPages/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/FastPages/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
