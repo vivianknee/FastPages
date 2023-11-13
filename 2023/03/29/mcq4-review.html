@@ -90,9 +90,27 @@ window.onload = wrap_img;
 
     </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-</ul><p><img src="/FastPages/images/MCQ4.png" alt="">
+  <div class="post-content e-content" itemprop="articleBody"><!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+    $( document ).ready(function() {
+      // Handler for .ready() called.
+    
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+    
+    /* this offset helps account for the space taken up by the floating toolbar. */
+    $('#toc').on('click', 'a', function() {
+      var target = $(this.getAttribute('href'))
+        , scroll_target = target.offset().top
+    
+      $(window).scrollTop(scroll_target - 10);
+      return false
+    })
+      
+    });
+</script>
+    
+<div id="toc"></div>
+<p><img src="/FastPages/images/MCQ4.png" alt="" />
 <strong>Q50: Suppose a large group of people in a room were all born in the same year. Consider the following three algorithms, which are each intended to identify the people in the room who have the earliest birthday based on just the month and day. For example, a person born on February 10 is considered to have an earlier birthday than a person born on March 5. Which of the three algorithms will identify the correct people?</strong></p>
 <ul>
   <li>I thought “Beginning with the number 1, ask if anyone was born on that day of any month. Continue with the numbers 2, 3, and so on until a positive response is received. If only one person responds, that person has the earliest birthday. If more than one person responds, determine which person was born in the earliest month, and that person or those persons have the earliest birthday.” this was a correct algorithm but it is not</li>
@@ -105,7 +123,7 @@ window.onload = wrap_img;
 </ul>
 
 <p><strong>Q45</strong>
-<img src="/FastPages/images/MC45.png" alt=""></p>
+<img src="/FastPages/images/MC45.png" alt="" /></p>
 <ul>
   <li>for this question, I failed to do math so I got it wrong</li>
 </ul>
@@ -140,7 +158,7 @@ window.onload = wrap_img;
 </ul>
 
 <p><strong>Q3</strong>
-<img src="/FastPages/images/MC3.png" alt=""></p>
+<img src="/FastPages/images/MC3.png" alt="" /></p>
 <ul>
   <li>I counted how many links needed to be cut relative to point E but failed to consider that I should also count how many links need to be cut from point F. If I cut 3 links from point F then E would have no way of reaching F.</li>
 </ul>
@@ -156,7 +174,6 @@ window.onload = wrap_img;
         async>
 </script><a class="u-url" href="/FastPages/2023/03/29/mcq4-review.html" hidden></a>
 </article>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/FastPages/"></data>

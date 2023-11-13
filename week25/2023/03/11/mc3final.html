@@ -89,7 +89,8 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/FastPages/categories/#week25">week25</a>
+          <a class="category-tags-link" href="/FastPages/categories/ap#week25">week25</a>
+        
         
       
       </p>
@@ -97,23 +98,29 @@ window.onload = wrap_img;
 
     </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#takeaways">Takeaways</a></li>
-<li class="toc-entry toc-h2"><a href="#questions">Questions</a>
-<ul>
-<li class="toc-entry toc-h5"><a href="#q50-a-computer-scientist-is-analyzing-four-different-algorithms-used-to-sort-a-list-the-table-below-shows-the-number-of-steps-each-algorithm-took-to-sort-lists-of-different-sizes-based-on-the-values-in-the-table-which-of-the-algorithms-appear-to-run-in-reasonable-time">Q50: A computer scientist is analyzing four different algorithms used to sort a list. The table below shows the number of steps each algorithm took to sort lists of different sizes. Based on the values in the table, which of the algorithms appear to run in reasonable time?</a></li>
-<li class="toc-entry toc-h4"><a href="#q49-a-city-planner-is-using-simulation-software-to-study-crowd-flow-out-of-a-large-arena-after-an-event-has-ended-the-arena-is-located-in-an-urban-city-which-of-the-following-best-describes-a-limitation-of-using-a-simulation-for-this-purpose">Q49: A city planner is using simulation software to study crowd flow out of a large arena after an event has ended. The arena is located in an urban city. Which of the following best describes a limitation of using a simulation for this purpose?</a></li>
-<li class="toc-entry toc-h4"><a href="#q43-what-is-displayed-as-a-result-of-the-procedure-call-proc2birthday-to-you-">Q43: What is displayed as a result of the procedure call proc2(“birthday”, “to you”) ?</a></li>
-<li class="toc-entry toc-h4"><a href="#q17-both-online-newspapers-and-social-media-sites-are-used-to-distribute-information-on-the-internet-which-of-the-following-best-describes-an-advantage-that-online-newspapers-have-over-social-media-sites">Q17: Both online newspapers and social media sites are used to distribute information on the Internet. Which of the following best describes an advantage that online newspapers have over social media sites?</a></li>
-<li class="toc-entry toc-h4"><a href="#q13-an-author-is-considering-publishing-an-e-book-using-a-creative-commons-license-in-which-of-the-following-situations-would-it-be-better-for-the-author-to-use-a-creative-commons-license-instead-of-a-traditional-copyright">Q13: An author is considering publishing an e-book using a Creative Commons license. In which of the following situations would it be better for the author to use a Creative Commons license instead of a traditional copyright?</a></li>
-<li class="toc-entry toc-h4"><a href="#q2-which-of-the-following-has-the-greatest-potential-for-compromising-a-users-personal-privacy">Q2: Which of the following has the greatest potential for compromising a user’s personal privacy?</a></li>
-</ul>
-</li>
-</ul><p><img src="/FastPages/images/tri3mc.png" alt=""></p>
+  <div class="post-content e-content" itemprop="articleBody"><!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+    $( document ).ready(function() {
+      // Handler for .ready() called.
+    
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+    
+    /* this offset helps account for the space taken up by the floating toolbar. */
+    $('#toc').on('click', 'a', function() {
+      var target = $(this.getAttribute('href'))
+        , scroll_target = target.offset().top
+    
+      $(window).scrollTop(scroll_target - 10);
+      return false
+    })
+      
+    });
+</script>
+    
+<div id="toc"></div>
+<p><img src="/FastPages/images/tri3mc.png" alt="" /></p>
 
-<h2 id="takeaways">
-<a class="anchor" href="#takeaways" aria-hidden="true"><span class="octicon octicon-link"></span></a>Takeaways</h2>
+<h2 id="takeaways">Takeaways</h2>
 <ul>
   <li>On my collegeboard MC #2, my score was 44/50</li>
   <li>The topics of questions I got wrong included
@@ -128,11 +135,9 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<h2 id="questions">
-<a class="anchor" href="#questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions</h2>
-<h5 id="q50-a-computer-scientist-is-analyzing-four-different-algorithms-used-to-sort-a-list-the-table-below-shows-the-number-of-steps-each-algorithm-took-to-sort-lists-of-different-sizes-based-on-the-values-in-the-table-which-of-the-algorithms-appear-to-run-in-reasonable-time">
-<a class="anchor" href="#q50-a-computer-scientist-is-analyzing-four-different-algorithms-used-to-sort-a-list-the-table-below-shows-the-number-of-steps-each-algorithm-took-to-sort-lists-of-different-sizes-based-on-the-values-in-the-table-which-of-the-algorithms-appear-to-run-in-reasonable-time" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q50</strong>: A computer scientist is analyzing four different algorithms used to sort a list. The table below shows the number of steps each algorithm took to sort lists of different sizes. Based on the values in the table, which of the algorithms appear to run in reasonable time?</h5>
-<p><img src="/FastPages/images/efficiency.png" alt=""></p>
+<h2 id="questions">Questions</h2>
+<h5 id="q50-a-computer-scientist-is-analyzing-four-different-algorithms-used-to-sort-a-list-the-table-below-shows-the-number-of-steps-each-algorithm-took-to-sort-lists-of-different-sizes-based-on-the-values-in-the-table-which-of-the-algorithms-appear-to-run-in-reasonable-time"><strong>Q50</strong>: A computer scientist is analyzing four different algorithms used to sort a list. The table below shows the number of steps each algorithm took to sort lists of different sizes. Based on the values in the table, which of the algorithms appear to run in reasonable time?</h5>
+<p><img src="/FastPages/images/efficiency.png" alt="" /></p>
 
 <ul>
   <li>I chose B and C when it was actually A and D</li>
@@ -145,8 +150,7 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<h4 id="q49-a-city-planner-is-using-simulation-software-to-study-crowd-flow-out-of-a-large-arena-after-an-event-has-ended-the-arena-is-located-in-an-urban-city-which-of-the-following-best-describes-a-limitation-of-using-a-simulation-for-this-purpose">
-<a class="anchor" href="#q49-a-city-planner-is-using-simulation-software-to-study-crowd-flow-out-of-a-large-arena-after-an-event-has-ended-the-arena-is-located-in-an-urban-city-which-of-the-following-best-describes-a-limitation-of-using-a-simulation-for-this-purpose" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q49</strong>: A city planner is using simulation software to study crowd flow out of a large arena after an event has ended. The arena is located in an urban city. Which of the following best describes a limitation of using a simulation for this purpose?</h4>
+<h4 id="q49-a-city-planner-is-using-simulation-software-to-study-crowd-flow-out-of-a-large-arena-after-an-event-has-ended-the-arena-is-located-in-an-urban-city-which-of-the-following-best-describes-a-limitation-of-using-a-simulation-for-this-purpose"><strong>Q49</strong>: A city planner is using simulation software to study crowd flow out of a large arena after an event has ended. The arena is located in an urban city. Which of the following best describes a limitation of using a simulation for this purpose?</h4>
 
 <ul>
   <li>
@@ -161,9 +165,8 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<h4 id="q43-what-is-displayed-as-a-result-of-the-procedure-call-proc2birthday-to-you-">
-<a class="anchor" href="#q43-what-is-displayed-as-a-result-of-the-procedure-call-proc2birthday-to-you-" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q43</strong>: What is displayed as a result of the procedure call proc2(“birthday”, “to you”) ?</h4>
-<p><img src="/FastPages/images/43.png" alt=""></p>
+<h4 id="q43-what-is-displayed-as-a-result-of-the-procedure-call-proc2birthday-to-you-"><strong>Q43</strong>: What is displayed as a result of the procedure call proc2(“birthday”, “to you”) ?</h4>
+<p><img src="/FastPages/images/43.png" alt="" /></p>
 
 <ul>
   <li>I chose “to you birthday happy” but the answer was “to you happy birthday”</li>
@@ -174,8 +177,7 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<h4 id="q17-both-online-newspapers-and-social-media-sites-are-used-to-distribute-information-on-the-internet-which-of-the-following-best-describes-an-advantage-that-online-newspapers-have-over-social-media-sites">
-<a class="anchor" href="#q17-both-online-newspapers-and-social-media-sites-are-used-to-distribute-information-on-the-internet-which-of-the-following-best-describes-an-advantage-that-online-newspapers-have-over-social-media-sites" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q17</strong>: Both online newspapers and social media sites are used to distribute information on the Internet. Which of the following best describes an advantage that online newspapers have over social media sites?</h4>
+<h4 id="q17-both-online-newspapers-and-social-media-sites-are-used-to-distribute-information-on-the-internet-which-of-the-following-best-describes-an-advantage-that-online-newspapers-have-over-social-media-sites"><strong>Q17</strong>: Both online newspapers and social media sites are used to distribute information on the Internet. Which of the following best describes an advantage that online newspapers have over social media sites?</h4>
 
 <ul>
   <li>I chose the answer that said “The ability to provide information that is widely accessible” but the correct answer was “The ability to provide credibility to the information distributed”</li>
@@ -187,8 +189,7 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<h4 id="q13-an-author-is-considering-publishing-an-e-book-using-a-creative-commons-license-in-which-of-the-following-situations-would-it-be-better-for-the-author-to-use-a-creative-commons-license-instead-of-a-traditional-copyright">
-<a class="anchor" href="#q13-an-author-is-considering-publishing-an-e-book-using-a-creative-commons-license-in-which-of-the-following-situations-would-it-be-better-for-the-author-to-use-a-creative-commons-license-instead-of-a-traditional-copyright" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q13</strong>: An author is considering publishing an e-book using a Creative Commons license. In which of the following situations would it be better for the author to use a Creative Commons license instead of a traditional copyright?</h4>
+<h4 id="q13-an-author-is-considering-publishing-an-e-book-using-a-creative-commons-license-in-which-of-the-following-situations-would-it-be-better-for-the-author-to-use-a-creative-commons-license-instead-of-a-traditional-copyright"><strong>Q13</strong>: An author is considering publishing an e-book using a Creative Commons license. In which of the following situations would it be better for the author to use a Creative Commons license instead of a traditional copyright?</h4>
 
 <ol>
   <li>The author wants to make the e-book available as a free download.</li>
@@ -207,8 +208,7 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<h4 id="q2-which-of-the-following-has-the-greatest-potential-for-compromising-a-users-personal-privacy">
-<a class="anchor" href="#q2-which-of-the-following-has-the-greatest-potential-for-compromising-a-users-personal-privacy" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q2</strong>: Which of the following has the greatest potential for compromising a user’s personal privacy?</h4>
+<h4 id="q2-which-of-the-following-has-the-greatest-potential-for-compromising-a-users-personal-privacy"><strong>Q2</strong>: Which of the following has the greatest potential for compromising a user’s personal privacy?</h4>
 <ul>
   <li>I chose “The Internet Protocol (IP) address of the user’s computer”</li>
   <li>The correct answer was “A group of cookies stored by the user’s Web browser”</li>
@@ -230,7 +230,6 @@ window.onload = wrap_img;
         async>
 </script><a class="u-url" href="/FastPages/week25/2023/03/11/mc3final.html" hidden></a>
 </article>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/FastPages/"></data>

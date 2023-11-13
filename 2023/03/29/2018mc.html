@@ -90,18 +90,36 @@ window.onload = wrap_img;
 
     </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-</ul><p><img src="/FastPages/images/2018score.png" alt=""></p>
+  <div class="post-content e-content" itemprop="articleBody"><!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+    $( document ).ready(function() {
+      // Handler for .ready() called.
+    
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+    
+    /* this offset helps account for the space taken up by the floating toolbar. */
+    $('#toc').on('click', 'a', function() {
+      var target = $(this.getAttribute('href'))
+        , scroll_target = target.offset().top
+    
+      $(window).scrollTop(scroll_target - 10);
+      return false
+    })
+      
+    });
+</script>
+    
+<div id="toc"></div>
+<p><img src="/FastPages/images/2018score.png" alt="" /></p>
 
 <p><strong>Q31:</strong>
-<img src="/FastPages/images/2018q31.png" alt=""></p>
+<img src="/FastPages/images/2018q31.png" alt="" /></p>
 <ul>
   <li>I misinterpreted the path that the triangle follows with the first program. I thought the triangle would forever be looping in a circle but it in fact does not and moves and eventually reaches the gray square.</li>
 </ul>
 
 <p><strong>Q21:</strong>
-<img src="/FastPages/images/2018q21.png" alt=""></p>
+<img src="/FastPages/images/2018q21.png" alt="" /></p>
 <ul>
   <li>I guess I cant tell left from right because I imagined the robot to turn left in my head when the code actually tells it to turn right.</li>
 </ul>
@@ -117,7 +135,6 @@ window.onload = wrap_img;
         async>
 </script><a class="u-url" href="/FastPages/2023/03/29/2018mc.html" hidden></a>
 </article>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/FastPages/"></data>

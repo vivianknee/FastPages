@@ -90,12 +90,30 @@ window.onload = wrap_img;
 
     </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-</ul><p><img src="/FastPages/images/2021score.png" alt=""></p>
+  <div class="post-content e-content" itemprop="articleBody"><!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+    $( document ).ready(function() {
+      // Handler for .ready() called.
+    
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+    
+    /* this offset helps account for the space taken up by the floating toolbar. */
+    $('#toc').on('click', 'a', function() {
+      var target = $(this.getAttribute('href'))
+        , scroll_target = target.offset().top
+    
+      $(window).scrollTop(scroll_target - 10);
+      return false
+    })
+      
+    });
+</script>
+    
+<div id="toc"></div>
+<p><img src="/FastPages/images/2021score.png" alt="" /></p>
 
 <p><strong>Q68:</strong>
-<img src="/FastPages/images/2021q68.png" alt=""></p>
+<img src="/FastPages/images/2021q68.png" alt="" /></p>
 <ul>
   <li>the answer is also [10,10,20,20,10,10] because while it will remove the 10 that is farthest to the right, and also the 10 that is second in the list. It will not remove the first 10 or the 10 in the fifth position. Thus there will still be duplicates in this list after going through the program</li>
 </ul>
@@ -119,7 +137,7 @@ window.onload = wrap_img;
 </ul>
 
 <p><strong>Q25:</strong>
-<img src="/FastPages/images/2021q25.png" alt=""></p>
+<img src="/FastPages/images/2021q25.png" alt="" /></p>
 <ul>
   <li>I had to notice that as j is increasing and being added to result, the procedure returns the sum of the integers from 1 to n.</li>
   <li>The procedure initially sets result to 1 and j to 2. In the REPEAT UNTIL loop, result is first assigned the sum of result and j, or 1 + 2. The value of j is then increased to 3. In each subsequent iteration of the loop, result is increased by each successive value of j (3, 4, 5, etc.) until j exceeds n. Therefore, the procedure returns the sum of the integers from 1 to n.</li>
@@ -145,7 +163,7 @@ window.onload = wrap_img;
 </ul>
 
 <p><strong>Q14:</strong>
-<img src="/FastPages/images/2021q14.png" alt=""></p>
+<img src="/FastPages/images/2021q14.png" alt="" /></p>
 <ul>
   <li>the answer is not “In line 6, &lt; should be changed to ≥.” because there might be one instance where count &gt; count-1 and the program would return true, but then there might be a chance that the next two terms do not satisfy this condition. So doing this overlooks certain possibilities</li>
   <li>Thus “Lines 8 and 12 should be interchanged.” is the right answer</li>
@@ -163,7 +181,6 @@ window.onload = wrap_img;
         async>
 </script><a class="u-url" href="/FastPages/2023/04/27/2021mc.html" hidden></a>
 </article>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/FastPages/"></data>

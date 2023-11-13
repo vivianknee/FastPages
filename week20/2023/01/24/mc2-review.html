@@ -89,7 +89,8 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/FastPages/categories/#week20">week20</a>
+          <a class="category-tags-link" href="/FastPages/categories/ap#week20">week20</a>
+        
         
       
       </p>
@@ -97,29 +98,33 @@ window.onload = wrap_img;
 
     </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#takeaways">Takeaways</a></li>
-<li class="toc-entry toc-h2"><a href="#questions">Questions</a>
-<ul>
-<li class="toc-entry toc-h5"><a href="#q12-controlling-an-elevator-in-a-building">Q12: Controlling an elevator in a building?</a></li>
-<li class="toc-entry toc-h4"><a href="#q15-robot-in-maze-series-of-ifs">Q15: Robot in maze series of ifs?</a></li>
-<li class="toc-entry toc-h4"><a href="#q33-find-maximum-value-algorithms">Q33: Find maximum value algorithms?</a></li>
-<li class="toc-entry toc-h4"><a href="#q34-binary-search-on-a-list-of-500-elements">Q34: binary search on a list of 500 elements</a></li>
-<li class="toc-entry toc-h4"><a href="#q42-car-manufacturer-simulations">Q42: Car manufacturer simulations?</a></li>
-<li class="toc-entry toc-h4"><a href="#q47-programs-that-benefit-from-heuristics">Q47: Programs that benefit from heuristics?</a></li>
-</ul>
-</li>
-</ul><h2 id="takeaways">
-<a class="anchor" href="#takeaways" aria-hidden="true"><span class="octicon octicon-link"></span></a>Takeaways</h2>
+  <div class="post-content e-content" itemprop="articleBody"><!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+    $( document ).ready(function() {
+      // Handler for .ready() called.
+    
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+    
+    /* this offset helps account for the space taken up by the floating toolbar. */
+    $('#toc').on('click', 'a', function() {
+      var target = $(this.getAttribute('href'))
+        , scroll_target = target.offset().top
+    
+      $(window).scrollTop(scroll_target - 10);
+      return false
+    })
+      
+    });
+</script>
+    
+<div id="toc"></div>
+<h2 id="takeaways">Takeaways</h2>
 <ul>
   <li>On my collegeboard MC #2, my score was 44/50</li>
 </ul>
 
-<h2 id="questions">
-<a class="anchor" href="#questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions</h2>
-<h5 id="q12-controlling-an-elevator-in-a-building">
-<a class="anchor" href="#q12-controlling-an-elevator-in-a-building" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q12</strong>: Controlling an elevator in a building?</h5>
+<h2 id="questions">Questions</h2>
+<h5 id="q12-controlling-an-elevator-in-a-building"><strong>Q12</strong>: Controlling an elevator in a building?</h5>
 
 <ul>
   <li>I chose “(onFloor1 AND callTo2) AND (onFloor2 AND callTo1)” but the answer was “(onFloor1 OR callTo2) AND (onFloor2 AND callTo1)”</li>
@@ -130,15 +135,14 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<h4 id="q15-robot-in-maze-series-of-ifs">
-<a class="anchor" href="#q15-robot-in-maze-series-of-ifs" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q15</strong>: Robot in maze series of ifs?</h4>
+<h4 id="q15-robot-in-maze-series-of-ifs"><strong>Q15</strong>: Robot in maze series of ifs?</h4>
 
-<p><img src="/FastPages/images/robotcode.png" alt=""></p>
+<p><img src="/FastPages/images/robotcode.png" alt="" /></p>
 
 <ul>
   <li>
     <p>I chose:
-<img src="/FastPages/images/robotimage.png" alt=""></p>
+<img src="/FastPages/images/robotimage.png" alt="" /></p>
   </li>
   <li>
     <p>Notes</p>
@@ -148,8 +152,7 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<h4 id="q33-find-maximum-value-algorithms">
-<a class="anchor" href="#q33-find-maximum-value-algorithms" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q33</strong>: Find maximum value algorithms?</h4>
+<h4 id="q33-find-maximum-value-algorithms"><strong>Q33</strong>: Find maximum value algorithms?</h4>
 
 <ul>
   <li>“Algorithm I : Set the value of a variable max to − 1. Iterate through the list of integer values. If a data value is greater than the value of the variable max, set max to the data value.</li>
@@ -157,13 +160,12 @@ window.onload = wrap_img;
   <li>I chose the answer that said that both algorithms will always work but the correct answer was that “Algorithm II always works correctly, but Algorithm I only works correctly when the maximum value is greater than or equal to − 1”</li>
   <li>Notes
     <ul>
-      <li>
+      <li></li>
     </ul>
   </li>
 </ul>
 
-<h4 id="q34-binary-search-on-a-list-of-500-elements">
-<a class="anchor" href="#q34-binary-search-on-a-list-of-500-elements" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q34</strong>: binary search on a list of 500 elements</h4>
+<h4 id="q34-binary-search-on-a-list-of-500-elements"><strong>Q34</strong>: binary search on a list of 500 elements</h4>
 
 <ul>
   <li>A sorted list of numbers contains 500 elements. Which of the following is closest to the maximum number of list elements that will be examined when performing a binary search for a value in the list?</li>
@@ -177,8 +179,7 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<h4 id="q42-car-manufacturer-simulations">
-<a class="anchor" href="#q42-car-manufacturer-simulations" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q42</strong>: Car manufacturer simulations?</h4>
+<h4 id="q42-car-manufacturer-simulations"><strong>Q42</strong>: Car manufacturer simulations?</h4>
 
 <ul>
   <li>Using simulation software can save the company money by helping to compare designs early in the process, before prototype cars are built.</li>
@@ -192,14 +193,13 @@ window.onload = wrap_img;
   </li>
 </ul>
 
-<h4 id="q47-programs-that-benefit-from-heuristics">
-<a class="anchor" href="#q47-programs-that-benefit-from-heuristics" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Q47</strong>: Programs that benefit from heuristics?</h4>
+<h4 id="q47-programs-that-benefit-from-heuristics"><strong>Q47</strong>: Programs that benefit from heuristics?</h4>
 <ul>
   <li>I chose “A program that calculates a student’s grade based on the student’s quiz and homework scores”</li>
   <li>The correct answer was “TA program that finds the shortest driving route between two locations on a map”</li>
   <li>Notes
     <ul>
-      <li>a grade calculator can calculate an exact score when given the students scores, so it does not need a heuristic solution<br>
+      <li>a grade calculator can calculate an exact score when given the students scores, so it does not need a heuristic solution<br />
   Finding the shortest driving route is an optimization problem that cannot be solved in a reasonable time, and a heuristic is a technique that can find an approximate solution more quickly when exact methods are too slow.</li>
     </ul>
   </li>
@@ -215,7 +215,6 @@ window.onload = wrap_img;
         async>
 </script><a class="u-url" href="/FastPages/week20/2023/01/24/mc2-review.html" hidden></a>
 </article>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/FastPages/"></data>

@@ -89,7 +89,8 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/FastPages/categories/#week20">week20</a>
+          <a class="category-tags-link" href="/FastPages/categories/ap#week20">week20</a>
+        
         
       
       </p>
@@ -97,9 +98,27 @@ window.onload = wrap_img;
 
     </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-</ul><p>Each individual performs starts “pre-view” outline/write-up of materials required for College Board. 
+  <div class="post-content e-content" itemprop="articleBody"><!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+    $( document ).ready(function() {
+      // Handler for .ready() called.
+    
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+    
+    /* this offset helps account for the space taken up by the floating toolbar. */
+    $('#toc').on('click', 'a', function() {
+      var target = $(this.getAttribute('href'))
+        , scroll_target = target.offset().top
+    
+      $(window).scrollTop(scroll_target - 10);
+      return false
+    })
+      
+    });
+</script>
+    
+<div id="toc"></div>
+<p>Each individual performs starts “pre-view” outline/write-up of materials required for College Board. 
 Describe portion of Project you will use for Create Performance task
 Describe code plan as it is required for CB,
 Consider what will be demonstrated in video, aka video plan</p>
@@ -114,7 +133,6 @@ Consider what will be demonstrated in video, aka video plan</p>
         async>
 </script><a class="u-url" href="/FastPages/week20/2023/01/24/projectblog.html" hidden></a>
 </article>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/FastPages/"></data>

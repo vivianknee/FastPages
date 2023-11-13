@@ -89,13 +89,16 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/FastPages/categories/#markdown">markdown</a>
+          <a class="category-tags-link" href="/FastPages/categories/ap#markdown">markdown</a>
+        
         &nbsp;
       
-        <a class="category-tags-link" href="/FastPages/categories/#noncsp">noncsp</a>
+          <a class="category-tags-link" href="/FastPages/categories/ap#noncsp">noncsp</a>
+        
         &nbsp;
       
-        <a class="category-tags-link" href="/FastPages/categories/#week1">week1</a>
+          <a class="category-tags-link" href="/FastPages/categories/ap#week1">week1</a>
+        
         
       
       </p>
@@ -103,92 +106,78 @@ window.onload = wrap_img;
 
     </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#my-artwork">My Artwork</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#acrylic">Acrylic</a></li>
-<li class="toc-entry toc-h3"><a href="#colorpencil">Colorpencil</a></li>
-<li class="toc-entry toc-h3"><a href="#digital">Digital</a></li>
-<li class="toc-entry toc-h3"><a href="#watercolor">Watercolor</a></li>
-</ul>
-</li>
-</ul><h2 id="my-artwork">
-<a class="anchor" href="#my-artwork" aria-hidden="true"><span class="octicon octicon-link"></span></a>My Artwork</h2>
-<hr>
+  <div class="post-content e-content" itemprop="articleBody"><!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+    $( document ).ready(function() {
+      // Handler for .ready() called.
+    
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+    
+    /* this offset helps account for the space taken up by the floating toolbar. */
+    $('#toc').on('click', 'a', function() {
+      var target = $(this.getAttribute('href'))
+        , scroll_target = target.offset().top
+    
+      $(window).scrollTop(scroll_target - 10);
+      return false
+    })
+      
+    });
+</script>
+    
+<div id="toc"></div>
+<h2 id="my-artwork">My Artwork</h2>
+<hr />
 
 <p>Welcome to my <code class="language-plaintext highlighter-rouge">art page!</code> Some of the mediums I enjoy using include <strong>acrylic</strong>, <strong>watercolor</strong>, <strong>colorpencil</strong>, and <strong>digital</strong>.</p>
 
-<h3>
-<a class="anchor" href="#acrylic" aria-hidden="true"><span class="octicon octicon-link"></span></a>Acrylic</h3>
-<hr>
+<h3>Acrylic</h3>
+<hr />
 
 <table>
     <tr>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic.jpg?raw=true" width="350" height="260"></td>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic2.jpg?raw=true" width="270" height="300"></td>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic3.jpg?raw=true" width="370" height="260"></td>
-    </tr>
-<tr>
-    </tr>
-<tr>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic4.PNG?raw=true" width="250" height="340"></td>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic5.jpg?raw=true" width="350" height="260"></td>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic6.jpg?raw=true" width="370" height="260"></td>
-    </tr>
-<tr>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic.jpg?raw=true" width="350" height="260" /></td>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic2.jpg?raw=true" width="270" height="300" /></td>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic3.jpg?raw=true" width="370" height="260" /></td>
+    <tr>
+    <tr>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic4.PNG?raw=true" width="250" height="340" /></td>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic5.jpg?raw=true" width="350" height="260" /></td>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/acrylic6.jpg?raw=true" width="370" height="260" /></td>
+    <tr>
 <table>
 
-<h3>
-<a class="anchor" href="#colorpencil" aria-hidden="true"><span class="octicon octicon-link"></span></a>Colorpencil</h3>
-<hr>
+<h3>Colorpencil</h3>
+<hr />
 <table>
     <tr>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/colorpencil.jpg?raw=true" width="270" height="330"></td>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/colorpencil2.jpg?raw=true" width="320" height="300"></td>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/colorpencil3.jpg?raw=true" width="300" height="320"></td>
-    </tr>
-<tr>
-    </tr>
-<tr>
-         <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/colorpencil4.jpg?raw=true" width="270" height="320"></td>
-    </tr>
-<tr>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/colorpencil.jpg?raw=true" width="270" height="330" /></td>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/colorpencil2.jpg?raw=true" width="320" height="300" /></td>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/colorpencil3.jpg?raw=true" width="300" height="320" /></td>
+    <tr>
+    <tr>
+         <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/colorpencil4.jpg?raw=true" width="270" height="320" /></td>
+    <tr>
 <table>
 
-<h3>
-<a class="anchor" href="#digital" aria-hidden="true"><span class="octicon octicon-link"></span></a>Digital</h3>
-<hr>
+<h3>Digital</h3>
+<hr />
 <table>
     <tr>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/digital.PNG?raw=true" width="270" height="300"></td>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/digital3.PNG?raw=true" width="370" height="260"></td>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/digital2.png?raw=true" width="270" height="300"></td>
-    </tr>
-<tr>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/digital.PNG?raw=true" width="270" height="300" /></td>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/digital3.PNG?raw=true" width="370" height="260" /></td>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/digital2.png?raw=true" width="270" height="300" /></td>
+    <tr>
 <table>
 
-<h3>
-<a class="anchor" href="#watercolor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Watercolor</h3>
-<hr>
+<h3>Watercolor</h3>
+<hr />
 <table>
     <tr>
-        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/watercolor.jpg?raw=true" width="370" height="260"></td>
-    </tr>
-<tr>
+        <td><img src="https://github.com/vivianknee/FastPages/blob/master/images/watercolor.jpg?raw=true" width="370" height="260" /></td>
+    <tr>
 <table>
-</table>
-</tr>
-</table>
-</table>
-</tr>
-</table>
-</table>
-</tr>
-</table>
-</table>
-</tr>
-</table>
+</table></tr></tr></table></table></tr></tr></table></table></tr></tr></tr></tr></table></table></tr></tr></tr></tr></table>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
@@ -200,7 +189,6 @@ window.onload = wrap_img;
         async>
 </script><a class="u-url" href="/FastPages/markdown/noncsp/week1/2022/08/24/My-Art.html" hidden></a>
 </article>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/FastPages/"></data>

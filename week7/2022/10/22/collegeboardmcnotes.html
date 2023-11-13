@@ -89,7 +89,8 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/FastPages/categories/#week7">week7</a>
+          <a class="category-tags-link" href="/FastPages/categories/ap#week7">week7</a>
+        
         
       
       </p>
@@ -97,15 +98,27 @@ window.onload = wrap_img;
 
     </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#identifying-and-correcting-errors-quiz-101022">Identifying and Correcting Errors Quiz (10/10/22)</a></li>
-<li class="toc-entry toc-h2"><a href="#the-internet-quiz-101022">The Internet Quiz (10/10/22)</a></li>
-<li class="toc-entry toc-h2"><a href="#program-design-and-development-quiz-92622">Program Design and Development Quiz (9/26/22)</a></li>
-<li class="toc-entry toc-h2"><a href="#collaboration-quiz-9422">Collaboration Quiz (9/4/22)</a></li>
-<li class="toc-entry toc-h2"><a href="#program-function-and-purpose-quiz-9422">Program Function and Purpose Quiz (9/4/22)</a></li>
-</ul><h2 id="identifying-and-correcting-errors-quiz-101022">
-<a class="anchor" href="#identifying-and-correcting-errors-quiz-101022" aria-hidden="true"><span class="octicon octicon-link"></span></a>Identifying and Correcting Errors Quiz (10/10/22)</h2>
+  <div class="post-content e-content" itemprop="articleBody"><!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+    $( document ).ready(function() {
+      // Handler for .ready() called.
+    
+    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+    
+    /* this offset helps account for the space taken up by the floating toolbar. */
+    $('#toc').on('click', 'a', function() {
+      var target = $(this.getAttribute('href'))
+        , scroll_target = target.offset().top
+    
+      $(window).scrollTop(scroll_target - 10);
+      return false
+    })
+      
+    });
+</script>
+    
+<div id="toc"></div>
+<h2 id="identifying-and-correcting-errors-quiz-101022">Identifying and Correcting Errors Quiz (10/10/22)</h2>
 <p>Outline</p>
 <ul>
   <li>3 question quiz testing whether I can identify and solve different errors found in code.</li>
@@ -114,14 +127,13 @@ window.onload = wrap_img;
 
 <p>Notes/Process</p>
 
-<p><img src="/FastPages/images/ICEq1.PNG" alt=""></p>
+<p><img src="/FastPages/images/ICEq1.PNG" alt="" /></p>
 <ul>
   <li>The code doesn’t work when the last value is positive but the rest are negative. In this case the answer was [-1, 0, 1]</li>
   <li>The procedure traverses this list and eventually encounters the positive value 1. At this point, the procedure returns true when it should return false because the list does not contain only positive values. [-1, 0, 1]</li>
 </ul>
 
-<h2 id="the-internet-quiz-101022">
-<a class="anchor" href="#the-internet-quiz-101022" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Internet Quiz (10/10/22)</h2>
+<h2 id="the-internet-quiz-101022">The Internet Quiz (10/10/22)</h2>
 <p>Outline</p>
 <ul>
   <li>3 question quiz testing my knowledge of networking including topics like packets, data, and transmitting information across the internet.</li>
@@ -135,8 +147,7 @@ window.onload = wrap_img;
   <li>The World Wide Web is a system of linked pages, programs, and files that is accessed via a network called the Internet.</li>
 </ul>
 
-<h2 id="program-design-and-development-quiz-92622">
-<a class="anchor" href="#program-design-and-development-quiz-92622" aria-hidden="true"><span class="octicon octicon-link"></span></a>Program Design and Development Quiz (9/26/22)</h2>
+<h2 id="program-design-and-development-quiz-92622">Program Design and Development Quiz (9/26/22)</h2>
 <p>Outline</p>
 <ul>
   <li>3 question quiz testing my knowledge of coding procedures</li>
@@ -145,29 +156,28 @@ window.onload = wrap_img;
 
 <p>Notes/Process</p>
 
-<p><img src="/FastPages/images/PDDq1.PNG" alt=""></p>
+<p><img src="/FastPages/images/PDDq1.PNG" alt="" /></p>
 <ul>
   <li>count is set to 1 outside of the loop</li>
   <li>the loop adds 2 to the variable count each time meaning it is printing odd numbers</li>
   <li>since the loop is set to stop once the count is greater than max, this means that the function will print all positive odd integers that are less than or qual to max</li>
 </ul>
 
-<p><img src="/FastPages/images/PDDq2.PNG" alt=""></p>
+<p><img src="/FastPages/images/PDDq2.PNG" alt="" /></p>
 <ul>
   <li>the variable result is set to x + y</li>
   <li>a new result variable is set to the previous result divided by x</li>
   <li>therefore, the printed result must be (x + y)/x where x must not be 0(then it would be undefined)</li>
 </ul>
 
-<p><img src="/FastPages/images/PDDq3.PNG" alt=""></p>
+<p><img src="/FastPages/images/PDDq3.PNG" alt="" /></p>
 <ul>
   <li>newList is = to numList</li>
   <li>the elements j and k are interchanged for numList and newList</li>
   <li>since j and k are indices, they must be valid values, hence the values of j and k must both be between 1 and length(numList)</li>
 </ul>
 
-<h2 id="collaboration-quiz-9422">
-<a class="anchor" href="#collaboration-quiz-9422" aria-hidden="true"><span class="octicon octicon-link"></span></a>Collaboration Quiz (9/4/22)</h2>
+<h2 id="collaboration-quiz-9422">Collaboration Quiz (9/4/22)</h2>
 <p>Outline:</p>
 <ul>
   <li>3 question quiz testing my knowledge on collaboration</li>
@@ -182,8 +192,7 @@ window.onload = wrap_img;
   <li>I also learned that assembling a diverse team allows for multiple perspectives.</li>
 </ul>
 
-<h2 id="program-function-and-purpose-quiz-9422">
-<a class="anchor" href="#program-function-and-purpose-quiz-9422" aria-hidden="true"><span class="octicon octicon-link"></span></a>Program Function and Purpose Quiz (9/4/22)</h2>
+<h2 id="program-function-and-purpose-quiz-9422">Program Function and Purpose Quiz (9/4/22)</h2>
 <p>Outline</p>
 <ul>
   <li>6 question quiz testing my understanding of the behavior of code</li>
@@ -195,7 +204,7 @@ window.onload = wrap_img;
   <li>There was a set of questions looking for what data was necessary to fulfill the task. For those questions, I used logic and reasoning to figure out what was necessary and what was not.</li>
 </ul>
 
-<p><img src="/FastPages/images/PFq1.PNG" alt=""></p>
+<p><img src="/FastPages/images/PFq1.PNG" alt="" /></p>
 <ul>
   <li>this was a pretty self explanatory if statement.</li>
   <li>It sets y as a variable when x is less than 0 meaning if y follows the criteria , it will print the value.</li>
@@ -213,7 +222,6 @@ window.onload = wrap_img;
         async>
 </script><a class="u-url" href="/FastPages/week7/2022/10/22/collegeboardmcnotes.html" hidden></a>
 </article>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/FastPages/"></data>
