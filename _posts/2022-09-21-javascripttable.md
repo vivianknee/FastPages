@@ -6,7 +6,6 @@ permalink: /frontend/jsTable
 categories: [markdown, week5]
 title: Javascript and HTML
 ---
-{% include nav_frontend.html %}
 
 <html>
 <body>
