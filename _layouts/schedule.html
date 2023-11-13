@@ -93,25 +93,25 @@ Load all posts
         {% if week == index %} 
 
   {%comment%} 
-  <!-- organizing blogs by type -->
-  {%endcomment%}
-          {% if post.type == "ccc" %}
-              {% assign ccc = ccc | unshift: title %}
-              {% assign ccc = ccc | unshift: url %}  
-          {% elsif post.type == "devops" %}
-              {% assign devops = devops | unshift: title %}
-              {% assign devops = devops | unshift: url %} 
-          {% elsif post.type == "collab" %}
-              {% assign collab = collab | unshift: title %}
-              {% assign collab = collab | unshift: url %} 
-          {% else %}
-              {% assign uk = uk | unshift: title %}
-              {% assign uk = uk | unshift: url %}     
-          {% endif %}
+   <!-- organizing blogs by type -->
+   {%endcomment%}
+   {% if post.type == "plans" %} 
+       {% assign plans = plans | unshift: title %}
+       {% assign plans = plans | unshift: url %}
+   {% elsif post.type == "hacks" %}
+       {% assign hacks = hacks | unshift: title %}
+       {% assign hacks = hacks | unshift: url %} 
+   {% elsif post.type == "tangibles" %}
+       {% assign tangibles = tangibles | unshift: title %}
+       {% assign tangibles = tangibles | unshift: url %} 
+   {% else %}
+       {% assign uk = uk | unshift: title %}
+       {% assign uk = uk | unshift: url %}     
+   {% endif %}
 
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+ {% endif %}
+{% endif %}
+{% endfor %}
 
   {%comment%} 
   <!-- ordering units and inserting column delimiters -->
