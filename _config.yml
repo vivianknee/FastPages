@@ -42,10 +42,10 @@ minima:
   skin: dark
   #  social_links:
   #    twitter: NighthawkCoding
-  #    github: nighthawkcoders
+  #    github: vivianknee
   #   youtube_channel: UClIKOsDS5dsfzFA3zveDT3Q
   social_links:
-    - { platform: github, user_url: "https://github.com/nighthawkcoders"}
+    - { platform: github, user_url: "https://github.com/vivianknee"}
     - { platform: twitter, user_url: "https://twitter.com/NighthawkCoding"}
     - { platform: youtube, user_url: "https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q"}
     

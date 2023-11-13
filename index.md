@@ -1,8 +1,8 @@
 ---
-layout: home
-search_exclude: true
-image: images/v.png
+layout: default
+title: Home
 ---
+
 <html>
 
 <body style="background-image: linear-gradient(to right, rgb(140, 240, 235) , rgb(224, 87, 151));">
