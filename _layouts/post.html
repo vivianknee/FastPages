@@ -34,10 +34,15 @@ layout: base
        • {% include reading_time.html -%}
     </p>
 
-    {% if page.categories.size > 0 and site.show_tags %}
+    {% if page.categories.size > 0 %}
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       {% for category in  page.categories  %}
-        <a class="category-tags-link" href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+        {%- assign prefix = category | slice: 0 -%}
+        {% if prefix == "C" %}
+          <a class="category-tags-link" href="{{site.baseurl}}/categories/cte#{{category|slugize}}">{{category}}</a>
+        {% else %}
+          <a class="category-tags-link" href="{{site.baseurl}}/categories/ap#{{category|slugize}}">{{category}}</a>
+        {% endif %}
         {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}
       </p>
@@ -56,7 +61,10 @@ layout: base
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    {{ content | toc  }}
+    {%- if page.toc -%}
+      {% include toc.html html=content %}
+    {%- endif -%}
+    {{ content }}
   </div>
   {%- if page.comments -%}
     {%- include utterances.html -%}
