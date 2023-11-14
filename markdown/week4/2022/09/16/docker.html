@@ -65,7 +65,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/FastPages/blogs">Blogs</a><a class="page-link" href="/FastPages/csa/">Timebox</a><a class="page-link" href="/FastPages/">Home</a><a class="page-link" href="/FastPages/search/">Search</a><a class="page-link" href="/FastPages/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/FastPages/_pages/002apcspblog.html">APCSP Blog</a><a class="page-link" href="/FastPages/_pages/003lessons.html">Student Lessons</a><a class="page-link" href="/FastPages/about/">About Me</a><a class="page-link" href="/FastPages/Vocab/">Vocab</a><a class="page-link" href="/FastPages/categories/">Tags</a><a class="page-link" href="/FastPages/_pages/Frontend.html">Frontend</a><a class="page-link" href="/FastPages/search/">Search</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -86,12 +86,10 @@ window.onload = wrap_img;
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-          <a class="category-tags-link" href="/FastPages/categories/ap#markdown">markdown</a>
-        
+        <a class="category-tags-link" href="/FastPages/categories/#markdown">markdown</a>
         &nbsp;
       
-          <a class="category-tags-link" href="/FastPages/categories/ap#week4">week4</a>
-        
+        <a class="category-tags-link" href="/FastPages/categories/#week4">week4</a>
         
       
       </p>
@@ -99,29 +97,13 @@ window.onload = wrap_img;
 
     </header>
 
-  <div class="post-content e-content" itemprop="articleBody"><!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
-<script>
-    $( document ).ready(function() {
-      // Handler for .ready() called.
-    
-    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-    
-    /* this offset helps account for the space taken up by the floating toolbar. */
-    $('#toc').on('click', 'a', function() {
-      var target = $(this.getAttribute('href'))
-        , scroll_target = target.offset().top
-    
-      $(window).scrollTop(scroll_target - 10);
-      return false
-    })
-      
-    });
-</script>
-    
-<div id="toc"></div>
-<p>Server Address: /http://localhost:4000/FastPages/</p>
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#my-process">My Process</a></li>
+</ul><p>Server Address: /http://localhost:4000/FastPages/</p>
 
-<h2 id="my-process">My Process</h2>
+<h2 id="my-process">
+<a class="anchor" href="#my-process" aria-hidden="true"><span class="octicon octicon-link"></span></a>My Process</h2>
 <p>I encountered a lot of errors during this process:</p>
 <ul>
     <li>I got the error telling me that I didn't have wsl 2 installed. I had to do the whole process of installing it, then changing settings in docker for the make server command to finally work</li>
@@ -131,6 +113,7 @@ window.onload = wrap_img;
 
   </div><a class="u-url" href="/FastPages/markdown/week4/2022/09/16/docker.html" hidden></a>
 </article>
+
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/FastPages/"></data>
@@ -148,12 +131,12 @@ window.onload = wrap_img;
         </p>
       </div>
       <div class="footer-col">
-        <p>CSA Blog</p>
+        <p>CSP Fastpages</p>
       </div>
     </div>
 
     <div class="social-links"><ul class="social-media-list"><li>
-  <a rel="me" href="https://github.com/vivianknee" target="_blank" title="github">
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
     <svg class="svg-icon grey">
       <use xlink:href="/FastPages/assets/minima-social-icons.svg#github"></use>
     </svg>

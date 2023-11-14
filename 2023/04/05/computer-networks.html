@@ -65,7 +65,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/FastPages/blogs">Blogs</a><a class="page-link" href="/FastPages/csa/">Timebox</a><a class="page-link" href="/FastPages/">Home</a><a class="page-link" href="/FastPages/search/">Search</a><a class="page-link" href="/FastPages/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/FastPages/_pages/002apcspblog.html">APCSP Blog</a><a class="page-link" href="/FastPages/_pages/003lessons.html">Student Lessons</a><a class="page-link" href="/FastPages/about/">About Me</a><a class="page-link" href="/FastPages/Vocab/">Vocab</a><a class="page-link" href="/FastPages/categories/">Tags</a><a class="page-link" href="/FastPages/_pages/Frontend.html">Frontend</a><a class="page-link" href="/FastPages/search/">Search</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -87,32 +87,24 @@ window.onload = wrap_img;
 
     </header>
 
-  <div class="post-content e-content" itemprop="articleBody"><!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
-<script>
-    $( document ).ready(function() {
-      // Handler for .ready() called.
-    
-    $('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
-    
-    /* this offset helps account for the space taken up by the floating toolbar. */
-    $('#toc').on('click', 'a', function() {
-      var target = $(this.getAttribute('href'))
-        , scroll_target = target.offset().top
-    
-      $(window).scrollTop(scroll_target - 10);
-      return false
-    })
-      
-    });
-</script>
-    
-<div id="toc"></div>
-<h2 id="requirements">Requirements</h2>
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#requirements">Requirements</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#how-a-computer-works">How a Computer Works</a></li>
+<li class="toc-entry toc-h3"><a href="#the-internet">The Internet</a></li>
+<li class="toc-entry toc-h3"><a href="#fault-tolerance">Fault Tolerance</a></li>
+<li class="toc-entry toc-h3"><a href="#parallel-and-distributed-computing">Parallel and Distributed Computing</a></li>
+</ul>
+</li>
+</ul><h2 id="requirements">
+<a class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
 <blockquote>
   <p>Work through College Board Unit 4… blog, add definitions, and pictures.  Be creative, for instance make a story of Computing and Networks that is related to your PBL experiences this year.</p>
 </blockquote>
 
-<h3 id="how-a-computer-works">How a Computer Works</h3>
+<h3 id="how-a-computer-works">
+<a class="anchor" href="#how-a-computer-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How a Computer Works</h3>
 <blockquote>
   <p>As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided.  The CPU retrieves and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.</p>
 </blockquote>
@@ -138,9 +130,10 @@ window.onload = wrap_img;
   <li>Inspect Variables</li>
 </ul>
 
-<p><img src="/FastPages/images/cpu.png" alt="Computer Hardware" /></p>
+<p><img src="/FastPages/images/cpu.png" alt="Computer Hardware"></p>
 
-<h3 id="the-internet">The Internet</h3>
+<h3 id="the-internet">
+<a class="anchor" href="#the-internet" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Internet</h3>
 <blockquote>
   <p>Watch/review College Board Daily Video for 4.1.1</p>
 </blockquote>
@@ -194,7 +187,8 @@ window.onload = wrap_img;
           <li>it is based on factors such as network congestion, available bandwidth, and the number of hops between devices thus it varies</li>
         </ul>
       </li>
-      <li>A protocol is an agreed upon set of rules that specify the behavior of a system: <strong>True</strong></li>
+      <li>A protocol is an agreed upon set of rules that specify the behavior of a system: <strong>True</strong>
+</li>
       <li>UDP guarantees transfers and is faster: <strong>False</strong>
         <ul>
           <li>UDP does not guarantee the delivery of data</li>
@@ -235,9 +229,9 @@ window.onload = wrap_img;
   <li>Go over AP videos, vocabulary, and essential knowledge. Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas</li>
 </ul>
 
-<p><img src="/FastPages/images/internetdiagram.png" alt="Internet" /></p>
+<p><img src="/FastPages/images/internetdiagram.png" alt="Internet"></p>
 
-<p><img src="/FastPages/images/fullstack.png" alt="Full Stack" /></p>
+<p><img src="/FastPages/images/fullstack.png" alt="Full Stack"></p>
 
 <ul>
   <li>Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is transported of the network. For College Board and future Computer Knowledge you should become familiar with the following …</li>
@@ -265,10 +259,12 @@ window.onload = wrap_img;
 
 <p>The “network” layer is responsible for <strong><em>routing data packets between networks</em></strong> using the Internet Protocol (IP). This layer handles tasks such as packet addressing and routing, fragmentation and reassembly, and <strong><em>network congestion</em></strong> control.</p>
 
-<h3 id="fault-tolerance">Fault Tolerance</h3>
+<h3 id="fault-tolerance">
+<a class="anchor" href="#fault-tolerance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fault Tolerance</h3>
 <ul>
   <li>in class activity
-<img src="/FastPages/images/networks.png" alt="Computer Networks" /></li>
+<img src="/FastPages/images/networks.png" alt="Computer Networks">
+</li>
 </ul>
 
 <blockquote>
@@ -285,23 +281,27 @@ window.onload = wrap_img;
   </ul>
 </blockquote>
 
-<p><img src="/FastPages/images/network1.png" alt="network1" /></p>
+<p><img src="/FastPages/images/network1.png" alt="network1"></p>
 <ul>
-  <li>for each of the devices, there are at least two other paths to the other devices so this network is <strong>fault tolerant</strong></li>
+  <li>for each of the devices, there are at least two other paths to the other devices so this network is <strong>fault tolerant</strong>
+</li>
 </ul>
 
-<p><img src="/FastPages/images/network2.png" alt="network2" /></p>
+<p><img src="/FastPages/images/network2.png" alt="network2"></p>
 <ul>
   <li>most of the devices have two paths which it can use to communicate to other devices.</li>
-  <li>however, device F has only once connection, so if that connection is cut off, it can no longer communicate with other devices thus this network is <strong>faulty</strong></li>
+  <li>however, device F has only once connection, so if that connection is cut off, it can no longer communicate with other devices thus this network is <strong>faulty</strong>
+</li>
 </ul>
 
-<p><img src="/FastPages/images/network3.png" alt="network3" /></p>
+<p><img src="/FastPages/images/network3.png" alt="network3"></p>
 <ul>
-  <li>every single connection is made through the path A-G so if the connection between A and G were to be broken, the entire network would be down. Thus this network is <strong>faulty</strong></li>
+  <li>every single connection is made through the path A-G so if the connection between A and G were to be broken, the entire network would be down. Thus this network is <strong>faulty</strong>
+</li>
 </ul>
 
-<h3 id="parallel-and-distributed-computing">Parallel and Distributed Computing</h3>
+<h3 id="parallel-and-distributed-computing">
+<a class="anchor" href="#parallel-and-distributed-computing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parallel and Distributed Computing</h3>
 <blockquote>
   <p>Review previous lecture on Parallel Computing and watch Daily video 4.3. Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks…</p>
 </blockquote>
@@ -379,6 +379,7 @@ window.onload = wrap_img;
         async>
 </script><a class="u-url" href="/FastPages/2023/04/05/computer-networks.html" hidden></a>
 </article>
+
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/FastPages/"></data>
@@ -396,12 +397,12 @@ window.onload = wrap_img;
         </p>
       </div>
       <div class="footer-col">
-        <p>CSA Blog</p>
+        <p>CSP Fastpages</p>
       </div>
     </div>
 
     <div class="social-links"><ul class="social-media-list"><li>
-  <a rel="me" href="https://github.com/vivianknee" target="_blank" title="github">
+  <a rel="me" href="https://github.com/nighthawkcoders" target="_blank" title="github">
     <svg class="svg-icon grey">
       <use xlink:href="/FastPages/assets/minima-social-icons.svg#github"></use>
     </svg>
