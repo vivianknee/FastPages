@@ -1,7 +1,6 @@
 ---
-layout: base
+layout: default
 title: Home
-hide: true
 ---
 
 <html>
