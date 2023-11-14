@@ -621,21 +621,12 @@
   
 
   
-      ,"page1": {
-          "title": "Blogs",
-          "content": "",
-          "url": "https://vivianknee.github.io/FastPages/blogs",
-          "relUrl": "/blogs",
-          "date": ""
-      }
-      
-  
 
   
 
   
       ,"page3": {
-          "title": "Home",
+          "title": "Course Outlines",
           "content": "Welcome to Vivian&#39;s Blog . .",
           "url": "https://vivianknee.github.io/FastPages/",
           "relUrl": "/",
