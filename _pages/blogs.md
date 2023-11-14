@@ -1,5 +1,6 @@
 ---
-layout: blogs
-permalink: /blogs
+layout: home
 title: Blogs
+search_exclude: true
+permalink: /blogs/
 ---

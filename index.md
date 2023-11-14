@@ -1,6 +1,8 @@
 ---
-layout: default
-title: Home
+layout: base
+title: Course Outlines
+image: /images/mario_animation.png
+hide: true
 ---
 
 <html>
