@@ -5,7 +5,7 @@ title: Home
 
 <html>
 
-<body style="background-image: linear-gradient(to right, rgb(140, 240, 235) , rgb(224, 87, 151));">
+<body>
     <h1 align="center">
         <b>
             Welcome to Vivian's Blog
@@ -13,8 +13,6 @@ title: Home
     </h1>
 </body>
 </html>
-
-## Posts
 
 
 
